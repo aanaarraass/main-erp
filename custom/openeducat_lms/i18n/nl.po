@@ -1,0 +1,1784 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_lms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 08:48+0000\n"
+"PO-Revision-Date: 2019-09-30 08:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__embed_views
+msgid "# of Embedded Views"
+msgstr "# Van Embedded Views"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__material_views
+msgid "# of Website Views"
+msgstr "# Van Website Views"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course Completed"
+msgstr ": Cursus voltooid"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course Duration"
+msgstr ": Duur van de cursus"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course In Progress"
+msgstr ": Cursus In Progress"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course To Begin"
+msgstr ": Cursus To Begin"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Days Since Launch"
+msgstr ": Days sinds introductie"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Enrolled Users"
+msgstr ": Ingeschreven gebruikers"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Training Material"
+msgstr ": Oefenmateriaal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Content</b><br/>"
+msgstr "<B> Inhoud </ b> <br/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Count</b><br/>"
+msgstr "<B> Course Count </ b> <br/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Enrollment</b><br/>"
+msgstr "<B> Cursusinschrijving </ b> <br/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material_forbidden
+msgid "<i class=\"fa fa-exclamation-triangle\"/>\n"
+"                        This"
+msgstr "<I class = \"fa fa-uitroep-driehoek\" />\n"
+"                        Deze"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "<i class=\"fa fa-eye\"/>\n"
+"                                                                                    <span class=\"hidden-xs hidden-sm\">\n"
+"                                                                                        Preview\n"
+"                                                                                    </span>"
+msgstr "<I class = \"fa fa-eye\" />\n"
+"                                                                                    <Span class = \"verborgen-xs verborgen-sm\">\n"
+"                                                                                        Voorbeeld\n"
+"                                                                                    </ Span>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<i class=\"fa fa-spinner fa-spin\"/> Loading ..."
+msgstr "<I class = \"fa fa-spinner fa-spin\" /> Laden ..."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "<i class=\"fa fa-users\" aria-hidden=\"true\"/>\n"
+"                                            Students:"
+msgstr "<I class = \"fa fa-gebruikers\"-aria verborgen = \"true\" />\n"
+"                                            studenten:"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "<i class=\"fa fa-users\"/>\n"
+"                                                            Students:"
+msgstr "<I class = \"fa fa-gebruikers\" />\n"
+"                                                            studenten:"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<span id=\"first\" class=\"ml-2 mr-2\" title=\"First slide\" role=\"img\" aria-label=\"First slide\">\n"
+"                                        <i class=\"fa fa-step-backward fa-2x\"/>\n"
+"                                    </span>"
+msgstr "<Span id = \"first\" class = \"ml 2-mr-2\" title = \"Eerste afbeelding\" functie = \"img\" aria-label = \"Eerste afbeelding\">\n"
+"                                        <I class = \"fa fa-stap achteruit fa-2x\" />\n"
+"                                    </ Span>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<span id=\"fullscreen\" title=\"View fullscreen\" role=\"img\" aria-label=\"Fullscreen\">\n"
+"                                        <i class=\"fa fa-arrows-alt fa-2x\"/>\n"
+"                                    </span>"
+msgstr "<Span id = \"fullscreen\" title = \"View fullscreen\" role = \"img\" aria-label = \"Volledig scherm\">\n"
+"                                        <I class = \"fa fa-arrows-alt fa-2x\" />\n"
+"                                    </ Span>"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_words
+msgid "A few words about Python"
+msgstr "Een paar woorden over Python"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_needaction
+msgid "Action Needed"
+msgstr "Actie nodig"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__active
+msgid "Active"
+msgstr "Actief"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_pdf
+msgid "All time Sell"
+msgstr "Alle tijd verkopen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Apply"
+msgstr "Toepassen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course_material__total_time
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__total_time
+msgid "Approx time to complete this material"
+msgstr "Ongeveer de tijd om dit materiaal te voltooien"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Audio"
+msgstr "audio"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__auto_publish
+msgid "Auto Publish"
+msgstr "Auto publiceren"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__auto_publish_type
+msgid "Auto Publish Type"
+msgstr "Auto publiceren Type"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Become an Instructor"
+msgstr "Word Instructeur"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Become an Instructor!"
+msgstr "Word instructeur!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_faculty__bio_data
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.lms_faculty_form_view
+msgid "Bio Data"
+msgstr "Bio gegevens"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Birth Date"
+msgstr "Geboortedatum"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__category_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Categories"
+msgstr "Categorieën"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__category_id
+msgid "Category"
+msgstr "Categorie"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Category:\n"
+"                                    <br/>"
+msgstr "Categorie:\n"
+"                                    <br/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Close"
+msgstr "Sluiten"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: selection:op.course,state:0
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Closed"
+msgstr "Gesloten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__code
+msgid "Code"
+msgstr ""
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Comments"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_res_company
+msgid "Companies"
+msgstr "Bedrijven"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__completed
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Completed"
+msgstr "Voltooid"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__completed_percentage
+msgid "Completed Percentage"
+msgstr "voltooid Percentage"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__completed_date
+msgid "Completed Time"
+msgstr "voltooid Time"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__completion_date
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Completion Date"
+msgstr "einddatum"
+
+#. module: openeducat_lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_lms_configuration
+msgid "Configuration"
+msgstr "Instellingen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: selection:op.course,state:0
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__confirm_date
+msgid "Confirm Date"
+msgstr "Bevestig Date"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__datas
+msgid "Content"
+msgstr "Inhoud"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Continue Learning"
+msgstr "Doorgaan Learning"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_3
+msgid "Contrary to what some say, people are not “born\" salespeople. Selling is a skill that can be learned, developed, and mastered. This course will set you down the path to increased sales, higher levels of confidence, and more motivation as you approach prospective clients of your products or services in the marketplace."
+msgstr "In tegenstelling tot wat sommigen zeggen, mensen zijn niet “geboren\" verkopers. Verkopen is een vaardigheid die kan worden geleerd, ontwikkeld en gemasterd. Zal deze cursus u instellen het pad naar een hogere omzet, hogere niveaus van vertrouwen, en meer motivatie als je benaderen potentiële klanten van uw producten of diensten in de markt."
+
+#. module: openeducat_lms
+#: code:addons/openeducat_lms/models/course_material.py:108
+#, python-format
+msgid "Could not fetch url. Document Id or                 access right not available:\n"
+"% s"
+msgstr "Kon niet halen url. Document Id of recht van toegang niet beschikbaar:\n"
+"% s"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:10
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_lms_course_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_search
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_search
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_report_course_pivot
+#, python-format
+msgid "Course"
+msgstr "Cursus"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_course_category_view
+#: model:ir.model,name:openeducat_lms.model_op_course_category
+#: model:ir.ui.menu,name:openeducat_lms.menu_course_category
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_search
+msgid "Course Category"
+msgstr "cursus Categorie"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+msgid "Course Category Layout Configuration"
+msgstr "Cursus Categorie Layout Configuration"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_course_category_layout
+msgid "Course Category Record Configuration"
+msgstr "Cursus Categorie Record Configuration"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:56
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_completed
+#, python-format
+msgid "Course Completed"
+msgstr "cursus voltooid"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.op_lms_dashboard_kanban
+#: model:ir.ui.menu,name:openeducat_lms.menu_openeducat_lms_dashboard
+msgid "Course Dashboard"
+msgstr "cursus Dashboard"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:38
+#, python-format
+msgid "Course Duration"
+msgstr "Duur van de cursus"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:63
+#, python-format
+msgid "Course Enrollments"
+msgstr "cursus Inschrijvingen"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:52
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_in_progress
+#, python-format
+msgid "Course In Progress"
+msgstr "Cursus In Progress"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Course Invitation"
+msgstr "Uitnodiging Course"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__language
+msgid "Course Language"
+msgstr "cursustaal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+msgid "Course Layout Configuration"
+msgstr "Cursus Layout Configuration"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Material"
+msgstr "studiemateriaal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Materials"
+msgstr "Lesmateriaal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Name"
+msgstr "Cursus naam"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_lms_onboarding_course_layout
+msgid "Course Record Configuration"
+msgstr "Cursus Record Configuration"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:48
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_to_begin
+#, python-format
+msgid "Course To Begin"
+msgstr ""
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_tree
+msgid "Course category"
+msgstr "Cursuscategorie"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__suggested_course_ids
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_course
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.portal_my_course_menu
+#: model:website.menu,name:openeducat_lms.website_menu_lms_courses
+msgid "Courses"
+msgstr "cursussen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Courses /"
+msgstr "cursussen /"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Create"
+msgstr "creëren"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__user_id
+msgid "Create By"
+msgstr "Gemaakt door"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__create_uid
+msgid "Created by"
+msgstr "Gemaakt door"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__create_date
+msgid "Created on"
+msgstr "Gemaakt op"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Curriculum"
+msgstr "leerplan"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Customize"
+msgstr "Wijzigen"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Dartfish"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.actions.client,name:openeducat_lms.action_lms_dashboard
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_main_dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Days"
+msgstr "dagen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__days_since_launch
+msgid "Days Since Launch"
+msgstr "Dagen sinds introductie"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:34
+#, python-format
+msgid "Days Since launch"
+msgstr "Dagen sinds lancering"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__desc
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+msgid "Description..."
+msgstr "Omschrijving..."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_faculty__designation
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Designation"
+msgstr "Aanwijzing"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__dislikes
+msgid "Dislikes"
+msgstr "Houdt niet van"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__display_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__display_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__display_time
+msgid "Display Time"
+msgstr "display Time"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course__sequence
+msgid "Display order"
+msgstr "weergavevolgorde"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Document"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__document_id
+msgid "Document ID"
+msgstr "document ID"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__url
+msgid "Document URL"
+msgstr "document URL"
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Document/PDF"
+msgstr "Document / PDF"
+
+#. module: openeducat_lms
+#: selection:op.course.enrollment,state:0
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Done"
+msgstr "Gedaan"
+
+#. module: openeducat_lms
+#: selection:op.course,state:0
+#: selection:op.course.enrollment,state:0
+msgid "Draft"
+msgstr "Droogte"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+msgid "E.g fa fa-home"
+msgstr "Bijv fa fa-home"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Email :"
+msgstr "E-mail:"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__template_id
+msgid "Emails"
+msgstr "emails"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__embed_code
+msgid "Embed Code"
+msgstr "Embed code"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Enroll Course"
+msgstr "inschrijven Course"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:28
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__enrolled_users
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__enrollment_user_ids
+#, python-format
+msgid "Enrolled Users"
+msgstr "ingeschreven gebruikers"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__enrollment_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__enrollment_id
+msgid "Enrollment"
+msgstr "Inschrijving"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__enrollment_date
+msgid "Enrollment Date"
+msgstr "inschrijving Date"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+msgid "Enrollment Layout Configuration"
+msgstr "Inschrijving Layout Configuration"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_enrollment_layout
+msgid "Enrollment Record Configuration"
+msgstr "Inschrijving Record Configuration"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_enrollment_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_enrollment_ids
+#: model:ir.ui.menu,name:openeducat_lms.menu_course_enrollment
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Enrollments"
+msgstr "inschrijvingen"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Everyone"
+msgstr "Iedereen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Faculties"
+msgstr "faculteiten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__promoted_material_id
+msgid "Featured Material"
+msgstr "Aanbevolen Materiaal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Female"
+msgstr "Vrouw"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "FileUpload"
+msgstr "Bestand upload"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "Finish"
+msgstr "Af hebben"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "First Name"
+msgstr "Voornaam"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Volgers (kanalen)"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (Partners)"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: selection:op.course,type:0
+msgid "Free"
+msgstr "Vrij"
+
+#. module: openeducat_lms
+#: selection:op.course,navigation_policy:0
+msgid "Free Learning Path"
+msgstr "Gratis Learning Path"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_pdf
+msgid "French CookBooks"
+msgstr "Franse kookboeken"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_video
+msgid "French Tutorials"
+msgstr "Frans Tutorials"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__full_description
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__full_description
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Full Description"
+msgstr "volledige beschrijving"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_functions
+msgid "Functions"
+msgstr "functies"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Gender"
+msgstr "Geslacht"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "General"
+msgstr "Algemeen"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Hours"
+msgstr "uren"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__icon
+msgid "Icon"
+msgstr "Icoon"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Indien aangevinkt nieuwe berichten die uw aandacht vereisen."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Wanneer ingeschakeld, nieuwe berichten die uw aandacht vereisen."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt, sommige berichten hebben een levertijd fout."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image
+#: selection:op.material,material_type:0
+msgid "Image"
+msgstr "Beeld"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "Importantly, our courses teach students the real-life skills needed to get those in-demand jobs or further your programming skills."
+msgstr "Belangrijk is dat onze cursussen leren de leerlingen de real-life skills die nodig zijn om die banen in de vraag te krijgen of verder uw programmeerkennis."
+
+#. module: openeducat_lms
+#: selection:op.course.enrollment,state:0
+msgid "In Progress"
+msgstr "Bezig"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "In summary, this course has been designed for all skill levels and even if you have no programming or statistical background you will be successful in this course!"
+msgstr "Samengevat heeft deze cursus is ontworpen voor alle niveaus en zelfs als je geen programmering of statistische achtergrond u succesvol zal zijn in deze cursus zijn!"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_install
+msgid "Installing Python the default way"
+msgstr "Het installeren van Python de standaard manier"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_anaconda_bundle
+msgid "Installing Python through the Anaconda bundle"
+msgstr "Het installeren van Python door de Anaconda bundel"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__faculty_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Instructor"
+msgstr "Instructeur"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_intro_course
+msgid "Introduction to the course"
+msgstr "Inleiding tot de cursus"
+
+#. module: openeducat_lms
+#: model:mail.template,subject:openeducat_lms.email_template_course_invitation_mail
+msgid "Invitation for Course: ${object.name}"
+msgstr "Uitnodiging voor de cursus: $ {object.name}"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__invited_users_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Invited Users"
+msgstr "uitgenodigde gebruikers"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_is_follower
+msgid "Is Follower"
+msgstr "is Follower"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__is_published
+msgid "Is published"
+msgstr "Is gepubliceerd"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_iteration
+msgid "Iterate Through Python List Using Loops"
+msgstr "Doorloopt Python lijst met behulp van Loops"
+
+#. module: openeducat_lms
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Just done"
+msgstr "Net gedaan"
+
+#. module: openeducat_lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_dashboard
+msgid "KPI Dashboard"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__kanban_lms_course_dashboard_graph
+msgid "Kanban Lms Course Dashboard Graph"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_quiz__lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_main
+msgid "LMS"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course
+msgid "LMS Course"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_enrollment
+msgid "LMS Course Enrollment"
+msgstr "LMS Cursusinschrijving"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_enrollment_material
+msgid "LMS Course Enrollment Material"
+msgstr "LMS Cursusinschrijving Materiaal"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_course_invitation
+msgid "LMS Course Invitation"
+msgstr "Uitnodiging LMS Course"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_material
+msgid "LMS Course Materials"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_section
+msgid "LMS Course Section"
+msgstr "LMS Course Sectie"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_material
+msgid "LMS Material"
+msgstr "LMS Materiaal"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_1
+msgid "Language"
+msgstr "Taal"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Language:\n"
+"                                        <br/>"
+msgstr "Taal:\n"
+"                                        <br/>"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__last_access_date
+msgid "Last Access Time"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Last Name"
+msgstr "Achternaam"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__write_uid
+msgid "Last Updated by"
+msgstr "Laatst aangepast door"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__write_date
+msgid "Last Updated on"
+msgstr "Laatst geupdate op"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Last slide"
+msgstr "laatste dia"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Learning Now"
+msgstr "learning Now"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "Learning Python will give you more <strong>opportunities for jobs and career advancement</strong> because Python is one of the most requested skills in 2019!"
+msgstr "Het leren van Python zult u meer <strong> kansen te geven voor de werkgelegenheid en loopbaanontwikkeling </ strong>, omdat Python is een van de meest gevraagde vaardigheden in 2019!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__likes
+msgid "Likes"
+msgstr "sympathieën"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Looks great!"
+msgstr "Ziet er goed uit!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Male"
+msgstr "Mannetje"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_3
+msgid "Management"
+msgstr "Beheer"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_material_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__material_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__material_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__material_id
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_course_material
+msgid "Material"
+msgstr "Materiaal"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_enrollment_material_view
+msgid "Material Enrollments"
+msgstr "materiaal Inschrijvingen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Material Layout Configuration"
+msgstr "Materiaal Layout Configuration"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Material Name"
+msgstr "materiaal naam"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_material_layout
+msgid "Material Record Configuration"
+msgstr "Materiaal Record Configuration"
+
+#. module: openeducat_lms
+#: model:ir.actions.server,name:openeducat_lms.ir_cron_material_reminder_action_ir_actions_server
+#: model:ir.cron,cron_name:openeducat_lms.ir_cron_material_reminder_action
+#: model:ir.cron,name:openeducat_lms.ir_cron_material_reminder_action
+#: model:ir.model,name:openeducat_lms.model_material_reminder
+msgid "Material Reminder"
+msgstr "materiaal Reminder"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__material_type
+msgid "Material Type"
+msgstr "materiaal type"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__enrollment_material_line
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Materials"
+msgstr "materialen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image_medium
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image_medium
+msgid "Medium"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_ids
+msgid "Messages"
+msgstr "berichten"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Minutes"
+msgstr "Notulen"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Months"
+msgstr "Maanden"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "More\n"
+"                                            <span class=\"caret\"/>"
+msgstr "Meer\n"
+"                                            <Span class = \"dakje\" />"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__name
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Name"
+msgstr "Naam"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__navigation_policy
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__navigation_policy
+msgid "Navigation Policy"
+msgstr "Navigation beleid"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "Next"
+msgstr "Volgende"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Next slide"
+msgstr "Volgende dia"
+
+#. module: openeducat_lms
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Not done"
+msgstr "Niet klaar"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_not_found
+msgid "Nothing created or published yet."
+msgstr "Niets aangemaakt of nog niet gepubliceerd."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_has_error_counter
+msgid "Number of error"
+msgstr "Aantal fouten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Aantal berichten dat een actie vereist"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met een verkeerde levering"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Aantal ongelezen berichten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__online_course
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_search
+msgid "Online Course"
+msgstr "Online cursus"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Online Course ?"
+msgstr "Online cursus ?"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Only Invited User"
+msgstr "Alleen uitgenodigde gebruiker"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Only logged in User"
+msgstr "Alleen ingelogde gebruiker"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/js/openeducat_lms_dashboard.js:118
+#, python-format
+msgid "OpenEduCat"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_faculty
+msgid "OpenEduCat Faculty"
+msgstr "OpenEduCat Faculteit"
+
+#. module: openeducat_lms
+#: selection:op.course,type:0
+msgid "Paid"
+msgstr "Betaald"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__parent_id
+msgid "Parent Category"
+msgstr "hoofdcategorie"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Photos"
+msgstr "foto's"
+
+#. module: openeducat_lms
+#: code:addons/openeducat_lms/models/course_material.py:104
+#, python-format
+msgid "Please enter valid URL: % s"
+msgstr "Voer een geldige URL:% s"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__preview
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Previous slide"
+msgstr "vorige dia"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Price:\n"
+"                                        <br/>"
+msgstr "Prijs:\n"
+"                                        <br/>"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_2
+msgid "Programming"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__date_published
+msgid "Publish Date"
+msgstr "Publiceer datum"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_syntax_pdf
+msgid "Python Basic Syntax"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_cnd_image
+msgid "Python Conditional Statements"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__quiz_id
+#: selection:op.material,material_type:0
+msgid "Quiz"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "Quiz Resultaten"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Re-open"
+msgstr "Re-geopend"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_files_rw
+msgid "Read/Write Operations"
+msgstr "Read / Write Operations"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Review :"
+msgstr "Beoordeling :"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__is_seo_optimized
+msgid "SEO optimized"
+msgstr "SEO geoptimaliseerd"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Search"
+msgstr "Zoek"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__section_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__section_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__name
+msgid "Section"
+msgstr "Sectie"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Section Material"
+msgstr "sectie Material"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__section_material_ids
+msgid "Section Materials"
+msgstr "sectie Materials"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_section_ids
+msgid "Sections"
+msgstr "secties"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+msgid "See how to create a Course Category Layout."
+msgstr "Zie hoe je een cursus categorie Lay-out te creëren."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+msgid "See how to create a Course Layout."
+msgstr "Zie hoe je een cursus lay-out te creëren."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+msgid "See how to create a Enrollment Layout."
+msgstr "Zie hoe een inschrijving lay-out te creëren."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "See how to create a Material Layout."
+msgstr "Zie hoe u een Material lay-out te creëren."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Select Users"
+msgstr "Gebruikers selecteren"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_image
+msgid "Sell on spot"
+msgstr "Verkoop ter plaatse"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_video
+msgid "Sells"
+msgstr ""
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Send"
+msgstr "Sturen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__date
+msgid "Sent Date"
+msgstr "Verzonden datum"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__sequence
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__sequence
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__sequence
+msgid "Sequence"
+msgstr "Volgorde"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_sequence_list
+msgid "Sequence with List"
+msgstr "Sequence met Lijst"
+
+#. module: openeducat_lms
+#: selection:op.course,navigation_policy:0
+msgid "Sequential Learning Path"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__short_description
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__short_description
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Short Description"
+msgstr "korte beschrijving"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Show more"
+msgstr "Laat meer zien"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Slide image"
+msgstr "image Slide"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Start Again"
+msgstr "Opnieuw beginnen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Start Course"
+msgstr "Start Cursus"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__state
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__state
+msgid "State"
+msgstr "Staat"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_course_category_layout_state
+msgid "State of the onboarding course category layout step"
+msgstr "State of the onboarding natuurlijk categorie layout stap"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_lms_course_layout_state
+msgid "State of the onboarding course layout step"
+msgstr "State of the onboarding natuurlijk layout stap"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_enrollment_layout_state
+msgid "State of the onboarding enrollment layout step"
+msgstr "State of the onboarding inschrijving layout stap"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_material_layout_state
+msgid "State of the onboarding material layout step"
+msgstr "State of the onboarding materiaal layout stap"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__lms_onboard_panel
+msgid "State of the onboarding step"
+msgstr "State of the onboarding stap"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_string_number
+msgid "String and Number"
+msgstr "String en Number"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Suggested Course"
+msgstr "Voorgestelde Course"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Suggested Courses"
+msgstr "Voorgestelde Cursussen"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Teacher"
+msgstr "Leraar"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Teacher:"
+msgstr "Leraar:"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__website_url
+msgid "The full URL to access the document through the website."
+msgstr "De volledige URL voor toegang tot het document via de website."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "The maximum number of quiz attempts has been reached !"
+msgstr "Het maximum aantal quiz pogingen is bereikt!"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "There are currently no Courses for your account."
+msgstr "Er zijn momenteel geen Cursussen voor uw account."
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_2
+msgid "This French Course is designed to help everyone from the ab initio stage - those who have never learned French before - to those wanting to brush up in preparation for an upcoming holiday or business trip. The course is pdf as well as audio video  based using a bilingual speaker (myself) and it will be supported with on-screen transcripts for easier learning and better retention. There are also printable vocabulary guides to take with you wherever you go!"
+msgstr "Deze Franse cursus is ontworpen om iedereen te helpen uit de ab initio fase - degenen die nog nooit Frans geleerd hebben eerder - om degenen die willen opfrissen als voorbereiding op een aanstaande vakantie of zakenreis. De cursus is pdf evenals audio video gebaseerde behulp van een tweetalige luidspreker (ikzelf) en het zal worden ondersteund met een on-screen transcripten voor eenvoudiger leren en betere retentie. Er zijn ook afdrukbare woordenschat begeleidt met u te nemen waar u gaat!"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_3
+msgid "This course lays out the foundation of what it takes in order to succeed in selling ANY product or service in ANY industry. Grant demystifies what selling really is and how in fact, every person on the planet is a salesperson, regardless of their job title or profession."
+msgstr "Deze cursus legt de basis van wat er nodig is om te slagen in het verkopen van een product of dienst in elke branche. Grant onthult wat selling werkelijk is en hoe in feite, elke persoon op de planeet is een verkoper, ongeacht hun functie of beroep."
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_2
+msgid "This course takes you from learning how to pronounce French words correctly to understanding others and expressing your needs in a number of situations."
+msgstr "Deze cursus brengt u van het leren hoe je Franse woorden correct uitspreken voor het begrijpen van anderen en het uiten van uw behoeften in een aantal situaties."
+
+#. module: openeducat_lms
+#: model_terms:ir.actions.act_window,help:openeducat_lms.op_lms_dashboard_kanban
+msgid "This is the LMS Course Dashboard."
+msgstr "Dit is de LMS Course Dashboard."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image_thumb
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image_thumb
+msgid "Thumbnail"
+msgstr "thumbnail"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__name
+msgid "Title"
+msgstr "Titel"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__total_views
+msgid "Total # Views"
+msgstr "Totaal Bekeken"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Total Duration:\n"
+"                                        <br/>"
+msgstr "Totale duur:\n"
+"                                        <br/>"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:5
+#, python-format
+msgid "Total Enrollments"
+msgstr "Totaal Inschrijvingen"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__total_time
+msgid "Total Time (HH:MM)"
+msgstr "Totale tijd (UU: MM)"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:42
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__training_material
+#, python-format
+msgid "Training Material"
+msgstr "Oefenmateriaal"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__type
+msgid "Type"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_unread
+msgid "Unread Messages"
+msgstr "ongelezen berichten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Ongelezen berichten Counter"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__user_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__user_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__user_id
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "User"
+msgstr "Gebruiker"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__user_ids
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__user_ids
+msgid "Users"
+msgstr "gebruikers"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_variable
+msgid "Variables"
+msgstr "Variabelen"
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Video"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__video_type
+msgid "Video Type"
+msgstr "video Type"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Vimeo"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__visibility
+msgid "Visibility Policy"
+msgstr "zichtbaarheid beleid"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_published
+msgid "Visible on current website"
+msgstr "Zichtbaar op de huidige website"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_date
+#: selection:op.material,auto_publish_type:0
+msgid "Wait Until"
+msgstr "Wacht totdat"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_duration
+#: selection:op.material,auto_publish_type:0
+msgid "Wait Until Duration"
+msgstr "Wacht Tot Duur"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_duration_period
+msgid "Wait at least period"
+msgstr "Wacht ten minste periode"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_image
+msgid "Way to french"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__website_message_ids
+msgid "Website Comments"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_message_ids
+msgid "Website Messages"
+msgstr "Website berichten"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_url
+msgid "Website URL"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course__website_message_ids
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__website_message_ids
+msgid "Website communication history"
+msgstr "Website communicatie geschiedenis"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_title
+msgid "Website meta title"
+msgstr "Website metatitel"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "image Website OpenGraph"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Weeks"
+msgstr "Weken"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_files
+msgid "Working with files"
+msgstr "Werken met bestanden"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Years"
+msgstr "jaren"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Your Courses"
+msgstr "uw Cursussen"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Youtube"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__url
+msgid "Youtube or Google Document URL"
+msgstr "Youtube of Google Document URL"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_migration_report
+msgid "course"
+msgstr "Cursus"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_course_invitation_wizard_view
+msgid "course Invitation"
+msgstr "Natuurlijk Uitnodiging"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material_forbidden
+msgid "is private."
+msgstr "is privé."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "op.material/#{material.id}/image_medium"
+msgstr "op.material / # {material.id} / image_medium"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "or"
+msgstr "of"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "suggest_slide.name"
+msgstr ""
+

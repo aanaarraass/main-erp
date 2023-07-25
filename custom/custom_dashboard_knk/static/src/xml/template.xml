@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="Invoicedashboard">
+        <t t-jquery="h1.dashboard-h1" t-operation="after">
+            <a type="button" class="book_keeping_help btn btn-primary btn-rounded" href="https://swiftinvoices.com/shop/category/subscription-1" target="_blank">
+                <span class="helping_person_img"><img id="person_img" src="/custom_dashboard_knk/static/src/images/bookkeeping_icon.jpg" height="34" width="34"/></span>
+                <span class="helping_text">Need Accounting or Bookkeeping Help?</span>
+            </a>
+        </t>
+    </t>
+</templates>

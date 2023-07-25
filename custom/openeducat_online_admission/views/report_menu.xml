@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="action_report_applicant" model="ir.actions.report">
+            <field name="name">Applicant report</field>
+            <field name="model">op.admission</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">openeducat_online_admission.report_admission_final_document</field>
+            <field name="report_file">openeducat_online_admission.report_admission_final_document</field>
+        </record>
+    </data>
+</odoo>

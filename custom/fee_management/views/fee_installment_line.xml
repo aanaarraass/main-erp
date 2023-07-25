@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <!--                tree view-->
+        <record model="ir.ui.view" id="fee_installment_line_list">
+            <field name="name">Fee Installments Line list</field>
+            <field name="model">fee.installment.line</field>
+            <field name="arch" type="xml">
+                <tree string="Tests" decoration-danger="state == 'unpaid'" decoration-success="state == 'invoiced'"
+                      decoration-muted="state == 'paid'" sample="1">
+                    <field name="sequence"/>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="installment_amount"/>
+                    <!--<field name="student_name"/>-->
+                    <field name="state" widget="badge"/>
+                    <field name="payment_status" widget="badge" attrs="{'invisible':[('state', '=', 'unpaid')]}"/>
+                    <button string="Create Invoice" type="object" name="action_create_invoice"
+                            attrs="{'invisible':[('state', '!=', 'unpaid')]}"/>
+                    <button string="View Invoice" type="object" name="action_view_invoice"
+                            attrs="{'invisible':[('state', '=', 'unpaid')]}"/>
+
+                </tree>
+            </field>
+        </record>
+        <!--      form view-->
+        <record model="ir.ui.view" id="fee_installment_line_form">
+            <field name="name">Fee Installments Line form</field>
+            <field name="model">fee.installment.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="unpaid,paid,invoiced"/>
+                    </header>
+                    <sheet>
+
+                        <group>
+                            <group>
+                                <field name="date"/>
+                                <field name="name"/>
+                                <field name="student_name"/>
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                                <field name="installment_amount"/>
+                                <field name="invoice_status"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_fee_installment_line">
+            <field name="name">Fee Installments Line window</field>
+            <field name="res_model">fee.installment.line</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+
+    </data>
+</odoo>

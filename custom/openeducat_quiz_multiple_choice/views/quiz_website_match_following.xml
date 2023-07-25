@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_following_Images_tree" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                    <xpath expr="//group[@name='questions']" position="inside">
+                        <field name="multiple_choice_que_type" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                        <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                        <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                    </xpath>
+                    <xpath expr="//group[@name='answers']" position="after">
+                        <group name="multiple_choice_answers" string="Answers" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')]}">
+                            <field name="multiple_choice_line_ids" nolabel="1" >
+                                <tree string="Text Answers" editable="bottom">
+                                    <field name="que_text" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'image')]}"/>
+                                    <field name="que_image" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'text')]}" />
+                                    <field name="default_answer" />
+                                </tree>
+                            </field>
+                        </group>
+                    </xpath>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="view_op_quiz_result_multiple_choice" model="ir.ui.view">
+            <field name="name">op.quiz.result.form</field>
+            <field name="model">op.quiz.result</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_result_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='line_ids']/form/group/field[@name='question_mark']" position="after">
+                        <field name="multiple_choice_que_type" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')]}"></field>
+                        <field name="multiple_choice_line_ids" readonly="1" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')]}">
+                            <tree string="Multiple Choice">
+                                <field name="que_text" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'image')]}"/>
+                                <field name="que_image" widget="image" width="100px" height="100px" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'text')]}"></field>
+                                <field name="default_answer"></field>
+                                <field name="given_answer"></field>
+                            </tree>
+                        </field>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,354 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_achievement_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-12 11:39+0000\n"
+"PO-Revision-Date: 2019-11-12 11:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_achievement_progression_report
+msgid "<strong>Achievement:</strong>"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model,name:openeducat_achievement_enterprise.model_op_achievement
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__achievement_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_form_inherite
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_tree_inherite
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_form
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_student_inherit_achievement
+msgid "Achievement"
+msgstr "Leistung"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_portal_achivemenet
+msgid ""
+"Achievement\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+msgstr ""
+"Leistung\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progression_achievement_portal_inherit
+msgid ""
+"Achievement\n"
+"                                <strong style=\"float:left;padding: 0 20px 0 20px;\">+</strong>"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_student__achievement_line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_student_inherit_achievement
+msgid "Achievement Details"
+msgstr "Achievement-Details"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model,name:openeducat_achievement_enterprise.model_achievement_progress_wizard
+msgid "Achievement Progress Wizard"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model,name:openeducat_achievement_enterprise.model_op_achievement_type
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__achievement_type_id
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_achievement_progression_report
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_portal_achivemenet
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progression_achievement_portal_inherit
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_tree
+msgid "Achievement Type"
+msgstr "Achievement Typ"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.actions.act_window,name:openeducat_achievement_enterprise.act_open_op_achievement_type_view
+#: model:ir.ui.menu,name:openeducat_achievement_enterprise.menu_op_achievement_type_sub
+msgid "Achievement Types"
+msgstr "Achievement Typen"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.actions.act_window,name:openeducat_achievement_enterprise.act_open_op_achievement_view
+#: model:ir.ui.menu,name:openeducat_achievement_enterprise.menu_op_achievement_main
+msgid "Achievements"
+msgstr "Erfolge"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_needaction
+msgid "Action Needed"
+msgstr "Aktion notwendig"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_wizad_form
+msgid "Add"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.actions.act_window,name:openeducat_achievement_enterprise.act_win_progress_achievement_wizard_action
+msgid "Add Achievement"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_attachment_count
+msgid "Attachment Count"
+msgstr "# Anhänge"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_wizad_form
+msgid "Close"
+msgstr "Abschliessen"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__code
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_search
+msgid "Code"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__company_id
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__create_uid
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__create_uid
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__create_date
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__create_date
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__achievement_date
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_achievement_progression_report
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_portal_achivemenet
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progression_achievement_portal_inherit
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+msgid "Date"
+msgstr "Datum"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__description
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_achievement_progression_report
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_portal_achivemenet
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progression_achievement_portal_inherit
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_form
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__display_name
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__display_name
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__faculty_id
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_achievement_progression_report
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progression_achievement_portal_inherit
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+msgid "Faculty"
+msgstr "Fakultät"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_follower_ids
+msgid "Followers"
+msgstr "Abonnenten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Abonnenten (Kanäle)"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnenten (Partner)"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_form_inherite
+msgid "Get Achievement"
+msgstr "Leistung abrufen"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_search
+msgid "Group By..."
+msgstr "Gruppieren nach ..."
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__id
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__id
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_needaction
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Falls markiert, benötigen neue Nachrichten Ihre Kenntnisnahme."
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_has_error
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Wenn gewählt, ist das Senden einiger Nachrichten fehlgeschlagen."
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_is_follower
+msgid "Is Follower"
+msgstr "Ist ein Abonnent"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard____last_update
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement____last_update
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type____last_update
+msgid "Last Modified on"
+msgstr "Letzte Änderung am"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__write_uid
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__write_uid
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__write_date
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__write_date
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Hauptanhänge"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_has_error
+msgid "Message Delivery error"
+msgstr "Fehler beim Senden der Nachricht"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_ids
+msgid "Messages"
+msgstr "Nachrichten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement_type__name
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_type_search
+msgid "Name"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Anzahl der Aktionen"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_has_error_counter
+msgid "Number of errors"
+msgstr "Anzahl der Fehler"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Anzahl der Nachrichten, die eine Aktion erfordern"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Anzahl der Nachrichten mit einem Fehler beim Senden."
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Anzahl ungelesener Nachrichten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_student_progression__achievement_lines
+msgid "Progression Achivement"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__progression_id
+msgid "Progression No"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS Zustellungsfehler"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model,name:openeducat_achievement_enterprise.model_op_student
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__student_id
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.view_op_achievement_search
+msgid "Student"
+msgstr "Schüler"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_achievement_progress_wizard__student_id
+msgid "Student Name"
+msgstr "Name des Studenten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model,name:openeducat_achievement_enterprise.model_op_student_progression
+msgid "Student progression"
+msgstr ""
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_student_progression__total_achievement
+msgid "Total Achievement"
+msgstr "Gesamtleistung"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_unread
+msgid "Unread Messages"
+msgstr "Ungelesene Nachrichten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Anzahl ungelesener Nachrichten"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_form_inherite
+msgid "Values"
+msgstr "Werte"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,field_description:openeducat_achievement_enterprise.field_op_achievement__website_message_ids
+msgid "Website Messages"
+msgstr "Website-Nachrichten"
+
+#. module: openeducat_achievement_enterprise
+#: model:ir.model.fields,help:openeducat_achievement_enterprise.field_op_achievement__website_message_ids
+msgid "Website communication history"
+msgstr "Website-Kommunikationshistorie"
+
+#. module: openeducat_achievement_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_achievement_enterprise.student_progress_achievement_wizad_form
+msgid "student achievement progress wizard"
+msgstr ""

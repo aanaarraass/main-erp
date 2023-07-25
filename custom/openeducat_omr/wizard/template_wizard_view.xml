@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="op_omr_temp_wizard" model="ir.ui.view">
+            <field name="name">op_omr_template_wizard</field>
+            <field name="model">op.omr.template.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Wizard">
+                    <group>
+                        <group>
+                            <field name="no_option"/>
+                            <field name="no_que"/>
+                        </group>
+                        <group>
+                            <field name="instruction"/>
+                            <field name="signature"/>
+                            <field name="batch"/>
+                            <field name="mobile_no"/>
+                            <field name="date"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="get_template" string="Print" type="object" class="btn-primary"/>
+                        <button string="Cancel" special="cancel" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_temp_wizard" model="ir.actions.act_window">
+            <field name="name">OMR Sheet Generate</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.omr.template.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

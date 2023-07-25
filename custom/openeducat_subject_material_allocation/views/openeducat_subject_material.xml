@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="portal_my_home_menu_study_material" name="Portal layout : Study Material"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <t t-if="user_id.sudo().is_student">
+                <li t-if="page_name == 'subject_detail'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="subject_id" t-attf-href="/subject/details/?{{ keep_query() }}">Study Material</a>
+                    <t t-else="">Study Material</t>
+                </li>
+                <li t-if="page_name == 'subject_material_detail'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="subject" t-attf-href="/subject/details/?{{ keep_query() }}">Study Material</a>
+                    <t t-else="">Study Material</t>
+                </li>
+            </t>
+            <t t-if="user_id.sudo().is_parent">
+                <li t-if="page_name == 'subject_detail'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="subject_id" t-attf-href="/subject/details/#{stud_id}?{{ keep_query() }}">Study Material</a>
+                    <t t-else="">Study Material</t>
+                </li>
+                <li t-if="page_name == 'subject_material_detail'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="subject" t-attf-href="/subject/details/#{student}?{{ keep_query() }}">Study Material</a>
+                    <t t-else="">Study Material</t>
+                </li>
+            </t>
+            <li t-if="subject" class="breadcrumb-item active">
+                <span t-field="subject.name"/>
+            </li>
+        </xpath>
+    </template>
+
+
+    <template id="portal_student_subject_details">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Study Material</t>
+            </t>
+            <t t-if="not grouped_tasks">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+            <t t-if="grouped_tasks" t-call="portal.portal_table">
+                <t t-foreach="grouped_tasks" t-as="subjects">
+                    <thead>
+                        <tr class="active" t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                            <th>Subject</th>
+                            <th t-if="groupby == 'none'">Course</th>
+                            <th t-else="">
+                                <em class="font-weight-normal text-muted">Course For:</em>
+                                <span t-field="subjects[0].sudo().course_id.name"/>
+                            </th>
+                            <th>Total Files</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="subjects" t-as="subject">
+                            <tr>
+                                <th t-if="subject.attachment_ids">
+                                    <a t-attf-href="/subject/material/detail/#{stud_id}/#{subject.id}">
+                                        <t t-esc="subject.name"/>
+                                    </a>
+                                </th>
+                                <th t-if="subject.attachment_ids">
+                                    <t t-esc="subject.course_id.name"/>
+                                </th>
+                                <th t-if="subject.attachment_ids">
+                                    <t t-set="counter" t-value="0"/>
+                                    <t t-foreach="subject.attachment_ids" t-as="file">
+                                        <t t-set="counter" t-value="counter + 1"/>
+                                    </t>
+                                    <t t-esc="counter"/>
+                                </th>
+                            </tr>
+                        </t>
+                    </tbody>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <template id="portal_student_subject_material_details">
+
+        <t t-call="portal.portal_layout">
+            <t t-foreach="subject" t-as="material_data">
+                <t t-set="o_portal_fullwidth_alert" groups="project.group_project_user">
+                    <t t-call="portal.portal_back_in_edit_mode">
+                        <t t-set="backend_url"
+                           t-value="'/web#model=op.subject.registration&amp;id=%s&amp;view_type=form' % (material_data.id)"/>
+                    </t>
+                </t>
+            </t>
+            <t t-if="not subject">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <t t-foreach="subject" t-as="material_data">
+                            <small class="text-muted">Subject -</small>
+                            <span t-field="material_data.name"/>
+                        </t>
+                    </h5>
+                </t>
+            </t>
+            <t t-foreach="subject" t-as="material_data">
+                <div t-if="material_data" style="background-color:white; padding: 20px 40px 20px 40px;"
+                     class="texr-center">
+                    <div class="mt32">
+                        <div class="row col-md-12">
+                            <div class="row col-md-6">
+                                <div t-if="material_data.name" class="col-md-5">
+                                    <strong>Subject:</strong>
+                                </div>
+                                <div t-if="material_data.name" class="col-md-7">
+                                    <span t-esc="material_data.name"/>
+                                </div>
+                                <div t-if="material_data.course_id" class="col-md-5">
+                                    <strong>Course:</strong>
+                                </div>
+                                <div t-if="material_data.course_id" class="col-md-7">
+                                    <span t-esc="material_data.course_id.name"/>
+                                </div>
+                                <div t-if="material_data.subject_type" class="col-md-5">
+                                    <strong>Subject Type:</strong>
+                                </div>
+                                <div t-if="material_data.subject_type" class="col-md-7">
+                                    <span t-esc="{False: False, 'elective': 'Elective',
+                                                    'compulsory': 'Compulsory'}[material_data.subject_type]"/>
+                                </div>
+                            </div>
+                            <div class="row col-md-6">
+                                <div t-if="material_data.code" class="col-md-5">
+                                    <strong>Code:</strong>
+                                </div>
+                                <div t-if="material_data.code" class="col-md-7">
+                                    <span t-esc="material_data.code"/>
+                                </div>
+                                <div t-if="material_data.type" class="col-md-5">
+                                    <strong>Type:</strong>
+                                </div>
+                                <div t-if="material_data.type" class="col-md-7">
+                                    <span t-esc="{False: False, 'theory': 'Theory',
+                                                    'practical': 'Practical',
+                                                    'both':'Both', 'other':'Other'}[material_data.type]"/>
+                                </div>
+                                <div class="col-md-5">
+                                    <strong>Grade Weightage:</strong>
+                                </div>
+                                <div class="col-md-7">
+                                    <span t-esc="material_data.grade_weightage"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div t-if="material_data.attachment_ids"
+                     style="background-color:white; padding: 2px 40px 20px 40px;">
+                    <div class="mt16">
+                        <div class="row">
+                            <t t-if="material_data" t-call="portal.portal_table">
+                                <thead>
+                                    <tr class="active"
+                                        t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                                        <th>Material</th>
+                                        <th>Uploaded date</th>
+                                        <th>Uploaded by</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="material_data.attachment_ids" t-as="file">
+                                        <tr>
+
+                                            <th t-if="material_data.attachment_ids">
+                                                <a t-attf-href="/study/material/download/#{file.id}">
+                                                    <t t-esc="file.name"/>
+                                                    <i t-if="file.name" class="fa fa-download"/>
+                                                </a>
+                                                <br/>
+                                            </th>
+                                            <th t-if="material_data.attachment_ids">
+                                                <t t-esc="file.create_date" t-options="{'widget': 'date'}"/>
+                                                <br/>
+                                            </th>
+                                            <th t-if="material_data.attachment_ids">
+                                                <t t-esc="file.create_uid.name"/>
+                                                <br/>
+                                            </th>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

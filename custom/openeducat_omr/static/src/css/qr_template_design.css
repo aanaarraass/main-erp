@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	width: 100%;
+}
+
+.outer {
+	position: relative;
+	height: 500px;
+	width: 550px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+
+.content {
+	animation-delay: 0.3s;
+	position: absolute;
+	left: 20px;
+	z-index: 3
+
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+	width: 280px;
+	font-size: 13px;
+	line-height: 1.4;
+	margin: 20px 0;
+
+}
+
+.bg {
+	display: inline-block;
+	color: #fff;
+	background: cornflowerblue;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: .7em;
+}
+.button {
+	width: fit-content;
+	height: fit-content;
+	radius:5px;
+}
+
+.button a {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	font-size: 11px;
+	color: #111;
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 1px solid #aaa;
+	font-weight: bold;
+
+
+}
+
+.button a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -10px;
+	width: 0%;
+	background: #111;
+	height: 100%;
+	z-index: -1;
+	transition: width 0.3s ease-in-out;
+	transform: skew(-25deg);
+	transform-origin: right;
+}
+
+.button a:hover:after {
+	width: 150%;
+	left: -10px;
+	transform-origin: left;
+
+}
+
+.button:hover {
+	color: #fff;
+	transition: all 0.5s ease;
+}
+
+.cart-icon {
+	padding-right: 8px;
+
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#take_but{
+	top: 300px;
+	
+}
+#takephoto{
+	z-index: 1;
+
+}
+#scanner_video{
+	height:100%;
+	width:100%;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.form-control{
+	}
+
+	.omr_scanner{
+		position: relative;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.outer{
+		position: relative;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.wrapper{
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+	}
+
+	#cam-div{
+		height:auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	#take_but{
+		text-align-last: center;
+		z-index: 1;
+		position: absolute;
+		margin-left: 17px;
+		top: 292px;
+	}
+	#imageTag{
+		width:100%;
+		height: auto;
+	}
+	#submit,#submit_scanner{
+		margin-left:0px;
+	}
+
+}

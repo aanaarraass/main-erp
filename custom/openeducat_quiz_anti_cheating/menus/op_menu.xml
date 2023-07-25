@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="op_quiz_anti_cheating_main_menu"
+                  sequence="20"
+                  name="Quiz Anti Cheating"
+                  groups="openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin,openeducat_core.group_op_faculty"
+                  web_icon="openeducat_quiz_anti_cheating,static/description/icon.png"/>
+    </data>
+</odoo>

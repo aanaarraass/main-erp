@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <function model="gradebook.gradebook" name="generate_hash_key">
+            <value eval="[ref('openeducat_grading.gradebook_1')]"/>
+            <value model="gradebook.gradebook" eval="obj().env.ref('openeducat_grading.gradebook_1')"/>
+        </function>
+
+        <function model="gradebook.gradebook" name="generate_hash_key">
+            <value eval="[ref('openeducat_grading.gradebook_2')]"/>
+            <value model="gradebook.gradebook" eval="obj().env.ref('openeducat_grading.gradebook_2')"/>
+        </function>
+
+        <function model="gradebook.gradebook" name="generate_hash_key">
+            <value eval="[ref('openeducat_grading.gradebook_3')]"/>
+            <value model="gradebook.gradebook" eval="obj().env.ref('openeducat_grading.gradebook_3')"/>
+        </function>
+
+        <function model="gradebook.gradebook" name="generate_hash_key">
+            <value eval="[ref('openeducat_grading.gradebook_4')]"/>
+            <value model="gradebook.gradebook" eval="obj().env.ref('openeducat_grading.gradebook_4')"/>
+        </function>
+
+    </data>
+</odoo>

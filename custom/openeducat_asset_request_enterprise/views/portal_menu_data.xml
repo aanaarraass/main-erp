@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="website_menu_asset_request" model="openeducat.portal.menu">
+        <field name="name">Asset Requests</field>
+        <field name="menu_ref_name">Asset Requests</field>
+        <field name="link">/my/asset-request</field>
+        <field name="active">True</field>
+        <field name="sequence" type="int">115</field>
+        <field name="background_color">#2E86C1 </field>
+        <field name="is_visible_to_parent">True</field>
+        <field name="icon_image" type="base64"
+               file="openeducat_asset_request_enterprise/static/description/logo.png"/>
+    </record>
+</odoo>

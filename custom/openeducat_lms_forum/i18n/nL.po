@@ -1,0 +1,469 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_lms_forum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 08:50+0000\n"
+"PO-Revision-Date: 2019-09-30 08:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "(The above section was adapted from Stackoverflow’s FAQ.)"
+msgstr "(De sectie hierboven was gewijzigd van de Stackoverflow's FAQ.)"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "(Un)archiving a post automatically (un)archives its answers. Do you want to proceed?"
+msgstr "(Un) archiveren van een bericht automatisch (on) archiveert haar antwoorden. Wil je doorgaan?"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers should not add or expand questions</b>. Instead\n"
+"    either edit the question or add a comment."
+msgstr "<b>Antwoorden moeten geen vragen toevoegen of uitbreiden</b>. In plaats hier van\n"
+"wijzigt u de vraag of voegt u een reactie toe."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers should not add or expand questions</b>. Instead either edit the question or add a question comment."
+msgstr "<b>Antwoorden moeten geen vragen toevoegen of uitbreiden</b>. In plaats hier van wijzigt u de vraag of voegt u een reactie toe."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers should not comment other answers</b>. Instead\n"
+"    add a comment on the other answers."
+msgstr "<b>Antwoorden moeten geen vragen toevoegen of uitbreiden</b>. In plaats hier van\n"
+"voegt u een reactie toe op de andere antwoorden."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers should not comment other answers</b>. Instead add a comment on the other answers."
+msgstr "<b>Antwoorden moeten geen vragen toevoegen of uitbreiden</b>. In plaats hier van\n"
+"voegt u een reactie toe op de andere antwoorden."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers should not start debates</b>\n"
+"    This community Q&amp;A is not a discussion group. Please avoid holding debates in\n"
+"    your answers as they tend to dilute the essence of questions and answers. For\n"
+"    brief discussions please use commenting facility."
+msgstr "<b>Antwoorden moeten geen debat starten</b>\n"
+"Deze community V&amp;A is geen discussiegroep. Vermeid aub debatten in\n"
+"uw antwoord omdat ze vaak de essentie van de vraag verdunnen. Voor\n"
+"korte discussies plaatst u best een reactie."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers shouldn't just point to other Questions</b>. Instead add a question comment indication \"Possible duplicate of...\". However, it's ok to include links to other questions or answers providing relevant additional information."
+msgstr "<b>Antwoorden moeten niet gewoon verwijzen naar andere vragen</b>. Voeg in plaats daarvan een vraag reactie indicatie toe \"Mogelijk duplicaat van...\". Hoewel het wel ok is om links naar andere vragen of antwoorden bij te voegen die extra relevante informatie toevoegen."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers shouldn't just point to other questions</b>.\n"
+"    Instead add a comment indicating <i>\"Possible duplicate\n"
+"    of...\"</i>. However, it's fine to include links to other\n"
+"    questions or answers providing relevant additional\n"
+"    information."
+msgstr "<b>Antwoorden moeten niet gewoon verwijzen naar andere vragen</b>. Voeg in plaats daarvan een vraag reactie indicatie toe \"Mogelijk duplicaat van...\". Hoewel het wel ok is om links naar andere vragen of antwoorden bij te voegen die extra relevante informatie toevoegen."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers shouldn't just provide a\n"
+"    link a solution</b>. Instead provide the solution\n"
+"    description text in your answer, even if it's just a\n"
+"    copy/paste. Links are welcome, but should be complementary to\n"
+"    answer, referring sources or additional reading."
+msgstr "<b>Antwoorden moeten niet gewoon een link geven naar\n"
+"een oplossing.</b> Bied in de plaats de oplossing\n"
+"aan in uw antwoord, zelfs als het een\n"
+"kopie is. Links zijn welkom, maar moeten enkel antwoorden\n"
+"aanvullen, bronnen toevoegen of extra leesmateriaal toevoegen."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Answers shouldn't just provide a link a solution</b>. Instead provide the solution description text in your answer, even if it's just a copy/paste. Links are welcome, but should be complementary to answer, referring sources or additional reading."
+msgstr "<b>Antwoorden moeten niet gewoon een link geven naar\n"
+"een oplossing.</b> Bied in de plaats de oplossing\n"
+"aan in uw antwoord, zelfs als het een\n"
+"kopie is. Links zijn welkom, maar moeten enkel antwoorden\n"
+"aanvullen, bronnen toevoegen of extra leesmateriaal toevoegen."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Before you ask - please make sure to search for a similar question.</b> You can\n"
+"    search questions by their title or tags.  It’s also OK to\n"
+"    answer your own question."
+msgstr "<b>Controleer of er al een gelijkwaardige vraag bestaat - voordat u ze stelt.</b> U kan\n"
+"vragen zoeken op hun titel of labels. Het is ook OK om\n"
+"uw eigen vraag te beantwoorden."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "<b>Please avoid asking questions that are too subjective\n"
+"    and argumentative</b> or not relevant to this community."
+msgstr "<b>Vermeid alsjeblieft vragen die te subjectief\n"
+"en argumentatief zijn</b> of niet relevant zijn voor deze community."
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "Answered by"
+msgstr "beantwoord door"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "Answers"
+msgstr "Antwoorden"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.course_detail_inherit
+msgid "Ask a Question"
+msgstr "Een vraag stellen"
+
+#. module: openeducat_lms_forum
+#: model:ir.model.fields,field_description:openeducat_lms_forum.field_op_course__forum_post_ids
+msgid "Blog Post"
+msgstr "Blogpost"
+
+#. module: openeducat_lms_forum
+#: model:ir.model.fields,field_description:openeducat_lms_forum.field_forum_post__course_id
+msgid "Course"
+msgstr "Cursus"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "Create Forum"
+msgstr "Maak Forum"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "For example, if you ask an interesting question or give a helpful answer, your\n"
+"    input will be upvoted. On the other hand if the answer is misleading - it will\n"
+"    be downvoted. Each vote in favor will generate 10 points, each vote against\n"
+"    will subtract 10 points. There is a limit of 200 points that can be accumulated\n"
+"    for a question or answer per day. The table given at the end explains reputation point\n"
+"    requirements for each type of moderation task."
+msgstr "Bijvoorbeeld, als u een interessante vraag stelt of een hulpvol antwoord geeft, wordt er\n"
+"op uw antwoord gestemd. Als het antwoord misleidend is zal het\n"
+"naar beneden worden gestemd. Elke stem voor genereert 10 punten, elke stem tegen\n"
+"trekt 10 punten af. Er is een limiet van 200 punten dat kan geaccumuleerd worden\n"
+"voor een vraag of antwoord per dag. De tafel op het einde legt reputatiepunten uit en de\n"
+"vereisten voor elke soort van moderator taak."
+
+#. module: openeducat_lms_forum
+#: model:ir.model.fields,field_description:openeducat_lms_forum.field_op_course__forum_id
+msgid "Forum"
+msgstr ""
+
+#. module: openeducat_lms_forum
+#: model:ir.model,name:openeducat_lms_forum.model_forum_post
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "Forum Post"
+msgstr "Forum bericht"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "Guidelines"
+msgstr "Regels"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_3_forum
+msgid "Hide Intro"
+msgstr "Verberg intro"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "If this approach is not for you, please respect the community and use Google+\n"
+"    communities instead."
+msgstr "Als deze aanpak niet voor u niet geschikt is, respecteer de community en gebruik een ander platform."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "If you fit in one of these example or if your motivation for asking the\n"
+"    question is “I would like to participate in a discussion about ______”, then\n"
+"    you should not be asking here but on our mailing lists.\n"
+"    However, if your motivation is “I would like others to explain ______ to me”,\n"
+"    then you are probably OK."
+msgstr "Als u één van deze voorbeelden in uw motivatie kan toepassen voor het vragen van het volgende: \"Ik wil graag deelnemer in een discussie over ______”,  dan\n"
+"zou u dit niet hier moeten vragen maar via onze mailing lijst.\n"
+"Maar als uw motivatie is \"Ik wil dat anderen ______ uitleggen aan mij\",\n"
+"dan is het waarschijnlijk OK."
+
+#. module: openeducat_lms_forum
+#: model:forum.forum,name:openeducat_lms_forum.demo_course_1_forum
+msgid "Introduction To Python Programming"
+msgstr ""
+
+#. module: openeducat_lms_forum
+#: code:addons/openeducat_lms_forum/models/course.py:27
+#, python-format
+msgid "It appears your email has not been verified to                     participate in forum, Verify it from forum menu on                     homepage."
+msgstr "Het lijkt erop dat uw e-mail is niet geverifieerd deel te nemen aan het forum, Controleer uit forum menu op de homepage."
+
+#. module: openeducat_lms_forum
+#: model:ir.model,name:openeducat_lms_forum.model_op_course
+msgid "LMS Course"
+msgstr ""
+
+#. module: openeducat_lms_forum
+#: model:forum.forum,name:openeducat_lms_forum.demo_course_3_forum
+msgid "Learn to Sell Anything"
+msgstr "Leer om iets te verkopen"
+
+#. module: openeducat_lms_forum
+#: model:forum.forum,name:openeducat_lms_forum.demo_course_2_forum
+msgid "Learn to Speak: French"
+msgstr "Leren spreken: Frans"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "More over:"
+msgstr "Meer over:"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.view_course_lms_forum_form
+msgid "Name"
+msgstr "Naam"
+
+#. module: openeducat_lms_forum
+#: model_terms:ir.ui.view,arch_db:openeducat_lms_forum.course_detail_inherit
+msgid "Q&amp;A"
+msgstr "Q & amp; A"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_3_forum
+msgid "Register"
+msgstr "Registreer"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "The goal of this site is create a relevant knowledge base that would answer\n"
+"    questions related to Odoo."
+msgstr "Het doel van deze website is om een relevante kennisbasis te maken die vragen\n"
+"kan beantwoorden gerelateerd aan Odoo."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "Therefore questions and answers can be edited like wiki pages by experienced users of\n"
+"    this site in order to improve the overall quality of the knowledge base content.\n"
+"    Such privileges are granted based on user karma level: you will be able to do the same\n"
+"    once your karma gets high enough."
+msgstr "Daarom kunnen vragen en antwoorden gewijzigd worden zoals wiki pagina's door ervaren gebruikers van\n"
+"deze website om zo de algemene kwaliteit te verbeteren van de kennis en inhoud.\n"
+"Zulke privileges worden toegewezen gebaseerd op het karma niveau: u kan hetzelfde doen\n"
+"wanneer u karma hoog genoeg is."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "This community is for professional and enthusiast users,\n"
+"    partners and programmers. You can ask questions about:"
+msgstr "Deze community is voor professionals en andere enthousiaste gebruikers, partners en programmeurs. U kan vragen stellen over:"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_3_forum
+msgid "This community is for professionals and enthusiasts of our products and services.\n"
+"                                        <br>Share and discuss the best content and new marketing ideas, build your professional profile and become a better marketer together."
+msgstr "De community is voor professionals en enthousiasten van onze producten en diensten. \n"
+"<br>Deel en discussieer de beste inhoud en nieuwe marketing ideeën, bouw uw professionele profiel en wordt samen een betere marketeer."
+
+#. module: openeducat_lms_forum
+#: model:forum.forum,description:openeducat_lms_forum.demo_course_1_forum
+#: model:forum.forum,description:openeducat_lms_forum.demo_course_2_forum
+#: model:forum.forum,description:openeducat_lms_forum.demo_course_3_forum
+msgid "This community is for professionals and enthusiasts of our products and services. Share and discuss the best content and new marketing ideas, build your professional profile and become a better marketer together."
+msgstr "De community is voor professionals en enthousiasten van onze producten en diensten. Deel en discussieer de beste inhoud en nieuwe marketing ideeën, bouw uw professionele profiel en wordt samen een betere marketeer."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "To prevent your question from being flagged and possibly removed, avoid asking\n"
+"    subjective questions where …"
+msgstr "Om te voorkomen dat uw vraag wordt gemarkeerd en mogelijk verwijderd worden vermeid u het beste\n"
+"subjectieve vragen waar ..."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,welcome_message:openeducat_lms_forum.demo_course_3_forum
+msgid "Welcome!"
+msgstr "Welkom!"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "What kinds of questions can I ask here?"
+msgstr "Welke soort vragen kan ik hier stellen?"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "What should I avoid in my answers?"
+msgstr "Wat moet ik vermijden in mijn antwoorden?"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "What should I avoid in my questions?"
+msgstr "Wat moet ik vermijden in mijn vragen?"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "When a question or answer is upvoted, the user who posted them will gain some\n"
+"    points, which are called \"karma points\". These points serve as a rough\n"
+"    measure of the community trust to him/her. Various moderation tasks are\n"
+"    gradually assigned to the users based on those points."
+msgstr "Wanneer een vraag of antwoord omhoog wordt gestemd zal de gebruiker die deze heeft aangemaakt\n"
+"wat punten krijgen, deze worden \"Karma punten\" genoemd. Deze punten dienen als een ruwe\n"
+"maateenheid van de community om hem/haar te vertrouwen. Verschillende moderator taken zijn\n"
+"gradueel toegewezen aan de gebruiker gebaseerd op deze punten."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "Why can other people edit my questions/answers?"
+msgstr "Waarom kunnen andere mensen mijn vragen/antwoorden wijzigen?"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "You should only ask practical, answerable questions based\n"
+"    on actual problems that you face. Chatty, open-ended\n"
+"    questions diminish the usefulness of this site and push\n"
+"    other questions off the front page."
+msgstr "U zou enkel praktische, beantwoordbaren vragen moeten stellen die gebaseerd zijn\n"
+"op problemen die u ondervind. Chatterige, open\n"
+"vragen verminderen de bruikbaarheid van deze website\n"
+"en duwen andere vragen van de eerste pagina."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "every answer is equally valid: “What’s your favorite ______?”"
+msgstr "elk antwoord is even valide: \"Wat is uw favoriete ______?”"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "how to configure or customize Odoo to specific business needs,"
+msgstr "Hoe Odoo te configureren of personaliseren naar specifieke zakelijke behoeftes,"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "how to develop modules for your own need,"
+msgstr "Hoe modules te ontwikkelen voor eigen gebruik,"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "how to install Odoo on a specific infrastructure,"
+msgstr "Hoe Odoo te installeren op een specifieke infrastructuur,"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "it is a rant disguised as a question: “______ sucks, am I right?”"
+msgstr "het is een klacht vermomt in een vraag: \"______ suckt, heb ik gelijk?\""
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "specific questions about Odoo service offers, etc."
+msgstr "specifieke vragen over Odoo dienstaanbiedingen, enz."
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "there is no actual problem to be solved: “I’m curious if other people feel like I do.”"
+msgstr "er is geen probleem om op te lossen: \"Ik ben nieuwsgierig of andere mensen zich voelen zoals mij.\""
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "we are being asked an open-ended, hypothetical question: “What if ______ happened?”"
+msgstr "we krijgen een open-einde, hypothetische vraag gesteld: \"Wat als  ______ gebeurde?\""
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "what's the best way to use Odoo for a specific business need,"
+msgstr "Wat is de beste manier om Odoo te gebruiken voor een specifieke bedrjifsbehoefte,"
+
+#. module: openeducat_lms_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_1_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_2_forum
+#: model_terms:forum.forum,faq:openeducat_lms_forum.demo_course_3_forum
+msgid "your answer is provided along with the question, and you expect more answers: “I use ______ for ______, what do you use?”"
+msgstr "uw antwoord is aangeboden samen met de vraag, en u verwacht meer antwoorden: “Ik gebruik ______ voor ______, wat gebruikt u?”"
+

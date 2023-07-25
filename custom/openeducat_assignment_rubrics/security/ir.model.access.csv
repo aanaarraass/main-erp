@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_op_rubric_element,access_op_rubric_element,model_op_rubric_element,base.group_user,1,0,0,0
+access_op_rubric_template,access_op_rubric_template,model_op_rubric_template,base.group_user,1,0,0,0
+access_op_assignment_rubric_sub_line,access_op_assignment_rubric_sub_line,model_op_assignment_rubric_sub_line,base.group_user,1,0,0,0
+
+access_op_rubric_element_faculty,op_rubric_element_faculty,model_op_rubric_element,openeducat_core.group_op_faculty,1,1,1,1
+access_op_rubric_template_faculty,op_rubric_template_faculty,model_op_rubric_template,openeducat_core.group_op_faculty,1,1,1,1
+access_op_assignment_rubric_sub_line_faculty,op_assignment_rubric_sub_line_faculty,model_op_assignment_rubric_sub_line,openeducat_core.group_op_faculty,1,1,1,1

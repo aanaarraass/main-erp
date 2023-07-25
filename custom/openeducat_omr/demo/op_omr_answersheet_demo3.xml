@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Answer Sheet Configuration Record -->
+        <record id="answersheet_3" model="op.answersheet.configuration">
+          <field name="name">LE 20 que Answersheet</field>
+          <field name="subject_id" ref="openeducat_core.op_subject_3"/>
+        </record>
+
+    <!-- Paper Keys -->
+        <record id="paper_key_A3" model="op.answer.set">
+            <field name="paper_set">A</field>
+            <field name="answersheet_configuration_id" ref="answersheet_3"/>
+        </record>
+        <record id="paper_key_B3" model="op.answer.set">
+            <field name="paper_set">B</field>
+            <field name="answersheet_configuration_id" ref="answersheet_3"/>
+        </record>
+        <record id="paper_key_C3" model="op.answer.set">
+            <field name="paper_set">C</field>
+            <field name="answersheet_configuration_id" ref="answersheet_3"/>
+        </record>
+        <record id="paper_key_D3" model="op.answer.set">
+            <field name="paper_set">D</field>
+            <field name="answersheet_configuration_id" ref="answersheet_3"/>
+        </record>
+        <record id="paper_key_E3" model="op.answer.set">
+            <field name="paper_set">E</field>
+            <field name="answersheet_configuration_id" ref="answersheet_3"/>
+        </record>
+
+
+    <!-- Question Answer of Paper Set A -->
+        <record id="A3_q_1" model="op.question.answer">
+            <field name="question">1</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_2" model="op.question.answer">
+            <field name="question">2</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_3" model="op.question.answer">
+            <field name="question">3</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_4" model="op.question.answer">
+            <field name="question">4</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_5" model="op.question.answer">
+            <field name="question">5</field>
+            <field name="answer">c</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_6" model="op.question.answer">
+            <field name="question">6</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_7" model="op.question.answer">
+            <field name="question">7</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_8" model="op.question.answer">
+            <field name="question">8</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_9" model="op.question.answer">
+            <field name="question">9</field>
+            <field name="answer">c</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_10" model="op.question.answer">
+            <field name="question">10</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_11" model="op.question.answer">
+            <field name="question">11</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_12" model="op.question.answer">
+            <field name="question">12</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_13" model="op.question.answer">
+            <field name="question">13</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_14" model="op.question.answer">
+            <field name="question">14</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_15" model="op.question.answer">
+            <field name="question">15</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_16" model="op.question.answer">
+            <field name="question">16</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_17" model="op.question.answer">
+            <field name="question">17</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_18" model="op.question.answer">
+            <field name="question">18</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_19" model="op.question.answer">
+            <field name="question">19</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+        <record id="A3_q_20" model="op.question.answer">
+            <field name="question">20</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_A3"/>
+        </record>
+
+    <!-- Question Answer of Paper Set B-->
+        <record id="B3_q_1" model="op.question.answer">
+            <field name="question">1</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_2" model="op.question.answer">
+            <field name="question">2</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_3" model="op.question.answer">
+            <field name="question">3</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_4" model="op.question.answer">
+            <field name="question">4</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_5" model="op.question.answer">
+            <field name="question">5</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_6" model="op.question.answer">
+            <field name="question">6</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_7" model="op.question.answer">
+            <field name="question">7</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_8" model="op.question.answer">
+            <field name="question">8</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_9" model="op.question.answer">
+            <field name="question">9</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_10" model="op.question.answer">
+            <field name="question">10</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_11" model="op.question.answer">
+            <field name="question">11</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_12" model="op.question.answer">
+            <field name="question">12</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_13" model="op.question.answer">
+            <field name="question">13</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_14" model="op.question.answer">
+            <field name="question">14</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_15" model="op.question.answer">
+            <field name="question">15</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_16" model="op.question.answer">
+            <field name="question">16</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_17" model="op.question.answer">
+            <field name="question">17</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_18" model="op.question.answer">
+            <field name="question">18</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_19" model="op.question.answer">
+            <field name="question">19</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+        <record id="B3_q_20" model="op.question.answer">
+            <field name="question">20</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_B3"/>
+        </record>
+
+    <!-- Question Answer Of Paper Set C-->
+        <record id="C3_q_1" model="op.question.answer">
+            <field name="question">1</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_2" model="op.question.answer">
+            <field name="question">2</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_3" model="op.question.answer">
+            <field name="question">3</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_4" model="op.question.answer">
+            <field name="question">4</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_5" model="op.question.answer">
+            <field name="question">5</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_6" model="op.question.answer">
+            <field name="question">6</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_7" model="op.question.answer">
+            <field name="question">7</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_8" model="op.question.answer">
+            <field name="question">8</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_9" model="op.question.answer">
+            <field name="question">9</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_10" model="op.question.answer">
+            <field name="question">10</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_11" model="op.question.answer">
+            <field name="question">11</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_12" model="op.question.answer">
+            <field name="question">12</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_13" model="op.question.answer">
+            <field name="question">13</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_14" model="op.question.answer">
+            <field name="question">14</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_15" model="op.question.answer">
+            <field name="question">15</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_16" model="op.question.answer">
+            <field name="question">16</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_17" model="op.question.answer">
+            <field name="question">17</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_18" model="op.question.answer">
+            <field name="question">18</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_19" model="op.question.answer">
+            <field name="question">19</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+        <record id="C3_q_20" model="op.question.answer">
+            <field name="question">20</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_C3"/>
+        </record>
+
+    <!-- Question Answer of Paper Set D-->
+
+        <record id="D3_q_1" model="op.question.answer">
+            <field name="question">1</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_2" model="op.question.answer">
+            <field name="question">2</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_3" model="op.question.answer">
+            <field name="question">3</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_4" model="op.question.answer">
+            <field name="question">4</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_5" model="op.question.answer">
+            <field name="question">5</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_6" model="op.question.answer">
+            <field name="question">6</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_7" model="op.question.answer">
+            <field name="question">7</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_8" model="op.question.answer">
+            <field name="question">8</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_9" model="op.question.answer">
+            <field name="question">9</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_10" model="op.question.answer">
+            <field name="question">10</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_11" model="op.question.answer">
+            <field name="question">11</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_12" model="op.question.answer">
+            <field name="question">12</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_13" model="op.question.answer">
+            <field name="question">13</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_14" model="op.question.answer">
+            <field name="question">14</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_15" model="op.question.answer">
+            <field name="question">15</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_16" model="op.question.answer">
+            <field name="question">16</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_17" model="op.question.answer">
+            <field name="question">17</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_18" model="op.question.answer">
+            <field name="question">18</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_19" model="op.question.answer">
+            <field name="question">19</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+        <record id="D3_q_20" model="op.question.answer">
+            <field name="question">20</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_D3"/>
+        </record>
+
+    <!-- Question Answer of Paper Set E-->
+        <record id="E3_q_1" model="op.question.answer">
+            <field name="question">1</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_2" model="op.question.answer">
+            <field name="question">2</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_3" model="op.question.answer">
+            <field name="question">3</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_4" model="op.question.answer">
+            <field name="question">4</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_5" model="op.question.answer">
+            <field name="question">5</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_6" model="op.question.answer">
+            <field name="question">6</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_7" model="op.question.answer">
+            <field name="question">7</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_8" model="op.question.answer">
+            <field name="question">8</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_9" model="op.question.answer">
+            <field name="question">9</field>
+            <field name="answer">A</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_10" model="op.question.answer">
+            <field name="question">10</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_11" model="op.question.answer">
+            <field name="question">11</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_12" model="op.question.answer">
+            <field name="question">12</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_13" model="op.question.answer">
+            <field name="question">13</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_14" model="op.question.answer">
+            <field name="question">14</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_15" model="op.question.answer">
+            <field name="question">15</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_16" model="op.question.answer">
+            <field name="question">16</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_17" model="op.question.answer">
+            <field name="question">17</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_18" model="op.question.answer">
+            <field name="question">18</field>
+            <field name="answer">C</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_19" model="op.question.answer">
+            <field name="question">19</field>
+            <field name="answer">D</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+        <record id="E3_q_20" model="op.question.answer">
+            <field name="question">20</field>
+            <field name="answer">B</field>
+            <field name="answer_set_id" ref="paper_key_E3"/>
+        </record>
+    </data>
+</odoo>

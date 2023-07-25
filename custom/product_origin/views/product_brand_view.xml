@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_origin_search_form_view" model="ir.ui.view">
+        <field name="name">product.origin.search.form</field>
+        <field name="model">product.origin</field>
+        <field name="arch" type="xml">
+            <search string="Product origin">
+                <field name="name" />
+                <field name="partner_id" />
+            </search>
+        </field>
+    </record>
+    <record id="action_open_origin_products" model="ir.actions.act_window">
+        <field name="name">origin Products</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">kanban,form,tree</field>
+        <field name="domain">[('product_origin_id', '=', active_id)]</field>
+    </record>
+    <record id="action_open_single_product_origin" model="ir.actions.act_window">
+        <field name="name">Product origin</field>
+        <field name="res_model">product.origin</field>
+        <field name="view_mode">kanban,form,tree</field>
+        <field name="target">current</field>
+        <field name="domain">[('product_ids', 'in', active_id)]</field>
+    </record>
+    <record id="view_product_origin_form" model="ir.ui.view">
+        <field name="name">product.origin.form</field>
+        <field name="model">product.origin</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="%(action_open_origin_products)d"
+                            type="action"
+                            class="oe_stat_button"
+                            icon="fa-cubes"
+                        >
+                            <field
+                                name="products_count"
+                                widget="statinfo"
+                                string="Products"
+                                context="{'default_product_origin_id': active_id}"
+                            />
+                        </button>
+                    </div>
+                    <field name="logo" widget="image" class="oe_avatar" />
+                    <div class="oe_title">
+                        <label for="name" string="origin Name" class="oe_edit_only" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group name="main">
+                        <group name="partner">
+                            <field name="partner_id" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="description" string="Description">
+                            <field name="description" nolabel="1" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_product_origin_tree" model="ir.ui.view">
+        <field name="name">product.origin.tree</field>
+        <field name="model">product.origin</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="description" />
+                <field name="partner_id" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_product_origin_kanban" model="ir.ui.view">
+        <field name="name">product.origin.kanban</field>
+        <field name="model">product.origin</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id" />
+                <field name="logo" />
+                <field name="products_count" />
+                <field name="description" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img
+                                    t-att-src="kanban_image('product.origin', 'logo', record.id.raw_value)"
+                                    alt="Logo"
+                                />
+                            </div>
+                            <div class="oe_kanban_details">
+                                <h4>
+                                    <field name="name" />
+                                </h4>
+                                <div>
+                                    <a
+                                        name="%(product_origin.action_open_origin_products)d"
+                                        type="action"
+                                    >
+                                        <t t-esc="record.products_count.value" />
+                                        Products
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_product_template_search_origin" model="ir.ui.view">
+        <field name="name">product.template.search.origin</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="product_origin_id" />
+                <filter
+                    string="Origin"
+                    name="groupby_origin"
+                    domain="[]"
+                    context="{'group_by' : 'product_origin_id'}"
+                />
+                <separator />
+            </field>
+        </field>
+    </record>
+    <record id="product_template_form_origin_add" model="ir.ui.view">
+        <field name="name">product.template.product.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <field name="categ_id" position="before">
+                <field name="product_origin_id" placeholder="Origin" />
+                <div />
+            </field>
+        </field>
+    </record>
+    <record id="view_product_template_kanban_origin" model="ir.ui.view">
+        <field name="name">product kanban view: add origin</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//strong[hasclass('o_kanban_record_title')]" position="after">
+                <div>
+                    <a
+                        t-if="record.product_origin_id"
+                        type="action"
+                        name="%(action_open_single_product_origin)d"
+                    >
+                        <field name="product_origin_id" />
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_product_variant_kanban_origin" model="ir.ui.view">
+        <field name="name">product variant kanban view: add origin</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_kanban_view" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//div[hasclass('oe_kanban_details')]/strong[1]"
+                position="after"
+            >
+                <div>
+                    <a t-if="record.product_origin_id" type="open">
+                        <field name="product_origin_id" />
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_product_template_tree_origin" model="ir.ui.view">
+        <field name="name">product tree view: add origin</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view" />
+        <field name="arch" type="xml">
+            <!-- <field name="name" position="after">
+                <field name="product_origin_id" />
+            </field> -->
+
+            <field name="name" position="after">
+                <field name="product_origin_id" />
+            </field>
+        </field>
+    </record>
+    <record id="view_product_variant_tree_origin" model="ir.ui.view">
+        <field name="name">product variant tree view: add origin</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view" />
+        <field name="arch" type="xml">
+            <!-- <field name="name" position="after">
+                <field name="product_origin_id" />
+            </field> -->
+
+            <field name="name" position="after">
+                <field name="product_origin_id" />
+            </field>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_product_origin">
+        <field name="name">origin</field>
+        <field name="res_model">product.origin</field>
+        <field name="view_mode">kanban,form,tree</field>
+    </record>
+    <menuitem
+        name="Product Origins"
+        id="menu_product_origin"
+        action="action_product_origin"
+        parent="sale.prod_config_main"
+    />
+</odoo>

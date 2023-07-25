@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <menuitem id="menu_student_attendance_checkin_out" name="Check In"
+                  sequence="10"
+                  parent="openeducat_attendance.menu_op_attendance_root"
+                  action="student_attendance_action_checkin"
+        />
+    </data>
+</odoo>

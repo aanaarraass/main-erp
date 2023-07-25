@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+        <record id="student_transport-fee_form_inherited" model="ir.ui.view">
+            <field name="name">Student Transport Fee Form</field>
+            <field name="model">op.partner.transportation.fees.details</field>
+            <field name="inherit_id" ref="openeducat_transportation_enterprise.op_transport_fee_details_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+        <!--                tree view of radical-->
+        <record model="ir.ui.view" id="agreement_account_list">
+            <field name="name">Account List</field>
+            <field name="model">agreement.account</field>
+            <field name="arch" type="xml">
+                <tree string="Tests" sample="1">
+                    <field name="account_id"/>
+                </tree>
+            </field>
+        </record>
+        <!--      form view of radical-->
+        <record model="ir.ui.view" id="agreement_account_form">
+            <field name="name">Account Form</field>
+            <field name="model">agreement.account</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="account_id"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_agreement_account">
+            <field name="name">Transport Agreement Account</field>
+            <field name="res_model">agreement.account</field>
+             <field name="limit">1</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Transport Agreement Account"
+                  action="action_agreement_account"
+                  parent="openeducat_transportation_enterprise.menu_item_configuration_sub_menu_1"
+                  sequence="83"
+                  id="agreement_account_menu_id"/>
+
+
+
+    </data>
+</odoo>

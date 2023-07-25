@@ -1,0 +1,83 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="timetable_request_list">
+            <field name="name">Timetable Request</field>
+            <field name="model">timetable.request</field>
+            <field name="arch" type="xml">
+                <tree sample="1" decoration-muted="state == 'draft'"
+                      decoration-success="state == 'confirm'" decoration-danger="state == 'cancel'">
+                    <field name="exam_id" invisible="1"/>
+                    <field name="academic_year" invisible="1"/>
+                    <field name="name" invisible="1"/>
+                     <field name="course_id" invisible="1"/>
+                    <field name="exam_time" invisible="1"/>
+                    <field name="date"/>
+                    <field name="subject_id"/>
+                    <field name="time_from" widget="float_time"/>
+                    <field name="time_to" widget="float_time"/>
+                    <field name="mark"/>
+                    <field name="state" widget="badge"
+                           decoration-info="state == 'request'" decoration-success="state == 'confirm'"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="timetable_request_form">
+            <field name="name">Timetable Request</field>
+            <field name="model">timetable.request</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,request,confirm,cancel"
+                               options="{'clickable': '1'}"/>
+                        <button id="button_request" name="action_request" states="draft"
+                                string="Request" type="object" class="btn-primary"/>
+                        <button id="button_confirm" name="action_confirm" states="request"
+                                string="Confirm" type="object" class="btn-primary"/>
+                        <button id="button_cancelled" name="action_cancel" states="request"
+                                string="Cancel" type="object"/>
+                        <button id="button_draft" name="action_draft" states="confirm,cancel"
+                                string="Reset to Draft" type="object" class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <widget name="web_ribbon" title="Cancelled" bg_color="bg-danger"
+                                attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+                        <widget name="web_ribbon" title="Confirmed" bg_color="bg-success"
+                                attrs="{'invisible': [('state', '!=', 'confirm')]}"/>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="course_id"/>
+                                <field name="date_start"/>
+                                <field name="date"/>
+                                <field name="time_from" widget="float_time"/>
+                                <field name="mark"/>
+                                <field name="academic_year"/>
+
+                            </group>
+                            <group>
+                                <field name="exam_id"/>
+                                <field name="subject_id"/>
+                                <field name="date_end"/>
+                                <field name="exam_time" widget="float_time"/>
+                                <field name="time_to" widget="float_time"/>
+                                <field name="company_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="timetable_request_action_window">
+            <field name="name">Timetable Request</field>
+            <field name="res_model">timetable.request</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>

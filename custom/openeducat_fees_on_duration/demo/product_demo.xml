@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_product_1" model="product.product">
+            <field name="name">Daily Product</field>
+            <field name="lst_price">100</field>
+        </record>
+
+        <record id="op_product_2" model="product.product">
+            <field name="name">Weekly Product</field>
+            <field name="lst_price">400</field>
+        </record>
+
+        <record id="op_product_3" model="product.product">
+            <field name="name">Monthly Product</field>
+            <field name="lst_price">1000</field>
+        </record>
+
+        <record id="op_product_4" model="product.product">
+            <field name="name">Yearly Product</field>
+            <field name="lst_price">12000</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+
+        <record id="view_fees_terms_form_inherited" model="ir.ui.view">
+            <field name="name">op.fees.terms.form.inherited</field>
+            <field name="model">op.fees.terms</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="openeducat_fees.view_fees_terms_form"/>
+            <field name="arch" type="xml">
+                <field name="fees_terms" position="after">
+                    <label for="bill_selection" string="Bill Every"
+                           attrs="{'invisible':[('fees_terms','!=','duration_based')]}"/>
+                    <div style="display: inline;" attrs="{'invisible':[('fees_terms','!=','duration_based')]}">
+                        <field name="term_duration" class="oe_inline"
+                               attrs="{'invisible':[('fees_terms','!=','duration_based')],'required':[('fees_terms','=','duration_based')]}"/>
+                        -
+                        <field name="bill_selection" class="oe_inline" style="width: 100%;"
+                               attrs="{'invisible':[('fees_terms','!=','duration_based')],'required':[('fees_terms','=','duration_based')]}"/>
+                    </div>
+                    <field name="expires_after"
+                           attrs="{'invisible':[('fees_terms','!=','duration_based')],'required':[('fees_terms','=','duration_based')]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_op_student_course_form_inherit" model="ir.ui.view">
+            <field name="name">op.student.course.form.inherit</field>
+            <field name="model">op.student.course</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_course_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[2]" position="after">
+                    <group col="4" string="Invoice Details">
+                        <field name="expires_after"/>
+                        <field name="generated_invoices"/>
+                        <field name="next_invoice_date"/>
+                        <field name="prev_invoice_date"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_op_student_form_inherit" model="ir.ui.view">
+            <field name="name">op.student.form.inherit</field>
+            <field name="model">op.student</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='roll_number']" position="after">
+                    <field name="expires_after"/>
+                    <field name="generated_invoices"/>
+                    <field name="next_invoice_date"/>
+                    <field name="prev_invoice_date"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="cron_create_invoice" model="ir.cron">
+            <field name="name">Cron Create Invoice</field>
+            <field name="model_id" ref="model_op_student_course"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_create_invoice()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="(DateTime.now() + timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

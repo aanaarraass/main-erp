@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="mail.ChannelMemberList" t-inherit-mode="extension" owl="1">
+        <xpath expr="//*[@t-name='mail.ChannelMemberList']" position="replace">
+            <t t-name="mail.ChannelMemberList" owl="1">
+                <div class="o_ChannelMemberList d-none d-flex flex-column overflow- bg-light">
+                    <t t-if="channel.orderedOnlineMembers.length > 0">
+                        <t t-call="mail.ChannelMemberList_memberList">
+                            <t t-set="members" t-value="channel.orderedOnlineMembers"/>
+                            <t t-set="title">Online</t>
+                        </t>
+                    </t>
+                </div>
+            </t>
+        </xpath>
+    </t>
+
+    <t t-inherit="mail.ChannelMemberList_memberList" t-inherit-mode="extension" owl="1">
+        <xpath expr="//*[@t-name='mail.ChannelMemberList_memberList']" position="replace">
+
+            <t t-name="mail.ChannelMemberList_memberList" owl="1">
+                <t t-if="channel.messaging">
+                    <t t-if="channel.messaging.rtc">
+                        <t t-if="channel.messaging.rtc.currentRtcSession">
+                            <t t-if="channel.threadViews">
+                                <t t-foreach="channel.threadViews" t-as="abc">
+                                    <t t-if="abc.rtcCallViewer">
+                                        <t t-if="abc.rtcCallViewer.tileParticipantCards">
+                                        <t t-if="abc.rtcCallViewer.tileParticipantCards.length">
+                                            <h6 class="m-2">
+                                                <t t-esc="title"/>
+ -                                                <t t-esc="abc.rtcCallViewer.tileParticipantCards.length"/>
+                                            </h6>
+                                        </t>
+                                            <t t-foreach="abc.rtcCallViewer.tileParticipantCards" t-as="member" t-key="member.localId">
+
+                                                <div class="o_ChannelMemberList_member d-flex align-items-center mx-3 my-1">
+
+                                                    <div class="o_ChannelMemberList_avatarContainer position-relative flex-shrink-0">
+                                                        <img class="o_ChannelMemberList_avatar rounded-circle w-100 h-100" t-attf-src="{{member.avatarUrl}}" alt="Avatar"/>
+
+                                                        <t t-if="member.im_status and member.im_status !== 'im_partner'">
+                                                            <PartnerImStatusIcon class="o_ChannelMemberList_partnerImStatusIcon d-flex align-items-center justify-content-center" t-att-class="{
+                                                        'o-mobile': messaging.device.isMobile,
+                                                    }" partnerLocalId="member.localId" />
+                                                        </t>
+                                                    </div>
+                                                    <span style="margin-left: 5px;">
+                                                        <t t-esc="member.name"/>
+                                                    </span>
+                                                    <t t-if="channel.messaging.rtc.currentRtcSession.isHost">
+                                                        <div>
+                                                            <Popover position="'top'" t-on-o-emoji-selection="member.rtcSession.selectemoji.bind(detail,member)">
+                                                                <!-- TODO FIXME o-open not possible to code due to https://github.com/odoo/owl/issues/693 -->
+                                                                <button class="btn">
+                                                                    <img src="/openeducat_live/static/src/img/face.png" style="width:17px;"/>
+                                                                    <!-- <i class="fa fa-smile-o"/> -->
+                                                                </button>
+                                                                <t t-set="opened">
+                                                                    <EmojisPopover t-ref="emojisPopover"/>
+                                                                </t>
+                                                            </Popover>
+                                                        </div>
+                                                        <t t-if="member.rtcSession">
+                                                            <span style="margin-left: 5px;">
+                                                                <t t-esc="member.rtcSession.isEmoji"/>
+                                                            </span>
+                                                            <t t-esc="member.rtcSession.isbadgeemoji"/>
+                                                            <t t-if="member.rtcSession.isHandRaised">
+                                                                <div class="raiseHand">
+                                                                    <span style="margin-left: 5px;color:black; background-color:transparent;" title="hand">
+                                                                        <img src="/openeducat_live/static/src/img/hand.png" style="width:17px;"/>
+                                                                        <!-- <i class="fa fa-hand-paper-o"/> -->
+                                                                    </span>
+                                                                </div>
+                                                            </t>
+                                                            <t t-if="member.rtcSession.isAttentiveness">
+                                                                <div>
+                                                                    <span class="o_RtcCallParticipantCard_overlayTopElement" style="color:black; background-color:transparent;" title="eye">
+                                                                        <img src="/openeducat_live_attentiveness/static/src/img/eye.png" style="width:17px;"/>
+                                                                    </span>
+                                                                </div>
+
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <span class="o_ChannelMemberList_name ml-2 flex-column-1 text-truncate" t-on-click="channel.onClickMemberName(member)">
+                                                        <t t-esc="member.nameOrDisplayName"/>
+                                                    </span>
+                                                </div>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </t>
+                            </t>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

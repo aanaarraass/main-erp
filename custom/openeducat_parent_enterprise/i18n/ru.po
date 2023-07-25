@@ -1,0 +1,170 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_parent_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 05:33+0000\n"
+"PO-Revision-Date: 2019-09-30 05:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_home_inherit
+msgid "<span>Documents</span>"
+msgstr "<SPAN> Документы </ SPAN>"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.view_op_parent_form_onboard
+msgid "Apply"
+msgstr "Применить"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_children_data
+msgid "Childs"
+msgstr "Дети"
+
+#. module: openeducat_parent_enterprise
+#: selection:res.company,core_onboarding_parent_layout_state:0
+#: selection:res.company,openeducat_parent_onboard_panel:0
+msgid "Closed"
+msgstr "Закрыто"
+
+#. module: openeducat_parent_enterprise
+#: model:ir.model,name:openeducat_parent_enterprise.model_res_company
+msgid "Companies"
+msgstr "Компании"
+
+#. module: openeducat_parent_enterprise
+#: model:ir.model.fields,field_description:openeducat_parent_enterprise.field_op_parent__company_id
+msgid "Company"
+msgstr "Компания"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.view_op_parent_form_onboard
+msgid "Create Parent User"
+msgstr "Создать родительский пользователя"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.onboarding_parent_layout_step
+msgid "Customize"
+msgstr "Настроить"
+
+#. module: openeducat_parent_enterprise
+#: selection:res.company,core_onboarding_parent_layout_state:0
+#: selection:res.company,openeducat_parent_onboard_panel:0
+msgid "Done"
+msgstr "Готово"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.student_portal_library
+msgid "Email"
+msgstr ""
+
+#. module: openeducat_parent_enterprise
+#: selection:res.company,core_onboarding_parent_layout_state:0
+#: selection:res.company,openeducat_parent_onboard_panel:0
+msgid "Just done"
+msgstr "Только что сделано"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.onboarding_parent_layout_step
+msgid "Looks great!"
+msgstr "Выглядит отлично!"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.student_portal_library
+msgid "Mobile"
+msgstr "мобильный"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.my_account_link_inherit
+msgid "My Account"
+msgstr "Мой счет"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.student_portal_library
+msgid "Name"
+msgstr "Название"
+
+#. module: openeducat_parent_enterprise
+#: selection:res.company,core_onboarding_parent_layout_state:0
+#: selection:res.company,openeducat_parent_onboard_panel:0
+msgid "Not done"
+msgstr "Не сделано"
+
+#. module: openeducat_parent_enterprise
+#: model:ir.model,name:openeducat_parent_enterprise.model_op_parent
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.view_op_parent_form_onboard
+msgid "Parent"
+msgstr "родитель"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.student_portal_library
+msgid "Parent\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+msgstr "родитель\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.view_op_parent_form_onboard
+msgid "Parent Name"
+msgstr "Имя родителя"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.onboarding_parent_layout_step
+msgid "Parent Type Configuration"
+msgstr "Родитель Конфигурация Тип"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_children_data
+msgid "Parents Child Information"
+msgstr "Родители Информация по уходу за детьми"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.onboarding_parent_layout_step
+msgid "See how to create a Parent."
+msgstr "Посмотрите, как создать подразделы."
+
+#. module: openeducat_parent_enterprise
+#: model:ir.model.fields,field_description:openeducat_parent_enterprise.field_res_company__core_onboarding_parent_layout_state
+#: model:ir.model.fields,field_description:openeducat_parent_enterprise.field_res_company__openeducat_parent_onboard_panel
+msgid "State of the onboarding parent layout step"
+msgstr "Состояние на стадии макета адаптационного родительского"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.view_op_parent_form_onboard
+msgid "Student(s)"
+msgstr "Ученики)"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_children_data
+msgid "There are currently no information for your account !!!"
+msgstr "Там на данный момент нет информации для вашей учетной записи !!!"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_breadcrumbs_inhetrite
+msgid "Your Details"
+msgstr "Ваши данные"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_breadcrumbs_inhetrite
+msgid "child"
+msgstr "ребенок"
+
+#. module: openeducat_parent_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_parent_enterprise.portal_breadcrumbs_inhetrite
+msgid "home"
+msgstr "Главная"
+
+#. module: openeducat_parent_enterprise
+#: model:ir.actions.act_window,name:openeducat_parent_enterprise.action_onboarding_parent_layout
+msgid "parent Type Configuration"
+msgstr "Родитель Configuration Type"
+

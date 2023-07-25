@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="openeducat_lms_h5p.upload.modal.h5purl">
+        <div>
+            <form class="clearfix">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="upload" class="col-form-label">H5P URL</label>
+                            <input id="document_url" name="document_url" class="form-control" placeholder="H5P Video URL"
+                                   required="required"/>
+                        </div>
+                        <canvas id="data_canvas" class="d-none"></canvas>
+                        <t t-call="openeducat_lms_website.upload.material.common"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </t>
+    <t t-name="openeducat_lms_h5p.upload.modal.h5piframe">
+        <div>
+            <form class="clearfix">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="upload" class="col-form-label">H5P Iframe</label>
+                            <textarea id="iframe_video_data" name="iframe_video_data" class="form-control" placeholder="H5P Iframe Code"
+                                   required="required"/>
+                        </div>
+                        <canvas id="data_canvas" class="d-none"></canvas>
+                        <t t-call="openeducat_lms_website.upload.material.common"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </t>
+</templates>

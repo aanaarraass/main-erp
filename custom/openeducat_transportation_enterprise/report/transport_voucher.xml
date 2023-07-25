@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="report_transport_voucher_view">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.basic_layout">
+                        <div class="page m-0">
+                            <link rel="stylesheet"
+                                  href="/openeducat_transportation_enterprise/static/src/css/mystyle.css"></link>
+                            <div class="header" style="width:100%;margin:0px !important">
+                                <style>
+                                    h5 {
+                                    font-weight:900;
+                                    }
+                                    .blr{
+                                    border-right: 1px solid black;
+                                    }
+                                </style>
+                                <div class="row">
+                                    <div class="col-3 blr">
+                                        <div class="row">
+                                            <div class="col-8 text-center pt-2 pb-0">
+                                                <h5>UNIVERSITY</h5>
+                                                <h5>OF JHANG</h5>
+                                            </div>
+                                            <div class="col-4 ml-0" style="">
+                                                <img src="/openeducat_transportation_enterprise/static/src/img/uoj1.png"
+                                                     style="height:70pt;width:60pt;" alt="Company Logo"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 blr">
+                                        <div class="row">
+                                            <div class="col-8 text-center pt-2 pb-0">
+                                                <h5>UNIVERSITY</h5>
+                                                <h5>OF JHANG</h5>
+                                            </div>
+                                            <div class="col-4 ml-0" style="">
+                                                <img src="/openeducat_transportation_enterprise/static/src/img/uoj1.png"
+                                                     style="height:70pt;width:60pt;" alt="Company Logo"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 blr">
+                                        <div class="row">
+                                            <div class="col-8 text-center pt-2 pb-0">
+                                                <h5>UNIVERSITY</h5>
+                                                <h5>OF JHANG</h5>
+                                            </div>
+                                            <div class="col-4 ml-0" style="">
+                                                <img src="/openeducat_transportation_enterprise/static/src/img/uoj1.png"
+                                                     style="height:70pt;width:60pt;" alt="Company Logo"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 blr">
+                                        <div class="row">
+                                            <div class="col-8 text-center pt-2 pb-0">
+                                                <h5>UNIVERSITY</h5>
+                                                <h5>OF JHANG</h5>
+                                            </div>
+                                            <div class="col-4 ml-0" style="">
+                                                <img src="/openeducat_transportation_enterprise/static/src/img/uoj1.png"
+                                                     style="height:70pt;width:60pt;" alt="Company Logo"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-0">
+                                <div class="col-3 p-0 pl-1 brl">
+                                    <div class="row mr-1">
+                                        <div class="col-5 text-center">
+                                            <strong>Issued Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.date"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="col-5 mr-0 text-center">
+                                            <strong>Due Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.end_date"/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <span class="dc">PERSONALS &#160; DETAILS</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-3">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-9 bb">
+                                            <span t-esc="doc.partner_id.name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Father Name:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.father_name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-4">
+                                            <strong>Cnic:</strong>
+                                        </div>
+                                        <div class="col-8 bb">
+                                             <span t-esc="doc.partner_id.studetn_cnic_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Roll number:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.roll_number"/>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <table class="table table-sm table-bordered text-center m-0" style="width:100%">
+                                        <thead class="bg-warning">
+                                            <tr>
+                                                <th colspan="4" class="cw f1">DESCRIPTION</th>
+                                                <th class="f1">AMOUNT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Transport Fee</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Late Fine</strong>
+                                                </td>
+                                                <td>
+                                                    <span>-</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Total</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <div class="row m-3">
+                                        <div class="col-4 bb">
+
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5 bb"></div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-4">
+                                            <strong>Issued by</strong>
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5">
+                                            <strong>Received by</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-2"></div>
+                                        <div class="col-8">
+                                            <p class="fb">Student Copy</p>
+
+                                        </div>
+                                        <div class="col-2"></div>
+                                    </div>
+
+                                </div>
+                                <div class="col-3 p-0 pl-1 brl">
+                                    <div class="row mr-1">
+                                        <div class="col-5 text-center">
+                                            <strong>Issued Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.date"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="col-5 mr-0 text-center">
+                                            <strong>Due Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.end_date"/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <span class="dc">PERSONALS &#160; DETAILS</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-3">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-9 bb">
+                                            <span t-esc="doc.partner_id.name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Father Name:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.father_name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-4">
+                                            <strong>Cnic:</strong>
+                                        </div>
+                                        <div class="col-8 bb">
+                                             <span t-esc="doc.partner_id.studetn_cnic_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Roll number:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.roll_number"/>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <table class="table table-sm table-bordered text-center m-0" style="width:100%">
+                                        <thead class="bg-warning">
+                                            <tr>
+                                                <th colspan="4" class="cw f1">DESCRIPTION</th>
+                                                <th class="f1">AMOUNT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Transport Fee</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Late Fine</strong>
+                                                </td>
+                                                <td>
+                                                    <span>-</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Total</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <div class="row m-3">
+                                        <div class="col-4 bb">
+
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5 bb"></div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-4">
+                                            <strong>Issued by</strong>
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5">
+                                            <strong>Received by</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-2"></div>
+                                        <div class="col-8">
+                                            <p class="fb">Admission Office Copy</p>
+
+                                        </div>
+                                        <div class="col-2"></div>
+                                    </div>
+
+                                </div>
+                                <div class="col-3 p-0 pl-1 brl">
+                                    <div class="row mr-1">
+                                        <div class="col-5 text-center">
+                                            <strong>Issued Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.date"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="col-5 mr-0 text-center">
+                                            <strong>Due Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.end_date"/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <span class="dc">PERSONALS &#160; DETAILS</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-3">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-9 bb">
+                                            <span t-esc="doc.partner_id.name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Father Name:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.father_name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-4">
+                                            <strong>Cnic:</strong>
+                                        </div>
+                                        <div class="col-8 bb">
+                                             <span t-esc="doc.partner_id.studetn_cnic_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Roll number:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.roll_number"/>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <table class="table table-sm table-bordered text-center m-0" style="width:100%">
+                                        <thead class="bg-warning">
+                                            <tr>
+                                                <th colspan="4" class="cw f1">DESCRIPTION</th>
+                                                <th class="f1">AMOUNT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Transport Fee</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Late Fine</strong>
+                                                </td>
+                                                <td>
+                                                    <span>-</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Total</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <div class="row m-3">
+                                        <div class="col-4 bb">
+
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5 bb"></div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-4">
+                                            <strong>Issued by</strong>
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5">
+                                            <strong>Received by</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-2"></div>
+                                        <div class="col-8">
+                                            <p class="fb">Treasurer Office Copy</p>
+
+                                        </div>
+                                        <div class="col-2"></div>
+                                    </div>
+
+                                </div>
+                                <div class="col-3 p-0 pl-1 brl">
+                                    <div class="row mr-1">
+                                        <div class="col-5 text-center">
+                                            <strong>Issued Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.date"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="col-5 mr-0 text-center">
+                                            <strong>Due Date:</strong>
+                                            <p class="bb">
+                                                <t t-esc="doc.end_date"/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <span class="dc">PERSONALS &#160; DETAILS</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-3">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-9 bb">
+                                            <span t-esc="doc.partner_id.name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Father Name:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.father_name"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-4">
+                                            <strong>Cnic:</strong>
+                                        </div>
+                                        <div class="col-8 bb">
+                                             <span t-esc="doc.partner_id.studetn_cnic_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-1">
+                                        <div class="col-5">
+                                            <strong>Roll number:</strong>
+                                        </div>
+                                        <div class="col-7 bb">
+                                            <span t-esc="doc.partner_id.roll_number"/>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <table class="table table-sm table-bordered text-center m-0" style="width:100%">
+                                        <thead class="bg-warning">
+                                            <tr>
+                                                <th colspan="4" class="cw f1">DESCRIPTION</th>
+                                                <th class="f1">AMOUNT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Transport Fee</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Late Fine</strong>
+                                                </td>
+                                                <td>
+                                                    <span>-</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="cw">
+                                                    <strong>Total</strong>
+                                                </td>
+                                                <td><span t-esc="doc.route_id.transport_fee"/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <div class="row m-3">
+                                        <div class="col-4 bb">
+
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5 bb"></div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-4">
+                                            <strong>Issued by</strong>
+                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-5">
+                                            <strong>Received by</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-3">
+                                        <div class="col-2"></div>
+                                        <div class="col-8">
+                                            <p class="fb">Treasurer Office Copy</p>
+
+                                        </div>
+                                        <div class="col-2"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="paperformat_transport_voucher" model="report.paperformat">
+            <field name="name">UOJ Pdf Sheet</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">25</field>
+            <field name="margin_bottom">3</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">25</field>
+            <field name="dpi">90</field>
+
+        </record>
+        <report
+                id="report_transport_voucher_id"
+                model="op.transportation.agreement"
+                string="Print Voucher"
+                name="openeducat_transportation_enterprise.report_transport_voucher_view"
+                file="openeducat_transportation_enterprise.report_transport_voucher_view"
+                report_type="qweb-pdf"
+                paperformat="paperformat_transport_voucher"
+                menu="True"/>
+
+    </data>
+</odoo>

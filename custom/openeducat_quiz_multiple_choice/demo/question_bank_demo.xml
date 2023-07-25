@@ -1,0 +1,196 @@
+<odoo>
+    <data>
+        <record id="multiple_choice_qb_op_ans_grd_100p_p" model="op.answer.grade">
+            <field name="name">+100%</field>
+            <field name="value">100</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_50p_p" model="op.answer.grade">
+            <field name="name">+50%</field>
+            <field name="value">50</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_25p_p" model="op.answer.grade">
+            <field name="name">+25%</field>
+            <field name="value">25</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_0p" model="op.answer.grade">
+            <field name="name">0</field>
+            <field name="value">0</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_100n_n" model="op.answer.grade">
+            <field name="name">-100%</field>
+            <field name="value">-100</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_50n_n" model="op.answer.grade">
+            <field name="name">-50%</field>
+            <field name="value">-50</field>
+        </record>
+
+        <record id="multiple_choice_qb_op_ans_grd_25n_n" model="op.answer.grade">
+            <field name="name">-25%</field>
+            <field name="value">-25</field>
+        </record>
+
+
+        <record id="multiple_choice_op_qu_bnk_type_cup1" model="op.question.bank.type">
+            <field name="name">Multiple Choice</field>
+        </record>
+        <record id="multiple_choice_op_qu_bnk_co" model="op.question.bank">
+            <field name="name">Multiple Choice</field>
+            <field name="bank_type_id" ref="multiple_choice_op_qu_bnk_type_cup1" />
+        </record>
+        
+        <record id="multiple_choice_op_c_qc1" model="op.question.bank.line">
+            <field name="name">Select Carnivorous Animals from the below options.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="multiple_choice_que_type">image</field>
+            <field name="grade_true_id" ref="multiple_choice_qb_op_ans_grd_100p_p" />
+            <field name="grade_false_id" ref="multiple_choice_qb_op_ans_grd_50n_n" />
+            <field name="que_type">multiple_choice</field>
+            <field name="bank_id" ref="multiple_choice_op_qu_bnk_co" />
+        </record>
+
+        <record id="multiple_choice_op_c_qc1_o1" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q1_image_q1.jpg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc1" />
+        </record>
+        <record id="multiple_choice_op_c_qc1_o2" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q1_image_q2.jpg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc1" />
+        </record>
+        <record id="multiple_choice_op_c_qc1_o3" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q1_image_q3.jpg" />
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc1" />
+        </record>
+        <record id="multiple_choice_op_c_qc1_o4" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q1_image_q4.jpeg" />
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc1" />
+        </record>
+        <record id="multiple_choice_op_c_qc1_o5" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q1_image_q5.jpeg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc1" />
+        </record>
+      
+
+
+        <record id="multiple_choice_op_c_qc2" model="op.question.bank.line">
+            <field name="name">Select Birds from the below options?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="multiple_choice_que_type">image</field>
+            <field name="grade_true_id" ref="multiple_choice_qb_op_ans_grd_100p_p" />
+            <field name="grade_false_id" ref="multiple_choice_qb_op_ans_grd_50n_n" />
+            <field name="que_type">multiple_choice</field>
+            <field name="bank_id" ref="multiple_choice_op_qu_bnk_co" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o1" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q1.jpeg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o2" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q2.jpeg" />
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o3" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q3.jpg" />
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o4" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q4.jpg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o5" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q5.jpg" />
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+        <record id="multiple_choice_op_c_qc2_o6" model="op.question.bank.answer.multiple.choice">
+            <field name="que_image" type="base64" file="openeducat_quiz_multiple_choice/static/src/img/q2_image_q6.jpeg" />
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc2" />
+        </record>
+
+
+        <record id="multiple_choice_op_c_qc3" model="op.question.bank.line">
+            <field name="name">Select fruits from the below options?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="multiple_choice_que_type">text</field>
+            <field name="grade_true_id" ref="multiple_choice_qb_op_ans_grd_100p_p" />
+            <field name="grade_false_id" ref="multiple_choice_qb_op_ans_grd_50n_n" />
+            <field name="que_type">multiple_choice</field>
+            <field name="bank_id" ref="multiple_choice_op_qu_bnk_co" />
+        </record>
+        <record id="multiple_choice_op_c_qc3_o1" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Orange</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc3" />
+        </record>
+        <record id="multiple_choice_op_c_qc3_o2" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">broccoli</field>
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc3" />
+        </record>
+        <record id="multiple_choice_op_c_qc3_o3" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">cauliflower</field>
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc3" />
+        </record>
+        <record id="multiple_choice_op_c_qc3_o4" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Apricots</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc3" />
+        </record>
+        <record id="multiple_choice_op_c_qc3_o5" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Mango</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc3" />
+        </record>
+
+        <record id="multiple_choice_op_c_qc4" model="op.question.bank.line">
+            <field name="name">Select Aquatic Animal from the below options?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="multiple_choice_que_type">text</field>
+            <field name="grade_true_id" ref="multiple_choice_qb_op_ans_grd_100p_p" />
+            <field name="grade_false_id" ref="multiple_choice_qb_op_ans_grd_50n_n" />
+            <field name="que_type">multiple_choice</field>
+            <field name="bank_id" ref="multiple_choice_op_qu_bnk_co" />
+        </record>
+        <record id="multiple_choice_op_c_qc4_o1" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Cow</field>
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc4" />
+        </record>
+        <record id="multiple_choice_op_c_qc4_o2" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Shark</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc4" />
+        </record>
+        <record id="multiple_choice_op_c_qc4_o3" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Tigar</field>
+            <field name="default_answer">False</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc4" />
+        </record>
+        <record id="multiple_choice_op_c_qc4_o4" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Octopus</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc4" />
+        </record>
+        <record id="multiple_choice_op_c_qc4_o5" model="op.question.bank.answer.multiple.choice">
+            <field name="que_text">Sea horse</field>
+            <field name="default_answer">True</field>
+            <field name="multiple_choice_line_id" ref="multiple_choice_op_c_qc4" />
+        </record>
+    </data>
+</odoo>

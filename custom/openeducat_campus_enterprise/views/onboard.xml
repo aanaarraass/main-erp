@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- openeducat_core module STEPS -->
+    <!-- discipline record view starts -->
+    <template id="onboarding_facilities_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Facilities Configuration</t>
+            <t t-set="description">See how to create a Facilities.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_facilities_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_facilities_layout_state')"/>
+        </t>
+    </template>
+     <record id="view_op_campus_facility_form_onboard" model="ir.ui.view">
+            <field name="name">op.campus.facility.form</field>
+            <field name="model">op.campus.facility</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="facility">
+                    <sheet>
+                        <group col="2">
+                            <h1>
+                                <field name="name" placeholder="Facility Name"
+                                       nolabel="1" style="width: 50%%"/>
+                            </h1>
+                            <div class="oe_button_box" name="button_box">
+                                <button class="oe_stat_button"
+                                        name="%(openeducat_campus_enterprise.act_open_op_facility_allocation_view)d"
+                                        context="{'search_default_facility_id': active_id}"
+                                        type="action" icon="fa-tasks">
+                                    <div class="o_form_field o_stat_info">
+                                        <span class="o_stat_text">Allocations</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </group>
+                        <group col="4">
+                            <field name="facility_type_id"/>
+                            <field name="parent_id" domain="[('facility_type_id','=',facility_type_id)]"/>
+                            <field name="capacity"/>
+                        </group>
+                        <group string="Sub Facilities">
+                            <field name="child_ids" nolabel="1"/>
+                        </group>
+                        <group string="Facility Allocation">
+                            <field name="facility_allocation_lines" nolabel="1"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_facilities_layout"/>
+                    </footer>
+                </form>
+            </field>
+     </record>
+
+
+    <record id="action_onboarding_facilities_layout" model="ir.actions.act_window">
+        <field name="name">Facilities Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.campus.facility</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_campus_facility_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- discipline record view starts -->
+    <template id="onboarding_facilities_type_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Facility Type Configuration</t>
+            <t t-set="description">See how to create a Facility Type.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_facilities_type_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_facilities_type_layout_state')"/>
+        </t>
+    </template>
+
+     <record id="view_op_facility_type_form_onboard" model="ir.ui.view">
+            <field name="name">op.facility.type.form</field>
+            <field name="model">op.facility.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Tag">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_facilities_type_layout"/>
+                    </footer>
+                </form>
+            </field>
+     </record>
+
+
+    <record id="action_onboarding_facilities_type_layout" model="ir.actions.act_window">
+        <field name="name">Facility Type Record Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.facility.type</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_facility_type_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+
+
+    <!-- ONBOARDING PANEL-->
+    <template id="openeducat_campus_enterprise_onboarding_panel" name="openeducat_campus_enterprise.quotation.onboarding.panel">
+        <t t-call="base.onboarding_container" >
+            <t t-set="classes" t-value="'o_onboarding_violet'"/>
+            <t t-set="bg_image" t-value="'/sale/static/src/img/sale_quotation_onboarding_bg.jpg'"/>
+            <t t-set="close_method" t-value="'action_close_campus_panel_onboarding'"/>
+            <t t-set="close_model" t-value="'res.company'"/>
+            <t t-call="openeducat_campus_enterprise.onboarding_facilities_layout_step" name="facilities_step"/>
+            <t t-call="openeducat_campus_enterprise.onboarding_facilities_type_layout_step" name="facilities_type_step"/>
+        </t>
+    </template>
+</odoo>

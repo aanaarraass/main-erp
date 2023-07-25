@@ -1,0 +1,416 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_alumni_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 09:14+0000\n"
+"PO-Revision-Date: 2019-09-26 09:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.student_detail
+msgid "<strong class=\"col-6 col-sm-6 col-md-4 col-lg-3\">Current Job :</strong>"
+msgstr "<Strong class = \"col-6 col-sm-6 col-md-4 col-lg-3\"> trabalho atual: </ strong>"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.student_detail
+msgid "<strong class=\"col-6 col-sm-6 col-md-4 col-lg-3\">Current Position :</strong>"
+msgstr "<Strong class = \"col-6 col-sm-6 col-md-4 col-lg-3\"> Posição atual: </ strong>"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.student_detail
+msgid "<strong class=\"col-6 col-sm-6 col-md-4 col-lg-3\">Passing Year :</strong>"
+msgstr "<Strong class = \"col-6 col-sm-6 col-md-4 col-lg-3\"> Passando Ano: </ strong>"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_needaction
+msgid "Action Needed"
+msgstr "Ação necessária"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.actions.act_window,name:openeducat_alumni_enterprise.op_alumni_group_action
+#: model:ir.ui.menu,name:openeducat_alumni_enterprise.menu_op_alumni_root
+#: model:website.menu,name:openeducat_alumni_enterprise.website_menu_alumni_view
+msgid "Alumni"
+msgstr ""
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_form_view
+msgid "Alumni Details"
+msgstr "Alumni Detalhes"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.ui.menu,name:openeducat_alumni_enterprise.op_alumni_group_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group_form_view
+msgid "Alumni Group"
+msgstr "Alumni Grupo"
+
+#. module: openeducat_alumni_enterprise
+#: model:product.product,name:openeducat_alumni_enterprise.op_alumni_product_1
+#: model:product.template,name:openeducat_alumni_enterprise.op_alumni_product_1_product_template
+msgid "Alumni Registration Fees"
+msgstr "Alumni Taxas de Inscrição"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__alumni_boolean
+msgid "Alumni Student"
+msgstr "Alumni Aluno"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conde anexo"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group
+msgid "Avatar"
+msgstr ""
+
+#. module: openeducat_alumni_enterprise
+#: selection:op.student,state:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group_form_view
+msgid "Create Forum"
+msgstr "Criar Forum"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group_form_view
+msgid "Create invoice"
+msgstr "Criar recibo"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__current_job
+msgid "Current Job"
+msgstr "Job atual"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__current_position
+msgid "Current Position"
+msgstr "Posição atual"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__display_name
+msgid "Display Name"
+msgstr "Mostrar nome"
+
+#. module: openeducat_alumni_enterprise
+#: selection:op.student,state:0
+msgid "Draft"
+msgstr "Esboço, projeto"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__fees_id
+msgid "Fees"
+msgstr "Honorários"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__alumni_fees_amount
+msgid "Fees Amount"
+msgstr "Valor das taxas"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_follower_ids
+msgid "Followers"
+msgstr "seguidores"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (canais)"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Parceiros)"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__forum_id
+msgid "Forum"
+msgstr "Fórum"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__alumni_id
+msgid "Group"
+msgstr "Grupo"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__id
+msgid "ID"
+msgstr "Id."
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Se marcada novas mensagens requer sua atenção."
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se marcada, as novas mensagens requer sua atenção."
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se marcada, algumas mensagens têm um erro de entrega."
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__image
+msgid "Image"
+msgstr "Imagem"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__invoice_id
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__number
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: openeducat_alumni_enterprise
+#: selection:op.student,state:0
+msgid "Invoice Created"
+msgstr "fatura Criado"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_is_follower
+msgid "Is Follower"
+msgstr "é Follower"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_form_view
+msgid "Is an Alumni?"
+msgstr "É um dos alunos?"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__is_published
+msgid "Is published"
+msgstr "Está publicado"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__join_date
+msgid "Join Date"
+msgstr "Data de inscrição"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_student__join_date
+msgid "Keep empty to use the current date"
+msgstr "Mantenha em branco para usar a data atual"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group____last_update
+msgid "Last Modified on"
+msgstr "Última modificação em"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group
+msgid "MEMBERS"
+msgstr "MEMBROS"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Anexo principal"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_has_error
+msgid "Message Delivery error"
+msgstr "erro Message Delivery"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_ids
+msgid "Messages"
+msgstr "mensagens"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Ações"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de erro"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensagens que requer uma ação"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensagens com erro de entrega"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensagens não lidas"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__passing_year_id
+msgid "Passing Year"
+msgstr "passando Ano"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__website_id
+msgid "Restrict publishing to this website."
+msgstr "Restringir publicação para este site."
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__is_seo_optimized
+msgid "SEO optimized"
+msgstr "SEO otimizado"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_student__state
+msgid "Status"
+msgstr "estado"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model,name:openeducat_alumni_enterprise.model_op_student
+msgid "Student"
+msgstr "Aluna"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__alumni_student_line
+msgid "Students"
+msgstr "estudantes"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__website_url
+msgid "The full URL to access the document through the website."
+msgstr "A URL completa para acessar o documento através do site."
+
+#. module: openeducat_alumni_enterprise
+#: code:addons/openeducat_alumni_enterprise/models/alumni.py:53
+#, python-format
+msgid "The value of the deposit amount must be positive."
+msgstr ""
+
+#. module: openeducat_alumni_enterprise
+#: code:addons/openeducat_alumni_enterprise/models/alumni.py:48
+#, python-format
+msgid "There is no income account defined for this product: \"% s\".You may have to install a chart of account from Accounting app, settings menu."
+msgstr ""
+
+#. module: openeducat_alumni_enterprise
+#: model:product.product,uom_name:openeducat_alumni_enterprise.op_alumni_product_1
+#: model:product.template,uom_name:openeducat_alumni_enterprise.op_alumni_product_1_product_template
+msgid "Unit(s)"
+msgstr "Unidade(s)"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_unread
+msgid "Unread Messages"
+msgstr "Mensagens não lidas"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "As mensagens não lidas Contador"
+
+#. module: openeducat_alumni_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_enterprise.alumni_group_form_view
+msgid "View Invoice"
+msgstr "Ver Invoice"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_published
+msgid "Visible on current website"
+msgstr "Visível no site atual"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_id
+msgid "Website"
+msgstr "Local na rede Internet"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_message_ids
+msgid "Website Messages"
+msgstr "Mensagens website"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_url
+msgid "Website URL"
+msgstr "URL do site"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,help:openeducat_alumni_enterprise.field_op_alumni_group__website_message_ids
+msgid "Website communication history"
+msgstr "histórico de comunicação site"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_meta_description
+msgid "Website meta description"
+msgstr "Site descrição meta"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Site meta palavras-chave"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_meta_title
+msgid "Website meta title"
+msgstr "Site título meta"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_enterprise.field_op_alumni_group__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "imagem OpenGraph site"
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.actions.act_window,name:openeducat_alumni_enterprise.op_alumni_group_act
+msgid "alumni"
+msgstr "alunos"
+
+#. module: openeducat_alumni_enterprise
+#: model:product.product,weight_uom_name:openeducat_alumni_enterprise.op_alumni_product_1
+#: model:product.template,weight_uom_name:openeducat_alumni_enterprise.op_alumni_product_1_product_template
+msgid "kg"
+msgstr ""
+
+#. module: openeducat_alumni_enterprise
+#: model:ir.model,name:openeducat_alumni_enterprise.model_op_alumni_group
+msgid "op.alumni.group"
+msgstr ""
+

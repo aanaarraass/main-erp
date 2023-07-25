@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_media_movement_enterprise_form" model="ir.ui.view">
+            <field name="name">op.media.movement.form</field>
+            <field name="model">op.media.movement</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_media_movement_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/header/field[@name='state']" position="before">
+                    <button type="object" name="renew_media"
+                            string="Renew Media" attrs="{'invisible':[('state','!=','issue')]}"
+                            groups="openeducat_library.group_op_library"/>
+                </xpath>
+                <xpath expr="//form/sheet/group[3]" position="after">
+                    <group string="Renew Details" attrs="{'invisible': [('is_renew','=', False)]}">
+                        <field name="is_renew" invisible="1"/>
+                        <field name="renew_ids" readonly="1" colspan="4" nolabel="1">
+                            <tree string="Media Renew Details" editable="top">
+                                <field name="librarian_id"/>
+                                <field name="renew_date"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+                <xpath expr="//field[@name='media_type_id']" position="after">
+                    <field name="queue_count"/>
+                </xpath>
+                <xpath expr="//field[@name='invoice_id']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="view_op_media_movement_inherited_tree_view" model="ir.ui.view">
+            <field name="name">op.media.movement.inherited.view</field>
+            <field name="model">op.media.movement</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_media_movement_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_op_media_movement_inherited_search_view" model="ir.ui.view">
+            <field name="name">op.media.movement.inherited.search.view</field>
+            <field name="model">op.media.movement</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_media_movement_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="." position="inside">
+                    <searchpanel>
+                        <field name="media_id" icon="fa fa-file-video-o"/>
+                    </searchpanel>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_op_media_movement_pivot" model="ir.ui.view">
+            <field name="name">op.media.movement.pivot</field>
+            <field name="model">op.media.movement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <pivot string="Media Analysis">
+                    <field name="media_id"/>
+                    <field name="media_unit_id" type="row"/>
+                    <field name="type"/>
+                    <field name="student_id"/>
+                    <field name="library_card_id"/>
+                    <field name="issued_date"/>
+                    <field name="return_date"/>
+                    <field name="actual_return_date"/>
+                    <field name="penalty"/>
+                    <field name="invoice_id"/>
+                    <field name="state" type="col"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="openeducat_library.act_open_op_media_movement_view">
+            <field name="view_mode">tree,form,pivot</field>
+        </record>
+        <record model="ir.actions.act_window" id="act_media_movement_analysis_pivot_view">
+            <field name="name">Media Movement Analysis</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.media.movement</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_id" ref="openeducat_library_enterprise.view_op_media_movement_pivot"/>
+            <field name="view_mode">pivot</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record id="op_media_movement_analysis_pivot_view" model="ir.actions.act_window.view">
+            <field name="view_mode">pivot</field>
+            <field name="view_id" ref="openeducat_library_enterprise.view_op_media_movement_pivot"/>
+            <field name="act_window_id" ref="act_media_movement_analysis_pivot_view"/>
+        </record>
+    </data>
+</odoo>

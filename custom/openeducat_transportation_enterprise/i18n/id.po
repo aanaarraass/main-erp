@@ -1,0 +1,999 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_transportation_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 07:13+0000\n"
+"PO-Revision-Date: 2019-09-30 07:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "Action Needed"
+msgstr "aksi Dibutuhkan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_ids
+msgid "Activities"
+msgstr "Kegiatan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Activity State"
+msgstr "kegiatan Negara"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+msgid "Apply"
+msgstr "Terapkan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_drivers
+msgid "Assignation Logs"
+msgstr "Log penugasan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr "lampiran Hitungan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Brand"
+msgstr "Merek"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 Emissions"
+msgstr "Emisi CO2"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 emissions of the vehicle"
+msgstr "emisi CO2 dari kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__capacity
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Capacity"
+msgstr "Kapasitas"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Catalog Value (VAT Incl.)"
+msgstr "Katalog Nilai (PPN Incl.)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Chassis Number"
+msgstr "chassis Number"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Closed"
+msgstr "Tutup"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color"
+msgstr "Warna"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color of the vehicle"
+msgstr "Warna kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_res_company
+msgid "Companies"
+msgstr "Perusahaan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__company_id
+msgid "Company"
+msgstr "Perusahaan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_count
+msgid "Contract Count"
+msgstr "kontrak Hitungan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_contracts
+msgid "Contracts"
+msgstr "kontrak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__cost
+msgid "Cost"
+msgstr "Biaya"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__cost_count
+msgid "Costs"
+msgstr "biaya"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "Current state of the vehicle"
+msgstr "keadaan saat kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Customize"
+msgstr "Sesuaikan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_date
+msgid "Date"
+msgstr "Tanggal"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Date when the vehicle has been immatriculated"
+msgstr "Tanggal ketika kendaraan telah immatriculated"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__display_name
+msgid "Display Name"
+msgstr "Nama tampilan"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Done"
+msgstr "Selesai"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Doors Number"
+msgstr "pintu Nomor"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Draft"
+msgstr "Draf"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver"
+msgstr "Sopir"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver of the vehicle"
+msgstr "Pengemudi kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Drop"
+msgstr "Penurunan"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "End"
+msgstr "Akhir"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "End Trip"
+msgstr "akhir perjalanan"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/vehicle.py:30
+#, python-format
+msgid "Enter proper Capacity."
+msgstr "Masukkan Kapasitas yang tepat."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__estimated_time
+msgid "Estimated Arrival"
+msgstr "perkiraan kedatangan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__estimated_arrival_conf
+msgid "Estimated Arrival Time"
+msgstr "Perkiraan Waktu Kedatangan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__first_contract_date
+msgid "First Contract Date"
+msgstr "Pertama Tanggal Kontrak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_follower_ids
+msgid "Followers"
+msgstr "pengikut"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_channel_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_logs_count
+msgid "Fuel Log Count"
+msgstr "Fuel Log Hitungan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_fuel
+msgid "Fuel Logs"
+msgstr "Log bahan bakar"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Type"
+msgstr "Jenis bahan bakar"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Used by the vehicle"
+msgstr "BBM Digunakan oleh kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Get Stops"
+msgstr "Dapatkan Stops"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Group By..."
+msgstr "Grup Dengan ..."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_overdue
+msgid "Has Contracts Overdue"
+msgstr "Memiliki Kontrak tempo"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_due_soon
+msgid "Has Contracts to renew"
+msgstr "Memiliki Kontrak untuk memperbaharui"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,description:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "Helps you manage user related to transportation."
+msgstr "Membantu Anda mengelola pengguna yang terkait dengan transportasi."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower
+msgid "Horsepower"
+msgstr "Daya kuda"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower_tax
+msgid "Horsepower Taxation"
+msgstr "horsepower Perpajakan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Jika dicentang pesan baru membutuhkan perhatian Anda."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru membutuhkan perhatian Anda."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan memiliki kesalahan pengiriman."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Immatriculation Date"
+msgstr "Immatriculation Tanggal"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr "Apakah Follower"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Just done"
+msgstr "hanya dilakukan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Last Odometer"
+msgstr "Odometer terakhir"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_date
+msgid "Last Updated on"
+msgstr "Terakhir diperbarui saat"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License Plate"
+msgstr "Pelat"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License plate number of the vehicle (i = plate number for a car)"
+msgstr "plat nomor kendaraan (i = nomor plat untuk mobil)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location"
+msgstr "tempat"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location of the vehicle (garage, ...)"
+msgstr "Lokasi kendaraan (garasi, ...)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "Logo"
+msgstr ""
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Logo (medium)"
+msgstr "Logo (menengah)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Logo (small)"
+msgstr "Logo (kecil)"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Looks great!"
+msgstr "Tampak hebat!"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran utama"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Make of the vehicle"
+msgstr "Membuat kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_manager
+msgid "Manager"
+msgstr "Manajer"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Medium-sized logo of the brand. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "logo menengah-merek. Hal ini secara otomatis diubah ukurannya sebagai gambar 128x128px, dengan rasio aspek diawetkan. Gunakan bidang ini dalam pandangan bentuk atau beberapa pandangan kanban."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr "pesan kesalahan Pengiriman"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_ids
+msgid "Messages"
+msgstr "pesan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model"
+msgstr ""
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Model Year"
+msgstr "Tahun Model"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model of the vehicle"
+msgstr "Model kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__name
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Name"
+msgstr "Nama"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_name
+msgid "Name of contract to renew soon"
+msgstr "Nama kontrak untuk segera diperpanjang"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Berikutnya Kegiatan Batas waktu"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr "Kegiatan Berikut"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr "Kegiatan berikutnya Type"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Not done"
+msgstr "Belum selesai"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Number of doors of the vehicle"
+msgstr "Jumlah pintu kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of error"
+msgstr "Jumlah kesalahan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Number of seats of the vehicle"
+msgstr "Jumlah kursi kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_count
+msgid "Odometer"
+msgstr ""
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Odometer Unit"
+msgstr "Satuan odometer"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Odometer measure of the vehicle at the moment of this log"
+msgstr "ukuran odometer kendaraan pada saat log ini"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,name:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "OpenEduCat Transportation"
+msgstr "OpenEduCat Transportasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_passenger_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__partner_id
+msgid "Passenger"
+msgstr "Penumpang"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Passengers"
+msgstr "Penumpang"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+msgid "Person(s)"
+msgstr "Orang (s)"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Pickup"
+msgstr "Menjemput"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power"
+msgstr "Kekuasaan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power in kW of the vehicle"
+msgstr "Kekuatan dalam kW kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__present
+msgid "Present/Absent"
+msgstr "Hadir / Absen"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__residual_value
+msgid "Residual Value"
+msgstr "Nilai sisa"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr "bertanggung jawab Pengguna"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__route_id
+msgid "Route"
+msgstr "Rute, jalan"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "Route Layout Configuration"
+msgstr "Route Tata Letak Konfigurasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__route_line_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__route_line_id
+msgid "Route Line"
+msgstr "Route Jalur"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_route_layout
+msgid "Route Record Configuration"
+msgstr "Route Rekam Konfigurasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_type
+msgid "Route Type"
+msgstr "Route Jenis"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_stop_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_tree
+msgid "Routes"
+msgstr "rute"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Seats Number"
+msgstr "Jumlah kursi"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "See how to create a Route Layout."
+msgstr "Lihat cara membuat Route Layout."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "See how to create a Trips Layout."
+msgstr "Lihat cara membuat Tata Letak Trips."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "See how to create a Vehicle Type Layout."
+msgstr "Lihat cara membuat Tipe Kendaraan Layout."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "See how to create a stops Layout."
+msgstr "Lihat cara membuat Tata Letak berhenti."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__sequence
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__sequence
+msgid "Sequence"
+msgstr "Urutan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__service_count
+msgid "Services"
+msgstr "Jasa"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_services
+msgid "Services Logs"
+msgstr "layanan Log"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Small-sized logo of the brand. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "logo berukuran kecil merek. Hal ini secara otomatis diubah ukurannya sebagai gambar 64x64px, dengan rasio aspek diawetkan. Gunakan bidang ini di mana saja gambar kecil diperlukan."
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Start"
+msgstr "mulai"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__start_time
+msgid "Start Time"
+msgstr "Waktu mulai"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Start Trip"
+msgstr "Mulai Trip"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__state
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "State"
+msgstr "Negara"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_route_layout_state
+msgid "State of the onboarding route layout  step"
+msgstr "Negara rute sosialisasi tata letak langkah"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__transportation_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "Negara langkah sosialisasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_stop_layout_state
+msgid "State of the onboarding stops layout  step"
+msgstr "Negara sosialisasi berhenti langkah tata letak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_trip_layout_state
+msgid "State of the onboarding trip layout  step"
+msgstr "Negara sosialisasi perjalanan tata letak langkah"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_vehicle_layout_state
+msgid "State of the onboarding vehicle layout  step"
+msgstr "Negara sosialisasi kendaraan tata letak langkah"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Status berdasarkan kegiatan\n"
+"Terlambat: Tanggal jatuh tempo sudah berlalu\n"
+"Hari: Tanggal Kegiatan hari ini\n"
+"Direncanakan: kegiatan Masa Depan."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__stop_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__stop_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_tree
+msgid "Stop"
+msgstr "Berhenti"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+msgid "Stop(s)"
+msgstr "Berhenti (s)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_stop_view
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__stop_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_stop_ids
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_stop_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Stops"
+msgstr "berhenti"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "Stops Layout Configuration"
+msgstr "Berhenti Konfigurasi Tata Letak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_stop_layout
+msgid "Stops Record Configuration"
+msgstr "Berhenti Rekam Konfigurasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__tag_ids
+msgid "Tags"
+msgstr ""
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "This field holds the image used as logo for the brand, limited to 1024x1024px."
+msgstr "Bidang ini memegang gambar yang digunakan sebagai logo untuk merek, terbatas 1024x1024px."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_total
+msgid "Total of contracts due or overdue minus one"
+msgstr "Total kontrak jatuh tempo atau terlambat minus satu"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission"
+msgstr "Transmisi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission Used by the vehicle"
+msgstr "Transmisi Digunakan oleh kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_transportations_main
+msgid "Transportation"
+msgstr "Angkutan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route
+msgid "Transportation Route"
+msgstr "transportasi Route"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_line
+msgid "Transportation Route Line"
+msgstr "Transportasi Route Jalur"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_passenger
+msgid "Transportation Route Passenger"
+msgstr "Transportasi Route Penumpang"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_stop_line
+msgid "Transportation Route Stop Line"
+msgstr "Transportasi Route Berhenti Baris"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_stop
+msgid "Transportation Stop"
+msgstr "transportasi Berhenti"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_vehicle
+msgid "Transportation Vehicle"
+msgstr "transportasi Kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_line_sub
+msgid "Trips"
+msgstr "Perjalanan"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "Trips Layout Configuration"
+msgstr "Perjalanan Konfigurasi Tata Letak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_trip_layout
+msgid "Trips Record Configuration"
+msgstr "Perjalanan Rekam Konfigurasi"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Unique number written on the vehicle motor (VIN/SN number)"
+msgstr "nomor unik yang ditulis pada motor kendaraan (VIN / nomor SN)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Unit of the odometer "
+msgstr "Unit odometer"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "Unread Messages"
+msgstr "Pesan belum dibaca"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Pesan belum dibaca Kontra"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_user
+msgid "User"
+msgstr "Pengguna"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Value of the bought vehicle"
+msgstr "Nilai dari kendaraan dibeli"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__vehicle_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vehicle_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_tree
+msgid "Vehicle"
+msgstr "Kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Vehicle Type Layout Configuration"
+msgstr "Kendaraan Konfigurasi Jenis Tata Letak"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_vehicle_layout
+msgid "Vehicle Type Record Configuration"
+msgstr "Jenis Kendaraan Rekam Konfigurasi"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/stop.py:35
+#, python-format
+msgid "Vehicle capacity is over."
+msgstr "Kapasitas kendaraan lebih."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_vehicle_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_vehicle_sub
+msgid "Vehicles"
+msgstr "kendaraan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr "Website Pesan"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr "riwayat komunikasi situs"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Year of the model"
+msgstr "Tahun model"
+

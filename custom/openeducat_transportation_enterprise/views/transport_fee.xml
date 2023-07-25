@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!--                tree view of radical-->
+        <!--      form view-->
+
+
+
+
+
+        <record id="transport_view_partner_form" model="ir.ui.view">
+            <field name="name">exam.res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group" position="after">
+                    <group col="4">
+                        <field name="is_driver"/>
+                        <field name="roll_number" attrs="{'invisible': [('is_student', '=', False)]}"/>
+                        <field name="studetn_cnic_number" attrs="{'invisible': [('is_student', '=', False)]}"/>
+                        <field name="father_name" attrs="{'invisible': [('is_student', '=', False)]}"/>
+                    </group>
+
+                </xpath>
+                <page name="sales_purchases" position="after">
+                    <page string="Driver Information" attrs="{'invisible': [('is_driver', '=', False)]}">
+                        <group>
+                            <group>
+                                <field name="license_number"/>
+                                <field name="license_type"/>
+                            </group>
+                            <group>
+                                <field name="license_date"/>
+                                <field name="license_district"/>
+                            </group>
+                        </group>
+
+                    </page>
+                </page>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="op_transport_fee_details_tree">
+            <field name="name">Student Transport Fee</field>
+            <field name="model">op.partner.transportation.fees.details</field>
+            <field name="arch" type="xml">
+                <tree decoration-success="state == 'paid'" decoration-danger="state == 'defaulter'" sample="1">
+                    <field name="agreement_id"/>
+                    <field name="date"/>
+                    <field name="amount" sum="Total"/>
+                    <field name="state" widget="badge"/>
+                    <field name="invoice_state"/>
+                    <button string="Create Invoice"
+                            states="draft" type="object" name="get_invoice"
+                            groups="openeducat_core.group_op_back_office"/>
+                    <button string="View Invoice"
+                            groups="openeducat_core.group_op_back_office"
+                            states="invoiced" type="object"
+                            name="action_get_invoice"/>
+                </tree>
+            </field>
+        </record>
+        <!--      form view-->
+        <record model="ir.ui.view" id="op_transport_fee_details_form">
+            <field name="name">Student Transport Fee</field>
+            <field name="model">op.partner.transportation.fees.details</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,submit,confirm,cancel"
+                               options="{'clickable': '1'}"/>
+
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="agreement_id"/>
+                                <field name="amount"/>
+                            </group>
+                            <group>
+                                <field name="date"/>
+                                <field name="product_id"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_op_transport_fee_details">
+            <field name="name">Transport Fee Details</field>
+            <field name="res_model">op.partner.transportation.fees.details</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>

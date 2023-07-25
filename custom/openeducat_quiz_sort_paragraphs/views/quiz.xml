@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_sort_paragraphs" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='questions']" position="inside">
+                        <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'sort_paragraphs')], 'required': [('que_type', '=', 'sort_paragraphs')]}" />
+                        <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'sort_paragraphs')], 'required': [('que_type', '=', 'sort_paragraphs')]}" />
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+
+    <data>
+        <record id="view_op_quiz_result_sort_paragraphs" model="ir.ui.view">
+            <field name="name">op.quiz.result.form</field>
+            <field name="model">op.quiz.result</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_result_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='line_ids']/form/group/field[@name='question_mark']" position="after">
+                        <field name="sort_paragraphs_line_ids" attrs="{'invisible': [('que_type', '!=', 'sort_paragraphs')]}">
+                            <tree string="Results">
+                                <field name="given_answer"/>
+                                <field name="default_answer"/>
+                            </tree>
+                        </field>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

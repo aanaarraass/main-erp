@@ -1,0 +1,993 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_library_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 04:58+0000\n"
+"PO-Revision-Date: 2019-09-26 04:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"إدارة\" title=\"إدارة\"/>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>New</span>"
+msgstr "<span>جديد</span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>Reports</span>"
+msgstr "<SPAN> التقارير </ SPAN>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Actual Return Date:</strong>"
+msgstr "<القوي> الفعلي العودة التاريخ: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Author:</strong>"
+msgstr "<القوي> الكاتب: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Code:</strong>"
+msgstr "<القوي> الرمز: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>تاريخ الاستحقاق:</strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Edition:</strong>"
+msgstr "<قوية> الطبعة: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>ISBN Code:</strong>"
+msgstr "<القوي> كود ISBN: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Invoice:</strong>"
+msgstr "<قوية> الفاتورة: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Issued Date:</strong>"
+msgstr "<القوي> تاريخ الصدور: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "<strong>Library Card:</strong>"
+msgstr "على <strong> بطاقة المكتبة: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Queue Count:</strong>"
+msgstr "<القوي> وسائل الإعلام قائمة انتظار الفرز: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Type:</strong>"
+msgstr "نوع <القوي> وسائل الإعلام: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Unit:</strong>"
+msgstr "على <strong> وحدة الإعلام: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media:</strong>"
+msgstr "<القوي> وسائل الإعلام: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Penalty:</strong>"
+msgstr "<قوية> العقوبة: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Publisher:</strong>"
+msgstr "<القوي> الناشر: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Status:</strong>"
+msgstr "الحالة:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student / Faculty:</strong>"
+msgstr "<القوي> طالب / كلية: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student:</strong>"
+msgstr "طالب علم:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Tags:</strong>"
+msgstr "<قوية> الكلمات: </ قوي>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Actual Return Date"
+msgstr "تاريخ العودة الفعلي"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "All Media Information"
+msgstr "جميع المعلومات وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+msgid "Author"
+msgstr "الكاتب"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_author_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "Author Configuration"
+msgstr "تكوين الكاتب"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Author:"
+msgstr "مؤلف"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__available
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Available"
+msgstr "متاح"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_barcode_issue_media
+msgid "Barcode Issue Media Wizard"
+msgstr "معالج الإعلام الباركود العدد"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_movement.py:52
+#, python-format
+msgid "Can't renew media \n"
+" you have penalty to pay"
+msgstr "لا يمكن تجديد وسائل الاعلام\n"
+" لديك لدفع عقوبة"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:58
+#, python-format
+msgid "Can't return media : % s"
+msgstr "لا يمكن إرجاع سائل الإعلام:٪ ق"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:72
+#, python-format
+msgid "Card not available : % s"
+msgstr "بطاقة غير متوفرة:٪ ق"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_author__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_purchase__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_queue__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_unit__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_publisher__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_tag__company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Course"
+msgstr "دورة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Course:"
+msgstr "دورة:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Courses"
+msgstr "الدورات التدريبية"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.menu_op_dashboard_librarian
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Description"
+msgstr "الوصف"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__display_name
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Done"
+msgstr "منجز"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Due"
+msgstr "مستحق"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_month
+msgid "Due Media of Month"
+msgstr "وسائل الإعلام الواجب شهر"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_today
+msgid "Due Media of Today"
+msgstr "وسائل الإعلام الواجب اليوم"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Edition"
+msgstr "الإصدار"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Edition:"
+msgstr "الإصدار"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Educational Details"
+msgstr "تفاصيل التعليمية"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "From Date"
+msgstr "من التاريخ"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "From Date:"
+msgstr "من التاريخ"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "ISBN Code"
+msgstr "رمز ISBN"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "Internal Code"
+msgstr "كود داخلي"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Issue"
+msgstr "القضية"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.barcode_issue_media_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Issue Media"
+msgstr "وسائل الإعلام قضية"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.barcode_issue_media_act
+msgid "Issue media"
+msgstr "وسائل الإعلام قضية"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__issued
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Issued"
+msgstr "نشر"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Issued Date"
+msgstr "تاريخ إصدارها"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Just done"
+msgstr "مجرد القيام به"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__kanban_dashboard_graph
+msgid "Kanban Dashboard Graph"
+msgstr "الرسم البياني للوحة معلومات كانبان"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media____last_update
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__librarian_id
+msgid "Librarian"
+msgstr "أمين المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Library\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+msgstr "مكتبة\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Library All Media Information"
+msgstr "مكتبة جميع المعلومات وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Library All Media details"
+msgstr "مكتبة جميع تفاصيل وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+msgid "Library Card"
+msgstr "بطاقة مكتبة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "Library Card Configuration"
+msgstr "تكوين بطاقة المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__library_card_number
+msgid "Library Card Number"
+msgstr "مكتبة رقم البطاقة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+msgid "Library Card Type"
+msgstr "نوع بطاقة المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "Library Card Type Configuration"
+msgstr "تكوين نوع بطاقة المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "Library Dashboard"
+msgstr "لوحة المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_renew
+msgid "Library Media Renewal"
+msgstr "تجديد مكتبة للوسائط المتعددة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Library card"
+msgstr "بطاقة المكتبة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Looks great!"
+msgstr "يبدو رائعا!"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:100
+#, python-format
+msgid "Maximum Number of media allowed for % s is : % s"
+msgstr "الحد الأقصى لعدد من وسائل الإعلام يسمح ل٪ s هو:٪ ق"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_month
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_today
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media"
+msgstr "وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_pivot
+msgid "Media Analysis"
+msgstr "تحليل وسائل الاعلام"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_author
+msgid "Media Author"
+msgstr "وسائل الاعلام الكاتب"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media
+msgid "Media Details"
+msgstr "تفاصيل وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_movement
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__movement_id
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Media Movement"
+msgstr "حركة الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Media Movement Information"
+msgstr "وسائل الاعلام معلومات حركة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Movements"
+msgstr "حركات وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_purhase_list
+msgid "Media Purchase List"
+msgstr "قائمة شراء الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media Purchase Request"
+msgstr "وسائل الاعلام طلب شراء"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+msgid "Media Purchase Request List"
+msgstr "قائمة طلب شراء الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Purchase Request Submit"
+msgstr "طلب شراء الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__queue_count
+msgid "Media Queue Count"
+msgstr "عدد وسائل الإعلام قائمة انتظار"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_queue_list
+msgid "Media Queue List"
+msgstr "قائمة انتظار الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media Queue Request"
+msgstr "وسائل الإعلام قائمة انتظار طلب"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Media Queue Request List"
+msgstr "قائمة طلب قائمة انتظار الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+msgid "Media Queue Request Submit"
+msgstr "طلب قائمة انتظار الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Media Renew Details"
+msgstr "وسائل الاعلام تجديد ترخيص التفاصيل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_tag
+msgid "Media Tags"
+msgstr "وسائل الإعلام الكلمات"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Type"
+msgstr "نوع الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_media_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "Media Type Configuration"
+msgstr "تكوين نوع الوسائط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_unit
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Unit"
+msgstr "وحدة الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__media_unit_number
+msgid "Media Unit Number"
+msgstr "وسائل الإعلام رقم الوحدة"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:52
+#, python-format
+msgid "Media Unit can not available : % s"
+msgstr "لا يمكن وحدة وسائل الاعلام المتاحة:٪ ق"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:95
+#, python-format
+msgid "Media Unit can not be issued                         because it's state is : % s"
+msgstr "وحدة الإعلام لا يمكن أن تصدر لانها دولة هي:٪ ق"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media type:"
+msgstr "نوع الوسائط:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Media(s)"
+msgstr "وسائل الإعلام (ق)"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media:"
+msgstr "وسائل الإعلام:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Movements"
+msgstr "الحركات"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New"
+msgstr "جديد"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New Media"
+msgstr "وسائل الإعلام الجديدة"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Not done"
+msgstr "لم تفعل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__media_movement_id
+msgid "Parent Media Movement"
+msgstr "حركة الإعلام الأم"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Penalty"
+msgstr "ضربة جزاء"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Person"
+msgstr "شخص"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Proceed"
+msgstr "تقدم"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_publisher
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Publisher"
+msgstr "الناشر"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_publisher_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Publisher Configuration"
+msgstr "تكوين الناشر"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Publisher:"
+msgstr "الناشر:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__is_renew
+msgid "Renew"
+msgstr "جدد"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__renew_date
+msgid "Renew Date"
+msgstr "تجديد التسجيل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__renew_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Details"
+msgstr "تجديد تفاصيل"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Media"
+msgstr "تجديد وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Request by:"
+msgstr "طلب من:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Requested by"
+msgstr "بتوصية من"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Return"
+msgstr "إرجاع"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Return Media"
+msgstr "عودة وسائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "SUBMIT\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "خضع"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "See how to create a Author."
+msgstr "معرفة كيفية إنشاء المؤلف."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "See how to create a Media Type."
+msgstr "معرفة كيفية إنشاء نوع الوسائط."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "See how to create a library card type."
+msgstr "معرفة كيفية إنشاء نوع بطاقة المكتبة."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "See how to create a library card."
+msgstr "معرفة كيفية إنشاء بطاقة المكتبة."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "See how to create a publisher."
+msgstr "معرفة كيفية إنشاء الناشر."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Select your option"
+msgstr "اختر الخيار الخاص بك"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Sequence No."
+msgstr "رقم التسلسل"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_author_layout_state
+msgid "State of the onboarding author layout step"
+msgstr "حالة الخطوة تخطيط مؤلف التأهيل ل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_layout_state
+msgid "State of the onboarding library card layout step"
+msgstr "حالة الخطوة تخطيط بطاقة المكتبة التأهيل ل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_type_layout_state
+msgid "State of the onboarding library card type layout step"
+msgstr "حالة التأهيل لبطاقة المكتبة خطوة نوع تخطيط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__openeducat_library_onboard_panel
+msgid "State of the onboarding library layout step"
+msgstr "حالة الخطوة تخطيط مكتبة التأهيل ل"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_media_type_layout_state
+msgid "State of the onboarding media type layout step"
+msgstr "حالة وسائل الإعلام التأهيل لخطوة نوع تخطيط"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_publisher_layout_state
+msgid "State of the onboarding publisher layout step"
+msgstr "حالة الخطوة تخطيط الناشر التأهيل ل"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Status"
+msgstr "الحالة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "Student / Faculty Detail"
+msgstr "طالب / كلية التفاصيل"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Subject"
+msgstr "موضوع"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Subject:"
+msgstr "موضوع:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Subjects"
+msgstr "المواضيع"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+msgid "Tag"
+msgstr "الوسم"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "There are currently no information for your account!!!"
+msgstr "لا يوجد حاليا أي معلومات عن حسابك!"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "This is the Library Dashboard."
+msgstr "هذه هي مكتبة لوحة."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Title"
+msgstr "العنوان"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Title:"
+msgstr "عنوان:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "To Date"
+msgstr "حتى الآن"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_queue.py:26
+#, python-format
+msgid "To Date cannot be set before From Date."
+msgstr ""
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date must be grater then From Date"
+msgstr "يجب أن يكون لتاريخ مبشرة ثم من التسجيل"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date:"
+msgstr "حتى الآن"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "To date"
+msgstr "حتى الآن"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__total_copies
+msgid "Total Copies"
+msgstr "مجموع نسخ"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__total_units
+msgid "Total Units"
+msgstr "إجمالي الوحدات"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__transaction_type
+msgid "Transaction Type"
+msgstr "نوع المعاملة"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Units"
+msgstr "وحدات"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "User:"
+msgstr "المستعمل:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "media Issue"
+msgstr "العدد سائل الإعلام"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Month"
+msgstr "من شهر"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Today"
+msgstr "من اليوم"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "status"
+msgstr "الحالة"
+

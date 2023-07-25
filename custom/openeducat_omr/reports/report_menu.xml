@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_omr_sheet_template_report" model="ir.actions.report">
+            <field name="name">Generate Templates</field>
+            <field name="model">op.omr.template.wizard</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">openeducat_omr.report_layout_hundred</field>
+            <field name="report_file">openeducat_omr.report_layout_hundred</field>
+        </record>
+
+    </data>
+
+</odoo>

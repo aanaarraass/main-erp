@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="website_menu_time_off_request" model="openeducat.portal.menu">
+        <field name="name">Time Off</field>
+        <field name="menu_ref_name">Time Off</field>
+        <field name="link">/my/time_off/</field>
+        <field name="active">True</field>
+        <field name="sequence" type="int">50</field>
+        <field name="background_color">#45ac34</field>
+        <field name="icon_image" type="base64"
+               file="openeducat_student_leave_enterprise/static/img/student_time_off.png"/>
+    </record>
+</odoo>

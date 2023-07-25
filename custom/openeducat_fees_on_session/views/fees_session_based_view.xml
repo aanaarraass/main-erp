@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="view_op_faculty_form_inherit" model="ir.ui.view">
+            <field name="name">op.faculty.form</field>
+            <field name="model">op.faculty</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_faculty_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page name="subject_cost" string="Subject Cost">
+                        <sheet>
+                            <field name="subject_cost_ids" widget="one2many">
+                                <tree editable="bottom">
+                                    <field name="subject_id"/>
+                                    <field name="product_id"/>
+                                    <field name="cost"/>
+                                </tree>
+                            </field>
+                        </sheet>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="student_fees_coll_details_line1" 
+            model="op.partner.transportation.fees.details">
+            <field name="date" eval="(DateTime.today() + relativedelta(months=1))"/>
+            <field name="amount">50</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="student_fees_coll_details_line2" 
+            model="op.partner.transportation.fees.details">
+            <field name="date" eval="(DateTime.today() + relativedelta(years=1))"/>
+            <field name="amount">100</field>
+            <field name="state">draft</field>
+        </record>
+    </data>
+</odoo>

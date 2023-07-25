@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_property_property_contract_form_inherit" model="ir.ui.view">
+        <field name="name">property.property.contract.inherit.form</field>
+        <field name="model">property.property.contract</field>
+        <field name="inherit_id" ref="real_estate_advertisement.view_property_property_contract_form" />
+        <field name="arch" type="xml">
+           <!-- <xpath expr="//field[@name='phone']" position="after">-->
+            <xpath expr="//field[@name='installment_option']" position="after">
+
+                <button
+                    name="button_edit_agents"
+                    icon="fa-users"
+                    type="object"
+                />
+                <field name="commission_status" optional="show" />
+
+            </xpath>
+            <xpath expr="//field[@name='contract_total_amount_with_tax']" position="after">
+                <field name="commission_total"/>
+
+            </xpath>
+
+        </field>
+    </record>
+
+     <record model="ir.ui.view" id="view_property_contract_line_agent_tree">
+        <field name="name">property.contract.line.agent.tree</field>
+        <field name="model">property.contract.line.agent</field>
+        <field name="arch" type="xml">
+            <tree string="Agents" editable="bottom">
+                <field
+                    name="agent_id"
+                    context="{'default_agent': True, 'default_customer': False, 'default_supplier': True}"
+                />
+                <field name="commission_id" />
+                <field name="amount" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

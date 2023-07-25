@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="poratl_menu_subject_material" model="openeducat.portal.menu">
+        <field name="name">Study Material</field>
+        <field name="menu_ref_name">Study Material</field>
+        <field name="link">/subject/details/</field>
+        <field name="active">True</field>
+        <field name="sequence" type="int">70</field>
+        <field name="background_color">#304cd5</field>
+        <field name="icon_image" type="base64"
+               file="openeducat_subject_material_allocation/static/img/study_material.png"/>
+    </record>
+
+    <menuitem id="subject_menu_main" name="Subject Material"
+              parent="openeducat_core.menu_op_faculty_root" sequence="30"
+              action="openeducat_core.act_open_op_subject_view"
+              groups="openeducat_core.group_op_faculty"/>
+</odoo>

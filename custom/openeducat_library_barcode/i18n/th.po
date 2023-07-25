@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_library_barcode
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-09 09:56+0000\n"
+"PO-Revision-Date: 2019-12-09 09:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_library_barcode
+#: model:ir.actions.client,name:openeducat_library_barcode.library_barcode_action_main_view
+msgid "Barcode Interface"
+msgstr "อินเตอร์เฟซบาร์โค้ด"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:8
+#, python-format
+msgid "Barcode Scanning"
+msgstr "สแกนบาร์โค้ด"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:14
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:29
+#, python-format
+msgid "Issue"
+msgstr "ปัญหา"
+
+#. module: openeducat_library_barcode
+#: model:ir.ui.menu,name:openeducat_library_barcode.menu_library_barcode_scan
+msgid "Library Barcode"
+msgstr "ห้องสมุดบาร์โค้ด"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:43
+#, python-format
+msgid "Main Menu"
+msgstr "เมนูหลัก"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:13
+#, python-format
+msgid "None"
+msgstr ""
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:18
+#, python-format
+msgid "Please Scan your Library Card ID for issue"
+msgstr "กรุณาสแกนห้องสมุดบัตรประจำตัวประชาชนของคุณสำหรับปัญหา"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:17
+#, python-format
+msgid "Please Scan your Media Unit ID for issue"
+msgstr "กรุณาสแกนสื่อหน่วย ID ของคุณให้ออก"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:19
+#, python-format
+msgid "Please Scan your Media Unit ID for return"
+msgstr "กรุณาสแกนสื่อหน่วย ID ของคุณสำหรับการกลับมา"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:15
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:36
+#, python-format
+msgid "Return"
+msgstr "กลับ"
+
+#. module: openeducat_library_barcode
+#: code:addons/openeducat_library_barcode/controllers/main.py:81
+#, python-format
+msgid "Successfully Return"
+msgstr "ประสบความสำเร็จในการกลับมา"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:23
+#, python-format
+msgid "Waiting for 'Library Card ID' barcode scan..."
+msgstr "รอให้ 'ห้องสมุดบัตรประจำตัวประชาชน' สแกนบาร์โค้ด ..."
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:21
+#, python-format
+msgid "Waiting for 'Media Unit ID' barcode scan..."
+msgstr "รอให้ 'สื่อหน่วย ID' สแกนบาร์โค้ด ..."
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:126
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:140
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:154
+#, python-format
+msgid "Welcome"
+msgstr "ยินดีต้อนรับ"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:127
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:141
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:155
+#, python-format
+msgid "Your Book"
+msgstr "หนังสือของคุณ"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:128
+#, python-format
+msgid "has been issued."
+msgstr "ได้รับการออก."
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:156
+#, python-format
+msgid "has been returned with penalty of"
+msgstr "ได้รับการกลับมาพร้อมกับบทลงโทษของการ"
+
+#. module: openeducat_library_barcode
+#. openerp-web
+#: code:addons/openeducat_library_barcode/static/src/xml/openeducat_library_barcode_template.xml:142
+#, python-format
+msgid "has been returned."
+msgstr "ได้รับการส่งกลับ"
+

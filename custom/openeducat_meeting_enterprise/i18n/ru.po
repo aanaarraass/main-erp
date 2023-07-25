@@ -1,0 +1,840 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_meeting_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 05:32+0000\n"
+"PO-Revision-Date: 2019-09-30 05:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "<span>hours</span>"
+msgstr "<SPAN> часов </ SPAN>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>All Day:</strong>"
+msgstr "<Сильный> Весь день: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Attendance:</strong>"
+msgstr "<Сильный> Участники: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Description:</strong>"
+msgstr "<Сильный> Описание: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Duration:</strong>"
+msgstr "<Сильный> Продолжительность: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Location:</strong>"
+msgstr "<Сильный> Расположение: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Meeting Subject:</strong>"
+msgstr "<Сильный> Тема встречи: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Privacy:</strong>"
+msgstr "<Сильный> Приватность: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Reminders:</strong>"
+msgstr "<STRONG> Памятка: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Show Time as:</strong>"
+msgstr "<Сильный> Show Time, как: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Starting at:</strong>"
+msgstr "<Сильный> Начиная с: </ STRONG>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Accept"
+msgstr "принимать"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "Action Needed"
+msgstr "Необходимое действие"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "Active"
+msgstr "активный"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__activity_ids
+msgid "Activities"
+msgstr "мероприятия"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__allday
+msgid "All Day"
+msgstr "Весь день"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Apply"
+msgstr "Применить"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Are You Sure You Want To Create Meeting"
+msgstr "Вы уверены, что вы хотите создать собрание"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_attachment_count
+msgid "Attachment Count"
+msgstr "Приложение Граф"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Attendance"
+msgstr "посещаемость"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_attendee
+msgid "Attendee"
+msgstr "Слушатель"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_status
+msgid "Attendee Status"
+msgstr "Слушатель Статус"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Attendees"
+msgstr "Присутствующие"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Availability"
+msgstr "Доступность"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__byday
+msgid "By day"
+msgstr "Днем"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Cancel"
+msgstr "Отменить"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "Click to schedule a new meeting."
+msgstr "Нажмите, чтобы запланировать новую встречу."
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Closed"
+msgstr "Закрыто"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_company
+msgid "Companies"
+msgstr "Компании"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Confirm"
+msgstr "подтвердить"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: openeducat_meeting_enterprise
+#: code:addons/openeducat_meeting_enterprise/wizard/op_meeting_wizard.py:31
+#, python-format
+msgid "Create Event"
+msgstr "Создать событие"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Create Meeting Event"
+msgstr "Создать событие Meeting"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_date
+msgid "Created on"
+msgstr "Создано на"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Customize"
+msgstr "Настроить"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_start
+msgid "Date"
+msgstr "Дата"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__day
+msgid "Date of month"
+msgstr "Дата месяц"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Decline"
+msgstr "снижение"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__description
+msgid "Description"
+msgstr "Описание"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_name
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_id
+msgid "Document ID"
+msgstr "Идентификатор документа"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model_id
+msgid "Document Model"
+msgstr "Модель документа"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model
+msgid "Document Model Name"
+msgstr "Название модели документа"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Done"
+msgstr "Готово"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__duration
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Duration"
+msgstr "продолжительность"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "End Date"
+msgstr "Дата окончания"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_datetime
+msgid "End Datetime"
+msgstr "Конец Datetime"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Ending at"
+msgstr "Окончание в"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_time
+msgid "Event Time"
+msgstr "Время события"
+
+#. module: openeducat_meeting_enterprise
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_faculty
+msgid "Faculty"
+msgstr "факультет"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_follower_ids
+msgid "Followers"
+msgstr "Читают"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Читатели (каналы)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Читатели (партнеры)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__fr
+msgid "Fri"
+msgstr "пятница"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Group By"
+msgstr "Группировать по"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__id
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__id
+msgid "ID"
+msgstr "Номер"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Если флажок новые сообщения требуют вашего внимания."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Если флажок установлен, новые сообщения требуют вашего внимания."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Если флажок установлен, некоторые сообщения имеют ошибки доставки."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "If the active field is set to false, it will allow you to hide the event alarm information without removing it."
+msgstr "Если активное поле установлено неверно, это позволит вам скрыть информацию о тревоге событий, не снимая его."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitation details"
+msgstr "подробности Приглашение"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitations"
+msgstr "Приглашения"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_is_follower
+msgid "Is Follower"
+msgstr "Является ли Последователь"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_highlighted
+msgid "Is the Event Highlighted"
+msgstr "Выделенные ли событие"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Just done"
+msgstr "Только что сделано"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting____last_update
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard____last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Последнее обновление от"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_date
+msgid "Last Updated on"
+msgstr "Последнее обновление"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Let the event automatically repeat at that interval"
+msgstr "Пусть событие автоматически повторяться на этом интервале"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__location
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Location"
+msgstr "Место нахождения"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__location
+msgid "Location of Event"
+msgstr "Место проведения"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Looks great!"
+msgstr "Выглядит отлично!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Главная Attachment"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_faculty
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_parent
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_wizard_student
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__meeting_id
+#: model:ir.ui.menu,name:openeducat_meeting_enterprise.menu_meeting
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Meeting"
+msgstr "Встреча"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting Data Information"
+msgstr "Встреча Информация данные"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.portal_my_home_library
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Meeting Details"
+msgstr "Встреча Подробнее"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Meeting Information"
+msgstr "информация Встречи"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Meeting Layout Configuration"
+msgstr "Конфигурация Meeting Layout"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_onboarding_meeting_layout
+msgid "Meeting Record Configuration"
+msgstr "Конфигурация Meeting Record"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__name
+msgid "Meeting Subject"
+msgstr "Тема Встречи"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting_wizard
+msgid "Meeting Wizard"
+msgstr "Мастер совещание"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting-Deatils"
+msgstr "Конференц-Deatils"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event_notify
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Meetings"
+msgstr "Встречи"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "Message Delivery error"
+msgstr "Сообщение об ошибке доставки"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_ids
+msgid "Messages"
+msgstr "Сообщения"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Misc"
+msgstr "Разное"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__mo
+msgid "Mon"
+msgstr "понедельник"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Events"
+msgstr "Мои события"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Meetings"
+msgstr "Мои встречи"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Not done"
+msgstr "Не сделано"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Количество действий"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of error"
+msgstr "Количество ошибок"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Количество сообщений, которое требует действий"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Число сообщений с ошибкой доставки"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Количество непрочитанных сообщений"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_faculty
+msgid "OpenEduCat Faculty"
+msgstr "OpenEduCat факультет"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__month_by
+msgid "Option"
+msgstr "вариант"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Options"
+msgstr "Параметры"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__user_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Owner"
+msgstr "Владелец"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_parent
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_parent
+msgid "Parent"
+msgstr "родитель"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_ids
+msgid "Participant"
+msgstr "участник"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__partner_id
+msgid "Partner-related data of the user"
+msgstr "Партнер связанных данные пользователя"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__privacy
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Recurrence"
+msgstr "рекуррентность"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__end_type
+msgid "Recurrence Termination"
+msgstr "Рецидив Прекращение"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent"
+msgstr "возвратный"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id
+msgid "Recurrent ID"
+msgstr "Рецидив ID"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id_date
+msgid "Recurrent ID date"
+msgstr "Повторяющиеся дата ID"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent Meeting"
+msgstr "Рецидив совещание"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule
+msgid "Recurrent Rule"
+msgstr "Рецидив Правило"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__alarm_ids
+msgid "Reminders"
+msgstr "Напоминания"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat"
+msgstr "Повторение"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat Every"
+msgstr "Повторять кажд"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__final_date
+msgid "Repeat Until"
+msgstr "Повторять до"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat every (Days/Week/Month/Year)"
+msgstr "Повторять каждый (дни / неделю / месяц / год)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat x times"
+msgstr "Повторить х раз"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Responsible"
+msgstr "ответственность"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__sa
+msgid "Sat"
+msgstr "Сидел"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Search Meetings"
+msgstr "Поиск Встречи"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "See how to create a Meeting Layout."
+msgstr "Посмотрите, как создать макет Meeting."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Select attendees..."
+msgstr "Выбор участников ..."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Send mail"
+msgstr "Отправить письмо"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__show_as
+msgid "Show Time as"
+msgstr "Показать время, как"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start"
+msgstr "Начало"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Start Date"
+msgstr "Дата начала"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_datetime
+msgid "Start DateTime"
+msgstr "Начало DateTime"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start date of an event, without time for full days events"
+msgstr "Дата начала события, без времени для полных дней событий"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Starting at"
+msgstr "Начинается с"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__onboarding_meeting_layout_state
+msgid "State of the onboarding meeting layout  step"
+msgstr "Состояние адаптационных встреч шага компоновки"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__meeting_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "Состояние стадии адаптационной"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__state
+msgid "Status"
+msgstr "Статус"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop"
+msgstr "Стоп"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop date of an event, without time for full days events"
+msgstr "дата события Стоп, без времени для полных дней событий"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_student
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_student
+msgid "Student"
+msgstr "Ученик"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Subject"
+msgstr "Тема"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__su
+msgid "Sun"
+msgstr "солнце"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__categ_ids
+msgid "Tags"
+msgstr "Теги"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "The calendar is shared between employees and fully integrated with\n"
+"                other applications such as the employee holidays or the\n"
+"                business\n"
+"                opportunities."
+msgstr "Календарь распределяется между работниками и полностью интегрирован с\n"
+"                другие приложения, такие как праздники работника или\n"
+"                бизнес\n"
+"                возможностей."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "There are currently no information for your account!!!"
+msgstr "Там на данный момент нет информации для вашей учетной записи !!!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__th
+msgid "Thu"
+msgstr "четверг"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__tu
+msgid "Tue"
+msgstr "вторник"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Uncertain"
+msgstr "неуверенный"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Unread Messages"
+msgstr "Непрочитанные сообщения"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Непрочитанные сообщения Счетчик"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website Messages"
+msgstr "Сайт сообщение"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website communication history"
+msgstr "Сайт истории связи"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__we
+msgid "Wed"
+msgstr "Мы б"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__week_list
+msgid "Weekday"
+msgstr "будний день"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "e.g. Business Lunch"
+msgstr "например Бизнес ланч"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "or"
+msgstr "или же"
+

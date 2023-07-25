@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mf_op_ans_grd_100p_p" model="op.answer.grade">
+            <field name="name">+100%</field>
+            <field name="value">100</field>
+        </record>
+
+        <record id="mf_op_ans_grd_50p_p" model="op.answer.grade">
+            <field name="name">+50%</field>
+            <field name="value">50</field>
+        </record>
+
+        <record id="mf_mf_op_ans_grd_25p_p" model="op.answer.grade">
+            <field name="name">+25%</field>
+            <field name="value">25</field>
+        </record>
+
+        <record id="mf_op_ans_grd_0p" model="op.answer.grade">
+            <field name="name">0</field>
+            <field name="value">0</field>
+        </record>
+
+        <record id="mf_op_ans_grd_100n_n" model="op.answer.grade">
+            <field name="name">-100%</field>
+            <field name="value">-100</field>
+        </record>
+
+        <record id="mf_op_ans_grd_50n_n" model="op.answer.grade">
+            <field name="name">-50%</field>
+            <field name="value">-50</field>
+        </record>
+
+        <record id="mf_op_ans_grd_25n_n" model="op.answer.grade">
+            <field name="name">-25%</field>
+            <field name="value">-25</field>
+        </record>
+
+        <record id="following_op_qz_ctg_b" model="op.quiz.category">
+            <field name="name">General Knowledge</field>
+            <field name="code">generalknowledge123</field>
+        </record>
+
+        <record id="following_quiz1" model="op.quiz">
+            <field name="name">Match the Following</field>
+            <field name="quiz_config">quiz_bank_selected</field>
+            <field name="categ_id" ref="following_op_qz_ctg_b"/>
+            <field name="time_config">True</field>
+            <field name="time_limit_hr">1</field>
+            <field name="time_limit_minute">30</field>
+            <field name="no_of_attempt">10</field>
+
+            <field name="description">This quiz is based on General Knowledge.
+            </field>
+            <field name="state">open</field>
+            <field name="exit_allow">True</field>
+            <field name="quiz_html">Match the following have a content area and a list of names or statements which must
+                be correctly matched against another list of names or statements. .
+            </field>
+        </record>
+        <record id="following_q1" model="op.quiz.line">
+            <field name="name">Match the following colours with their names:</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="mf_op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="mf_op_ans_grd_50n_n"/>
+            <field name="que_type">match_following</field>
+            <field name="quiz_id" ref="following_quiz1"/>
+        </record>
+        <record id="following_q1_o1" model="op.quiz.answer.following">
+            <field name="question" >King of Animal</field>
+            <field name="answer" >Lion</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/lion.png"/>
+            <field name="following_line_id" ref="following_q1"/>
+        </record>
+        <record id="following_q1_o2" model="op.quiz.answer.following">
+            <field name="question" >Tallest animal</field>
+            <field name="answer" >Giraffe</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/giraffe.png"/>
+            <field name="following_line_id" ref="following_q1"/>
+        </record>
+        <record id="following_q1_o3" model="op.quiz.answer.following">
+            <field name="question" >Tallest Bird</field>
+            <field name="answer" >Ostrich</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/ostrich.png"/>
+            <field name="following_line_id" ref="following_q1"/>
+        </record>
+        <record id="following_q1_o4" model="op.quiz.answer.following">
+            <field name="question" >Fastest Animal</field>
+            <field name="answer" >Cheetah</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/cheetah.png"/>
+            <field name="following_line_id" ref="following_q1"/>
+        </record>
+
+        <record id="following_q2" model="op.quiz.line">
+            <field name="name">Match the appropriate social media given below.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="mf_op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="mf_op_ans_grd_50n_n"/>
+            <field name="que_type">match_following</field>
+            <field name="quiz_id" ref="following_quiz1"/>
+        </record>
+        <record id="following_q2_o1" model="op.quiz.answer.following">
+            <field name="answer" >Facebook</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/facebook.png"/>
+            <field name="following_line_id" ref="following_q2"/>
+        </record>
+        <record id="following_q2_o2" model="op.quiz.answer.following">
+            <field name="answer" >Instagram</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/instagram.jpeg"/>
+            <field name="following_line_id" ref="following_q2"/>
+        </record>
+        <record id="following_q2_o3" model="op.quiz.answer.following">
+            <field name="answer" >Snapchat</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/snapchat.jpeg"/>
+            <field name="following_line_id" ref="following_q2"/>
+        </record>
+        <record id="following_q2_o4" model="op.quiz.answer.following">
+            <field name="answer" >Whatsapp</field>
+            <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/whatsapp.jpeg"/>
+            <field name="following_line_id" ref="following_q2"/>
+        </record>
+
+        <record id="following_q3" model="op.quiz.line">
+            <field name="name">Match up the following Week Days.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="mf_op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="mf_op_ans_grd_50n_n"/>
+            <field name="que_type">match_following</field>
+            <field name="quiz_id" ref="following_quiz1"/>
+        </record>
+        <record id="following_q3_o1" model="op.quiz.answer.following">
+            <field name="question" >2nd day of the week</field>
+            <field name="answer" >Monday</field>
+            <field name="following_line_id" ref="following_q3"/>
+        </record>
+        <record id="following_q3_o2" model="op.quiz.answer.following">
+            <field name="question" >1st day of the week</field>
+            <field name="answer" >Sunday</field>
+            <field name="following_line_id" ref="following_q3"/>
+        </record>
+        <record id="following_q3_o3" model="op.quiz.answer.following">
+            <field name="question" >6th day of the week</field>
+            <field name="answer" >Friday</field>
+            <field name="following_line_id" ref="following_q3"/>
+        </record>
+        <record id="following_q3_o4" model="op.quiz.answer.following">
+            <field name="question" >4th day of the week</field>
+            <field name="answer" >Wednesday</field>
+            <field name="following_line_id" ref="following_q3"/>
+        </record>
+
+        <record id="following_q4" model="op.quiz.line">
+            <field name="name">Identify the body part.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="mf_op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="mf_op_ans_grd_50n_n"/>
+            <field name="que_type">match_following</field>
+            <field name="quiz_id" ref="following_quiz1"/>
+        </record>
+        <record id="following_q4_o1" model="op.quiz.answer.following">
+            <field name="question" >Pumping blood</field>
+            <field name="answer" >Heart</field>
+            <field name="following_line_id" ref="following_q4"/>
+        </record>
+        <record id="following_q4_o2" model="op.quiz.answer.following">
+            <field name="question" >Looking, seeing</field>
+            <field name="answer" >Eyes</field>
+            <field name="following_line_id" ref="following_q4"/>
+        </record>
+        <record id="following_q4_o3" model="op.quiz.answer.following">
+            <field name="question" >Holding food</field>
+            <field name="answer" >Stomach</field>
+            <field name="following_line_id" ref="following_q4"/>
+        </record>
+        <record id="following_q4_o4" model="op.quiz.answer.following">
+            <field name="question" >Thinking, control of body</field>
+            <field name="answer" >Brain</field>
+            <field name="following_line_id" ref="following_q4"/>
+        </record>
+
+         <record id="following_q5" model="op.quiz.line">
+            <field name="name">Match the following colour.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="mf_op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="mf_op_ans_grd_50n_n"/>
+            <field name="que_type">match_following</field>
+            <field name="quiz_id" ref="following_quiz1"/>
+        </record>
+        <record id="following_q5_o1" model="op.quiz.answer.following">
+            <field name="answer" >Red</field>
+             <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/Red.png"/>
+            <field name="following_line_id" ref="following_q5"/>
+        </record>
+        <record id="following_q5_o2" model="op.quiz.answer.following">
+            <field name="answer" >Yellow</field>
+             <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/yellow.png"/>
+            <field name="following_line_id" ref="following_q5"/>
+        </record>
+        <record id="following_q5_o3" model="op.quiz.answer.following">
+            <field name="answer" >Green</field>
+             <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/green.png"/>
+            <field name="following_line_id" ref="following_q5"/>
+        </record>
+        <record id="following_q5_o4" model="op.quiz.answer.following">
+            <field name="answer" >Blue</field>
+             <field name="image" type="base64"
+            file="openeducat_quiz_match_following/static/src/img/blue.png"/>
+            <field name="following_line_id" ref="following_q5"/>
+        </record>
+    </data>
+</odoo>

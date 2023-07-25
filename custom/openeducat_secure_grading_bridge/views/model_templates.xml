@@ -1,0 +1,265 @@
+<odoo>
+    <data>
+        <template id="qr_hash_template_gradebook_gradebook" name="Grade Details">
+            <t t-if="type=='open'">
+                <t t-call="website.layout">
+                    <div class="oe_structure">
+                        <div class="container">
+                            <div style="text-align:center;padding-top:35px;">
+                                <strong>
+                                    <h2>Report Card</h2>
+                                </strong>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row" style="font-size:18px;">
+                                <t t-foreach="multiple" t-as="d">
+                                    <t t-if="d=='Student'">
+                                        <div class="col-6">
+                                            <strong>
+                                                Student:
+                                            </strong>
+                                            <t t-foreach="multiple[d]" t-as="i">
+                                                <t t-foreach="i[1]" t-as="j">
+                                                    <t t-esc="i[1][j]"></t>
+                                                </t>
+                                            </t>
+                                        </div>
+                                    </t>
+                                </t>
+                                <t t-foreach="single" t-as="d">
+                                    <t t-if="d=='percentage'">
+                                        <div class="col-6">
+                                            <strong>
+                                                <span style="text-transform: capitalize;">Percentage(%):</span>
+                                            </strong>
+                                            <t t-esc="single[d]"></t>
+                                        </div>
+                                    </t>
+                                </t>
+
+                            </div>
+                            <div class="row" style="font-size:18px;">
+                                <t t-foreach="multiple" t-as="d">
+                                    <t t-if="d=='Course'">
+                                        <div class="col-6">
+                                            <strong>
+                                                Course:
+                                            </strong>
+
+                                            <t t-foreach="multiple[d]" t-as="i">
+
+
+                                                <t t-foreach="i[1]" t-as="j">
+
+
+                                                    <t t-esc="i[1][j]"></t>
+
+                                                </t>
+                                            </t>
+                                        </div>
+                                    </t>
+                                </t>
+
+                                <t t-foreach="single" t-as="d">
+                                    <t t-if="d=='grade'">
+                                        <div class="col-6">
+
+                                            <strong>
+                                                <span style="text-transform: capitalize;">
+                                                    Grade:
+                                                </span>
+                                            </strong>
+                                            <t t-esc="single[d]"></t>
+                                        </div>
+
+                                    </t>
+                                </t>
+
+                            </div>
+                            <div class="row" style="font-size:18px;">
+                                <div class="col-6">
+                                    <strong>
+                                        Academic Year:
+                                    </strong>
+                                    <t t-foreach="multiple" t-as="d">
+                                        <t t-if="d=='Year'">
+                                            <t t-foreach="multiple[d]" t-as="i">
+                                                <t t-foreach="i[1]" t-as="j">
+                                                    <t t-esc="i[1][j]"></t>
+                                                </t>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+
+                            <table class="table table-bordered" style="word-wrap: break-word;">
+                                <tbody class="text-center" style="font-size:12px;">
+                                    <t t-foreach="multiple" t-as="d">
+
+                                        <t t-if="d=='Gradebook Line'">
+                                            <!--                                                    <tr>-->
+                                            <!--                                                        <th colspan="4" style="font-size:15px;"><t t-esc="type"/> </th>-->
+                                            <!--                                                    </tr> -->
+                                            <tr style="font-size:18px;background:#ccc">
+                                                <th>Term</th>
+                                                <th>Subject</th>
+                                                <th>Assignment</th>
+                                                <th>Marks</th>
+                                            </tr>
+                                            <t t-foreach="multiple[d]" t-as="i">
+
+                                                <tr style="font-size:15px;">
+                                                    <t t-foreach="i[1]" t-as="j">
+                                                        <td>
+                                                            <t t-esc="i[1][j]"></t>
+                                                        </td>
+                                                    </t>
+                                                </tr>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+            <t t-else="">
+                <div class="oe_structure">
+                    <div class="container">
+                        <div style="text-align:center;">
+                            <strong>
+                                <h2>Report Card</h2>
+                            </strong>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="row" style="font-size:18px;">
+
+                            <t t-foreach="multiple" t-as="d">
+                                <t t-if="d=='Student'">
+                                    <div class="col-6">
+                                        <strong>
+                                            Student:
+                                        </strong>
+                                        <t t-foreach="multiple[d]" t-as="i">
+                                            <t t-foreach="i[1]" t-as="j">
+                                                <t t-esc="i[1][j]"></t>
+
+                                            </t>
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                            <t t-foreach="single" t-as="d">
+
+                                <t t-if="d=='percentage'">
+                                    <div class="col-6">
+                                        <strong>
+                                            <span style="text-transform: capitalize;">Percentage(%):</span>
+                                        </strong>
+                                        <t t-esc="single[d]"></t>
+                                    </div>
+                                </t>
+                            </t>
+
+                        </div>
+                        <div class="row" style="font-size:18px;">
+                            <t t-foreach="multiple" t-as="d">
+                                <t t-if="d=='Course'">
+                                    <div class="col-6">
+                                        <strong>
+                                            Course:
+                                        </strong>
+
+                                        <t t-foreach="multiple[d]" t-as="i">
+
+
+                                            <t t-foreach="i[1]" t-as="j">
+
+
+                                                <t t-esc="i[1][j]"></t>
+
+                                            </t>
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+
+                            <t t-foreach="single" t-as="d">
+                                <t t-if="d=='grade'">
+                                    <div class="col-6">
+
+                                        <strong>
+                                            <span style="text-transform: capitalize;">
+                                                Grade:
+                                            </span>
+                                        </strong>
+                                        <t t-esc="single[d]"></t>
+                                    </div>
+
+                                </t>
+                            </t>
+
+                        </div>
+                        <div class="row" style="font-size:18px;">
+                            <div class="col-6">
+                                <strong>
+                                    Academic Year:
+                                </strong>
+                                <t t-foreach="multiple" t-as="d">
+                                    <t t-if="d=='Year'">
+                                        <t t-foreach="multiple[d]" t-as="i">
+                                            <t t-foreach="i[1]" t-as="j">
+                                                <t t-esc="i[1][j]"></t>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <table class="table table-bordered" style="word-wrap: break-word;">
+                            <tbody class="text-center" style="font-size:12px;">
+                                <t t-foreach="multiple" t-as="d">
+
+                                    <t t-if="d=='Gradebook Line'">
+                                        <!--                                                    <tr>-->
+                                        <!--                                                        <th colspan="4" style="font-size:15px;"><t t-esc="type"/> </th>-->
+                                        <!--                                                    </tr> -->
+                                        <tr style="font-size:18px;background:#ccc">
+                                            <th>Term</th>
+                                            <th>Subject</th>
+                                            <th>Assignment</th>
+                                            <th>Marks</th>
+                                        </tr>
+                                        <t t-foreach="multiple[d]" t-as="i">
+
+                                            <tr style="font-size:15px;">
+                                                <t t-foreach="i[1]" t-as="j">
+                                                    <td>
+                                                        <t t-esc="i[1][j]"></t>
+                                                    </td>
+                                                </t>
+                                            </tr>
+                                        </t>
+                                    </t>
+                                </t>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_op_omr_exam,access_op_omr_exam,model_op_omr_exam,base.group_user,1,1,1,1
+access_op_answersheet_configuration,access_op_answersheet_configuration,model_op_answersheet_configuration,base.group_user,1,1,1,1
+access_op_question_answer,access_op_question_answer,model_op_question_answer,base.group_user,1,1,1,1
+access_op_answer_sheets,access_op_answer_sheets,model_op_answer_sheets,base.group_user,1,1,1,1
+access_op_omr_template_wizard,access_op_omr_template_wizard,model_op_omr_template_wizard,base.group_user,1,1,1,1
+access_op_omr_template,access_op_omr_template,model_op_omr_template,base.group_user,1,1,1,1
+access_op_omr_image,access_op_omr_image,model_op_omr_image,base.group_user,1,1,1,1
+access_op_answer_set,access_op_answer_set,model_op_answer_set,base.group_user,1,1,1,1

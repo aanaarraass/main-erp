@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="terminology_settings_list_view" model="ir.ui.view">
+            <field name="name">terminology.configuration.list</field>
+            <field name="model">terminology.configuration</field>
+            <field name="arch" type="xml">
+                <tree string="Terminology Setting List">
+                    <field name="name"/>
+                    <field name="course_old_label"/>
+                    <field name="course_new_label"/>
+                    <field name="subject_old_label"/>
+                    <field name="subject_new_label"/>
+                    <field name="batch_old_label"/>
+                    <field name="batch_new_label"/>
+                    <field name="student_old_label"/>
+                    <field name="student_new_label"/>
+                    <field name="faculty_old_label"/>
+                    <field name="faculty_new_label"/>
+                    <field name="course_old_label_plural"/>
+                    <field name="course_new_label_plural"/>
+                    <field name="subject_old_label_plural"/>
+                    <field name="subject_new_label_plural"/>
+                    <field name="batch_old_label_plural"/>
+                    <field name="batch_new_label_plural"/>
+                    <field name="student_old_label_plural"/>
+                    <field name="student_new_label_plural"/>
+                    <field name="faculty_old_label_plural"/>
+                    <field name="faculty_new_label_plural"/>
+                </tree>
+            </field>
+        </record>
+        <record id="terminology_settings_form_view" model="ir.ui.view">
+            <field name="name">terminology.configuration.form</field>
+            <field name="model">terminology.configuration</field>
+            <field name="arch" type="xml">
+                <form string="Terminology Setting Form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h2>
+                                <span>Name:</span>
+                                <field name="name" readonly="1" placeholder="Name"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <h1>
+                                    <span>SINGULAR</span>
+                                </h1>
+                            </group>
+                            <group>
+                                <h1>
+                                    <span>PLURAL</span>
+                                </h1>
+                            </group>
+                            <group>
+                                <field name="course_old_label"/>
+                                <field name="course_new_label"/>
+                            </group>
+                            <group>
+                                <field name="course_old_label_plural"/>
+                                <field name="course_new_label_plural"/>
+                            </group>
+                            <group>
+                                <field name="subject_old_label"/>
+                                <field name="subject_new_label"/>
+                            </group>
+                            <group>
+                                <field name="subject_old_label_plural"/>
+                                <field name="subject_new_label_plural"/>
+                            </group>
+                            <group>
+                                <field name="batch_old_label"/>
+                                <field name="batch_new_label"/>
+                            </group>
+                            <group>
+                                <field name="batch_old_label_plural"/>
+                                <field name="batch_new_label_plural"/>
+                            </group>
+                            <group>
+                                <field name="student_old_label"/>
+                                <field name="student_new_label"/>
+                            </group>
+                            <group>
+                                <field name="student_old_label_plural"/>
+                                <field name="student_new_label_plural"/>
+                            </group>
+                            <group>
+                                <field name="faculty_old_label"/>
+                                <field name="faculty_new_label"/>
+                            </group>
+                            <group>
+                                <field name="faculty_old_label_plural"/>
+                                <field name="faculty_new_label_plural"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_terminology_setting" model="ir.actions.act_window">
+            <field name="name">Terminology Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">terminology.configuration</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

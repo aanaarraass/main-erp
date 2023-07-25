@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_calendar_online_meeting_form_view" model="ir.ui.view">
+        <field name="name">calendar.online.meeting.form</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button type="action" name="%(act_open_BbbMeeting_view)d"
+                            attrs="{'invisible': [('online_meeting','=', True)]}"
+                            groups="openeducat_core.group_op_back_office_admin,openeducat_core.group_op_faculty"
+                            string="Create Bigbluebutton Meeting" class="oe_highlight"/>
+                </header>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <footer>
+                    <field name="salt" invisible="1"/>
+                    <field name="meeting_name" invisible="1"/>
+                </footer>
+            </xpath>
+            <xpath expr="//field[@name='location']" position="after">
+                <field name="apw" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='meeting_url']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='mpw']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="big_blue_button_url" model="ir.config_parameter">
+            <field name="key">bigbluebutton.url</field>
+            <field name="value">https://bbb.openeducat.org/bigbluebutton/</field>
+        </record>
+
+        <record id="big_blue_button_secret_key" model="ir.config_parameter">
+            <field name="key">bigbluebutton.secret</field>
+            <field name="value">2376e2aa55abab9c8a2758ed156a3169</field>
+        </record>
+
+    </data>
+</odoo>

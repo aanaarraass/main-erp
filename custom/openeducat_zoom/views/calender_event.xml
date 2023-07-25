@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_calendar_online_meeting_form_view" model="ir.ui.view">
+        <field name="name">calendar.online.meeting.form</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button type="action" name="%(act_open_zoommeeting_view)d"
+                            attrs="{'invisible': [('online_meeting','=', True)]}"
+                            string="Create Zoom Meeting" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,31 @@
+.ui-state-default{
+    background-color: #eee;
+    border-color: transparent;
+    border-radius: .3em;
+    border-style: solid;
+    border-width: .25em;
+    box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+    cursor: move;
+    display: flex;
+    flex-direction: row;
+    padding: .5em 0;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    word-break: break-word;
+    margin-bottom:20px;
+    min-width:90%;
+}
+.sort-paragraphs{
+    margin-left: -30px;
+}
+.ui-icon{
+    align-self: center;
+
+}
+/* #sort-paragraphs { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sort-paragraphs li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sort-paragraphs li span { position: absolute; margin-left: -1.3em; } */

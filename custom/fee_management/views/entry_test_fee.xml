@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <!--                tree view-->
+        <record model="ir.ui.view" id="entry_test_fee_list">
+            <field name="name">Entry Test Fee list</field>
+            <field name="model">entry.test.fee</field>
+            <field name="arch" type="xml">
+                <tree string="Tests" sample="1">
+                    <field name="batch_number"/>
+                    <field name="partner_id"/>
+                </tree>
+            </field>
+        </record>
+        <!--      form view-->
+        <record model="ir.ui.view" id="entry_test_fee_form">
+            <field name="name">Entry Test Fee form</field>
+            <field name="model">entry.test.fee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <div class="oe_title">
+                                <h1>
+                                    <field name="partner_id" placeholder="Name"/>
+                                </h1>
+                            </div>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="batch_number"/>
+                                <field name="year_of_fee"/>
+
+                            </group>
+                            <group>
+                                <field name="semester_fee"/>
+                                <field name="admission_fee"/>
+                                <field name="late_fine"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_entry_test_fee">
+            <field name="name">Entry Test Fee window</field>
+            <field name="res_model">entry.test.fee</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+
+    </data>
+</odoo>

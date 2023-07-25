@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="zooom_api_key" model="ir.config_parameter">
+            <field name="key">zoom.apikey</field>
+            <field name="value">sGkadQCaQ-GoxXP8VOc1qQ</field>
+        </record>
+
+        <record id="zoom_secret_key" model="ir.config_parameter">
+            <field name="key">zoom.secretkey</field>
+            <field name="value">ZAUvYjPSQZhkyuae8YfyQG46PBVF8STj2XW3</field>
+        </record>
+
+        <record id="zoom_email" model="ir.config_parameter">
+            <field name="key">zoom.email</field>
+            <field name="value">info@openeducat.org</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="openeducat_core.op_student_course_1" model="op.student.course">
+            <field name="subject_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_core.op_subject_1'),
+                   ref('openeducat_core.op_subject_2'),
+                   ref('openeducat_core.op_subject_3'),
+                   ref('openeducat_core.op_subject_4')
+                   ])]"/>
+        </record>
+
+        <record id="student_subject_registartion_1" model="op.subject.registration">
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+            <field name="course_id" ref="openeducat_core.op_course_2"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_1"/>
+            <field name="min_unit_load">01</field>
+            <field name="max_unit_load">30</field>
+
+            <field name="compulsory_subject_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_core.op_subject_1'),
+                   ref('openeducat_core.op_subject_2'),
+                   ref('openeducat_core.op_subject_3'),
+                   ref('openeducat_core.op_subject_4')
+                   ])]"/>
+            <field name="elective_subject_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_core.op_subject_17'),
+                   ref('openeducat_core.op_subject_18'),
+                   ref('openeducat_core.op_subject_19'),
+                   ref('openeducat_core.op_subject_20')
+                   ])]"/>
+            <field name="state">approved</field>
+        </record>
+    </data>
+</odoo>

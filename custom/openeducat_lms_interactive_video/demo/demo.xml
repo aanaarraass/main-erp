@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="iv_demo_course_1" model="op.course">
+            <field name="name">Interactive Video Quiz</field>
+            <field name="sequence">1</field>
+            <field name="code">iv-ConFr</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="faculty_ids"
+                   eval="[(6,0,[ref('openeducat_core.op_faculty_4')])]"/>
+            <field name="visibility">public</field>
+            <field name="navigation_policy">free_learn</field>
+            <field name="state">open</field>
+            <field name="online_course" eval="True"/>
+            <field name="confirm_date" eval="(DateTime.today() - relativedelta(days=11))"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_lms_interactive_video/demo/files/geometric_Shapes.png"/>
+            <field name="full_description">
+                <![CDATA[
+<div class="description__title">
+            <div>
+                <p>An interactive video quiz is a video that includes quiz questions.</p>
+                <p>You can use audio-only, video, and presentation recordings in My Media as the basis for a video quiz
+                (not just videos). Learners watch the video and questions appear at chosen points.</p>
+                <p>The video continues after the learner has answered each question.</p>
+            </div>
+            ]]>
+            </field>
+        </record>
+
+        <record id="iv_section_demo_course_1" model="op.course.section">
+            <field name="sequence">1</field>
+            <field name="name">Introduction to Geometric Shapes</field>
+            <field name="course_id" ref="iv_demo_course_1"></field>
+        </record>
+
+        <record id="material_interactive_video_intro_course" model="op.material">
+            <field name="name">Introduction to Geometric Shapes</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="website_published" eval="True"/>
+            <field name="material_type">interactive_video</field>
+            <field name="total_time" type="float">5.24</field>
+            <field name="data_interactive_video" type="base64"
+                   file="openeducat_lms_interactive_video/static/src/video/Guess_The_Shapes.mp4"></field>
+
+        </record>
+
+        <record id="q1_1_interactive_video_line_id" model="op.material.interactive.video">
+            <field name="interactive_video_type">quiz</field>
+            <field name="question">Guess The Shapes</field>
+            <field name="time">02.22</field>
+            <field name="quiz_id" ref="openeducat_lms_interactive_video.op_qz_iv_1"></field>
+            <field name="interactive_video_line_id" ref="material_interactive_video_intro_course"></field>
+        </record>
+
+        <record id="q1_2_interactive_video_line_id" model="op.material.interactive.video">
+            <field name="interactive_video_type">description</field>
+            <field name="question">geometric Shapes</field>
+            <field name="time">00.10</field>
+            <field name="full_description">Geometric Shapes can be defined as figure or area closed by a boundary which
+                is created by combining the specific amount of curves, points, and lines. Different geometric shapes are
+                Triangle, Circle, Square, etc. ... All of us know about the common shapes in geometry like a square,
+                rectangle, circle, and triangle.
+            </field>
+            <field name="interactive_video_line_id" ref="material_interactive_video_intro_course"></field>
+        </record>
+
+        <record id="iv_material_demo_course_1" model="op.course.material">
+            <field name="sequence">1</field>
+            <field name="section_id" ref="iv_section_demo_course_1"></field>
+            <field name="material_id" ref="material_interactive_video_intro_course"></field>
+        </record>
+    </data>
+</odoo>

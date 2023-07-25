@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_users_view_form_profile_zoom" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.inherit.zoom</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position='inside'>
+                <sheet>
+                    <notebook>
+                        <page string="Zoom Meeting Setting" groups="base.group_user">
+                            <separator string="Zoom Meeting Credentials"
+                                       colspan="2"/>
+                            <group col="4" colspan="4">
+                                <field name="zoom_email" readonly="0"/>
+                                <field name="zoom_api_key" readonly="0"/>
+                                <field name="zoom_secret_key" readonly="0"/>
+                            </group>
+                            <separator string="Zoom Meeting Configuration"
+                                       colspan="2"/>
+                            <group col="2">
+                                <group>
+                                    <field name="host_video" readonly="0"/>
+                                    <field name="watermark" readonly="0"/>
+                                    <field name="participant_video" readonly="0"/>
+                                    <field name="cn_meeting" readonly="0"/>
+                                    <field name="in_meeting" readonly="0"/>
+                                    <field name="join_before_host" readonly="0"/>
+                                    <field name="mute_upon_entry" readonly="0"/>
+                                    <field name="use_pmi" readonly="0"/>
+                                    <field name="enforce_login" readonly="0"/>
+                                    <field name="waiting_room" readonly="0"/>
+                                    <field name="close_registration" readonly="0"/>
+
+                                </group>
+                                <group>
+                                    <field name="approval_type" readonly="0"/>
+                                    <field name="registration_type" readonly="0"/>
+                                    <field name="audio" readonly="0"/>
+                                    <field name="auto_recording" readonly="0"/>
+                                    <field name="enforce_login_domains" readonly="0"/>
+                                    <field name="alternative_hosts" readonly="0"/>
+
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_users_view_form_view_zoom" model="ir.ui.view">
+        <field name="name">res.users.view.form.inherit.zoom</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='access_rights']" position="after">
+
+                <page string="Zoom Meeting Setting">
+                    <separator string="Zoom Meeting Credentials"
+                               colspan="2"/>
+                    <group col="4" colspan="4">
+                        <field name="zoom_email" readonly="0"/>
+                        <field name="zoom_api_key" readonly="0"/>
+                        <field name="zoom_secret_key" readonly="0"/>
+                    </group>
+                    <separator string="Zoom Meeting Configuration"
+                               colspan="2"/>
+                    <group col="2">
+                        <group>
+                            <field name="host_video" readonly="0"/>
+                            <field name="watermark" readonly="0"/>
+                            <field name="participant_video" readonly="0"/>
+                            <field name="cn_meeting" readonly="0"/>
+                            <field name="in_meeting" readonly="0"/>
+                            <field name="join_before_host" readonly="0"/>
+                            <field name="mute_upon_entry" readonly="0"/>
+                            <field name="use_pmi" readonly="0"/>
+                            <field name="enforce_login" readonly="0"/>
+                            <field name="waiting_room" readonly="0"/>
+                            <field name="close_registration" readonly="0"/>
+                        </group>
+                        <group>
+                            <field name="approval_type" readonly="0"/>
+                            <field name="registration_type" readonly="0"/>
+                            <field name="audio" readonly="0"/>
+                            <field name="auto_recording" readonly="0"/>
+                            <field name="enforce_login_domains" readonly="0"/>
+                            <field name="alternative_hosts" readonly="0"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

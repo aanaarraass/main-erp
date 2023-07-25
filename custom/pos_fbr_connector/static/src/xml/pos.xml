@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+		<xpath expr="//div[@class='pos-receipt-contact']" position="inside">
+				<div>
+				FBR Invoice Number:
+					<t t-esc="receipt.invoice_no"/><br />
+				</div>
+		</xpath>
+	</t>
+</templates>

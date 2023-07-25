@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_inherited_op_author_tree" model="ir.ui.view">
+            <field name="name">op.author.inherited.tree</field>
+            <field name="model">op.author</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_author_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='media_ids']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_inherited_op_author_form" model="ir.ui.view">
+            <field name="name">op.author.inherited.form</field>
+            <field name="model">op.author</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_author_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='address']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

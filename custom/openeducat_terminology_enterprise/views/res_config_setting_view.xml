@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.name</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="openeducat_core.res_config_settings_view_form_core"/>
+        <field name="arch" type="xml">
+            <xpath expr="//h2[@id='openeducat_core_apps']" position="before">
+                <h2>OpenEduCat Name Change</h2>
+
+                <div class="align-items-center mt16 o_settings_container row">
+                    <div class="col-12">
+                        <span>Change Terminology:</span>
+                        <button name="%(openeducat_terminology_enterprise.action_wizard_string_label_change)d"
+                                string="Configure Terminology" type="action" class="oe_link" icon="fa-arrow-right"/>
+
+                    </div>
+                </div>
+                <div class="align-items-center mt16 o_settings_container row">
+                    <div class="col-12">
+                        <span>Selected Terminology:</span>
+                        <field name="terminology_setting_id" class="w-25 " style="height:32px;" readonly="1"/>
+                    </div>
+                </div>
+                <!--                <div class="align-items-center mt16 o_settings_container row">-->
+                <!--                    <div class="col-12">-->
+                <!--                        <field name="course_label" attrs="{'invisible': [('course_label', '=', False)]}"-->
+                <!--                               class="w-25 " style="height:32px;"/>-->
+                <!--                        &lt;!&ndash;                            <field name="batch_label" attrs="{'invisible': [('batch_label', '=', False)]}" class="w-25 " style="height:32px;"/>&ndash;&gt;-->
+
+                <!--                        &lt;!&ndash;                        <input class="o_field_char o_field_widget o_input w-25" name="course_label" placeholder="" type="text" autocomplete="none" id="o_field_input_861" data-original-title="" title="">&ndash;&gt;-->
+                <!--                    </div>-->
+                <!--                    &lt;!&ndash;                                                <field name="batch_label" attrs="{'invisible': [('batch_label', '=', False)]}" class="w-25 " style="height:32px;"/>&ndash;&gt;-->
+
+                <!--                </div>-->
+                <!--                <div class="align-items-center mt16 o_settings_container row">-->
+                <!--                    <div class="col-12">-->
+                <!--                        <field name="subject_label" class="w-25 " style="height:32px;"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="align-items-center mt16 o_settings_container row">-->
+                <!--                    <div class="col-12">-->
+                <!--                        <field name="batch_label" class="w-25 " style="height:32px;"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="align-items-center mt16 o_settings_container row">-->
+                <!--                    <div class="col-12">-->
+                <!--                        <field name="student_label" class="w-25 " style="height:32px;"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="align-items-center mt16 o_settings_container row">-->
+                <!--                    <div class="col-12">-->
+                <!--                        <field name="faculty_label" class="w-25 " style="height:32px;"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <!--                attrs="{'invisible': [('course_label', '=', False)]}"-->
+                <!--                <div class="row mt16 o_settings_container" name="users_setting_container">-->
+                <!--                    <div class="col-12 col-lg-6 o_setting_box" id="invite_users_setting">-->
+                <!--                                                <field name="name_change_course"/>-->
+
+                <!--                        <div class="o_setting_right_pane">-->
+                <!--                            <widget name='res_config_name_change'/>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="row mt16 o_settings_container">-->
+                <!--                    &lt;!&ndash;                    <div class="col-xs-4 col-md-12 o_setting_box boxed">&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                                                <div class="border boxed p-4"><span>Course</span></div>&ndash;&gt;-->
+
+
+                <!--                    &lt;!&ndash;                        <div class="border boxed p-4"><span>Course</span></div>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                        <field name="course_label"/>&ndash;&gt;-->
+                <!--                    <div class="col-12" style="display:flex;">-->
+                <!--                        <div class="col-4">-->
+                <!--                            &lt;!&ndash;                        <button class="btn btn-primary o_web_settings_change" ><strong>Change</strong></button>&ndash;&gt;-->
+                <!--                            <button name="%(openeducat_terminology_enterprise.action_wizard_string_label_change)d"-->
+                <!--                                    string="Course To" type="action" class="btn btn-primary btn-lg"/>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-4">-->
+                <!--                            <span>&ndash;&gt;</span>-->
+                <!--                            &lt;!&ndash;                        <button class="btn btn-primary o_web_settings_change" ><strong>Change</strong></button>&ndash;&gt;-->
+                <!--                        </div>-->
+                <!--                        <div class="col-4">-->
+
+                <!--                            &lt;!&ndash;                        <button name="set_open" string="Course To" type="object"/>&ndash;&gt;-->
+                <!--                            <field name="course_label" attrs="{'invisible': [('course_label', '=', False)]}"/>-->
+                <!--                        </div>-->
+
+                <!--                        &lt;!&ndash;                                            <button name="%(base.action_view_base_language_install)d" icon="fa-arrow-right" type="action" string="Add Language" class="btn-link"/>&ndash;&gt;-->
+
+                <!--                        &lt;!&ndash;                        <div class="border boxed p-4"><span>Course</span></div>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        <div class="border boxed p-4"><span>Course</span></div>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        <div class="boxed">&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        <span>Course</span>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        </div>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        <div class="mt16">&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                            <input class="o_field_char o_field_widget o_input" name="openeducat_instance_key" placeholder="" type="text" autocomplete="none" id="o_field_input_825"/>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        </div>&ndash;&gt;-->
+                <!--                    </div>-->
+                <!--                </div>-->
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+        <!--                        <div class="card" attrs="{'invisible': [('is_mail_sent', '=', False)]}"-->
+        <!--                             style="color: #fff; background-color: #469408; border-color: #d6e9c6; padding: 7px;">-->
+        <!--                            <div class="card-header">-->
+        <!--                                <field name="openeducat_instance_hash_msg" readonly="1"/>-->
+        <!--                                <field name="is_hash_verified" invisible="1"/>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->

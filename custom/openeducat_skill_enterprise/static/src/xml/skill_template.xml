@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="student_skill_data_row">
+        <tr class="o_data_row" t-att-data-id="id">
+            <td class="o_data_cell o_skill_cell w-100">
+                <t t-esc="data.student_skills_id.data.display_name"/>
+            </td>
+            <td class="o_data_cell pr-3">
+                <t t-esc="data.student_skill_level_id.data.display_name"/>
+            </td>
+        </tr>
+    </t>
+
+    <t t-name="group_add_item">
+        <t t-set="empty" t-value="Object.keys(context).length == 2"/>
+        <div t-attf-class="o_field_x2many_list_row_add #{empty? 'd-block w-100' : 'd-inline pull-right'}">
+            <div t-if="empty" class="o_resume_empty_helper o_horizontal_separator text-muted my-0">
+                <em>Resumé empty</em>
+            </div>
+            <a href="#"
+               role="button"
+               t-attf-class="btn o-kanban-button-new #{empty? 'btn-primary mt-3' : 'btn-secondary btn-sm'}"
+               t-attf-data-context="{{ context }}">
+                    <t t-if="empty">CREATE A NEW ENTRY</t>
+                <t t-else="">ADD</t>
+                </a>
+        </div>
+    </t>
+
+    <t t-name="student_default_group_row">
+        <tr class="o_group_header o_group_has_content">
+            <td class="o_group_name border-0 pr-2" colspan="99">
+                <b t-esc="display_name"/>
+            </td>
+        </tr>
+    </t>
+
+    <t t-name="hr_trash_button">
+        <td class="o_list_record_remove pr-3">
+            <button name="delete" arial-label="Delete row" class="btn btn-secondary">
+                <i class="fa fa-trash"/>
+            </button>
+        </td>
+    </t>
+</templates>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_fees_term_1" model="op.fees.terms">
+            <field name="name">Session Based Fees Term</field>
+            <field name="note">Session Based Fees Terms and Condition</field>
+            <field name="active" eval="True"/>
+            <field name="fees_terms">session_based</field>
+            <field name="line_ids" eval="[(4, ref('op_fees_term_date_line_1'))]"/>
+        </record>
+
+        <record id="op_fees_term_2" model="op.fees.terms">
+            <field name="name">Faculty Session Based Fees Term</field>
+            <field name="note">Faculty Session Based Fees Terms and Condition</field>
+            <field name="active" eval="True"/>
+            <field name="fees_terms">faculty_based</field>
+            <field name="line_ids" eval="[(4, ref('op_fees_term_date_line_2'))]"/>
+        </record>
+    </data>
+</odoo>

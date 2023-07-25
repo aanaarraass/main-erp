@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_course_material_form_interactive_video" model="ir.ui.view">
+            <field name="name">op.material.form</field>
+            <field name="model">op.material</field>
+            <field name="inherit_id" ref="openeducat_lms.view_op_course_material_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='material_type']" position="after">
+                        <field name="data_interactive_video" attrs="{'invisible': [('material_type', '!=', 'interactive_video')], 'required': [('material_type', '=', 'interactive_video')]}" />
+                    </xpath>
+                    <xpath expr="//field[@name='total_time']" position="after">
+                        <field name="interactive_video_line_ids" attrs="{'invisible': [('material_type', '!=', 'interactive_video')], 'required': [('material_type', '=', 'interactive_video')]}">
+                            <field name="quiz_id" />
+                            <form name="interactive_video">
+                                <sheet>
+                                    <group>
+                                        <field name="interactive_video_type"></field>
+                                        <field name="question"></field>
+                                        <field name="full_description" attrs="{'invisible': [('interactive_video_type', '!=', 'description')], 'required': [('interactive_video_type', '=', 'description')]}" />
+                                        <field name="quiz_id" domain="[('lms', '=', True)]" attrs="{'invisible': [('interactive_video_type', '!=', 'quiz')], 'required':[('interactive_video_type','=','quiz')]}" />
+                                        <field name="time" widget="float_time" />
+                                    </group>
+                                </sheet>
+                            </form>
+                            <tree>
+                                <field name="interactive_video_type"></field>
+                                <field name="question"></field>
+                                <field name="time" widget="float_time" />
+                            </tree>
+                        </field>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

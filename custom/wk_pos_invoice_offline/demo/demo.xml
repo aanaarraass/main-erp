@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+<odoo>
+    <data>           
+        <record model="pos.config" id="point_of_sale.pos_config_main">
+            <field name="invoice_offline" eval="True"></field>
+            <field name="download_invoice" eval="True"></field>
+        </record>
+    </data>
+</odoo>

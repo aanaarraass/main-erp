@@ -1,0 +1,764 @@
+<templates>
+
+    <t t-name="state_list_preview_layout">
+        <div id="enterID" class="dashboard_element dashboard_element_preview dashboard_element_preview_color_picker " style="position:relative;overflow:hidden !important">
+            <div style="display:flex">
+                <div class="dashboard_element_layout_3 dashboard_icon_color_picker" style="top:20%;left:-3%;font-size:24px;position:absolute;">
+                    <t t-if="selection_icon_field=='Custom'">
+                        <t t-if="img_src">
+                            <img t-att-src="img_src" class="dashboard_element_image"/>
+                        </t>
+                    </t>
+                    <t t-elif="selection_icon_field=='Default'">
+                        <span t-att-style="'color:'+ icon_color + ';opacity:0.8;'"
+                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    </t>
+                </div>
+                <div class="dashboard_element_main_body" style="width:100%">
+                    <div class="dashboard_element_info dashboard_element_info_layout_3" style="width:100%">
+                        <div class="dashboard_element_count_layout_3" t-att-title="count_tooltip">
+                            <t t-esc="count"/>
+                        </div>
+                        <div class="dashboard_element_name_layout_3" t-att-title="name">
+                            <t t-esc="name"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="state_list_preview_layout_1">
+        <div id="enterID" class="dashboard_element new_div dashboard_element_preview dashboard_element_preview_color_picker ">
+            <div style="display:flex;">
+                <div class="side_bar_div"></div>
+                <div class="dashboard_element_layout_3 dashboard_icon_color_picker">
+                    <t t-if="selection_icon_field=='Custom'">
+                        <t t-if="img_src">
+                            <img t-att-src="img_src" class="dashboard_element_image"/>
+                        </t>
+                    </t>
+                    <t t-elif="selection_icon_field=='Default'">
+                        <span t-att-style="'color:'+ icon_color + ';margin:25px 10px 0 0;padding:5px 10px;'"
+                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    </t>
+                </div>
+                <div class="dashboard_element_info dashboard_element_info_layout_3" >
+                    <div class="dashboard_element_count_layout_3" style="padding:10px;" t-att-title="count_tooltip">
+                        <t t-esc="count"/>
+                    </div>
+                    <div class="dashboard_element_name_layout_3" t-att-title="name">
+                        <t t-esc="name"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="database_list_layout1">
+        <div id="enterID" class="dashboard_element  dashboard_element_preview dashboard_element_preview_color_picker ">
+            <div class="dashboard_element_header dashboard_element_hover">
+                <button type="button" title="Edit Element" t-att-style="'color:'+ icon_color + ';'" class="dashboard_item_preview_customize">
+                    <i class="fa fa-cog"/>
+                </button>
+                <button type="button" title="Remove Element" t-att-style="'color:'+ icon_color + ';'" class="dashboard_item_preview_delete">
+                    <i class="fa fa-times"/>
+                </button>
+            </div>
+            <div class="dashboard_element_main_body">
+                <div class="dashboard_icon dashboard_icon_color_picker">
+                    <t t-if="selection_icon_field=='Custom'">
+                        <t t-if="img_src">
+                            <img t-att-src="img_src" class="dashboard_element_image"/>
+                        </t>
+                    </t>
+                    <t t-elif="selection_icon_field=='Default'">
+                        <span t-att-style="'color:'+ icon_color + ';'"
+                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    </t>
+                </div>
+                <div class="dashboard_element_info">
+                    <div class="dashboard_element_name" t-att-title="name">
+                        <t t-esc="name"/>
+                    </div>
+                    <div class="dashboard_element_count" t-att-title="count_tooltip">
+                        <t t-esc="count"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="dashboard_list_layout2">
+        <div class="dashboard_element_layout_2  dashboard_element_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_icon_layout_2  dashboard_icon_color_picker dashboard_element_preview_layout_2">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+
+            <div class="dashboard_element_main_layout_2">
+                <div class="dashboard_element_count_layout_2" t-att-title="count_tooltip">
+                    <t t-esc="count"/>
+                </div>
+                <div class="dashboard_element_name_layout_2" t-att-title="name">
+                    <t t-esc="name"/>
+                </div>
+
+                <div class="dashboard_element_header_layout_2 dashboard_element_hover">
+                    <button type="button" title="Edit Element" t-att-style="'color:'+ icon_color + ';'" class="dashboard_item_preview_customize">
+                        <i class="fa fa-cog"/>
+                    </button>
+                    <button type="button" title="Remove Element" t-att-style="'color:'+ icon_color + ';'" class="dashboard_item_preview_delete">
+                        <i class="fa fa-times"/>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </t>
+
+
+    <t t-name="db_list_preview_layout3">
+        <div id="enterID" class="dashboard_element  dashboard_element_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_element_header dashboard_element_hover">
+                <button type="button" title="Edit Element" class="dashboard_item_preview_customize">
+                    <i class="fa fa-cog"/>
+                </button>
+                <button type="button" title="Remove Element" class="dashboard_item_preview_delete">
+                    <i class="fa fa-times"/>
+                </button>
+            </div>
+            <div class="dashboard_element_main_body">
+                <div class="dashboard_element_layout_3 dashboard_icon_color_picker">
+                    <t t-if="selection_icon_field=='Custom'">
+                        <t t-if="img_src">
+                            <img t-att-src="img_src" class="dashboard_element_image"/>
+                        </t>
+                    </t>
+                    <t t-elif="selection_icon_field=='Default'">
+                        <span t-att-style="'color:'+ icon_color + ';'"
+                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    </t>
+                </div>
+                <div class="dashboard_element_info dashboard_element_info_layout_3">
+                    <div class="dashboard_element_count_layout_3" t-att-title="count_tooltip">
+                        <t t-esc="count"/>
+                    </div>
+                    <div class="dashboard_element_name_layout_3" t-att-title="name">
+                        <t t-esc="name"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="to_do_list_view_container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card shadow col-md-9 p-0 m-0">
+                    <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
+                        <h6 class="m-0 font-weight-bold h3 chart_heading" t-att-title="to_do_list_name">
+                            <t t-esc="to_do_list_name"/>
+                        </h6>
+                    </div>
+                    <div class="card-body table-responsive MaxTableContent">
+                        <t t-if="json_todo_list_data">
+                            <table id="ToDoListViewTable" class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <t t-foreach="json_todo_list_data['label']" t-as="table_header">
+                                            <th>
+                                                <t t-esc="table_header"/>
+                                            </th>
+                                        </t>
+                                        <th/>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="json_todo_list_data['data_rows']" t-as="table_row">
+                                        <tr class="tr" t-att-data-record-id="table_row['id']">
+                                            <t t-foreach="table_row['data']" t-as="row_data">
+                                                <td>
+                                                    <input type="checkbox" id="item_info" t-att-data-model="json_todo_list_data['model']"
+                                                       t-att-data-record-id="table_row['id']"/>
+                                                </td>
+                                                <td>
+                                                    <t t-esc="row_data"/>
+                                                </td>
+                                            </t>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="dashboarb_list_layout_4">
+        <div class="dashboard_element_layout_4  dashboard_element_preview ">
+            <div class="dashboard_icon_layout_4 dashboard_element_preview_color_picker dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+
+            <div class="dashboard_element_main_layout_2">
+                <div class="dashboard_element_count_layout_2" t-att-title="count_tooltip">
+                    <t t-esc="count"/>
+                </div>
+                <div class="dashboard_element_name_layout_2" t-att-title="name">
+                    <t t-esc="name"/>
+                </div>
+
+                <div class="dashboard_element_header_layout_2 dashboard_element_hover">
+                    <button type="button" title="Edit Element" class="dashboard_item_preview_customize">
+                        <i class="fa fa-cog"/>
+                    </button>
+                    <button type="button" title="Remove Element" class="dashboard_item_preview_delete">
+                        <i class="fa fa-times"/>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+    <t t-name="dashboard_list_layout5">
+        <div class="dashboard_element_layout_5 dashboard_element_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_icon_layout_5 dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+            <div class="dashboard_element_body_layout_5">
+                <div class="dashboard_element_count_layout_5" t-att-title="count_tooltip">
+                    <t t-esc="count"/>
+                </div>
+                <div class="dashboard_element_name_layout_5" t-att-title="name">
+                    <t t-esc="name"/>
+                </div>
+            </div>
+            <div class="dashboard_element_header_layout_2 dashboard_element_hover">
+                <button type="button" title="Edit Element" class="dashboard_item_preview_customize">
+                    <i class="fa fa-cog"/>
+                </button>
+                <button type="button" title="Remove Element" class="dashboard_item_preview_delete">
+                    <i class="fa fa-times"/>
+                </button>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="add_text_element_preview">
+        <div class="dashboard_add_text_element pt-5 dashboard_element_add_text_preview" t-att-style="'background-color:'+ background_color + ';'">
+            <div class="row">
+                <div class="col-md-3 px-0">
+                    <div>
+                        <span t-att-style="'color:'+ default_icon_color_rgba_format + ';'"
+                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    </div>
+                </div>
+                <div class="col-md-9 pr-0">
+                    <div>
+                        <h3 t-att-style="'color:'+ font_color + ';'">
+                            <t t-esc="name"/>
+                        </h3>
+                    </div>
+                    <t t-if="font_style_selection=='h3'">
+                        <h3 class="dashboard_add_text_main_body" t-att-style="'color:'+ font_color + ';text-align:'+add_text_align_field+';'">
+                            <t t-esc="main_content"/>
+                        </h3>
+                    </t>
+                    <t t-elif="font_style_selection=='h2'">
+                        <h2 class="dashboard_add_text_main_body" t-att-style="'color:'+ font_color + ';text-align:'+add_text_align_field+';'">
+                            <t t-esc="main_content"/>
+                        </h2>
+                    </t>
+                    <t t-elif="font_style_selection=='h1'">
+                        <h1 class="dashboard_add_text_main_body" t-att-style="'color:'+ font_color + ';text-align:'+add_text_align_field+';'">
+                            <t t-esc="main_content"/>
+                        </h1>
+                    </t>
+                    <t t-elif="font_style_selection=='p'">
+                        <p class="dashboard_add_text_main_body" t-att-style="'color:'+ font_color + ';text-align:'+add_text_align_field+';'">
+                            <t t-esc="main_content"/>
+                        </p>
+                    </t>
+                    <t t-elif="font_style_selection=='custom'">
+                        <p class="dashboard_add_text_main_body" t-att-style="'color:'+ font_color + ';font-style:'+add_text_italic+';font-weight:'+add_text_bold+';font-size:'+add_text_font_size+'px;text-align:'+add_text_align_field+';'">
+                            <t t-esc="main_content"/>
+                        </p>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="add_link_element_preview">
+        <div class="dashboard_add_link_element dashboard_element_add_link_preview" t-att-style="'background-color:'+ background_color + ';'">
+            <t t-if="add_link_title">
+                <div t-att-style="'color:'+font_color+';font-size:30px;'">
+                    <t t-esc="add_link_title_name"/>
+                </div>
+            </t>
+            <a t-att-href="add_link_content" target="_blank" t-att-style="'color:'+font_color+';font-size:20px;'">
+                <t t-esc="add_link_content" />
+            </a>
+        </div>
+    </t>
+
+    <t t-name="dashboard_list_preview_layout_6">
+        <div class="dashboard_element_layout_2  dashboard_element_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_element_main_layout_2">
+                <div class="dashboard_element_count_layout_2" t-att-title="count_tooltip">
+                    <t t-esc="count"/>
+                </div>
+                <div class="dashboard_element_name_layout_2" t-att-title="name">
+                    <t t-esc="name"/>
+                </div>
+            </div>
+
+            <div class="dashboard_icon_layout_2 dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+
+                <div class="dashboard_element_header_layout_2 dashboard_element_hover">
+                    <button type="button" title="Edit Element" class="dashboard_item_preview_customize">
+                        <i class="fa fa-cog"/>
+                    </button>
+                    <button type="button" title="Remove Element" class="dashboard_item_preview_delete">
+                        <i class="fa fa-times"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+    <t t-name="DashboardFieldBinaryImage">
+        <div class="o_field_image" aria-atomic="true">
+            <t t-if="widget.mode !== 'readonly'">
+                <div class="o_form_image_controls">
+                    <button type="button" class=" fa fa-image fa-lg image_widget_icon_container float-left"
+                            title="Select Icons">
+                    </button>
+                    <button class="fa fa-trash-o fa-lg float-right o_clear_file_button" title="Clear"
+                            aria-label="Clear"/>
+                    <span class="o_form_binary_progress">Uploading...</span>
+                </div>
+            </t>
+        </div>
+    </t>
+    
+    <t t-name="icon_container_modal_template">
+        <div class="modal fade" id="icon_container_modal_id" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Select Icon</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal_icon_input_div">
+                            <div class="search_modal_container">
+                                <input type="search" id="site-search" placeholder="Search fa-icon.."
+                                       name="fa Icon Input" aria-label="Search through site content"
+                                       class="modal_icon_input"/>
+
+                                <button class="fa_icon_search">
+                                    <i class="fa fa-search"/>
+                                </button>
+                            </div>
+                            <section
+                                    style="margin-top: 12px;font-size: 14px;text-align: justify;color: black;background:transparent;">
+                                <strong>
+                                    Note:
+                                </strong>
+                                Please use Font Awesome 4.7.0 icons only. E.g. 'fa-bell' or 'bell'.
+                                For more information visit
+                                <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome 4.7.0</a>
+                            </section>
+                        </div>
+                        <div class="icon_container_grid_view">
+                            <t t-foreach="fa_icons_set" t-as="fa_icon">
+                                <div class="icon_container_list" id="icon1">
+                                    <span t-att-id="'.'+fa_icon" t-att-class="'fa fa-' + fa_icon + ' fa-4x'"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary icon_container_open_button"
+                                data-dismiss="modal">Select
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </t>
+
+    <t t-name="dashboard_pro_color_picker_opacity_view">
+        <input class='dashboard_pro_color_picker'/>
+        Transparency :
+        <input type="range" t-att-value="color_opacity" class="color_opacity" name="db_item_opacity" min="0"
+               max="0.99" step="0.01"/>
+    </t>
+
+    <t t-name="db_list_preview">
+        <div class="field_preview">
+            <p>!!Please Choose A Layout!!</p>
+        </div>
+    </t>
+
+    <t t-name="db_item_preview_footer_note">
+        <div class="db_item_preview_footer_note">
+            <strong>Note :</strong>
+            Changing Layout midway will set the default icon colour and font colour for selected layout.
+        </div>
+    </t>
+    
+    <t t-name="list_view_container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card shadow col-md-9 p-0 m-0">
+                    <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
+                        <h6 class="m-0 font-weight-bold h3 chart_heading" t-att-title="list_view_name">
+                            <t t-esc="list_view_name"/>
+                        </h6>
+                    </div>
+                    <div class="card-body table-responsive MaxTableContent">
+                        <t t-if="json_list_data">
+                            <table id="ListViewTable" class="table table-hover"
+                                   t-att-data-model="json_list_data['model']">
+                                <thead>
+                                    <tr>
+                                        <t t-foreach="json_list_data['label']" t-as="table_header">
+                                            <th>
+                                                <t t-esc="table_header"/>
+                                            </th>
+                                        </t>
+                                        <th/>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="json_list_data['data_rows']" t-as="table_row">
+                                        <tr class="tr" t-att-data-record-id="table_row['id']">
+                                            <t t-foreach="table_row['data']" t-as="row_data">
+                                                <td>
+                                                    <t t-esc="row_data"/>
+                                                </td>
+                                            </t>
+                                            <td>
+                                                <i id="item_info" t-att-data-model="json_list_data['model']"
+                                                   t-att-data-record-id="table_row['id']" class="fa fa-pencil"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr t-if="count">
+                                        <td class="pro_font">
+                                            <span>(
+                                                <t t-esc="count"/>
+                                                records more)
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </t>
+                        <t t-else="">
+                            No Data Present
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+    <t t-name="kpi_preview_template">
+        <div class="dashboard_kpi dashboard_custom_scrollbar dashboard_kpi_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_icon_layout_5 dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+            <div class="dashboard_element_body_layout_5">
+                <div class="dashboard_kpi_name_preview">
+                    <t t-esc="name"/>
+                </div>
+                <div class="dashboard_kpi_count_preview" t-att-title="count_1_tooltip">
+                    <t t-esc="count_1"/>
+                </div>
+            </div>
+            <div class="row d-flex ml-auto mr-auto">
+                <t t-if="enable_goal">
+                    <div class="col">
+                        <div style="color: rgba(0, 0, 0, 0.61);">
+                            <span>vs Target</span>
+                        </div>
+                        <div>
+
+                            <span class="target_deviation" style="font-size : medium;">
+                                <t t-esc="target_deviation"/>
+                                <t t-if="target_arrow">
+                                    <i t-att-class="'fa fa-arrow-'+ target_arrow"/>
+                                </t>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+                <t t-if="previous_data_field">
+                    <div class="col" style="text-align:right;">
+                        <div style="color: rgba(0, 0, 0, 0.61);">
+                            <span>vs Prev</span>
+                        </div>
+                        <div>
+                            <span class="pre_deviation" style="font-size : medium;">
+                                <t t-esc="pre_deviation"/>
+                                <i t-att-class="'fa fa-arrow-'+ pre_arrow"/>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="dashboard_theme_view">
+        <div class="dashboard_theme_view_render">
+            <div class="dashboard_theme_input_container">
+                <input class="dashboard_theme_input color_white" type="checkbox" name="White Theme"
+                       value="white"/>
+                <span class="checkmark"/>
+            </div>
+            <div class="dashboard_theme_input_container">
+                <input class="dashboard_theme_input color_blue" type="checkbox" name="Blue Theme" value="blue"/>
+                <span class="checkmark"/>
+            </div>
+            <div class="dashboard_theme_input_container">
+                <input class="dashboard_theme_input color_red" type="checkbox" name="Red Theme" value="red"/>
+                <span class="checkmark"/>
+            </div>
+            <div class="dashboard_theme_input_container">
+                <input class="dashboard_theme_input color_yellow" type="checkbox" name="Yellow Theme"
+                       value="yellow"/>
+                <span class="checkmark"/>
+            </div>
+            <div class="dashboard_theme_input_container">
+                <input class="dashboard_theme_input color_green" type="checkbox" name="Green Theme"
+                       value="green"/>
+                <span class="checkmark"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="kpi_preview_template_2">
+        <div class="dashboard_kpi dashboard_custom_scrollbar  dashboard_kpi_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_icon_layout_5 dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+            <div class="dashboard_element_body_layout_5">
+                <div class="dashboard_kpi_name_preview">
+                    <t t-esc="name"/>
+                </div>
+                <div class="dashboard_kpi_count_preview" t-att-title="count_tooltip">
+                    <span>
+                        <t t-esc="count"/>
+                        <t t-if="target_view =='Progress Bar' and target_enable">/
+                            <t t-esc="target"/>
+                        </t>
+                    </span>
+                </div>
+            </div>
+            <t t-if="enable_goal and target_enable">
+                <t t-if="target_deviation and target_view =='Number'">
+                    <div class="text-center">
+                        <div>
+                            <span class="kpi_target_grey">vs Target</span>
+                        </div>
+                        <div>
+                            <span class="target_deviation">
+                                <t t-esc="target_deviation"/>
+                                <t t-if="pre_arrow">
+                                    <i t-att-class="'fa fa-arrow-'+ pre_arrow"/>
+                                </t>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+                <t t-if="target_progress_deviation and target_view =='Progress Bar'">
+                    <div class="text-center  progress">
+                        <div>
+                            <progress id="progressbar" value="0" max="100"/>
+                        </div>
+                        <div class="text-center">
+                            <t t-esc="target_progress_deviation"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </div>
+    </t>
+    
+    <t t-name="kpi_preview_template_3">
+        <div class="dashboard_kpi dashboard_custom_scrollbar  dashboard_kpi_preview dashboard_element_preview_color_picker">
+            <div class="dashboard_icon_layout_5 dashboard_icon_color_picker">
+                <t t-if="selection_icon_field=='Custom'">
+                    <t t-if="img_src">
+                        <img t-att-src="img_src" class="dashboard_element_image"/>
+                    </t>
+                </t>
+                <t t-elif="selection_icon_field=='Default'">
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                </t>
+            </div>
+            <div class="dashboard_element_body_layout_5">
+                <div class="dashboard_kpi_name_preview">
+                    <t t-esc="name"/>
+                </div>
+                <div class="dashboard_kpi_count_preview" t-att-title="count_1_tooltip">
+                    <span class="count">
+                        <t t-esc="count_1"/>
+                    </span>
+                    /
+                    <span>
+                        <t t-esc="target"/>
+                    </span>
+                </div>
+            </div>
+            <div class="text-center progress progress-bar" style="background:transparent;box-shadow:none;bottom:15%;">
+                <div >
+                    <progress id="progressbar" value="0" max="100"/>
+                </div>
+                <div class="text-center">
+                    <t t-esc="target_progress_deviation"/>%
+                </div>
+            </div>
+            <t t-if="previous_data_field and previous_period_data">
+                <div class="text-center mt-1">
+                    <div>
+                        <span>vs Prev</span>
+                    </div>
+                    <div>
+                        <t t-esc="previous_period_data"/>
+                        <span class="pre_deviation">
+                            <t t-esc="pre_deviation"/>
+                            <i t-att-class="'fa fa-arrow-'+ pre_arrow"/>
+                        </span>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="widget_toggle">
+        <div class="select_dashboard_item_toggle">
+            <div class="select_icon_div">
+                <input id="default_icon" type="radio" name="default_custom_icon_toggle"
+                       class="toggle_icon_input" value="Default"/>
+                Default Icons
+            </div>
+            <div class="select_icon_div">
+                <input id="custom_icon" type="radio" name="default_custom_icon_toggle" class="toggle_icon_input"
+                       value="Custom"/>
+                Upload Icon
+            </div>
+        </div>
+    </t>
+    <t t-name="widget_toggle_kpi_target_view">
+        <div class="select_dashboard_item_toggle">
+            <div class="select_icon_div">
+                <input id="default_icon" type="radio" name="default_custom_icon_toggle"
+                       class="toggle_icon_input" value="Number"/>
+                Number
+            </div>
+            <div class="select_icon_div">
+                <input id="custom_icon" type="radio" name="default_custom_icon_toggle" class="toggle_icon_input"
+                       value="Progress Bar"/>
+                Progress Bar
+            </div>
+        </div>
+    </t>
+    <t t-name="kpi_type_selection_widget">
+        <div class="select_dashboard_item_toggle">
+            <div class="select_icon_div">
+                <input id="sum_kpi" type="radio" name="kpi_data_comparison_none"
+                       class="toggle_icon_input" value="None"/>
+                None
+            </div>
+            <div class="select_icon_div">
+                <input id="sum_kpi" type="radio" name="kpi_data_comparison_sum"
+                       class="toggle_icon_input" value="Sum"/>
+                Sum
+            </div>
+            <div class="select_icon_div">
+                <input id="ratio_kpi" type="radio" name="kpi_data_comparison_ratio"
+                       class="toggle_icon_input" value="Ratio"/>
+                Ratio
+            </div>
+            <div class="select_icon_div">
+                <input id="percentage_kpi" type="radio" name="kpi_data_comparison_percentage"
+                       class="toggle_icon_input" value="Percentage"/>
+                Percentage
+            </div>
+        </div>
+    </t>
+
+    <t t-name="chart_form_view_container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card shadow p-0 m-0 w-100">
+                    <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
+                        <h6 class="m-0 font-weight-bold h3 chart_heading" t-att-title="chart_name">
+                            <t t-esc="chart_name"/>
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="MyChart" height="250px"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+</templates>

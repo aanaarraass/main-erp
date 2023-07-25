@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="openeducat_library_barcode_template">
+        <div class="o_openeducat_library_barcode_bg o_event_info">
+            <div class="o_library_barcode_clock text-center"/>
+            <div class="o_openeducat_library_barcode_main mt16 mb16">
+                <p>Print the <b><a href="openeducat_library_barcode/static/description/opeartion_type.pdf">operation type</a></b> to check out what this module can do! You can also book issue and return.</p>
+                <h1 class="mt0" style="font-size: 40px;">Barcode Scanning</h1>
+                <img class="mt16" src="/openeducat_library_barcode/static/src/img/barcode.png"/>
+                <br></br>
+                <br></br>
+                <select id="mySelect" style="display:none">
+					  <option value="none">None</option>
+                    <option value="issue">Issue</option>
+                    <option value="return">Return</option>
+				</select>
+                <label id="issue_text" class="text-center col-12" style="display:none;font-size: 24px;"> Please Scan your Media Unit ID for issue</label>
+                <label id="issue_text_1" class="text-center col-12" style="display:none;font-size: 24px;"> Please Scan your Library Card ID for issue</label>
+                <label id="return_text" class="text-center col-12" style="display:none;font-size: 24px;"> Please Scan your Media Unit ID for return</label>
+                <input class="mt32" id="openeducat_library_barcode"
+                       placeholder="Waiting for 'Media Unit ID' barcode scan..." size="40" style="display:none"/>
+                       <br></br>
+                <input class="mt32" id="openeducat_library_barcode1"
+                       placeholder="Waiting for 'Library Card ID' barcode scan..." size="40" style="display:none"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+                        <div class="btn-group mt16">
+                            <button style="display:block" id="btn_issue"
+                                class="btn btn-lg btn-primary mr-3 px-5 py-4" type="button">Issue</button>
+                            <br/>
+                        </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+                        <div class="btn-group mt16">
+                            <button style="display:block" id="btn_return"
+                                class="btn btn-lg btn-primary px-5 py-4" type="button">Return</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group mt16">
+				<button id="btn_main_menu" style="display:none"
+                        class="btn btn-lg btn-primary px-5 py-4" type="button">Main Menu</button>
+                </div>
+                <script>
+
+                    </script>
+                </div>
+        </div>
+    </t>
+
+    <t t-name="openeducat_library_barcode_success">
+        <div class="o_notification o_library_success" t-translation="off">
+            <a t-if="widget.sticky" class="fa fa-times o_close" href="#"/>
+            <div class="o_notification_title">
+                <span class="o_icon fa fa-3x fa-thumbs-up"/>
+                <t t-raw="widget.title"/>
+            </div>
+        </div>
+    </t>
+
+
+    <t t-name="LibraryBarcodeGreetingMessage">
+           <div class="o_openeducat_library_barcode_bg o_event_info vertical_center">
+
+            <div class="o_library_barcode_clock text-center"/>
+               <div class="o_openeducat_library_barcode_main mt16 mb16">
+                    <h1 class="mb-4">Welcome  <t t-esc="widget.student"/>!</h1>
+                   <div class="alert alert-info h2 mt0" role="status">
+                        Your Book <t t-esc="widget.unit"/>
+                       has been issued.
+                       <b></b>
+                 </div>
+             </div>
+            </div>
+     </t>
+
+    <t t-name="LibraryBarcodeReturnMessage">
+         <div class="o_openeducat_library_barcode_bg o_event_info vertical_center">
+            <div class="o_library_barcode_clock text-center"/>
+             <div class="o_openeducat_library_barcode_main mt16 mb16">
+                 <h1 class="mb-4">Welcome  <t t-esc="widget.student"/>!</h1>
+                 <div class="alert alert-info h2 mt0" role="status">
+                      Your Book <t t-esc="widget.media"/>
+                     has been returned.
+                     <b></b>
+                 </div>
+            </div>
+         </div>
+     </t>
+
+     <t t-name="LibraryBarcodePenaltyMessage">
+         <div class="o_openeducat_library_barcode_bg o_event_info vertical_center">
+            <div class="o_library_barcode_clock text-center"/>
+             <div class="o_openeducat_library_barcode_main mt16 mb16">
+                 <h1 class="mb-4">Welcome  <t t-esc="widget.student"/>!</h1>
+                 <div class="alert alert-info h2 mt0" role="status">
+                      Your Book <t t-esc="widget.media"/>
+                     has been returned with penalty of <t t-esc="widget.currency_id"/>  <t t-esc="widget.penalty"/>
+                     <b></b>
+                 </div>
+            </div>
+         </div>
+     </t>
+
+</templates>

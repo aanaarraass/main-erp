@@ -1,0 +1,1784 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_lms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 04:59+0000\n"
+"PO-Revision-Date: 2019-09-26 04:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__embed_views
+msgid "# of Embedded Views"
+msgstr "# المشاهدات جزءا لا يتجزأ من"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__material_views
+msgid "# of Website Views"
+msgstr "# من موقع المشاهدات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course Completed"
+msgstr ": تم الانتهاء من دورة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course Duration"
+msgstr ": مدة الدورة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course In Progress"
+msgstr ": دورة في التقدم"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Course To Begin"
+msgstr ": دورة لبيغن"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Days Since Launch"
+msgstr ": يوم منذ إطلاق"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Enrolled Users"
+msgstr ": مستخدمين المسجلين"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid ": Training Material"
+msgstr "مادة: تدريبية"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Content</b><br/>"
+msgstr "<ب> محتوى المقرر </ B> <BR/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Count</b><br/>"
+msgstr "<ب> دورة الكونت </ B> <BR/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.openeducat_lms_dashboard_kanban_view
+msgid "<b>Course Enrollment</b><br/>"
+msgstr "<ب> دورة التسجيل </ B> <BR/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material_forbidden
+msgid "<i class=\"fa fa-exclamation-triangle\"/>\n"
+"                        This"
+msgstr "<ط الطبقة = \"كرة القدم اتحاد كرة القدم-تعجب مثلث\" />\n"
+"                        هذه"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "<i class=\"fa fa-eye\"/>\n"
+"                                                                                    <span class=\"hidden-xs hidden-sm\">\n"
+"                                                                                        Preview\n"
+"                                                                                    </span>"
+msgstr "<ط الطبقة = \"كرة القدم اتحاد كرة القدم العين\" />\n"
+"                                                                                    <تمتد الطبقة = \"مخفية XS خفية خ\">\n"
+"                                                                                        معاينة\n"
+"                                                                                    </ SPAN>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<i class=\"fa fa-spinner fa-spin\"/> Loading ..."
+msgstr "<ط الطبقة = \"كرة القدم اتحاد كرة القدم الدوار كرة القدم تدور\" /> تحميل ..."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "<i class=\"fa fa-users\" aria-hidden=\"true\"/>\n"
+"                                            Students:"
+msgstr "<ط الطبقة = \"كرة القدم اتحاد كرة القدم المستخدمين\" خفية النغم = \"صحيح\" />\n"
+"                                            الطلاب:"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "<i class=\"fa fa-users\"/>\n"
+"                                                            Students:"
+msgstr "<ط الطبقة = \"كرة القدم اتحاد كرة القدم المستخدمين\" />\n"
+"                                                            الطلاب:"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<span id=\"first\" class=\"ml-2 mr-2\" title=\"First slide\" role=\"img\" aria-label=\"First slide\">\n"
+"                                        <i class=\"fa fa-step-backward fa-2x\"/>\n"
+"                                    </span>"
+msgstr "في <span id = \"أولا\" الطبقة = \"ML-2 MR-2\" عنوان = \"الشريحة الأولى\" دور = \"IMG\" الأغنية التسمية = \"الشريحة الأولى\">\n"
+"                                        <ط الطبقة = \"كرة القدم اتحاد كرة القدم، خطوة إلى الوراء كرة القدم-2X\" />\n"
+"                                    </ SPAN>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "<span id=\"fullscreen\" title=\"View fullscreen\" role=\"img\" aria-label=\"Fullscreen\">\n"
+"                                        <i class=\"fa fa-arrows-alt fa-2x\"/>\n"
+"                                    </span>"
+msgstr "في <span id = \"ملء الشاشة\" عنوان = \"عرض ملء الشاشة\" دور = \"IMG\" الأغنية التسمية = \"ملء الشاشة\">\n"
+"                                        <ط الطبقة = \"كرة القدم اتحاد كرة القدم-السهام بديل FA-2X\" />\n"
+"                                    </ SPAN>"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_words
+msgid "A few words about Python"
+msgstr "بضع كلمات حول بيثون"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_pdf
+msgid "All time Sell"
+msgstr "كل الوقت بيع"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course_material__total_time
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__total_time
+msgid "Approx time to complete this material"
+msgstr "تقريبا الوقت لاستكمال هذه المواد"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Audio"
+msgstr "سمعي"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__auto_publish
+msgid "Auto Publish"
+msgstr "نشر السيارات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__auto_publish_type
+msgid "Auto Publish Type"
+msgstr "نشر السيارات نوع"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Become an Instructor"
+msgstr "تصبح مدرس"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Become an Instructor!"
+msgstr "تصبح مدرب!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_faculty__bio_data
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.lms_faculty_form_view
+msgid "Bio Data"
+msgstr "السيرة الذاتية البيانات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Birth Date"
+msgstr "تاريخ الولادة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__category_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Categories"
+msgstr "التصنيفات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__category_id
+msgid "Category"
+msgstr "الفئة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Category:\n"
+"                                    <br/>"
+msgstr "الفئة:\n"
+"                                    <BR/>"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Close"
+msgstr "إقفال"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: selection:op.course,state:0
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__code
+msgid "Code"
+msgstr "الكود"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Comments"
+msgstr "التعليقات"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__completed
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__completed_percentage
+msgid "Completed Percentage"
+msgstr "النسبة المئوية الانتهاء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__completed_date
+msgid "Completed Time"
+msgstr "وقت الانتهاء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__completion_date
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Completion Date"
+msgstr "موعد الإكمال"
+
+#. module: openeducat_lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_lms_configuration
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: selection:op.course,state:0
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__confirm_date
+msgid "Confirm Date"
+msgstr "تأكيد التسجيل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__datas
+msgid "Content"
+msgstr "المحتوى"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Continue Learning"
+msgstr "مواصلة التعلم"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_3
+msgid "Contrary to what some say, people are not “born\" salespeople. Selling is a skill that can be learned, developed, and mastered. This course will set you down the path to increased sales, higher levels of confidence, and more motivation as you approach prospective clients of your products or services in the marketplace."
+msgstr "على عكس ما يقول البعض، الناس ليسوا \"ولدت\" مندوبي المبيعات. البيع هو مهارة يمكن تعلمها وتطويرها، ويتقن. هذا بالطبع سوف تحدد لك في الطريق لزيادة المبيعات، وارتفاع مستويات الثقة، ومزيد من التحفيز كما كنت الاقتراب من العملاء المحتملين من المنتجات أو الخدمات في السوق."
+
+#. module: openeducat_lms
+#: code:addons/openeducat_lms/models/course_material.py:108
+#, python-format
+msgid "Could not fetch url. Document Id or                 access right not available:\n"
+"% s"
+msgstr "لا يمكن جلب رابط. رقم الوثيقة أو الوصول إلى الحق في عدم المتاحة:\n"
+"٪ الصورة"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:10
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_lms_course_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__course_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_search
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_search
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_report_course_pivot
+#, python-format
+msgid "Course"
+msgstr "دورة"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_course_category_view
+#: model:ir.model,name:openeducat_lms.model_op_course_category
+#: model:ir.ui.menu,name:openeducat_lms.menu_course_category
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_search
+msgid "Course Category"
+msgstr "فئة المساق"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+msgid "Course Category Layout Configuration"
+msgstr "تكوين الفئة تخطيط مسار"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_course_category_layout
+msgid "Course Category Record Configuration"
+msgstr "بالطبع الفئة تكوين سجل"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:56
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_completed
+#, python-format
+msgid "Course Completed"
+msgstr "الانتهاء من دورة"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.op_lms_dashboard_kanban
+#: model:ir.ui.menu,name:openeducat_lms.menu_openeducat_lms_dashboard
+msgid "Course Dashboard"
+msgstr "لوحة بالطبع"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:38
+#, python-format
+msgid "Course Duration"
+msgstr "مدة الدورة"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:63
+#, python-format
+msgid "Course Enrollments"
+msgstr "معدلات الالتحاق بالطبع"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:52
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_in_progress
+#, python-format
+msgid "Course In Progress"
+msgstr "بالطبع في التقدم"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Course Invitation"
+msgstr "دعوة بالطبع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__language
+msgid "Course Language"
+msgstr ": اللغة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+msgid "Course Layout Configuration"
+msgstr "تكوين تخطيط مسار"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Material"
+msgstr "مواد الدورة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Materials"
+msgstr "المواد دورة تدريبية"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Course Name"
+msgstr "اسم الدورة التدريبية"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_lms_onboarding_course_layout
+msgid "Course Record Configuration"
+msgstr "تكوين سجل الحال"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:48
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_to_begin
+#, python-format
+msgid "Course To Begin"
+msgstr "بالطبع لبدء"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_tree
+msgid "Course category"
+msgstr "صنف مقرر دراسي"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__suggested_course_ids
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_course
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.portal_my_course_menu
+#: model:website.menu,name:openeducat_lms.website_menu_lms_courses
+msgid "Courses"
+msgstr "الدورات التدريبية"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Courses /"
+msgstr "الدورات /"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__user_id
+msgid "Create By"
+msgstr "تم اعداده بواسطة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__create_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__create_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Curriculum"
+msgstr "منهاج دراسي"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Dartfish"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.actions.client,name:openeducat_lms.action_lms_dashboard
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_main_dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Days"
+msgstr "أيام"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__days_since_launch
+msgid "Days Since Launch"
+msgstr "أيام منذ إطلاق"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:34
+#, python-format
+msgid "Days Since launch"
+msgstr "أيام منذ إطلاقها"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__desc
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Description"
+msgstr "الوصف"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+msgid "Description..."
+msgstr "وصف..."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_faculty__designation
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Designation"
+msgstr "تعيين"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__dislikes
+msgid "Dislikes"
+msgstr "يكره"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__display_name
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__display_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__display_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__display_time
+msgid "Display Time"
+msgstr "وقت العرض"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course__sequence
+msgid "Display order"
+msgstr "ترتيب العرض"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Document"
+msgstr "مستند"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__document_id
+msgid "Document ID"
+msgstr "معرف المستند"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__url
+msgid "Document URL"
+msgstr "URL ثيقة"
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Document/PDF"
+msgstr "وثيقة / PDF"
+
+#. module: openeducat_lms
+#: selection:op.course.enrollment,state:0
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: openeducat_lms
+#: selection:op.course,state:0
+#: selection:op.course.enrollment,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_category_form_onboard
+msgid "E.g fa fa-home"
+msgstr "منها مثلا اتحاد كرة القدم اتحاد كرة القدم المنزل"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Email :"
+msgstr "البريد الإلكتروني :"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__template_id
+msgid "Emails"
+msgstr "رسائل البريد الإلكتروني"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__embed_code
+msgid "Embed Code"
+msgstr "كود الإلصاق"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Enroll Course"
+msgstr "تسجيل دورة"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:28
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__enrolled_users
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__enrollment_user_ids
+#, python-format
+msgid "Enrolled Users"
+msgstr "المستخدمين المسجلين"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__enrollment_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__enrollment_id
+msgid "Enrollment"
+msgstr "تسجيل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__enrollment_date
+msgid "Enrollment Date"
+msgstr "التسجيل التسجيل"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+msgid "Enrollment Layout Configuration"
+msgstr "تكوين تخطيط التسجيل"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_enrollment_layout
+msgid "Enrollment Record Configuration"
+msgstr "تكوين سجل القيد"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_enrollment_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_enrollment_ids
+#: model:ir.ui.menu,name:openeducat_lms.menu_course_enrollment
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Enrollments"
+msgstr "عدد المسجلين"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Everyone"
+msgstr "كل واحد"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Faculties"
+msgstr "ملكات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__promoted_material_id
+msgid "Featured Material"
+msgstr "مادة مميزة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Female"
+msgstr "إناثا"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "FileUpload"
+msgstr "تحميل الملف"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "Finish"
+msgstr "إنهاء"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: selection:op.course,type:0
+msgid "Free"
+msgstr "حر"
+
+#. module: openeducat_lms
+#: selection:op.course,navigation_policy:0
+msgid "Free Learning Path"
+msgstr "مسار التعلم مجانا"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_pdf
+msgid "French CookBooks"
+msgstr "كتب الطبخ الفرنسية"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_video
+msgid "French Tutorials"
+msgstr "دروس الفرنسية"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__full_description
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__full_description
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Full Description"
+msgstr "وصف كامل"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_functions
+msgid "Functions"
+msgstr "المهام"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Gender"
+msgstr "جنس"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "General"
+msgstr "عام"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Hours"
+msgstr "ساعات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image
+#: selection:op.material,material_type:0
+msgid "Image"
+msgstr "الصورة"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "Importantly, our courses teach students the real-life skills needed to get those in-demand jobs or further your programming skills."
+msgstr "الأهم من ذلك، لدينا دورات تعليم الطلاب مهارات الحياة الحقيقية اللازمة للحصول على تلك الوظائف في الطلب أو تعزيز مهارات البرمجة الخاصة بك."
+
+#. module: openeducat_lms
+#: selection:op.course.enrollment,state:0
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "In summary, this course has been designed for all skill levels and even if you have no programming or statistical background you will be successful in this course!"
+msgstr "وباختصار، فقد تم تصميم هذه الدورة لجميع مستويات المهارة، وحتى إذا كان لديك أي برمجة أو خلفية إحصائية سوف يكون ناجحا في هذه الدورة!"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_install
+msgid "Installing Python the default way"
+msgstr "تثبيت بيثون الطريقة الافتراضية"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_anaconda_bundle
+msgid "Installing Python through the Anaconda bundle"
+msgstr "تثبيت بيثون من خلال حزمة اناكوندا"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__faculty_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Instructor"
+msgstr "مدرب"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_intro_course
+msgid "Introduction to the course"
+msgstr "مقدمة إلى الدورة"
+
+#. module: openeducat_lms
+#: model:mail.template,subject:openeducat_lms.email_template_course_invitation_mail
+msgid "Invitation for Course: ${object.name}"
+msgstr "دعوة للدورة: $ {object.name}"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__invited_users_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Invited Users"
+msgstr "المستخدمون الذين تمت دعوتهم"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__is_published
+msgid "Is published"
+msgstr "منشور"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_iteration
+msgid "Iterate Through Python List Using Loops"
+msgstr "تكرار خلال قائمة بيثون عن طريق الحلقات"
+
+#. module: openeducat_lms
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Just done"
+msgstr "مجرد القيام به"
+
+#. module: openeducat_lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_dashboard
+msgid "KPI Dashboard"
+msgstr "KPI لوحة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__kanban_lms_course_dashboard_graph
+msgid "Kanban Lms Course Dashboard Graph"
+msgstr "كانبان LMS دورة لوحة الرسم البياني"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_quiz__lms
+#: model:ir.ui.menu,name:openeducat_lms.menu_lms_main
+msgid "LMS"
+msgstr "تعلم"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course
+msgid "LMS Course"
+msgstr "دورة LMS"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_enrollment
+msgid "LMS Course Enrollment"
+msgstr "LMS دورة انتساب"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_enrollment_material
+msgid "LMS Course Enrollment Material"
+msgstr "LMS دورة انتساب المواد"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_course_invitation
+msgid "LMS Course Invitation"
+msgstr "دعوة دورة LMS"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_material
+msgid "LMS Course Materials"
+msgstr "LMS مادة الدورة"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_course_section
+msgid "LMS Course Section"
+msgstr "القسم دورة LMS"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_material
+msgid "LMS Material"
+msgstr "LMS المواد"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_1
+msgid "Language"
+msgstr "لغة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Language:\n"
+"                                        <br/>"
+msgstr "لغة:\n"
+"                                        <BR/>"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__last_access_date
+msgid "Last Access Time"
+msgstr "آخر وقت وصول"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section____last_update
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Last Name"
+msgstr "الكنية"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__write_uid
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__write_date
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Last slide"
+msgstr "الشريحة الأخيرة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Learning Now"
+msgstr "تعلم الآن"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_1
+msgid "Learning Python will give you more <strong>opportunities for jobs and career advancement</strong> because Python is one of the most requested skills in 2019!"
+msgstr "وسوف تعلم بايثون يعطيك المزيد من <قوية> فرص العمل والتقدم الوظيفي </ قوي> لبايثون هي واحدة من أكثر المهارات المطلوبة في 2019!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__likes
+msgid "Likes"
+msgstr "الإعجابات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Looks great!"
+msgstr "يبدو رائعا!"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Male"
+msgstr "الذكر"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_3
+msgid "Management"
+msgstr "إدارة"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_material_view
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__material_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__material_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__material_id
+#: model:ir.ui.menu,name:openeducat_lms.menu_op_course_material
+msgid "Material"
+msgstr "مواد"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_op_course_enrollment_material_view
+msgid "Material Enrollments"
+msgstr "المواد معدلات الالتحاق"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "Material Layout Configuration"
+msgstr "تكوين تخطيط المواد"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Material Name"
+msgstr "اسم المادي"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_onboarding_material_layout
+msgid "Material Record Configuration"
+msgstr "تكوين سجل المواد"
+
+#. module: openeducat_lms
+#: model:ir.actions.server,name:openeducat_lms.ir_cron_material_reminder_action_ir_actions_server
+#: model:ir.cron,cron_name:openeducat_lms.ir_cron_material_reminder_action
+#: model:ir.cron,name:openeducat_lms.ir_cron_material_reminder_action
+#: model:ir.model,name:openeducat_lms.model_material_reminder
+msgid "Material Reminder"
+msgstr "تذكير المادي"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__material_type
+msgid "Material Type"
+msgstr "نوع المادة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__enrollment_material_line
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_enrollment_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Materials"
+msgstr "المواد"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image_medium
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image_medium
+msgid "Medium"
+msgstr "متوسط"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Minutes"
+msgstr "الدقائق"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Months"
+msgstr "الشهور"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "More\n"
+"                                            <span class=\"caret\"/>"
+msgstr "أكثر من\n"
+"                                            <تمتد الطبقة = \"الإقحام\" />"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__name
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+msgid "Name"
+msgstr "الاسم"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__navigation_policy
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__navigation_policy
+msgid "Navigation Policy"
+msgstr "سياسة التنقل"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "Next"
+msgstr "التالي"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Next slide"
+msgstr "الشريحة التالية"
+
+#. module: openeducat_lms
+#: selection:res.company,lms_onboard_panel:0
+#: selection:res.company,onboarding_course_category_layout_state:0
+#: selection:res.company,onboarding_enrollment_layout_state:0
+#: selection:res.company,onboarding_lms_course_layout_state:0
+#: selection:res.company,onboarding_material_layout_state:0
+msgid "Not done"
+msgstr "لم تفعل"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_not_found
+msgid "Nothing created or published yet."
+msgstr "لا شيء إنشاؤها أو تنشر بعد."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد الأخطاء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__online_course
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_search
+msgid "Online Course"
+msgstr "دورة على شبكة الإنترنت"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Online Course ?"
+msgstr "دورة على شبكة الإنترنت ؟"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Only Invited User"
+msgstr "العضو دعوة فقط"
+
+#. module: openeducat_lms
+#: selection:op.course,visibility:0
+msgid "Only logged in User"
+msgstr "بتسجيل الدخول فقط في العضو"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/js/openeducat_lms_dashboard.js:118
+#, python-format
+msgid "OpenEduCat"
+msgstr ""
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_faculty
+msgid "OpenEduCat Faculty"
+msgstr "OpenEduCat كلية"
+
+#. module: openeducat_lms
+#: selection:op.course,type:0
+msgid "Paid"
+msgstr "دفع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_category__parent_id
+msgid "Parent Category"
+msgstr "الفئة الأم"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Photos"
+msgstr "الصور"
+
+#. module: openeducat_lms
+#: code:addons/openeducat_lms/models/course_material.py:104
+#, python-format
+msgid "Please enter valid URL: % s"
+msgstr "الرجاء إدخال URL صحيح:٪ ق"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__preview
+msgid "Preview"
+msgstr "معاينة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Previous slide"
+msgstr "الشريحة السابقة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Price:\n"
+"                                        <br/>"
+msgstr "السعر:\n"
+"                                        <BR/>"
+
+#. module: openeducat_lms
+#: model:op.course.category,name:openeducat_lms.category_2
+msgid "Programming"
+msgstr "برمجة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__date_published
+msgid "Publish Date"
+msgstr "تاريخ النشر"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_syntax_pdf
+msgid "Python Basic Syntax"
+msgstr "بيثون بناء الجملة الأساسية"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_cnd_image
+msgid "Python Conditional Statements"
+msgstr "بيثون القوائم المشروطة"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__quiz_id
+#: selection:op.material,material_type:0
+msgid "Quiz"
+msgstr "لغز"
+
+#. module: openeducat_lms
+#: model:ir.model,name:openeducat_lms.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "نتائج الاختبار"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Re-open"
+msgstr "إعادة فتح"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_files_rw
+msgid "Read/Write Operations"
+msgstr "قراءة العمليات / الكتابة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Review :"
+msgstr "إعادة النظر :"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__is_seo_optimized
+msgid "SEO optimized"
+msgstr "تم تحسين محركات البحث"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+msgid "Search"
+msgstr "بحث"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment_material__section_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__section_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__name
+msgid "Section"
+msgstr "الجزء"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Section Material"
+msgstr "قسم المواد"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__section_material_ids
+msgid "Section Materials"
+msgstr "مواد القسم"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__course_section_ids
+msgid "Sections"
+msgstr "الأقسام"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_course_category_layout_step
+msgid "See how to create a Course Category Layout."
+msgstr "معرفة كيفية إنشاء تخطيط فئة المساق."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_lms_course_layout_step
+msgid "See how to create a Course Layout."
+msgstr "معرفة كيفية إنشاء تخطيط دورة."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_enrollment_layout_step
+msgid "See how to create a Enrollment Layout."
+msgstr "معرفة كيفية إنشاء تخطيط التسجيل."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.onboarding_material_layout_step
+msgid "See how to create a Material Layout."
+msgstr "معرفة كيفية إنشاء تخطيط مواد."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Select Users"
+msgstr "حدد المستخدمين"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_image
+msgid "Sell on spot"
+msgstr "بيع على الفور"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_sell_video
+msgid "Sells"
+msgstr "يبيع"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "Send"
+msgstr "إرسال"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__date
+msgid "Sent Date"
+msgstr "تاريخ أرسلت"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__sequence
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__sequence
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_sequence_list
+msgid "Sequence with List"
+msgstr "تسلسل مع قائمة"
+
+#. module: openeducat_lms
+#: selection:op.course,navigation_policy:0
+msgid "Sequential Learning Path"
+msgstr "مسار التعلم متسلسل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__short_description
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__short_description
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_course_material_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Short Description"
+msgstr "وصف قصير"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Show more"
+msgstr "أظهر المزيد"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "Slide image"
+msgstr "صورة الشريحة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Start Again"
+msgstr "إبدأ من جديد"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Start Course"
+msgstr "دورة البداية"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__state
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_course_category_layout_state
+msgid "State of the onboarding course category layout step"
+msgstr "حالة الدورة التأهيلية خطوة فئة تخطيط"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_lms_course_layout_state
+msgid "State of the onboarding course layout step"
+msgstr "حالة بالطبع خطوة تخطيط التأهيل ل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_enrollment_layout_state
+msgid "State of the onboarding enrollment layout step"
+msgstr "حالة الخطوة تخطيط التحاق التأهيل ل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__onboarding_material_layout_state
+msgid "State of the onboarding material layout step"
+msgstr "حالة الخطوة تخطيط المواد التأهيل ل"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_res_company__lms_onboard_panel
+msgid "State of the onboarding step"
+msgstr "حالة الخطوة التأهيل ل"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_string_number
+msgid "String and Number"
+msgstr "سلسلة وعدد"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "Suggested Course"
+msgstr "دورة اقترح"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Suggested Courses"
+msgstr "الدورات المقترحة"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Teacher"
+msgstr "مدرس"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.courses
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my-courses
+msgid "Teacher:"
+msgstr "مدرس:"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__website_url
+msgid "The full URL to access the document through the website."
+msgstr "الرابط الكامل للوصول إلى المستند من خلال الموقع."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.material_detail_view
+msgid "The maximum number of quiz attempts has been reached !"
+msgstr "تم الوصول إلى الحد الأقصى لعدد محاولات مسابقة!"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "There are currently no Courses for your account."
+msgstr "لا يوجد حاليا أي دورات لحسابك."
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_2
+msgid "This French Course is designed to help everyone from the ab initio stage - those who have never learned French before - to those wanting to brush up in preparation for an upcoming holiday or business trip. The course is pdf as well as audio video  based using a bilingual speaker (myself) and it will be supported with on-screen transcripts for easier learning and better retention. There are also printable vocabulary guides to take with you wherever you go!"
+msgstr "تم تصميم هذه الدورة الفرنسي لمساعدة الجميع من مرحلة أساسه - أولئك الذين لم يسبق لهم تعلم الفرنسية من قبل - إلى أولئك الذين يريدون صقل استعدادا لقضاء عطلة أو رحلة عمل القادمة. وبطبيعة الحال هو قوات الدفاع الشعبي، وكذلك الصوت والفيديو القائمة على استخدام اللغة ثنائي اللغة (نفسي) وسيتم دعم ذلك مع النصوص على الشاشة لتسهيل التعلم والاحتفاظ أفضل. وهناك أيضا أدلة المفردات للطباعة أن تأخذ معك أينما ذهبت!"
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_3
+msgid "This course lays out the foundation of what it takes in order to succeed in selling ANY product or service in ANY industry. Grant demystifies what selling really is and how in fact, every person on the planet is a salesperson, regardless of their job title or profession."
+msgstr "هذا بالطبع يضع من الأساس ما في وسعها من أجل تحقيق النجاح في بيع أي منتج أو خدمة في أي صناعة. منحة يبسط ما هي بيع حقا، وكيف في الواقع، كل شخص على هذا الكوكب هو مندوب مبيعات، بغض النظر عن المسمى الوظيفي أو المهنة."
+
+#. module: openeducat_lms
+#: model_terms:op.course,full_description:openeducat_lms.demo_course_2
+msgid "This course takes you from learning how to pronounce French words correctly to understanding others and expressing your needs in a number of situations."
+msgstr "هذا بالطبع يأخذك من تعلم كيفية نطق الكلمات الفرنسية بشكل صحيح لفهم الآخرين والتعبير عن احتياجاتك في عدد من الحالات."
+
+#. module: openeducat_lms
+#: model_terms:ir.actions.act_window,help:openeducat_lms.op_lms_dashboard_kanban
+msgid "This is the LMS Course Dashboard."
+msgstr "هذا هو LMS دورة لوحة."
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__image_thumb
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__image_thumb
+msgid "Thumbnail"
+msgstr "صورة مصغرة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__name
+msgid "Title"
+msgstr "العنوان"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__total_views
+msgid "Total # Views"
+msgstr "عدد المشاهدات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.course_detail
+msgid "Total Duration:\n"
+"                                        <br/>"
+msgstr "المدة الإجمالية:\n"
+"                                        <BR/>"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:5
+#, python-format
+msgid "Total Enrollments"
+msgstr "مجموع الملتحقين"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_material__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_section__total_time
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__total_time
+msgid "Total Time (HH:MM)"
+msgstr "إجمالي الوقت (HH: MM)"
+
+#. module: openeducat_lms
+#. openerp-web
+#: code:addons/openeducat_lms/static/src/xml/openeducat_lms_dashboard.xml:42
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__training_material
+#, python-format
+msgid "Training Material"
+msgstr "تدريب المواد"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_material_reminder__user_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course_enrollment__user_id
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__user_id
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_op_lms_course_form_onboard
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_course_invitation__user_ids
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__user_ids
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_variable
+msgid "Variables"
+msgstr "المتغيرات"
+
+#. module: openeducat_lms
+#: selection:op.material,material_type:0
+msgid "Video"
+msgstr "فيديو"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__video_type
+msgid "Video Type"
+msgstr "نوع الفيديو"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Vimeo"
+msgstr "فيميو"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__visibility
+msgid "Visibility Policy"
+msgstr "سياسة الرؤية"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_published
+msgid "Visible on current website"
+msgstr "ظاهرة في الموقع الحالي"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_date
+#: selection:op.material,auto_publish_type:0
+msgid "Wait Until"
+msgstr "انتظر حتى"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_duration
+#: selection:op.material,auto_publish_type:0
+msgid "Wait Until Duration"
+msgstr "انتظر حتى المدة"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__wait_until_duration_period
+msgid "Wait at least period"
+msgstr "انتظر فترة على الأقل"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_french_image
+msgid "Way to french"
+msgstr "الطريق إلى الفرنسية"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_course__website_message_ids
+msgid "Website Comments"
+msgstr "موقع تعليقات"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_url
+msgid "Website URL"
+msgstr "رابط الموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_course__website_message_ids
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_description
+msgid "Website meta description"
+msgstr "الوصف الدلالي في الموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "الكلمات الدلالية بالموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_title
+msgid "Website meta title"
+msgstr "العنوان الدلالي بالموقع"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,field_description:openeducat_lms.field_op_material__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "صورة الرسم البياني المفتوح للموقع"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Weeks"
+msgstr "أسابيع"
+
+#. module: openeducat_lms
+#: model:op.material,name:openeducat_lms.material_python_files
+msgid "Working with files"
+msgstr "العمل مع الملفات"
+
+#. module: openeducat_lms
+#: selection:op.material,wait_until_duration_period:0
+msgid "Years"
+msgstr "سنوات"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.my_profile
+msgid "Your Courses"
+msgstr "الدورات الخاصة بك"
+
+#. module: openeducat_lms
+#: selection:op.material,video_type:0
+msgid "Youtube"
+msgstr "موقع YouTube"
+
+#. module: openeducat_lms
+#: model:ir.model.fields,help:openeducat_lms.field_op_material__url
+msgid "Youtube or Google Document URL"
+msgstr "يوتيوب أو URL الوثيقة جوجل"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.action_migration_report
+msgid "course"
+msgstr "دورة"
+
+#. module: openeducat_lms
+#: model:ir.actions.act_window,name:openeducat_lms.act_open_course_invitation_wizard_view
+msgid "course Invitation"
+msgstr "دعوة بالطبع"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material_forbidden
+msgid "is private."
+msgstr "هو خاص."
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "op.material/#{material.id}/image_medium"
+msgstr "op.material / # {material.id} / image_medium"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.view_course_invitation_wizard_form
+msgid "or"
+msgstr "أو"
+
+#. module: openeducat_lms
+#: model_terms:ir.ui.view,arch_db:openeducat_lms.embed_material
+msgid "suggest_slide.name"
+msgstr ""
+

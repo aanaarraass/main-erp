@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.module.category" id="jts_sale_line_category_id">
+            <field name="name">Sale Lines Prices</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="group_jts_sale_line_id" model="res.groups">
+            <field name="name">Sale Unit price</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            <field name="category_id" ref="jts_sale.jts_sale_line_category_id"/>
+        </record>
+
+       <!-- <record id="group_ProjectName_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ProjectName.ProjectName_category"/>
+            <field name="implied_ids" eval="[(4, ref('group_ProjectName_employee'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>-->
+
+
+    </data>
+</odoo>

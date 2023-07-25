@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_alumni_job_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 04:58+0000\n"
+"PO-Revision-Date: 2019-09-26 04:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>\n"
+"                                                Estimated New\n"
+"                                                <br/>\n"
+"                                                Employees:\n"
+"                                            </strong>"
+msgstr "على <strong>\n"
+"                                                ويقدر جديد\n"
+"                                                <BR/>\n"
+"                                                الموظفين:\n"
+"                                            </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Address:</strong>"
+msgstr "على <strong> العنوان: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Description</strong>\n"
+"                                        <span style=\"float: right;text-align: right;\">:</span>"
+msgstr "<القوي> الوصف </ قوي>\n"
+"                                        <تمتد نمط = \"تعويم: الحق؛ مواءمة النصوص: الحق؛\">: </ SPAN>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>End Date:</strong>"
+msgstr "<القوي> تاريخ الانتهاء: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Job Position:</strong>"
+msgstr "<القوي> موضع الوظيفة: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Salary From:</strong>"
+msgstr "<القوي> راتب من: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Salary Upto:</strong>"
+msgstr "على <strong> راتب لغاية: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "<strong>Start Date:</strong>"
+msgstr "<strong> بدء التسجيل: </ قوي>"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Address"
+msgstr "عنوان"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Address Detail"
+msgstr "عنوان التفاصيل"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Alumni"
+msgstr "الخريجين"
+
+#. module: openeducat_alumni_job_enterprise
+#: model:ir.ui.menu,name:openeducat_alumni_job_enterprise.menu_op_alumni_job
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_my_home_alumani_job_post
+msgid "Alumni Job"
+msgstr "الخريجون وظيفة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Alumni Job List"
+msgstr "الخريجين قائمة الوظيفة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Alumni Job Post"
+msgstr "الخريجين المشاركة الوظيفة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Created By"
+msgstr "انشأ من قبل"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+msgid "Cretaed by"
+msgstr "Cretaed بواسطة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Cretaed by:"
+msgstr "Cretaed حسب:"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+msgid "Employment Type"
+msgstr "نوع الوظيفة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Employment Type:"
+msgstr "نوع الوظيفة:"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Job Position"
+msgstr "وظيفه"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Job description"
+msgstr "المسمى الوظيفي"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Monthly"
+msgstr "شهريا"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Name"
+msgstr "الاسم"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Offer"
+msgstr "عرض"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Other Information"
+msgstr "معلومات أخرى"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Payable At"
+msgstr "تدفع في"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Payable At:"
+msgstr "تدفع في:"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Placement"
+msgstr "تحديد مستوى"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Required Employe Number"
+msgstr "مطلوب عدد صاحب العمل"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "SUBMIT\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "تقديم\n"
+"                                    <تمتد الطبقة = \"كرة القدم اتحاد كرة القدم لمدة السهم الأيمن\" />"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Salary From"
+msgstr "الراتب من"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Salary Upto"
+msgstr "الراتب لغاية"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Select your Country"
+msgstr "اختر بلدك"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Select your State"
+msgstr "اختر دولتكم"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Select your option"
+msgstr "اختر الخيار الخاص بك"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Skills"
+msgstr "مهارات"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Skills:"
+msgstr "مهارات:"
+
+#. module: openeducat_alumni_job_enterprise
+#: model:op.job.post,job_post:openeducat_alumni_job_enterprise.alumni_job_post_2
+msgid "Software tester"
+msgstr "مختبر برمجيات"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job_list
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Strat Date"
+msgstr "STRAT التسجيل"
+
+#. module: openeducat_alumni_job_enterprise
+#: model:op.job.post,job_post:openeducat_alumni_job_enterprise.alumni_job_post_1
+msgid "Web developer"
+msgstr "مطور ويب"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Weekly"
+msgstr "أسبوعي"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "Yearly"
+msgstr "سنوي"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "city"
+msgstr "مدينة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model:ir.actions.act_window,name:openeducat_alumni_job_enterprise.alumni_job_view_act
+msgid "job post"
+msgstr "آخر وظيفة"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "street"
+msgstr "شارع"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "street2"
+msgstr ""
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_alumni_job_list_data
+msgid "there is no data available for your account!!!"
+msgstr "لا توجد بيانات متاحة لحسابك!"
+
+#. module: openeducat_alumni_job_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_job_enterprise.portal_student_alumni_job
+msgid "zip"
+msgstr "الرمز البريدي"
+

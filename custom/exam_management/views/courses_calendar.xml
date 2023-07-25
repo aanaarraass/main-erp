@@ -1,0 +1,65 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="courses_calendar_list">
+            <field name="name">Courses Calendar</field>
+            <field name="model">courses.calendar</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="course_name"/>
+                    <field name="date_start"/>
+                    <field name="date_stop"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="courses_calendar_form">
+            <field name="name">Courses Calendar</field>
+            <field name="model">courses.calendar</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="course_name"/>
+                        <field name="date_start"/>
+                        <field name="date_time_start"/>
+                        <field name="date_stop"/>
+                        <field name="duration"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <!-- explicit calendar view definition -->
+        <record model="ir.ui.view" id="courses_calendar_calendar">
+            <field name="name">Courses Calendar</field>
+            <field name="model">courses.calendar</field>
+            <field name="arch" type="xml">
+                <calendar string="Time Sheet" date_start="date_start" date_stop="date_stop" mode="year"  date_delay="duration"
+                          event_open_popup="true" color="name" quick_add="False" event_limit="5">
+                     <field name="name" filters="1"/>
+                    <field name="course_name" filters="1"/>
+                </calendar>
+            </field>
+
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="courses_calendar_action_window">
+            <field name="name">Courses Calendar</field>
+            <field name="res_model">courses.calendar</field>
+            <field name="view_mode">tree,form,calendar</field>
+        </record>
+
+
+        <!-- Top menu item -->
+
+      <!--  <menuitem
+                name="Courses Calendar"
+                id="menu_courses_calendar"
+                sequence="2"
+                action="courses_calendar_action_window"
+                parent="academic_calendar_menu_root"/>-->
+
+    </data>
+</odoo>

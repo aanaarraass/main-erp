@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_academic_calendar,academic_calendar,model_academic_calendar,base.group_user,1,1,1,1
+access_exam_exam,exam_exam,model_exam_exam,base.group_user,1,1,1,1
+access_exam_subject_line,exam_subject_line,model_exam_subject_line,base.group_user,1,1,1,1
+access_exam_room,exam_room,model_exam_room,base.group_user,1,1,1,1
+access_timetable_request,timetable_request,model_timetable_request,base.group_user,1,1,1,1
+access_exam_sittingplan,exam_sittingplan,model_exam_sittingplan,base.group_user,1,1,1,1
+access_exam_sittingplan_line,exam_sittingplan_line,model_exam_sittingplan_line,base.group_user,1,1,1,1
+access_exam_result,exam_result,model_exam_result,base.group_user,1,1,1,1
+access_exam_timeslots,exam_timeslots,model_exam_timeslots,base.group_user,1,1,1,1

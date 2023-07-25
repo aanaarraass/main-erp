@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="admission_registration" name="Course Registration Form">
+            <t t-call="website.layout">
+
+                <!--                <style type="text/css">-->
+                <!--/* Chrome, Safari, Edge, Opera */-->
+                <!--input::-webkit-outer-spin-button,-->
+                <!--input::-webkit-inner-spin-button {-->
+                <!--  -webkit-appearance: none;-->
+                <!--  margin: 0;-->
+                <!--}-->
+
+                <!--/* Firefox */-->
+                <!--input[type=number] {-->
+                <!--  -moz-appearance: textfield;-->
+                <!--}-->
+                <!--</style>-->
+
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                    <br></br>
+                                    <form role="form" data-toggle="validator" method="post" enctype="multipart/form-data" action="/application/submission"
+                                          id="request_demo">
+                                        <div class="row js_online_get_data">
+                                            <div class="form-group col-md-12" style="padding-right: 45px;">
+                                                <input type="hidden" name="csrf_token"
+                                                       t-att-value="request.csrf_token()"/>
+
+
+
+
+
+                                                <label for="company_id">Campus</label>
+                                                <select name="company_id" class="form-control"  required="1">
+                                                    <option value="">select...</option>
+
+                                                    <t t-foreach="companies or []" t-as="company">
+                                                        <option t-att-value="company.id">
+                                                            <t t-esc="company.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+
+                                                <label for="department_id">Department</label>
+                                                <select name="department_id" id="department_id" class="form-control" >
+                                                    <option value="">select...</option>
+
+                                                    <t t-foreach="departments or []" t-as="department">
+
+                                                        <option t-att-value="department.id" t-att-data-company_id="department.company_id.id">
+                                                            <t t-esc="department.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                                <!-- <label for="program_id">Program</label>
+
+                                                <select name="program_id" class="form-control" >
+
+                                                    <option value="">select...</option>
+                                                            <t t-foreach="programs or []" t-as="program">
+                                                                <option t-att-value="program.id" t-att-data-department_id="program.department_id.id">
+                                                                    <t t-esc="program.name"/>
+                                                                </option>
+                                                            </t>
+                                                        </select> -->
+
+
+                                                <label for="register_id">Programs</label>
+
+                                                <select name="register_id" id="register_id" class="form-control"
+                                                        required="1">
+                                                    <option value="">select...</option>
+                                                    <t t-foreach="register_ids or []" t-as="register">
+                                                        <!--                                                        <t t-if="register.id != register_id">-->
+
+                                                        <!-- <option t-att-value="register.id" t-att-data-program_id="register.program_id.id" t-att-data-year_equivalent="register.year_equivalent" t-att-data-year_of_degree="register.year_of_degree"> -->
+                                                        <option t-att-value="register.id" t-att-data-department_id="register.department_id.id" >
+                                                            <t t-esc="register.name"/>
+                                                        </option>
+                                                        <!--                                                        </t>-->
+                                                        <!--                                                        <t t-if="register.id == register_id">-->
+                                                        <!--                                                            <option t-att-value="register.id" selected="1">-->
+                                                        <!--                                                                <t t-esc="register.name"/>-->
+                                                        <!--                                                            </option>-->
+                                                        <!--                                                        </t>-->
+                                                    </t>
+                                                </select>
+
+
+                                                <label for="quota_id">Quota</label>
+                                                <select name="quota_id" class="form-control" >
+
+                                                    <t t-foreach="quotas or []" t-as="quota">
+                                                        <option t-att-value="quota.id">
+                                                            <t t-esc="quota.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+
+                                            </div>
+                                            <div t-if="student_id" class="form-group col-md-12">
+                                                <label class="radio-inline pr-3">
+                                                    <input type="radio" name="application" id="self_application"
+                                                           t-att-value="partner_id.id" required="1"
+                                                           style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                        Self
+                                                    </input>
+                                                </label>
+                                                <label class="radio-inline pr-3">
+                                                    <input type="radio" name="application" id="self_application"
+                                                           value="0"
+                                                           required="1"
+                                                           style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                        Other
+                                                    </input>
+                                                </label>
+                                            </div>
+                                            <div class="students" id="student_registration">
+                                                <div class="row col-md-12 "
+                                                     style="padding-right: 15px;">
+                                                    <div class="form-group col-md-12" id="name">
+
+                                                        <label for="name">Full</label>
+                                                        <input type="text" class="form-control"
+                                                               id="student_registration"
+                                                               name="name" t-att-value="op_admission_ids.name or []" placeholder="Full Name"
+                                                               required="1"/>
+                                                    </div>
+                                                    <!--  <div class="form-group col-md-3" id="name">
+
+                                                          <label for="name">First Name</label>
+                                                          <input type="text" class="form-control"
+                                                                 id="student_registration"
+                                                                 name="first_name" t-att-value="op_admission_ids.first_name or []" placeholder="First Name"
+                                                                 required="1"/>
+                                                      </div>
+                                                      <div class="form-group col-md-3" id="name">
+                                                          <label for="name">Middle Name</label>
+                                                          <input type="text" class="form-control"
+                                                                 id="student_registration"
+                                                                 name="middle_name" t-att-value="op_admission_ids.middle_name or []" placeholder="Middle Name"/>
+                                                      </div>
+                                                      <div class="form-group col-md-3" id="student_registration">
+                                                          <label for="name">Last Name</label>
+                                                          <input type="text" class="form-control" name='last_name'
+                                                                 id="student_registration"
+                                                                 placeholder="Last Name"  t-att-value="op_admission_ids.last_name or []" required="1"/>
+                                                      </div>-->
+
+                                                    <!--                                                    <div t-attf-class="form-group col-md-3">-->
+                                                    <!--                                                        <img src="" id="slide-image" width="100px" class="img-thumbnail"/>-->
+                                                    <!--                                                        <input type="file" name="image" id="profile_img" accept="image/*"/>-->
+                                                    <!--                                                    </div>-->
+
+
+                                                    <div class="form-group col-md-3">
+                                                        <label class="control-label label-optional" for="image">
+                                                            <b>
+                                                                Student Image
+                                                            </b>
+                                                        </label>
+                                                        <input type="file" name="image" id="profile_img" required="1" accept="image/*" />
+                                                        <field name="image" widget='image' class="oe_avatar"/>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="gender">Gender</label>
+                                                        <br/>
+                                                        <t t-if="op_admission_ids.gender == 'm'">
+                                                            <label class="radio-inline pr-3">
+
+                                                                <input type="radio" name="gender" id="male" value="m"
+                                                                       required="1" checked="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Male
+                                                                </input>
+                                                            </label>
+                                                            <label class="radio-inline pr-3">
+                                                                <input type="radio" name="gender" id="female" value="f"
+                                                                       required="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Female
+                                                                </input>
+                                                            </label>
+                                                        </t>
+                                                        <t t-elif="op_admission_ids.gender == 'f'">
+                                                            <label class="radio-inline pr-3">
+
+                                                                <input type="radio" name="gender" id="male" value="m"
+                                                                       required="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Male
+                                                                </input>
+                                                            </label>
+                                                            <label class="radio-inline pr-3">
+                                                                <input type="radio" name="gender" id="female" value="f"
+                                                                       required="1" checked="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Female
+                                                                </input>
+                                                            </label>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <label class="radio-inline pr-3">
+
+                                                                <input type="radio" name="gender" id="male" value="m"
+                                                                       required="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Male
+                                                                </input>
+                                                            </label>
+                                                            <label class="radio-inline pr-3">
+                                                                <input type="radio" name="gender" id="female" value="f"
+                                                                       required="1"
+                                                                       style="margin-top:2px; margin-right:5px; vertical-align:text-top;">
+                                                                    Female
+                                                                </input>
+                                                            </label>
+                                                        </t>
+
+                                                    </div>
+                                                    <div class="form-group admission_form_date col-md-6"
+                                                         data-target-input="nearest"
+                                                         id="datetimepicker_birth">
+                                                        <label for="name">Date of Birth</label>
+
+
+                                                        <input type="text"
+                                                               data-target="#datetimepicker_birth"
+                                                               t-attf-class="form-control datetimepicker-input a fa-calendar:before"
+                                                               id="birthdate"
+                                                               name="birth_date" placeholder="MM/DD/YYYY"
+                                                               required="1" t-att-value="op_admission_ids.birth_date"/>
+                                                        <div class="input-group-append position-absolute d-none"
+                                                             data-target="#datetimepicker_birth"
+                                                             data-toggle="datetimepicker">
+                                                            <div class="input-group-text text-primary border-0 bg-transparent p-0">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" class="form-control" id="email" name="email"
+                                                               placeholder="Email" t-att-value="partner_id.email" readonly="1"/>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="phone">Mobile Number</label>
+                                                        <input type="text" class="form-control" id="phone"
+                                                               name="phone" maxlength="11"
+                                                               placeholder="XXXXXXXXXXX" t-att-value="op_admission_ids.phone or []" required="1"/>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="street">Street</label>
+                                                        <input type="text" name="street" class="form-control"
+                                                               placeholder="Street" t-att-value="op_admission_ids.street or []" required="1"/>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label" for="city">City</label>
+                                                        <input type="text" name="city" t-att-value="op_admission_ids.city or []" class="form-control"
+                                                               placeholder="City"
+                                                               required="1"/>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="zip">
+                                                            <b>
+                                                                Zip / Postal Code
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="zip" class="form-control"
+                                                               placeholder="Zip / Postal Code" t-att-value="op_admission_ids.zip or []" required="1"/>
+                                                    </div>
+                                                    <div class="from-group col-md-6">
+                                                        <label class="control-label" for="country_id">Country</label>
+                                                        <select name="country_id" class="form-control" required="1">
+                                                            <option value="">Country...</option>
+                                                            <t t-foreach="countries or []" t-as="country">
+                                                                <option t-att-value="country.id">
+                                                                    <t t-esc="country.name"/>
+                                                                </option>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="studetn_cnic_number">
+                                                            <b>
+                                                                Student CNIC Number
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$" name="studetn_cnic_number" class="form-control"
+                                                               placeholder="00000-0000000-0" t-att-value="op_admission_ids.studetn_cnic_number or []" required="1"  title="Must be 15 Digit" maxlength="15"/>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="cnic_image">
+                                                            <b>
+                                                                Student CNIC Image
+                                                            </b>
+                                                        </label>
+                                                        <input type='file' id="cnic_image" accept="image/*" required="1" name="cnic_image" />
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="bank_name">
+                                                            <b>
+                                                                Bank Name
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="bank_name" class="form-control"
+                                                               placeholder="Bank Name" required="1"/>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="bank_branch_code">
+                                                            <b>
+                                                                Branch Code
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="bank_branch_code" class="form-control"
+                                                               placeholder="Branch Code" required="1"/>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="bank_deposit_amount">
+                                                            <b>
+                                                                Amount Paid
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="bank_deposit_amount" class="form-control"
+                                                               placeholder="Amount Paid" required="1"/>
+                                                    </div>
+
+
+
+                                                    <div class="form-group col-md-6">
+                                                        <label class="control-label label-optional" for="bank_vouher_image">
+                                                            <b>
+                                                                Bank Slip
+                                                            </b>
+                                                        </label>
+                                                        <br/>
+
+                                                        <input type='file' id="bank_vouher_image" required="1" accept="image/*" name="bank_vouher_image" />
+                                                    </div>
+
+                                                    <h1 class="mt-3 container">Academic Records</h1>
+                                                    <div class="table-responsive-md" >
+
+                                                        <table class="table" id="pedutable">
+                                                            <thead>
+                                                                <tr>
+
+                                                                    <th scope="col">Academic Qualification</th>
+                                                                    <!--            <th scope="col">Degree Level</th>-->
+                                                                    <th scope="col">Degree Name</th>
+                                                                    <th scope="col">Total Marks</th>
+                                                                    <th scope="col">Marks Obtained</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">CGPA / Marks%</th>
+                                                                    <th scope="col">Year of Passing</th>
+                                                                    <th scope="col">Board / University</th>
+                                                                </tr>
+
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td >Secondary School/Equivalence Certificate</td>
+                                                                    <t t-if="first">
+
+                                                                        <!--                  <td><input class="w-100" type="text" id="degree_level_one" t-att-value="first.level or []" name="degree_level_one" required="1"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_one" t-att-value="first.degree_name or []" name="degree_name_one" required="1"/></td>
+
+                                                                        <td><input class="w-100"  type="number" id="total_marks_one" t-att-value="first.total_marks" name="total_marks_one" required="1"/></td>
+
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_one" t-att-value="first.marks_obtained" name="marks_obtained_one" required="1"/></td>
+
+
+
+
+
+
+
+                                                                        <td>
+                                                                            <select  id="marks_type_one" name="marks_type_one">
+                                                                                <option value="select_one" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa" >CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_one"  name="cgpa_or_marks_one" t-att-value="first.cgpa_or_marks or []" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_one" name="passing_year_one" t-att-value="first.passing_year or []" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_one" name="name_of_institution_one" t-att-value="first.name_of_institution or []" required="1"/></td>
+                                                                        <td class='groupId' style="display:none;">10</td>
+                                                                    </t>
+                                                                    <t t-if="first == false">
+
+
+                                                                        <!--               <td>-->
+                                                                        <!--                  <select  id="degree_level_one" name="degree_level_one">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_one" name="degree_name_one" required="1"/></td>
+
+                                                                        <td><input class="w-100"  type="number" id="total_marks_one" name="total_marks_one" required="1"/></td>
+
+
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_one" name="marks_obtained_one" required="1"/></td>
+
+
+
+
+
+
+
+                                                                        <td>
+                                                                            <select  id="marks_type_one" name="marks_type_one">
+                                                                                <option value="select_one" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa" >CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_one"  name="cgpa_or_marks_one" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_one" name="passing_year_one" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_one" name="name_of_institution_one" required="1"/></td>
+                                                                        <td class='groupId' style="display:none;">10</td>
+
+
+
+                                                                        <!--              t-att-value="students.last_name or []" t-att-selected="first.select_one == 'cgpa' or []"-->
+                                                                    </t>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Intermediate/Equivalence Certificate </td>
+
+                                                                    <t t-if="second">
+
+                                                                        <!--            <td><input class="w-100" type="text" id="degree_level_two" t-att-value="second.level or []" name="degree_level_two"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_two" t-att-value="second.degree_name or []" name="degree_name_two"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_two" name="total_marks_two" t-att-value="second.total_marks or []"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_two" name="marks_obtained_two" t-att-value="second.marks_obtained or []"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_two" name="marks_type_two">
+                                                                                <option value="select_two" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number"  id="cgpa_or_marks_two" name="cgpa_or_marks_two" t-att-value="second.cgpa_or_marks or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_two" name="passing_year_two" t-att-value="second.passing_year or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_two" name="name_of_institution_two" t-att-value="second.name_of_institution or []"/></td>
+                                                                        <td class='groupId' style="display:none;">12</td>
+
+                                                                    </t>
+
+                                                                    <t t-if="second == false">
+
+                                                                        <!--            <td>-->
+                                                                        <!--                  <select  id="degree_level_two" name="degree_level_two">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_two"  name="degree_name_two" required="1"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_two" name="total_marks_two" required="1"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_two" name="marks_obtained_two" required="1"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_two" name="marks_type_two">
+                                                                                <option value="select_two" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number"  id="cgpa_or_marks_two" name="cgpa_or_marks_two" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_two" name="passing_year_two" required="1"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_two" name="name_of_institution_two" required="1"/></td>
+                                                                        <td class='groupId' style="display:none;">12</td>
+
+                                                                    </t>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>BSc (14 Years)</td>
+
+                                                                    <t t-if="sixth">
+
+                                                                        <!--            <td><input class="w-100" type="text" id="degree_level_sixth" name="degree_level_sixth" t-att-value="third.level or []"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_sixth" name="degree_name_sixth" t-att-value="sixth.name_of_institution or []" style="width: 120% !important;"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_sixth" name="total_marks_sixth" t-att-value="sixth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_sixth" name="marks_obtained_sixth" t-att-value="sixth.name_of_institution or []" style="width: 80% !important;"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_sixth" name="marks_type_sixth">
+                                                                                <option value="select_sixth" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_sixth" name="cgpa_or_marks_sixth" t-att-value="sixth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_sixth" name="passing_year_sixth" t-att-value="sixth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_sixth" name="name_of_institution_sixth" t-att-value="sixth.name_of_institution or []" style="width: 200% !important;"/></td>
+                                                                        <td class='groupId' style="display:none;">16</td>
+
+                                                                    </t>
+
+                                                                    <t t-if="sixth == false">
+
+                                                                        <!--            <td>-->
+                                                                        <!--                  <select  id="degree_level_sixth" name="degree_level_sixth">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_sixth" name="degree_name_sixth" style="width: 120% !important;"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_sixth" name="total_marks_sixth"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_sixth" name="marks_obtained_sixth" style="width: 80% !important;"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_sixth" name="marks_type_sixth">
+                                                                                <option value="select_sixth" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_sixth" name="cgpa_or_marks_sixth"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_sixth" name="passing_year_sixth"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_sixth" name="name_of_institution_sixth" style="width: 200% !important;"/></td>
+                                                                        <td class='groupId' style="display:none;">16</td>
+
+                                                                    </t>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>BS (16 Years)</td>
+
+                                                                    <t t-if="third">
+
+                                                                        <!--            <td><input class="w-100" type="text" id="degree_level_three" name="degree_level_three" t-att-value="third.level or []"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_three" name="degree_name_three" t-att-value="third.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_three" name="total_marks_three" t-att-value="third.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_three" name="marks_obtained_three" t-att-value="third.name_of_institution or []"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_three" name="marks_type_three">
+                                                                                <option value="select_three" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_three" name="cgpa_or_marks_three" t-att-value="third.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_three" name="passing_year_three" t-att-value="third.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_three" name="name_of_institution_three" t-att-value="third.name_of_institution or []"/></td>
+                                                                        <td class='groupId' style="display:none;">16</td>
+
+                                                                    </t>
+
+                                                                    <t t-if="third == false">
+
+                                                                        <!--            <td>-->
+                                                                        <!--                  <select  id="degree_level_three" name="degree_level_three">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_three" name="degree_name_three"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_three" name="total_marks_three"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_three" name="marks_obtained_three"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_three" name="marks_type_three">
+                                                                                <option value="select_three" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_three" name="cgpa_or_marks_three"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_three" name="passing_year_three"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_three" name="name_of_institution_three"/></td>
+                                                                        <td class='groupId' style="display:none;">16</td>
+
+                                                                    </t>
+
+                                                                </tr>
+
+
+                                                                <tr>
+                                                                    <td>Master (16 years)</td>
+
+
+                                                                    <t t-if="fourth">
+                                                                        <!--            <td><input class="w-100" type="text" id="degree_level_four" name="degree_level_four" t-att-value="fourth.level or []"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_four" name="degree_name_four" t-att-value="fourth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_four" name="total_marks_four" t-att-value="fourth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_four" name="marks_obtained_four" t-att-value="fourth.name_of_institution or []"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_four" name="marks_type_four">
+                                                                                <option value="select_four" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_four" name="cgpa_or_marks_four" t-att-value="fourth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_four" name="passing_year_four" t-att-value="fourth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_four" name="name_of_institution_four" t-att-value="fourth.name_of_institution or []"/></td>
+                                                                        <td class='groupId' style="display:none;">18</td>
+
+
+                                                                    </t>
+
+                                                                    <t t-if="third == false">
+                                                                        <!--    <td>-->
+                                                                        <!--                  <select  id="degree_level_four" name="degree_level_four">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_four" name="degree_name_four"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_four" name="total_marks_four"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_four" name="marks_obtained_four"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_four" name="marks_type_four">
+                                                                                <option value="select_four" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_four" name="cgpa_or_marks_four"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_four" name="passing_year_four"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_four" name="name_of_institution_four"/></td>
+                                                                        <td class='groupId' style="display:none;">18</td>
+
+
+                                                                    </t>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>MS/MPhil (18 years)</td>
+
+                                                                    <t t-if="fivth">
+
+                                                                        <!--            <td><input class="w-100" type="text" id="degree_level_five" name="degree_level_five" t-att-value="fivth.level or []"/></td>-->
+                                                                        <td><input class="w-100" type="text" id="degree_name_five" name="degree_name_five" t-att-value="fivth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_five" name="total_marks_five" t-att-value="fivth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_five" name="marks_obtained_five" t-att-value="fivth.name_of_institution or []"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_five" name="marks_type_five">
+                                                                                <option value="select_five" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_five" name="cgpa_or_marks_five" t-att-value="fivth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_five" name="passing_year_five" t-att-value="fivth.name_of_institution or []"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_five" name="name_of_institution_five" t-att-value="fivth.name_of_institution or []"/></td>
+                                                                        <td class='groupId' style="display:none;">20</td>
+
+
+                                                                    </t>
+
+                                                                    <t t-if="fivth == false">
+                                                                        <!--                  <td>-->
+                                                                        <!--                  <select  id="degree_level_five" name="degree_level_five">-->
+                                                                        <!--                        <option value="" >Select</option>-->
+                                                                        <!--                      <option value="matric">Matric</option>-->
+                                                                        <!--                    <option value="fsc" >F.Sc.</option>-->
+                                                                        <!--                    <option value="bs" >Graduation</option>-->
+                                                                        <!--                    <option value="ms" >Post Graduation</option>-->
+                                                                        <!--                  </select>-->
+                                                                        <!--              </td>-->
+
+                                                                        <td><input class="w-100" type="text" id="degree_name_five" name="degree_name_five"/></td>
+                                                                        <td><input class="w-100"  type="number" id="total_marks_five" name="total_marks_five"/></td>
+                                                                        <td><input class="w-100" type="number" id="marks_obtained_five" name="marks_obtained_five"/></td>
+
+                                                                        <td>
+                                                                            <select id="marks_type_five" name="marks_type_five">
+                                                                                <option value="select_five" >Select</option>
+                                                                                <option value="marks" selected="selected">Marks</option>
+                                                                                <option value="cgpa">CGPA</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input class="w-100" type="number" id="cgpa_or_marks_five" name="cgpa_or_marks_five"/></td>
+                                                                        <td><input class="w-100" type="text" id="passing_year_five" name="passing_year_five"/></td>
+                                                                        <td><input class="w-100" type="text" id="name_of_institution_five" name="name_of_institution_five"/></td>
+                                                                        <td class='groupId' style="display:none;">20</td>
+
+
+                                                                    </t>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <!--                                            <div class="form-group row form-field o_website_form_required_custom">-->
+                                            <!--                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Attachments</label>-->
+                                            <!--                                                    <div class="col-lg-7 col-md-8">-->
+                                            <!--                                                        <input type="file" name="attachment" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true" />-->
+                                            <!--                                                    </div>-->
+                                            <!--                                            </div>-->
+
+
+
+                                            <div class="from-group col-md-12" style="padding-right: 45px;">
+                                                <button type="submit" class="btn btn-primary mb16 mt16 col-md-12">Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+
+        <template id="application_confirmed" name="Proceed for Payment">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="mt32 mb64">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-center">
+                                    <br></br>
+                                    <h2>Your application has been received.
+                                    </h2>
+                                    <h4>
+                                        Your application Number is:
+                                      <t t-esc="admission_id.application_number"/>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+
+        <record id="menu_admissionregistration" model="website.menu">
+            <field name="name">Registration</field>
+            <field name="url">/admissionregistration</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+    </data>
+</odoo>

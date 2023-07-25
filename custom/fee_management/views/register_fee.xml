@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+        <!--                tree view-->
+        <record model="ir.ui.view" id="register_fee_list">
+            <field name="name">Register Fee list</field>
+            <field name="model">register.fee</field>
+            <field name="arch" type="xml">
+                <tree string="Tests" sample="1">
+                    <field name="batch_id"/>
+                    <field name="name"/>
+                    <field name="semester_fee"/>
+                    <field name="no_of_semester"/>
+                    <field name="admission_fee"/>
+                    <field name="late_fine"/>
+                </tree>
+            </field>
+        </record>
+        <!--      form view-->
+        <record model="ir.ui.view" id="register_fee_form">
+            <field name="name">Register Fee form</field>
+            <field name="model">register.fee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <!--<field name="partner_id"/>-->
+                                <field name="batch_id"/>
+                                <field name="roll_number"/>
+                                <field name="course_id"/>
+                                <field name="academic_year"/>
+                                <field name="fee_year"/>
+                            </group>
+                            <group>
+                                <field name="semester_fee"/>
+                                <field name="no_of_semester"/>
+                                <field name="late_fine"/>
+                                <field name="admission_fee"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Other Fees">
+                                <field name="fee_register_line">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="amount"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group name="note_group" class="mt-2 mr-2">
+                            <group>
+                                <field name="notes" class="oe_inline"
+                                       placeholder="Define your terms and conditions ..."/>
+                            </group>
+                            <group class="oe_subtotal_footer mr-3" name="fee_total">
+                                <field name="total_amount"/>
+                                <field name="total_other_fee"/>
+                                <field name="total_fee" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_register_fee">
+            <field name="name">Register Fee window</field>
+            <field name="res_model">register.fee</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+
+    </data>
+</odoo>

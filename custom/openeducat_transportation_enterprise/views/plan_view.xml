@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_cost_plan_tree" model="ir.ui.view">
+            <field name="name">op.cost.plan.tree</field>
+            <field name="model">cost.plan</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Cost Plan">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_cost_plan_form" model="ir.ui.view">
+            <field name="name">op.cost.plan.form</field>
+            <field name="model">cost.plan</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Cost Plan">
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="company_id"/>
+                            <field name="plan_description"/>
+                        </group>
+                        <group col="4" string="Bill and Accounts">
+                            <field name="bill"/>
+                            <field name="bill_selection"/>
+                            <field name="expires_after"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_cost_plan_view">
+            <field name="name">Cost Plan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cost.plan</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

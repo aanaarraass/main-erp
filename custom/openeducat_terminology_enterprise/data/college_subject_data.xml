@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <!--   CHANGE TERMINOLOGY DEMO DATA     -->
+        <record id="change_terminology_1" model="terminology.configuration">
+            <field name="name">College</field>
+            <!--     SINGULAR       -->
+            <field name="base_course_label">Course</field>
+            <field name="course_old_label">Course</field>
+            <field name="course_new_label">Program</field>
+
+            <field name="base_subject_label">Subject</field>
+            <field name="subject_old_label">Subject</field>
+            <field name="subject_new_label">Section</field>
+
+            <field name="base_batch_label">Batch</field>
+            <field name="batch_old_label">Batch</field>
+            <field name="batch_new_label">Cohert</field>
+
+            <field name="base_student_label">Student</field>
+            <field name="student_old_label">Student</field>
+            <field name="student_new_label">Pupil</field>
+
+            <field name="base_faculty_label">Faculty</field>
+            <field name="faculty_old_label">Faculty</field>
+            <field name="faculty_new_label">Teacher</field>
+
+
+            <!--     PLURAL       -->
+            <field name="base_course_label_plural">Courses</field>
+            <field name="course_old_label_plural">Courses</field>
+            <field name="course_new_label_plural">Programs</field>
+
+            <field name="base_subject_label_plural">Subjects</field>
+            <field name="subject_old_label_plural">Subjects</field>
+            <field name="subject_new_label_plural">Sections</field>
+
+            <field name="base_batch_label_plural">Batches</field>
+            <field name="batch_old_label_plural">Batches</field>
+            <field name="batch_new_label_plural">Coherts</field>
+
+            <field name="base_student_label_plural">Students</field>
+            <field name="student_old_label_plural">Students</field>
+            <field name="student_new_label_plural">Pupils</field>
+
+            <field name="base_faculty_label_plural">Faculties</field>
+            <field name="faculty_old_label_plural">Faculties</field>
+            <field name="faculty_new_label_plural">Teachers</field>
+        </record>
+
+        <record id="change_terminology_2" model="terminology.configuration">
+            <field name="name">School</field>
+            <!--     SINGULAR       -->
+            <field name="base_course_label">Course</field>
+            <field name="course_old_label">Course</field>
+            <field name="course_new_label">Semester</field>
+
+            <field name="base_subject_label">Subject</field>
+            <field name="subject_old_label">Subject</field>
+            <field name="subject_new_label">Section</field>
+
+            <field name="base_batch_label">Batch</field>
+            <field name="batch_old_label">Batch</field>
+            <field name="batch_new_label">Division</field>
+
+            <field name="base_student_label">Student</field>
+            <field name="student_old_label">Student</field>
+            <field name="student_new_label">Pupil</field>
+
+            <field name="base_faculty_label">Faculty</field>
+            <field name="faculty_old_label">Faculty</field>
+            <field name="faculty_new_label">Teacher</field>
+
+
+            <!--     PLURAL       -->
+            <field name="base_course_label_plural">Courses</field>
+            <field name="course_old_label_plural">Courses</field>
+            <field name="course_new_label_plural">Semesters</field>
+
+            <field name="base_subject_label_plural">Subjects</field>
+            <field name="subject_old_label_plural">Subject</field>
+            <field name="subject_new_label_plural">Sections</field>
+
+            <field name="base_batch_label_plural">Batches</field>
+            <field name="batch_old_label_plural">Batches</field>
+            <field name="batch_new_label_plural">Divisions</field>
+
+            <field name="base_student_label_plural">Student</field>
+            <field name="student_old_label_plural">Students</field>
+            <field name="student_new_label_plural">Pupils</field>
+
+            <field name="base_faculty_label_plural">Faculties</field>
+            <field name="faculty_old_label_plural">Faculties</field>
+            <field name="faculty_new_label_plural">Teachers</field>
+        </record>
+    </data>
+</odoo>

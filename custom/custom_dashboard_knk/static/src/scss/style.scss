@@ -1,0 +1,39 @@
+.accounts-dashboard-wrap .book_keeping_help {
+    display: flex;
+    width: 230px;
+    color: #FFFFFF !important;
+    border-radius: 40px;
+    background-color: #5371ff !important;
+    border-color: #5371ff !important;
+}
+
+.accounts-dashboard-wrap .book_keeping_help #person_img {
+    padding: 0;
+    margin: 1px 0 1px 1px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.accounts-dashboard-wrap .book_keeping_help .helping_text{
+    margin: 5px 0px;
+    width: 150px;
+}
+
+@media(min-width:768px){
+    .accounts-dashboard-wrap .dash-header {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 0fr;
+        gap: 35px;
+    }
+}
+
+@media(max-width:768px){
+    .accounts-dashboard-wrap .book_keeping_help{
+        margin: 10px 0 !important;
+    }
+    .accounts-dashboard-wrap .dash-header {
+        display: block !important;
+    }
+}

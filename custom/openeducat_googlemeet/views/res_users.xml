@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <record id="view_google_auth_inherited_form" model="ir.ui.view">
+            <field name="name">res.users.google.inherited.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="inside">
+                    <sheet>
+                        <notebook>
+                            <page string="Google Meet">
+                                <group>
+                                    <field name="client_id" readonly="0"/>
+                                    <field name="client_secret" readonly="0"/>
+                                    <field name="access_token"/>
+                                    <field name="refresh_token"/>
+                                </group>
+                                <group>
+                                    <button type="object" name="auth_google" string="Authenticate" class="btn-primary"/>
+                                    <button type="object" name="refreshTokenUser" string="Refresh" class="btn-primary"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

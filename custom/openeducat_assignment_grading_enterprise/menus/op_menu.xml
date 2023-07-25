@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_op_assign_grade_config" name="Assignment Grades"
+                  parent="openeducat_assignment.menu_op_assignment_configuration" sequence="11"
+                  action="act_op_assign_grade_config_view"
+                  groups="openeducat_core.group_op_back_office_admin,openeducat_core.group_op_faculty"/>
+    </data>
+</odoo>

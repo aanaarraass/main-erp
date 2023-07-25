@@ -1,0 +1,101 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="exam_exam_list">
+            <field name="name">Exam</field>
+            <field name="model">exam.exam</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="academic_year"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="exam_exam_form">
+            <field name="name">Exam</field>
+            <field name="model">exam.exam</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,ongoing,cancel,close"
+                               options="{'clickable': '1'}"/>
+                        <button id="button_draft" name="action_draft"
+                                string="Rest to Draft" type="object" class="btn-primary"/>
+                        <button id="button_ongoing" name="action_ongoing"
+                                string="Ongoing" type="object" class="btn-primary"/>
+                        <button id="button_cancel" name="action_cancel"
+                                string="Cancel" type="object"/>
+                        <button id="button_close" name="action_close"
+                                string="Close" type="object" class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <div class="oe-title">
+                            <h1>
+                                <field name="name" placeholder="Exam Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="academic_year"/>
+                                <field name="department_id"/>
+                                <field name="course_id"/>
+                            </group>
+                            <group>
+                                <field name="date_start"/>
+                                <field name="date_end"/>
+                                <field name="company_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <!--<page string="Subjects">
+                                &lt;!&ndash; attrs="{'readonly': [('state', '!=', 'draft')]}"&ndash;&gt;
+                                <field name="exam_subject_line">
+                                    <tree editable="bottom">
+                                        <field name="date"/>
+                                        <field name="subject_id"/>
+                                        <field name="time_from" widget="float_time"/>
+                                        <field name="time_to" widget="float_time"/>
+                                        <field name="mark"/>
+                                    </tree>
+                                </field>
+                            </page>-->
+                            <page string="Time Sheet">
+                                <field name="timetable_request_line" readonly="1">
+                                    <tree sample="1" decoration-muted="state == 'draft'" default_order="date"
+                                          decoration-success="state == 'confirm'" decoration-danger="state == 'cancel'">
+                                        <field name="exam_id" invisible="1"/>
+                                        <field name="academic_year" invisible="1"/>
+                                        <field name="name" invisible="1"/>
+                                        <field name="course_id" invisible="1"/>
+                                        <field name="exam_time" invisible="1"/>
+                                        <field name="date" attrs="{'invisible':[('state','!=','confirm')]}"/>
+                                        <field name="subject_id" attrs="{'invisible':[('state','!=','confirm')]}"/>
+                                        <field name="time_from" widget="float_time" attrs="{'invisible':[('state','!=','confirm')]}"/>
+                                        <field name="time_to" widget="float_time" attrs="{'invisible':[('state','!=','confirm')]}"/>
+                                        <field name="mark" attrs="{'invisible':[('state','!=','confirm')]}"/>
+                                        <field name="state" widget="badge" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="exam_exam_action_window">
+            <field name="name">Examination</field>
+            <field name="res_model">exam.exam</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!-- Top menu item -->
+
+
+    </data>
+</odoo>

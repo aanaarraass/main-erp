@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form_grading" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.core</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='secure_qr']" position="inside">
+                <div class="content-group"
+                     attrs="{'invisible': [('module_openeducat_secure' ,'=', False)]}">
+                    <div class="mt16">
+                        <div class="o_setting_left_pane">
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="secure_qr_code" widget="radio" options="{'horizontal': true}"/>
+                            <div class="text-muted">
+                                Secure: It generates a Secure QR that can only be scanned using a Proprietary Scanner.
+                                <br/>
+                                Open: It generates a link-based QR.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

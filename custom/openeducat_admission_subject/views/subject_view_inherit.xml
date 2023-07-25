@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="op_subject_from_product_view_inherit" model="ir.ui.view">
+            <field name="name">op.subject.form.inherited</field>
+            <field name="model">op.subject</field>
+            <field name="priority" eval="100"/>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_subject_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="after">
+                    <group>
+                        <field name="required_subject">
+                            <tree>
+                                <field name="subject_id"/>
+                                <field name="code"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="view_required_subject_line" model="ir.ui.view">
+            <field name="name">required.subject.form</field>
+            <field name="model">required.subject</field>
+            <field name="priority" eval="101"/>
+            <field name="arch" type="xml">
+                <form string="Rrquired Subject">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="subject_id" required="1"/>
+                            </group>
+                            <group>
+                                <field name="code"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+

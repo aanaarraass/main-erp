@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+       <record id="op_fees_term_date_line_1" model="op.fees.terms.line">
+            <field name="fees_element_line" eval="[(4, ref('op_fees_element_line_1'))]"/>
+            <field name="value">100.0</field>
+        </record>
+
+        <record id="op_fees_term_date_line_2" model="op.fees.terms.line">
+            <field name="fees_element_line" eval="[(4, ref('op_fees_element_line_2'))]"/>
+            <field name="value">100.0</field>
+        </record>
+    </data>
+</odoo>

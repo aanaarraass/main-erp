@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_entry_test_fee,entry_test_fee,model_entry_test_fee,base.group_user,1,1,1,1
+access_register_fee,register_fee,model_register_fee,base.group_user,1,1,1,1
+access_register_fee_line,register_fee_line,model_register_fee_line,base.group_user,1,1,1,1
+access_register_fee_quota,register_fee_quota,model_register_fee_quota,base.group_user,1,1,1,1
+access_fee_installment_line,fee_installment_line,model_fee_installment_line,base.group_user,1,1,1,1
+access_student_contract,student_contract,model_student_contract,base.group_user,1,1,1,1

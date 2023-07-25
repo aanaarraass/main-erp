@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="course_registration_form_inherit_credit"
+              inherit_id="openeducat_core_enterprise.openeducat_create_subject_registration">
+        <xpath expr="//div[hasclass('js_get_data')]//div//form//div[1]//div[4]" position="after">
+            <div class="col-md-4 mt16">
+                <lable>Academic Year:</lable>
+            </div>
+            <div class="col-md-8 mt16">
+                <select class="form-control" name="year_ids">
+                    <option value="" class="disabled selected">
+                        <lable></lable>
+                    </option>
+                    <t t-foreach="year_ids" t-as="year_data">
+                        <option t-att-value="year_data.id">
+                            <t t-esc="year_data.name"/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('js_get_data')]//div//form//div[1]" position="after">
+            <div class="row col-md-12">
+                <div class="col-md-2 mt16">
+                    <lable>Total Credit:</lable>
+                </div>
+                <div class="col-md-3 mt16" style="padding-left:5px;">
+                    <input readonly="readonly" name="total_credit" t-attf-class="form-control"/>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('js_get_data')]//div//form//div[1]//div[2]//div[4]" position="after">
+            <div class="col-md-4 mt16">
+                <lable>Term:</lable>
+            </div>
+            <div class="col-md-8 mt16">
+                <select class="form-control" name="term_ids">
+                    <option value="" class="disabled selected">
+                        <lable></lable>
+                    </option>
+                    <t t-foreach="term_ids" t-as="term_data">
+                        <option t-att-value="term_data.id">
+                            <t t-esc="term_data.name"/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('js_get_data')]//div//form/div[4]" position="replace">
+            <div t-if="user_id.sudo().is_student" class="row col-md-12">
+                <div class="col-md-2 mt8">
+                    <lable>Compulsory Subjects:</lable>
+                </div>
+                <div class="col-md-10" style="padding-left: 5px;">
+                    <select class="form-control js-example-basic-multiple subjects"
+                            name="compulsory_subject_ids" multiple="True" required="1">
+                    </select>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('js_get_data')]//div//form/div[5]" position="replace">
+            <div t-if="user_id.sudo().is_student" class="row mt8 col-md-12">
+                <div class="col-md-2 mt8">
+                    <lable>Elective Subjects:</lable>
+                </div>
+                <div class="col-md-10" style="padding-left: 5px;">
+                    <select class="form-control js-example-basic-multiple"
+                            name="elective_subject_ids" multiple="True">
+                        <t t-foreach="subject_registration_ids" t-as="student_details">
+                            <option t-att-value="student_details.id">
+                                <t t-esc="student_details.name"/>
+                            </option>
+                        </t>
+                    </select>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

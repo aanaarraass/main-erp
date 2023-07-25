@@ -1,0 +1,104 @@
+<odoo>
+    <data>
+      <!--  <record id="view_op_student_exam-management" model="ir.ui.view">
+            <field name="name">op.student.exam management</field>
+            <field name="model">op.student</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/div[1]" position="after">
+                   <group>
+                       <field name="is_seated" readonly="1"/>
+                   </group>
+                </xpath>
+            </field>
+        </record>-->
+
+        <record model="ir.ui.view" id="exam_sittingplan_line_list">
+            <field name="name">Sitting Plan Lines</field>
+            <field name="model">exam.sittingplan.line</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="student_name"/>
+                    <field name="roll_number"/>
+                    <field name="row_no"/>
+                    <field name="chair_no"/>
+                    <field name="sittingplan_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="exam_sittingplan_list">
+            <field name="name">Sitting Plan</field>
+            <field name="model">exam.sittingplan</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <!--<field name="subjects"/>-->
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="exam_sittingplan_form">
+            <field name="name">Sitting Plan</field>
+            <field name="model">exam.sittingplan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,cancel" options="{'clickable': '1'}"/>
+                        <button id="button_confirm" name="action_confirm" states="draft"
+                                string="Confirm" type="object" class="btn-primary"/>
+                        <button id="button_cancelled" name="action_cancel" states="confirm,draft"
+                                string="Cancel" type="object"/>
+                        <button id="button_draft" name="action_draft" states="confirm,cancel"
+                                string="Reset to Draft" type="object" class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <!--  <widget name="web_ribbon" title="Cancelled" bg_color="bg-danger" attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+                          <widget name="web_ribbon" title="Confirmed" bg_color="bg-success" attrs="{'invisible': [('state', '!=', 'confirm')]}"/>-->
+                        <div class="oe_title">
+                            <h1> <field name="name" placeholder="Title"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="date"/>
+                                <field name="exam_id"/>
+                                <field name="course_id"/>
+                                <field name="date_start"/>
+                                <field name="date_end"/>
+                                <field name="time_from"/>
+                                <field name="time_to"/>
+
+                            </group>
+                            <group>
+                                <field name="room_id"/>
+                                <!--<field name="subjects"/>-->
+                                <field name="mark"/>
+                                <!--<field name="subject_id"/>-->
+                                <field name="batch_id"/>
+                                <field name="timetable_id"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sitting Lines">
+                                <field name="sittingplan_line"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="exam_sittingplan_action_window">
+            <field name="name">Sitting Plan</field>
+            <field name="res_model">exam.sittingplan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>

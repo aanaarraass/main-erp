@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quiz_first_question_sort_paragraphs_inherit" inherit_id="openeducat_quiz.quiz_first_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'sort_paragraphs'">
+               <div id="sort_paragraphs_data">
+                    <ul t-att-class="question.id" id="sort-paragraphs"></ul>
+                    <div class="sort_paragraphs_question" t-att-data-id="question.id" t-att-value="question.que_type" t-att-id="question.id"></div>
+                    <div id="sort_paragraphs"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_last_question_sort_paragraphs_inherit" inherit_id="openeducat_quiz.quiz_last_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'sort_paragraphs'">
+                <div id="sort_paragraphs_data">
+                    <ul t-att-class="question.id" id="sort-paragraphs"></ul>
+                    <div class="sort_paragraphs_question" t-att-data-id="question.id" t-att-value="question.que_type" t-att-id="question.id"></div>
+                    <div id="sort_paragraphs"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_middle_question_sort_paragraphs_inherit" inherit_id="openeducat_quiz.quiz_middle_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'sort_paragraphs'">
+               <div id="sort_paragraphs_data">
+                    <ul t-att-class="question.id" id="sort-paragraphs"></ul>
+                    <div class="sort_paragraphs_question" t-att-data-id="question.id" t-att-value="question.que_type" t-att-id="question.id"></div>
+                    <div id="sort_paragraphs"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

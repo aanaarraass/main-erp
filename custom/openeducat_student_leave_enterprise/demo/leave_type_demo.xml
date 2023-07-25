@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="student_leave_type1" model="student.leave.type">
+            <field name="name">Sick Leave</field>
+            <field name="code">sick</field>
+        </record>
+
+        <record id="student_leave_type2" model="student.leave.type">
+            <field name="name">Legal Leave</field>
+            <field name="code">legal</field>
+        </record>
+    </data>
+</odoo>

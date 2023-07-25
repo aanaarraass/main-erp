@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="student_leave_request1" model="student.leave.request">
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+            <field name="leave_type" ref="openeducat_student_leave_enterprise.student_leave_type1"/>
+            <field name="description">I'm suffering from Dengue and Dr advised me to take rest for a week.</field>
+            <field name="start_date" eval="DateTime.today().strftime('%Y-%m-%d')"/>
+            <field name="end_date" eval="(DateTime.today() + relativedelta(days=7)).strftime('%Y-%m-%d')"/>
+            <field name="faculty_id" ref="openeducat_core.op_faculty_1"/>
+            <field name="state">confirm</field>
+        </record>
+        <record id="student_leave_request2" model="student.leave.request">
+            <field name="student_id" ref="openeducat_core.op_student_4"/>
+            <field name="leave_type" ref="openeducat_student_leave_enterprise.student_leave_type2"/>
+            <field name="description">I selected for State Team to play National Level Hockey Tournament. So, I will unavailable for a Month because of my Training and Tournament.
+            </field>
+            <field name="start_date" eval="(DateTime.today() + relativedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="end_date" eval="(DateTime.today() + relativedelta(days=35)).strftime('%Y-%m-%d')"/>
+            <field name="faculty_id" ref="openeducat_core.op_faculty_1"/>
+            <field name="approve_date" eval="DateTime.today().strftime('%Y-%m-%d')"/>
+            <field name="approved_by_id" ref="openeducat_core.op_user_faculty"/>
+            <field name="state">approve</field>
+        </record>
+    </data>
+</odoo>

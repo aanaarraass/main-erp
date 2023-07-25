@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="material_detail_view_inherit" inherit_id="openeducat_lms.material_detail_view"
+              name="Material Detailed View">
+        <xpath expr="//div[hasclass('course_img_video')]//div[hasclass('new_content_here')]" position="before">
+            <div t-if="material.material_type == 'h5p_url'"
+                 class="embed-responsive embed-responsive-4by3 embed-responsive-item mb8 col-12 col-lg-10 col-md-12 mx-auto oe_lms_h5p website_url">
+                <t t-out="embed_code"/>
+            </div>
+            <div t-if="material.material_type == 'h5p_iframe'"
+                 class="embed-responsive embed-responsive-4by3 embed-responsive-item mb8 col-12 col-lg-10 col-md-12 mx-auto oe_lms_h5p">
+                <t t-out="embed_code"/>
+            </div>
+        </xpath>
+
+        <xpath expr="//table//td[hasclass('material_icon')]/i" position="after">
+            <i t-if="material.material_type == 'h5p_url'"
+               class="fa fa-play-circle-o"></i>
+            <i t-if="material.material_type == 'h5p_iframe'"
+               class="fa fa-play-circle-o"></i>
+        </xpath>
+
+    </template>
+
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="course_detail_inherit" inherit_id="openeducat_lms.course_detail" name="Course Detail"
+              t-name="course-detail">
+        <xpath expr="//table//td[1]/i" position="after">
+            <i t-if="m.material_id.material_type == 'h5p_url'"
+               class="fa fa-play-circle-o mr-2"></i>
+            <i t-if="m.material_id.material_type == 'h5p_iframe'"
+               class="fa fa-play-circle-o mr-2"></i>
+        </xpath>
+    </template>
+</odoo>

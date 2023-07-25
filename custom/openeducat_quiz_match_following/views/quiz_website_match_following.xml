@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_match_following_tree" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='answers']" position="after">
+                        <group name="answers" string="Answers" attrs="{'invisible': [('que_type', '!=', 'match_following')]}">
+                            <field name="following_line_ids" nolabel="1">
+                                <tree string="Answers" editable="bottom">
+                                    <field name="image" />
+                                    <field name="question" />
+                                    <field name="answer" />
+                                </tree>
+                                <form string="Answers">
+                                    <group>
+                                        <field name="image" />
+                                        <field name="question" />
+                                        <field name="answer" />
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="view_op_quiz_result_match_the_following" model="ir.ui.view">
+            <field name="name">op.quiz.result.form</field>
+            <field name="model">op.quiz.result</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_result_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='line_ids']/form/group/field[@name='question_mark']" position="after">
+                        <field name="line_ids" attrs="{'invisible': [('que_type', '!=', 'match_following')]}"></field>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

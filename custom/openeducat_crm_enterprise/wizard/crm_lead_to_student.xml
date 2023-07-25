@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="crm_convert_lead_to_student_form" model="ir.ui.view">
+            <field name="name">crm.convert.lead.to.student</field>
+            <field name="model">lead.to.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div>
+                        <group>
+                            <group>
+                                <field name="lead_create_method" class="oe_inline" widget="radio"/>
+                            </group>
+                            <group>
+                                <field name="student_id" attrs="{'invisible': ['|','|',('lead_create_method', '=', False),('lead_create_method', '=', 'create_student_directly'),('lead_create_method', '=', 'create_admission')],
+                                'required': [('lead_create_method', '=', 'merge_in_student')]}"/>
+                                <field name="first_name" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                                <field name="last_name" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                                <field name="gender" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                                <field name="birth_date" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                                <field name="register_id" attrs="{'invisible': ['|','|',('lead_create_method', '=', False),('lead_create_method', '=', 'create_student_directly'),('lead_create_method', '=', 'merge_in_student')],
+                                'required': [('lead_create_method', '=', 'create_admission')]}"/>
+                                <field name="course_id" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                                <field name="batch_id" attrs="{'invisible': ['|',('lead_create_method', '=', False),('lead_create_method', '=', 'merge_in_student')],
+                                'required': ['|',('lead_create_method', '=', 'create_admission'),('lead_create_method', '=', 'create_student_directly')]}"/>
+                            </group>
+                        </group>
+                    </div>
+                    <footer>
+                        <button name="convert_to_student" type="object" string="Create"/>
+                        <button string="Cancel" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="convert_lead_to_student" model="ir.actions.act_window">
+            <field name="name">Convert Lead To Student</field>
+            <field name="res_model">lead.to.student</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

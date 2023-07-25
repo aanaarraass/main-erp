@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="student_portal_health"
+              inherit_id="openeducat_core_enterprise.openeducat_enterprise_student_portal"
+              priority="20">
+        <xpath expr="//ul[hasclass('nav-pills')]" position="inside">
+            <li>
+                <a href="#health_detail" aria-expanded="false" data-toggle="tab">
+                    <h5 class="mb0">
+                        Health Detail
+                    </h5>
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[hasclass('tab-content')]" position="inside">
+            <div class="tab-pane fade" id="health_detail">
+                <div class="mb-4">
+                    <h4>Health Detail</h4>
+                </div>
+                <table class="mt16 table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Height(C.M.)</th>
+                            <th>Weight</th>
+                            <th>Eye Glasses?</th>
+                            <th>Physical Challenge?</th>
+                            <th>Major Diseases?</th>
+                            <th style="width: 96px;">Checkup Date</th>
+                            <th>Checkup Detail</th>
+                            <th>Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="student.health_lines" t-as="health">
+                            <tr>
+                                <td class="numspan">
+                                    <span t-esc="health.height"/>
+                                </td>
+                                <td class="numspan">
+                                    <span t-esc="health.weight"/>
+                                </td>
+                                <td class="numspan">
+                                    <span t-esc="health.eyeglasses_no"/>
+                                </td>
+
+                                <td>
+                                    <span t-esc="health.physical_challenges_note"/>
+                                </td>
+                                <td>
+                                    <span t-esc="health.major_diseases_note"/>
+                                </td>
+                                <t t-foreach="health.health_line" t-as="checkup_detail">
+                                    <td>
+                                        <span t-esc="checkup_detail.date" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="checkup_detail.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="checkup_detail.recommendation"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="request_reason_list_view" model="ir.ui.view">
+            <field name="name">Request Asset List View</field>
+            <field name="model">asset.request.reason</field>
+            <field name="arch" type="xml">
+                <tree string="Request Reason Tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="request_reason_form_view" model="ir.ui.view">
+            <field name="name">Request Reason Form View</field>
+            <field name="model">asset.request.reason</field>
+            <field name="arch" type="xml">
+                <form string="Request Asset Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_request_reason_list" model="ir.actions.act_window">
+            <field name="name">Request Reason</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">asset.request.reason</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

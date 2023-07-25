@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="res_config_settings_view_form_big_blue_button" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.bigbluebutton</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="openeducat_core.res_config_settings_view_form_core"/>
+        <field name="arch" type="xml">
+            <xpath expr="//h2[@id='openeducat_core_apps']" position="before">
+                <h2>OpenEduCat BigBlueButton</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-12 col-lg-6">
+                        <div class="o_setting_left_pane">
+                            <label for="openeducat_big_blue_url_key"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="openeducat_big_blue_url_key"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="o_setting_left_pane">
+                            <label for="openeducat_big_blue_button_key"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="openeducat_big_blue_button_key"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="o_setting_left_pane">
+                            <label for="record_meeting"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="record_meeting"/>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="o_setting_left_pane">
+                            <label for="auto_start_recording"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="auto_start_recording"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="o_setting_left_pane">
+                            <label for="dial_number"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <field name="dial_number"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

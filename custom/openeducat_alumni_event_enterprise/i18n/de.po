@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_alumni_event_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 08:50+0000\n"
+"PO-Revision-Date: 2019-09-30 08:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Start date\" title=\"Start date\"/>"
+msgstr "<I class = \"fa fa-Uhr-o\" role = \"img\" aria-label = \"Startdatum\" title = \"Startdatum\" />"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "<i class=\"fa fa-tag\" role=\"img\" aria-label=\"Event type\" title=\"Event type\"/>"
+msgstr "<I class = \"fa fa-tag\" role = \"img\" aria-label = \"Ereignistyp\" title = \"Event-Typ\" />"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "<i>to</i>"
+msgstr "<I> </ i>"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_event_enterprise.field_event_event__alumni_event_id
+msgid "Alumni Group"
+msgstr "Alumni-Gruppe"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:event.event,name:openeducat_alumni_event_enterprise.alumni_event_3
+msgid "Annual Function"
+msgstr "Jahres Funktion"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:ir.model,name:openeducat_alumni_event_enterprise.model_event_event
+msgid "Event"
+msgstr ""
+
+#. module: openeducat_alumni_event_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_event_enterprise.field_op_alumni_group__event_ids
+msgid "Events"
+msgstr "Veranstaltungen"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:event.event,name:openeducat_alumni_event_enterprise.alumni_event_2
+msgid "Music Festival"
+msgstr "Musikfestival"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "Online"
+msgstr ""
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "Organized by:"
+msgstr "Organisiert durch:"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "Our Events"
+msgstr "Unsere Veranstaltungen"
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "Participating"
+msgstr "Teilnehmende"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:event.event,name:openeducat_alumni_event_enterprise.alumni_event_1
+msgid "Sports Event"
+msgstr "Sportereignis"
+
+#. module: openeducat_alumni_event_enterprise
+#: model:ir.model,name:openeducat_alumni_event_enterprise.model_op_alumni_group
+msgid "op.alumni.group"
+msgstr ""
+
+#. module: openeducat_alumni_event_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_event_enterprise.event_detail
+msgid "unpublished"
+msgstr "unveröffentlicht"
+

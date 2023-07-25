@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="mail.ChannelInvitationForm" t-inherit-mode="extension" owl="1">
+        <xpath expr="//*[@t-name='mail.ChannelInvitationForm']" position="replace">
+            <t t-name="mail.ChannelInvitationForm" owl="1">
+                <div class="o_ChannelInvitationForm d-flex flex-column" t-ref="channelInvitationForm">
+
+
+                    <t t-if="channelInvitationForm">
+                        <t t-if="messaging">
+                            <t t-if="messaging.rtc">
+                                <t t-if="messaging.rtc.currentRtcSession">
+                                    <t t-if="messaging.rtc.currentRtcSession.isHost">
+                                        <ul class="nav nav-tabs border-0">
+                                            <li>
+                                                <a data-toggle="tab" href="#invitation" class="w-100 btn active">Invite people</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="invitation" class="tab-pane active">
+                                                <!-- Invitation -->
+
+                                                <t t-if="channelInvitationForm.thread and channelInvitationForm.thread.invitationLink">
+                                                    <div class="mx-0 align-items-center">
+                                                        <div class="col-12">
+                                                            <p class="mt-3 mb-2 text-600">Share the meeting link to invite</p>
+                                                        </div>
+                                                        <div class="mx-3 my-2">
+                                                            <input type="text" t-att-value="channelInvitationForm.thread.invitationLink" style="padding: 8px 4px;"/>
+                                                        </div>
+                                                    </div>
+                                                </t>
+
+                                                <!-- Password -->
+
+                                                <t t-if="messaging">
+                                                    <t t-if="messaging.rtc">
+                                                        <t t-if="messaging.rtc.currentRtcSession">
+                                                            <t t-if="messaging.rtc.currentRtcSession.isHost">
+                                                                <div class="mb24 mx-0 mt-2">
+                                                                    <div class="col-12">
+                                                                        <label class="my-1 o_RtcConfigurationMenu_optionLabel" title="Password" aria-label="Password">
+                                                                            <p class="o_RtcConfigurationMenu_optionName my-2 font-weight-normal">
+                                                                                <input style="vertical-align: middle;" type="checkbox" id="checked" name="Password" value="Password" t-on-change="channelInvitationForm._password" t-att-checked="messaging.rtc.currentRtcSession.isPassword ? 'checked' : ''"/>
+                                                                                <span class="mx-2 text-600">Password</span>
+                                                                            </p>
+                                                                        </label>
+                                                                    </div>
+
+                                                                    <div class="mx-3 my-2">
+                                                                        <t t-if="messaging.rtc.currentRtcSession.isPassword">
+                                                                            <input type="text" t-att-value="messaging.rtc.currentRtcSession.iscreatedpassword" style="padding: 8px 4px;" readonly="true"/>
+                                                                        </t>
+                                                                    </div>
+                                                                </div>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <hr style="border:1px solid #d0d0d0;"/>
+                                                <div class="col-12">
+                                                    <h4 class="my-3">Add People</h4>
+                                                </div>
+                                                <t t-if="!messaging.isCurrentUserGuest">
+                                                    <div class="mx-3 my-2">
+                                                        <input style="padding: 8px 4px;" class="o_ChannelInvitationForm_searchInput" type="text" t-att-value="channelInvitationForm.searchTerm" placeholder="Type the name of a person" t-on-input="channelInvitationForm.onInputSearch" t-ref="searchInput"/>
+                                                    </div>
+                                                    <t t-if="channelInvitationForm.selectedPartners.length > 0">
+                                                        <div class="mx-3 mt-3">
+                                                            <!-- <h4>Selected users:</h4> -->
+                                                            <div class="o_ChannelInvitationForm_selectedPartners overflow-auto">
+                                                                <t t-foreach="channelInvitationForm.selectedPartners" t-as="selectedPartner" t-key="selectedPartner.localId">
+                                                                    <button class="btn btn-secondary m-1 p-0 pl-2" t-on-click="channelInvitationForm.onClickSelectedPartner.bind(channelInvitationForm, selectedPartner)">
+                                                                        <t t-esc="selectedPartner.nameOrDisplayName"/>
+                                                                        <i class="fa fa-times pl-2" style="vertical-align: super; font-size: 10px;"/>
+                                                                    </button>
+                                                                </t>
+                                                            </div>
+                                                        </div>
+                                                    </t>
+                                                    <div class="d-flex flex-column flex-grow-1 mx-0 py-2 overflow-auto invitaion_names">
+                                                        <t t-foreach="channelInvitationForm.selectablePartners" t-as="selectablePartner" t-key="selectablePartner.localId">
+                                                            <div class="o_ChannelInvitationForm_selectablePartner d-flex align-items-center px-3 py-1" t-on-click="channelInvitationForm.onClickSelectablePartner.bind(channelInvitationForm, selectablePartner)" t-att-data-partner-id="selectablePartner.id">
+                                                                <input class="o_ChannelInvitationForm_selectablePartnerCheckbox flex-shrink-0" type="checkbox" t-att-checked="channelInvitationForm.selectedPartners.includes(selectablePartner) ? 'checked' : undefined" t-on-input="channelInvitationForm.onInputPartnerCheckbox.bind(channelInvitationForm, selectablePartner)" t-ref="selection-status"/>
+
+                                                                <div class="o_ChannelInvitationForm_selectablePartnerAvatarContainer flex-shrink-0 position-relative ml-2">
+                                                                    <img class="o_ChannelInvitationForm_selectablePartnerAvatar w-100 h-100 rounded-circle" t-att-src="selectablePartner.avatarUrl" alt="Avatar"/>
+                                                                    <t t-if="selectablePartner.im_status and selectablePartner.im_status !== 'im_partner'">
+                                                                        <PartnerImStatusIcon class="o_ChannelInvitationForm_selectablePartnerImStatusIcon d-flex align-items-center justify-content-center text-white" t-att-class="{
+                                                'o_ChannelInvitationForm_selectablePartnerImStatusIcon-mobile': messaging.device.isMobile,
+                                            }" partnerLocalId="selectablePartner.localId"/>
+                                                                    </t>
+                                                                </div>
+                                                                <div class="o_ChannelInvitationForm_selectablePartnerAvatarNameSeparator"/>
+                                                                <span class="o_ChannelInvitationForm_selectablePartnerName flex-grow-1 text-truncate">
+                                                                    <t t-esc="selectablePartner.nameOrDisplayName"/>
+                                                                </span>
+                                                                <div class="o_ChannelInvitationForm_selectablePartnerNameSelectionSeparator flex-grow-1 flex-shrink-0"/>
+                                                            </div>
+                                                        </t>
+                                                        <t t-if="channelInvitationForm.selectablePartners.length === 0">
+                                                            <div class="mx-3">No user found that is not already a member of this channel.</div>
+                                                        </t>
+                                                        <t t-if="channelInvitationForm.searchResultCount > channelInvitationForm.selectablePartners.length">
+                                                            <div class="mx-3">
+                                Showing <t t-esc="channelInvitationForm.selectablePartners.length"/>
+                                        results out of
+                                                            <t t-esc="channelInvitationForm.searchResultCount"/>
+                                        . Narrow your search to see more choices.
+                                                        </div>
+                                                    </t>
+                                                </div>
+
+                                                <div class="mx-3 mt-4 mb-4">
+                                                    <button class="o_ChannelInvitationForm_inviteButton btn btn-primary w-100 p-2" t-att-disabled="channelInvitationForm.selectedPartners.length === 0" t-on-click="channelInvitationForm.onClickInvite">
+                                                        <t t-esc="channelInvitationForm.inviteButtonText"/>
+                                                    </button>
+                                                </div>
+                                            </t>
+
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                            <t t-else="">
+                                <t t-if="channelInvitationForm.thread and channelInvitationForm.thread.invitationLink">
+                                    <div class="mx-0 align-items-center">
+                                        <div class="col-12">
+                                            <p class="mt-3 mb-2 text-600">Share the meeting link to invite</p>
+                                        </div>
+                                        <div class="mx-3 my-2">
+                                            <input type="text" t-att-value="channelInvitationForm.thread.invitationLink" style="padding: 8px 4px;"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </xpath>
+</t>
+</templates>

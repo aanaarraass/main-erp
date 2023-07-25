@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_admission_final_document">
+    <t t-call="web.html_container">
+        <t t-if="not company">
+            <t t-if="company_id">
+                <t t-set="company" t-value="company_id"/>
+            </t>
+            <t t-elif="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-else="else">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+        </t>
+        <t t-call="web.basic_layout">
+            <style>.borders{ border: 1px solid black; } .margins{ margin-top: 3%; } .signature { border: 0;
+                border-bottom: 1px solid #000; }
+            </style>
+            <div class="page">
+                <div class="row" style="padding:2%;">
+                    <div class="col col-12">
+                        <!-- <t t-if="not o ">
+                                                            <span>Sorry no record found</span>
+                                                        </t> -->
+                        <t t-foreach="docs.sudo()" t-as="o">
+                            <div class="row">
+                                <div class="col col-2" style="text-align:left;">
+                                    <img style="width:120px;height:120px;" t-att-src="image_data_uri(o.company_id.logo)"
+                                         t-if="o.company_id.logo"/>
+                                    <img src="/web/static/src/img/user_menu_avatar.png" t-if="not o.company_id.logo"/>
+                                </div>
+                                <div class="col col-10" style="text-align:center;" id="admission_form_report_head">
+                                    <h1 style="color:red;" t-esc="company.name" t-if="company.name"/>
+                                    <h6 style="text-align: center;">12KM, Chiniot Road, Jhang</h6>
+                                    <h5 style="text-align: center; color:red;border-bottom: 1px solid black double;">
+                                        CANDIDATE REGISTRATION FOR ADMISSION
+                                        <span t-esc="o.register_id.program_id.name"/>
+                                    </h5>
+                                    <!-- <h1 t-if="not company_id.name">Admit Card</h1> -->
+                                </div>
+                            </div>
+                            <div class="row margins">
+                                <div class="col col-9" style="text-align:left;">
+                                    <div class="row" style="margin-bottom:2%;">
+                                        <div class="col col-2 " style="text-align:left;">Name:</div>
+                                        <div class="col col-4 " style="text-align:left; border-bottom:1px solid black;">
+                                           <!-- <t t-esc="o.first_name"/>
+                                            <t t-esc="o.last_name"/>-->
+                                            <t t-esc="o.name"/>
+                                        </div>
+                                        <div class="col col-2 " style="text-align:left;">CNIC:</div>
+                                        <div class="col col-4 " style="text-align:left; border-bottom:1px solid black;">
+                                            <t t-esc="o.studetn_cnic_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:2%;">
+                                        <div class="col col-2 " style="text-align:left;">Email:</div>
+                                        <div class="col col-4" style="text-align:left; border-bottom:1px solid black;">
+                                            <t t-esc="o.email"/>
+                                        </div>
+                                        <div class="col col-2 " style="text-align:left;">Contact:</div>
+                                        <div class="col col-4" style="text-align:left;border-bottom:1px solid black;">
+                                            <t t-esc="o.phone"/>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:2%;">
+                                        <div class="col col-2" style="text-align:left;">DOB:</div>
+                                        <div class="col col-2" style="text-align:left; border-bottom:1px solid black;">
+                                            <t t-esc="o.birth_date.strftime('%d-%m-%Y')"/>
+                                        </div>
+                                        <div class="col col-2" style="text-align:left;">Gender:</div>
+                                        <div class="col col-2 " style="text-align:left;border-bottom:1px solid black;">
+                                            <t t-if="o.gender == 'm'">Male</t>
+                                            <t t-elif="o.gender == 'f'">Female</t>
+                                            <t t-elif="o.gender == 'o'">Other</t>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-3" style="text-align:center;">
+                                    <t t-if="o.image">
+                                        <img id="profile_image borders"
+                                             t-att-src="'data:image/png;base64,%s' % to_text(o.image)" width="100px"
+                                             height="100px"/>
+                                    </t>
+                                    <t t-if="not o.image ">Passport Size Photograph</t>
+                                </div>
+                            </div>
+                        </t>
+                        <div class="row">
+                            <div class="col col-12 margins">
+                                <div class="row" style="margin-bottom:2%;">
+                                    <div class="col col-2 " style="text-align:left;">City:</div>
+                                    <div class="col col-2" style="text-align:left;border-bottom:1px solid black;">
+                                        <t t-esc="o.city"/>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom:2%;">
+                                    <t t-foreach="docs" t-as="o">
+                                        <div class="col col-3" style="text-align:left;">Program Applied For:</div>
+                                        <div class="col col-9" style="text-align:left; border-bottom:1px solid black;">
+                                            <!-- <t t-set="priority" t-value="0"/>
+                                                                                            <t t-foreach="program_preferences_ordered" t-as="program">
+                                                                                                <t t-set="priority" t-value="priority + 1"/>
+                                                                                                [<b t-esc="priority"/>]
+                                                                                                <th class="text-left">Preference </th>
+                                                                                                <td class="text-left">
+                                                                                                <span t-field="o.register_id.program_id.name"/>
+                                                                                                </td>
+                                                                                            </t> -->
+                                            <t t-esc="o.register_id.program_id.name"/>
+                                        </div>
+                                    </t>
+                                </div>
+                                <div class="row" style="margin-bottom:2%;">
+                                    <div class="col col-2" style="text-align:left;">Present Address:</div>
+                                    <div class="col col-10" style="text-align:left; border-bottom:1px solid black;">
+                                        <t t-esc="o.street"/>
+                                        ,
+                                        <t t-esc="o.street2"/>
+                                        ,
+                                        <t t-esc="o.city"/>
+                                        ,
+                                        <t t-esc="o.country_id.name"/>
+                                    </div>
+                                </div>
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-3" style="text-align:left;"> -->
+                                <!--                                             Permanent Address: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-9" style="text-align:left; border-bottom:1px solid black;"> -->
+                                <!--                                             <t t-esc="o.per_street"/>, <t t-esc="o.per_street2"/>, <t t-esc="o.per_city"/>, <t t-esc="o.per_country_id.name"/> -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-3" style="text-align:left;"> -->
+                                <!--                                             Disability?: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-9"> -->
+                                <!--                                             <t t-if="is_any_disability"> -->
+                                <!--                                             Yes 	 Details: <span style="text-align:left; border-bottom:1px solid black;"><t t-esc="o.disability"/></span> -->
+                                <!--                                         </t> -->
+                                <!--                                              <t t-if="not is_any_disability"> -->
+                                <!--                                             No -->
+                                <!--                                         </t> -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-5" style="text-align:left;"> -->
+                                <!--                                             <h4 style=""> -->
+                                <!--                                                 <span style="border-bottom:1px solid black;">Father / Guardian</span> -->
+                                <!--                                             </h4> -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-2" style="text-align:left;"> -->
+                                <!--                                             Name: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-4" style="text-align:left; border-bottom:1px solid black;"> -->
+                                <!--                                             <t t-esc="o.guardian_name"/> -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-2" style="text-align:left;"> -->
+                                <!--                                             Relation: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-4" style="text-align:left; border-bottom:1px solid black;"> -->
+                                <!--                                             <t t-esc="o.guardian_relation"/> -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-2" style="text-align:left;"> -->
+                                <!--                                             Contact No: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-10" style="text-align:left; border-bottom:1px solid black;"> -->
+                                <!--                                             <t t-esc="o.guardian_mobile"/> -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <div class="row" style="margin-bottom:2%;">
+                                    <div class="col col-5" style="text-align:left;">
+                                        <h4 style="">
+                                            <span style="border-bottom:1px solid black;">Academic Details</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom:2%;">
+                                    <div class="col col-12" style="text-align:left;">
+                                        <table class="table" width="100%">
+                                            <tbody>
+                                                <tr style="font-size:14px;">
+                                                    <th class="text-left">Degree</th>
+                                                    <th class="text-left">Passing Year</th>
+                                                    <th class="text-left">Board</th>
+                                                    <!--                                                             <th class="text-left">Group</th> -->
+                                                    <th class="text-left">Total Marks</th>
+                                                    <th class="text-left">Obtained Marks</th>
+                                                </tr>
+                                                <t t-foreach="o.sudo().education_detail_ids" t-as="matric">
+                                                    <tr style="font-size:13px;">
+                                                        <td class="text-left">
+                                                            <span t-field="matric.degree_name"/>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <span t-field="matric.passing_year"/>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <span t-field="matric.name_of_institution"/>
+                                                        </td>
+                                                        <!--                                                             <td class="text-left"> -->
+                                                        <!--                                                                 <span t-field="matric.subjects"/> -->
+                                                        <!--                                                             </td> -->
+                                                        <td class="text-left">
+                                                            <span t-field="matric.total_marks"/>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <span t-field="matric.marks_obtained"/>
+                                                        </td>
+                                                    </tr>
+                                                </t>
+                                                <!--                                                     <t t-foreach="inter_education" t-as="inter"> -->
+                                                <!--                                                         <tr style="font-size:14px;"> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <span t-field="inter.degree"/> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <span t-field="inter.year"/> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <span t-field="inter.board"/> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <t t-if="inter.degree=='A-Level'"> -->
+                                                <!--                                                                     <span t-field="inter.degree"/> -->
+                                                <!--                                                                 </t> -->
+                                                <!--                                                                 <t t-if="not inter.degree =='A-Level'"> -->
+                                                <!--                                                                     <span t-field="inter.subjects"/> -->
+                                                <!--                                                                 </t> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <span t-field="inter.total_marks"/> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                             <td class="text-left"> -->
+                                                <!--                                                                 <span t-field="inter.obtained_marks"/> -->
+                                                <!--                                                             </td> -->
+                                                <!--                                                         </tr> -->
+                                                <!--                                                     </t> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--                                     <div class="row" style="margin-bottom:2%;"> -->
+                                <!--                                         <div class="col col-4" style="text-align:left;"> -->
+                                <!--                                             Entry Test Center/Time: -->
+                                <!--                                         </div> -->
+                                <!--                                         <div class="col col-8" style="text-align:left; border-bottom:1px solid black;"> -->
+                                <!--                                             <t t-if="o.center_id" t-esc="o.center_id.name"/> -->
+                                <!--                                             (<t t-if="o.slot_id" t-esc="'%02d:%02d' % (divmod(o.slot_id.time * 60, 60))"/>) -->
+                                <!--                                         </div> -->
+                                <!--                                     </div> -->
+                                <h3 style="margin-top: 3%; text-align:center;">
+                                    <span style="border-bottom:1px solid black;">UNDERTAKING</span>
+                                </h3>
+                                <p>It is Stated that the information given in this application form is true to the best
+                                    of my knowledge and I understand that any incorrect information will result in the
+                                    cancellation of this application. University of Jhang reserves the right to use
+                                    information given in this form for verification and other purposes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row"/>
+                        <div class="row">
+                            <div class="col col-1 margins">
+                                <b>Date:</b>
+                            </div>
+                            <div class="col col-3 margins">
+                                <input type="text" class="signature"/>
+                            </div>
+                            <div class="col col-2 margins"></div>
+                            <div class="col col-6 margins" style="text-align:right;">
+                                <span>
+                                    <span>
+                                        <b>Applicant Signature:</b>
+                                    </span>
+                                    <span>
+                                        <input type="text" class="signature"/>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+
+        </template>
+    </data>
+</odoo>

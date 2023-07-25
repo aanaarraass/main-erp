@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quiz_first_question_inherit" inherit_id="openeducat_quiz.quiz_first_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'match_following'">
+                <div class="match_following" t-att-data-id="question.id"></div>
+                <div id="quiz_data">
+                    <div id="quiz_answer"></div>
+                    <div t-attf-id="quiz_question#{question.id}" class="row"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_last_question_inherit" inherit_id="openeducat_quiz.quiz_last_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'match_following'">
+                <div class="match_following" t-att-data-id="question.id"></div>
+                <div id="quiz_data">
+                    <div id="quiz_answer"></div>
+                    <div t-attf-id="quiz_question#{question.id}" class="row"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_middle_question_inherit" inherit_id="openeducat_quiz.quiz_middle_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'match_following'">
+                <div class="match_following" t-att-data-id="question.id"></div>
+                <div id="quiz_data">
+                    <div id="quiz_answer"></div>
+                    <div t-attf-id="quiz_question#{question.id}" class="row"></div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

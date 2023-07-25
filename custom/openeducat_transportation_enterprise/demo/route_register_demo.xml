@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_route_register_1" model="op.route.register">
+            <field name="name">BOA Route Register</field>
+            <field name="route_id" ref="op_route_1"/>
+            <field name="end_date">2022-12-31</field>
+            <field name="product_id" 
+                ref="openeducat_transportation_enterprise.op_product_route"/>
+            <field name="plan_id" ref="op_plan_1"/>
+            <field name="cost">50</field>
+            <field name="state">gathering</field>
+        </record>
+
+        <record id="op_route_register_2" model="op.route.register">
+            <field name="name">LTRP Route Register</field>
+            <field name="route_id" ref="op_route_2"/>
+            <field name="end_date">2022-12-31</field>
+            <field name="product_id" 
+                ref="openeducat_transportation_enterprise.op_product_route"/>
+            <field name="plan_id" ref="op_plan_2"/>
+            <field name="cost">100</field>
+            <field name="state">gathering</field>
+        </record>
+    </data>
+</odoo>

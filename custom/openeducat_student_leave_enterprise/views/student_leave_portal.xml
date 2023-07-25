@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="portal_my_home_menu_student_time_off"
+              name="Portal layout : Subject Registration Form"
+              inherit_id="openeducat_core_enterprise.portal_my_home_menu_subject_registration_form" priority="10">
+        <xpath expr="//li[2]" position="replace">
+            <li t-if="page_name == 'student_time_off_list' or student_time_off_list "
+                t-attf-class="breadcrumb-item #{'active ' if not subject_reg_form else ''}">
+                <t t-if="user_id.sudo().is_student">
+                    <a t-if="leave_request_ids" t-attf-href="/my/time_off/?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                </t>
+                <t t-else=" ">
+                    <a t-if="leave_request_ids" t-attf-href="/my/time_off/#{student_id}?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                </t>
+            </li>
+        </xpath>
+        <xpath expr="//li[3]" position="replace">
+            <li t-if="page_name == 'leave_request_form' or leave_request_form "
+                t-attf-class="breadcrumb-item #{'active ' if not subject_reg_form else ''}">
+                <t t-if="user_id.sudo().is_student">
+                    <a t-if="student_id" t-attf-href="/my/time_off/?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                    <a t-if="student_id" t-attf-href="/time_off/request/#{student_id.id}?{{ keep_query() }}">
+                        / Leave Request Form
+                    </a>
+                    <t t-else="">/ Leave Request Form</t>
+                </t>
+                <t t-else=" ">
+                    <a t-if="student_id" t-attf-href="/my/time_off/#{student_id.id}?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                    <a t-if="student_id" t-attf-href="/time_off/request/#{student_id.id}?{{ keep_query() }}">
+                        / Leave Request Form
+                    </a>
+                    <t t-else="">/ Leave Request Form</t>
+                </t>
+            </li>
+        </xpath>
+        <xpath expr="//li[5]" position="replace">
+        </xpath>
+        <xpath expr="//li[4]" position="replace">
+            <li t-if="page_name == 'leave_request_submit' or leave_request_form "
+                t-attf-class="breadcrumb-item #{'active ' if not subject_reg_form else ''}">
+                <t t-if="user_id.sudo().is_student">
+                    <a t-if="student_id" t-attf-href="/my/time_off/?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                    <a t-if="student_id" t-attf-href="/time_off/request/#{student_id}?{{ keep_query() }}">
+                        / Leave Request Form
+                    </a>
+                    <t t-else="">/ Leave Request Form</t>
+                    <a t-if="leave_request_submit" t-attf-href="/time_off/request/submit/">
+                        / Leave Request Submit
+                    </a>
+                    <t t-else="">/ Leave Request Submit</t>
+                </t>
+                <t t-else=" ">
+                    <a t-if="student_id" t-attf-href="/my/time_off/#{student_id}?{{ keep_query() }}">
+                        Leave Request List
+                    </a>
+                    <t t-else="">Leave Request List</t>
+                    <a t-if="student_id" t-attf-href="/time_off/request/#{student_id}?{{ keep_query() }}">
+                        / Leave Request Form
+                    </a>
+                    <t t-else="">/ Leave Request Form</t>
+                    <a t-if="leave_request_submit" t-attf-href="/time_off/request/submit/">
+                        / Leave Request Submit
+                    </a>
+                    <t t-else="">/ Leave Request Submit</t>
+                </t>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="student_time_off_portal" name="Portal layout : Student Leave Request">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Student Leave List</t>
+            </t>
+
+            <t t-if="not leave_request_ids">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+
+            <div class="row mt16 mb16 text-left portal_buttons"
+                 style="padding-left: 15px;">
+                <div>
+                    <a t-attf-href="/time_off/request/#{student_id}" id="create_leave">
+                        <button class="btn">Create Leave Request</button>
+                    </a>
+                </div>
+            </div>
+
+            <t t-if="leave_request_ids" t-call="portal.portal_table">
+                <thead t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                    <tr>
+                        <th>Request Number</th>
+                        <th>Student</th>
+                        <th>Time Off Type</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>Approved/Refused On</th>
+                        <th>Approved/Refused By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="leave_request_ids" t-as="request">
+                        <tr>
+                            <td>
+                                <span t-esc="request.request_number"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.student_id.name" id="student_id"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.leave_type.name"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.description"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.start_date" t-options='{"widget": "date"}'/>
+                            </td>
+                            <td>
+                                <span t-esc="request.end_date" t-options='{"widget": "date"}'/>
+                            </td>
+                            <td>
+                                <span t-esc="request.duration"/>
+                            </td>
+
+                            <td>
+                                <t t-if="request.state == 'confirm'">
+                                    <span class="badge badge-pill badge-primary">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-clock-o" aria-label="Requested" title="Requested"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Requested</span>
+                                        </div>
+                                    </span>
+                                </t>
+                                <t t-if="request.state == 'draft'">
+                                    <span class="badge badge-pill badge-danger">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-square" aria-label="Draft" title="Draft"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Update</span>
+                                        </div>
+                                    </span>
+                                </t>
+                                <t t-if="request.state == 'refuse'">
+                                    <span class="badge badge-pill badge-danger">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-square" aria-label="Refused" title="Refused"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Refused</span>
+                                        </div>
+                                    </span>
+                                </t>
+                                <t t-if="request.state == 'validate'">
+                                    <span class="badge badge-pill badge-primary">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-check-square" aria-label="Validated" title="Validated"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Validate</span>
+                                        </div>
+                                    </span>
+                                </t>
+                                <t t-if="request.state == 'approve'">
+                                    <span class="badge badge-pill badge-success">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-check" aria-label="Approved" title="Approved"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Approved</span>
+                                        </div>
+                                    </span>
+                                </t>
+                                <t t-if="request.state == 'cancel'">
+                                    <span class="badge badge-pill badge-danger">
+                                        <div style="width:70px;">
+                                            <i class="fa fa-fw fa-remove" aria-label="Cancelled" title="Cancelled"
+                                               role="img"/>
+                                            <span class="d-none d-md-inline">Cancelled</span>
+                                        </div>
+                                    </span>
+                                </t>
+                            </td>
+                            <td>
+                                <span t-field="request.approve_date" t-field-options='{"format": "dd-MMM-yyyy"}'/>
+                            </td>
+                            <td>
+                                <span t-esc="request.approved_by_id.name"/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template id="openeducat_student_time_off_request" name="Student Leave Request">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Student Time Off Request</t>
+            </t>
+            <div class="mt16" style="background-color:white; padding: 20px 40px 20px 40px;">
+                <form class="student_portal_view/time_off/request/" action="/time_off/request/submit/" method="post" role="form"
+                      enctype="multipart/form-data">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="row col-md-12">
+                        <div class="row col-md-6">
+                            <div class="col-md-4 mt16">
+                                <strong>Student:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <input type="hidden" name="student_id" t-att-value="student_id.id"/>
+                                <input type="text" name="name" id="student_id" t-attf-class="form-control"
+                                       t-att-value="student_id.name" readonly="1"/>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-6">
+                            <div class="col-md-4 mt16">
+                                <strong>Faculty:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <select class="form-control" name="faculty_ids">
+                                    <option value="" class="disabled selected">
+                                        <lable>Select Faculty</lable>
+                                    </option>
+                                    <t t-foreach="faculty_ids or []" t-as="faculty">
+                                        <option t-att-value="faculty.id">
+                                            <t t-esc="faculty.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-6" style="margin-top:10px">
+                            <div class="col-md-4 mt16">
+                                <strong>Leave Type:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <select class="form-control" name="leave_type_ids">
+                                    <option value="" class="disabled selected">
+                                        <lable>Select your option</lable>
+                                    </option>
+                                    <t t-foreach="leave_type_ids or []" t-as="leave_type">
+                                        <option t-att-value="leave_type.id">
+                                            <t t-esc="leave_type.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-6" style="margin-top:10px">
+                            <div class="col-md-4 mt16">
+                                <strong>Attachment:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <input type="file" multiple="true" name="attachments"
+                                       class="inputfile"/>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-6" style="margin-top:10px">
+                            <div class="col-md-4 mt16">
+                                <strong>Start Date:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <input type="text" name="start_date" t-attf-class="form-control a fa-calendar:before"
+                                       required="1" placeholder="MM/DD/YYYY"
+                                       id="leave_start_date"
+                                       data-date-format="MM/DD/YYYY"/>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-6" style="margin-top:10px">
+                            <div class="col-md-4 mt16">
+                                <strong>End Date:</strong>
+                            </div>
+                            <div class="col-md-7 mt8">
+                                <input type="text" id="date_change" name="end_date"
+                                       t-attf-class="form-control a fa-calendar:before" placeholder="MM/DD/YYYY"
+                                       required="1" data-date-format="MM/DD/YYYY"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row col-md-12" style="margin-top:10px">
+                        <div class="col-md-4">
+                            <strong>Description:</strong>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="description" t-attf-class="form-control o_website_form_input" required="1"/>
+                        </div>
+                    </div>
+
+                    <div class="clearfix mt16 row col-md-12 mb16">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                                <span class="fa fa-long-arrow-right"/>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </t>
+    </template>
+
+    <template id="student_time_off_submit" name="Student Leave Request Submitted">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Student Leave Request Submit</t>
+            </t>
+            <t t-if="leave_request" t-call="portal.portal_table">
+                <thead>
+                    <tr>
+                        <th>Request Number</th>
+                        <th>Student</th>
+                        <th>Time Off Type</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="leave_request" t-as="request">
+                        <tr>
+                            <td>
+                                <span t-esc="request.request_number"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.student_id.name" id="student_id"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.leave_type.name"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.description"/>
+                            </td>
+                            <td>
+                                <span t-esc="request.start_date" t-options='{"widget": "date"}'/>
+                            </td>
+                            <td>
+                                <span t-esc="request.end_date" t-options='{"widget": "date"}'/>
+                            </td>
+                            <td>
+                                <span t-esc="request.duration"/>
+                            </td>
+                            <td>
+                                <span t-field="request.state"/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </t>
+        </t>
+    </template>
+</odoo>

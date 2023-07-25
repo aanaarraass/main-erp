@@ -1,0 +1,16 @@
+<odoo>
+    <template id="error_page" name="Failure Code Page">
+        <t t-if="type=='open'">
+            <t t-call="website.layout">
+                <div class="alert alert-success" style="text-align:center;">
+                    <span>Data not found!!! Please scan valid or updated QR Code</span>
+                </div>
+            </t>
+        </t>
+        <t t-else="">
+            <div class="alert alert-success" style="text-align:center;">
+                <span>Data not found!!! Please scan valid or updated QR Code</span>
+            </div>
+        </t>
+    </template>
+</odoo>

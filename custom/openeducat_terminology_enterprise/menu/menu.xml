@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_terminology_setting"
+                  name="Terminology Setting"
+                  sequence="4"
+                  parent="openeducat_core.menu_op_school_config"
+                  action="action_terminology_setting"/>
+    </data>
+</odoo>

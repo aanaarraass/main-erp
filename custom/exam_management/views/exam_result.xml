@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="exam_result_list">
+            <field name="name">Exam Result</field>
+            <field name="model">exam.result</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <field name="total_marks"/>
+                    <field name="passing_marks"/>
+                    <field name="obtained_marks"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="exam_result_form">
+            <field name="name">Exam Result</field>
+            <field name="model">exam.result</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="subjects"/>
+                                <field name="grade"/>
+                                <field name="cgpa"/>
+                                <field name="course_id"/>
+                            </group>
+                            <group>
+                                <field name="total_marks"/>
+                                <field name="passing_marks"/>
+                                <field name="obtained_marks"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="exam_result_action_window">
+            <field name="name">Exam Result</field>
+            <field name="res_model">exam.result</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>

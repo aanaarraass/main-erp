@@ -1,0 +1,46 @@
+.all_drag_option{
+    height:50px;
+    border: 2px dashed #009efb;
+    border-radius: 5px;
+    text-align: -webkit-center;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    transition: 0.3s;
+    margin-bottom: 25px;
+    margin-top:10px;
+    min-height:40px;
+}
+
+.all_drag_option.hovering {
+    background-color: #009ffb91;
+    z-index: 10;
+    /* transform: scale(1.05); */
+}
+
+#option1{
+    display: inline-block;
+    width: auto;
+    min-width:72px;
+    height: 25px;    
+    border-bottom: .5px solid;
+    text-align-last: center;
+}
+
+.drag_into_text_mybtn{
+border: .5px solid;
+padding: 5px;
+background-color: #fff;
+border-radius: 5px;
+margin-left: 5px;
+cursor: pointer;
+
+}
+
+span .drag_into_text_mybtn{
+    background-color: transparent;
+    border: 0px;
+    /* padding-bottom: 0px; */
+margin:-7px;
+    }

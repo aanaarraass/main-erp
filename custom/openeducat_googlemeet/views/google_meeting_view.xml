@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_calendar_google_meeting_form_view" model="ir.ui.view">
+        <field name="name">calendar.google.meeting.form</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button type="action" name="%(openeducat_googlemeet.act_open_googlemeet_view)d" attrs="{'invisible': [('online_meeting','=', True)]}" string="Create Meeting" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,999 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_transportation_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 05:40+0000\n"
+"PO-Revision-Date: 2019-09-30 05:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "Action Needed"
+msgstr "Необходимое действие"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__active
+msgid "Active"
+msgstr "активный"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_ids
+msgid "Activities"
+msgstr "мероприятия"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Activity State"
+msgstr "Государственная деятельность"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+msgid "Apply"
+msgstr "Применить"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_drivers
+msgid "Assignation Logs"
+msgstr "Ассигнационные Журналы"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr "Приложение Граф"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Brand"
+msgstr "марка"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 Emissions"
+msgstr "Выбросы CO2"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 emissions of the vehicle"
+msgstr "выбросы CO2 транспортного средства"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__capacity
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Capacity"
+msgstr "Вместимость"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Catalog Value (VAT Incl.)"
+msgstr "Каталог Значение (вкл. НДС)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Chassis Number"
+msgstr "Номер шасси"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Closed"
+msgstr "Закрыто"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color"
+msgstr "цвет"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color of the vehicle"
+msgstr "Цвет автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_res_company
+msgid "Companies"
+msgstr "Компании"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__company_id
+msgid "Company"
+msgstr "Компания"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_count
+msgid "Contract Count"
+msgstr "Граф контракта"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_contracts
+msgid "Contracts"
+msgstr "контракты"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__cost
+msgid "Cost"
+msgstr "Стоимость"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__cost_count
+msgid "Costs"
+msgstr "Расходы"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_date
+msgid "Created on"
+msgstr "Создано на"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "Current state of the vehicle"
+msgstr "Текущее состояние транспортного средства"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Customize"
+msgstr "Настроить"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_date
+msgid "Date"
+msgstr "Дата"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Date when the vehicle has been immatriculated"
+msgstr "Дата, когда транспортное средство было immatriculated"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Done"
+msgstr "Готово"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Doors Number"
+msgstr "Двери Количество"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Draft"
+msgstr "Черновой вариант"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver"
+msgstr "Водитель"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver of the vehicle"
+msgstr "Водитель автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Drop"
+msgstr "Капля"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "End"
+msgstr "Конец"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "End Trip"
+msgstr "Конец поездки"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/vehicle.py:30
+#, python-format
+msgid "Enter proper Capacity."
+msgstr "Введите правильную емкость."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__estimated_time
+msgid "Estimated Arrival"
+msgstr "ожидаемое прибытие"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__estimated_arrival_conf
+msgid "Estimated Arrival Time"
+msgstr "ожидаемое время прибытия"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__first_contract_date
+msgid "First Contract Date"
+msgstr "Первая дата контракта"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_follower_ids
+msgid "Followers"
+msgstr "Читают"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_channel_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Читатели (каналы)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Читатели (партнеры)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_logs_count
+msgid "Fuel Log Count"
+msgstr "Топлива Log Count"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_fuel
+msgid "Fuel Logs"
+msgstr "Журналы Топливные"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Type"
+msgstr "Тип топлива"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Used by the vehicle"
+msgstr "Топливо Используется автомобиль"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Get Stops"
+msgstr "Получить Стопы"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Group By..."
+msgstr "Группа по..."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_overdue
+msgid "Has Contracts Overdue"
+msgstr "Имеет контракты Просроченные"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_due_soon
+msgid "Has Contracts to renew"
+msgstr "Имеет контракты по возобновлению"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,description:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "Helps you manage user related to transportation."
+msgstr "Помогает управлять пользователем, связанным с транспортировкой."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower
+msgid "Horsepower"
+msgstr "Лошадиные силы"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower_tax
+msgid "Horsepower Taxation"
+msgstr "Мощность Налогообложение"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__id
+msgid "ID"
+msgstr "Номер"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Если флажок новые сообщения требуют вашего внимания."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Если флажок установлен, новые сообщения требуют вашего внимания."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Если флажок установлен, некоторые сообщения имеют ошибки доставки."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Immatriculation Date"
+msgstr "Immatriculation Дата"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr "Является ли Последователь"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Just done"
+msgstr "Только что сделано"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle____last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Last Odometer"
+msgstr "Последний одометр"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_uid
+msgid "Last Updated by"
+msgstr "Последнее обновление от"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_date
+msgid "Last Updated on"
+msgstr "Последнее обновление"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License Plate"
+msgstr "Номерной знак"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License plate number of the vehicle (i = plate number for a car)"
+msgstr "Номерной знак транспортного средства (я = номерной знак для автомобиля)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location"
+msgstr "Место нахождения"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location of the vehicle (garage, ...)"
+msgstr "Местонахождение автомобиля (гараж, ...)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "Logo"
+msgstr "логотип"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Logo (medium)"
+msgstr "Логотип (среда)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Logo (small)"
+msgstr "Логотип (маленький)"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Looks great!"
+msgstr "Выглядит отлично!"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Главная Attachment"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Make of the vehicle"
+msgstr "Марка автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_manager
+msgid "Manager"
+msgstr "Менеджер"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Medium-sized logo of the brand. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Среднего размера логотип марки. Он автоматически изменяется в качестве 128x128px изображения с соотношением сторон сохранились. Используйте это поле для отображения форм или некоторых канбаны взглядами."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr "Сообщение об ошибке доставки"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_ids
+msgid "Messages"
+msgstr "Сообщения"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model"
+msgstr "модель"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Model Year"
+msgstr "Год выпуска"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model of the vehicle"
+msgstr "Модель автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__name
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Name"
+msgstr "имя"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_name
+msgid "Name of contract to renew soon"
+msgstr "Название контракта возобновить в ближайшее время"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Следующая активность Deadline"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr "Следующая Активность"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr "Следующий тип деятельности"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Not done"
+msgstr "Не сделано"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Количество действий"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Number of doors of the vehicle"
+msgstr "Количество дверей автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of error"
+msgstr "Количество ошибок"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Количество сообщений, которое требует действий"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Число сообщений с ошибкой доставки"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Number of seats of the vehicle"
+msgstr "Количество мест в транспортном средстве"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Количество непрочитанных сообщений"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_count
+msgid "Odometer"
+msgstr "одометр"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Odometer Unit"
+msgstr "одометр Unit"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Odometer measure of the vehicle at the moment of this log"
+msgstr "Одометр мера транспортного средства в момент этого журнала"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,name:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "OpenEduCat Transportation"
+msgstr "OpenEduCat транспорт"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_passenger_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__partner_id
+msgid "Passenger"
+msgstr "пассажир"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Passengers"
+msgstr "Пассажиры"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+msgid "Person(s)"
+msgstr "Человек (ы)"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Pickup"
+msgstr "Подобрать"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power"
+msgstr "Сила"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power in kW of the vehicle"
+msgstr "Мощность в кВт автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__present
+msgid "Present/Absent"
+msgstr "Присутствует / Отсутствует"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__residual_value
+msgid "Residual Value"
+msgstr "остаточная стоимость"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr "Ответственный пользователь"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__route_id
+msgid "Route"
+msgstr "маршрут"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "Route Layout Configuration"
+msgstr "Конфигурация маршрута Layout"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__route_line_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__route_line_id
+msgid "Route Line"
+msgstr "линия маршрута"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_route_layout
+msgid "Route Record Configuration"
+msgstr "Конфигурация записи маршрута"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_type
+msgid "Route Type"
+msgstr "Тип маршрута"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_stop_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_tree
+msgid "Routes"
+msgstr "Маршруты"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Seats Number"
+msgstr "Количество мест Количество"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "See how to create a Route Layout."
+msgstr "Посмотрите, как создать макет маршрута."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "See how to create a Trips Layout."
+msgstr "Посмотрите, как создать макет поездки."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "See how to create a Vehicle Type Layout."
+msgstr "Посмотрите, как создать тип транспортного средства Layout."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "See how to create a stops Layout."
+msgstr "Посмотрите, как создать макет останавливается."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__sequence
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__sequence
+msgid "Sequence"
+msgstr "Последовательность"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__service_count
+msgid "Services"
+msgstr "Сервисы"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_services
+msgid "Services Logs"
+msgstr "Услуги Журналы"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Small-sized logo of the brand. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Малогабаритный логотип марки. Он автоматически изменяется в качестве 64x64px изображения с соотношением сторон сохранились. Используйте это поле в любом месте требуется небольшое изображение."
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Start"
+msgstr "Начало"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__start_time
+msgid "Start Time"
+msgstr "Время начала"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Start Trip"
+msgstr "Начало поездки"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__state
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "State"
+msgstr "государственный"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_route_layout_state
+msgid "State of the onboarding route layout  step"
+msgstr "Состояние на стадии макета адаптационного маршрута"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__transportation_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "Состояние стадии адаптационной"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_stop_layout_state
+msgid "State of the onboarding stops layout  step"
+msgstr "Состояние адаптационного останавливает шага компоновки"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_trip_layout_state
+msgid "State of the onboarding trip layout  step"
+msgstr "Состояние на стадии макета адаптационных поездок"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_vehicle_layout_state
+msgid "State of the onboarding vehicle layout  step"
+msgstr "Состояние адаптационного шага компоновки транспортного средства"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Статус на основе деятельности\n"
+"Просроченная: Дата, уже прошло\n"
+"Сегодня: Дата Активность сегодня\n"
+"Планируемое: Будущая деятельность."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__stop_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__stop_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_tree
+msgid "Stop"
+msgstr "Стоп"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+msgid "Stop(s)"
+msgstr "Стоп (ы)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_stop_view
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__stop_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_stop_ids
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_stop_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Stops"
+msgstr "Остановки"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "Stops Layout Configuration"
+msgstr "Остановки Layout Конфигурация"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_stop_layout
+msgid "Stops Record Configuration"
+msgstr "Остановки Конфигурация записи"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__tag_ids
+msgid "Tags"
+msgstr "Теги"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "This field holds the image used as logo for the brand, limited to 1024x1024px."
+msgstr "Это поле содержит изображение, используемое в качестве логотипа для бренда, ограниченного 1024x1024px."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_total
+msgid "Total of contracts due or overdue minus one"
+msgstr "Всего контрактов из-за или просрочены минус один"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission"
+msgstr "коробка передач"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission Used by the vehicle"
+msgstr "Передача Используется автомобиль"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_transportations_main
+msgid "Transportation"
+msgstr "Транспорт"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route
+msgid "Transportation Route"
+msgstr "Транспорт Маршрут"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_line
+msgid "Transportation Route Line"
+msgstr "Транспорт Маршрут линии"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_passenger
+msgid "Transportation Route Passenger"
+msgstr "Транспорт Маршрут Passenger"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_stop_line
+msgid "Transportation Route Stop Line"
+msgstr "Транспорт Маршрут Stop Line"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_stop
+msgid "Transportation Stop"
+msgstr "Транспорт Стоп"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_vehicle
+msgid "Transportation Vehicle"
+msgstr "Транспортировка автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_line_sub
+msgid "Trips"
+msgstr "Путешествия"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "Trips Layout Configuration"
+msgstr "Trips Layout Конфигурация"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_trip_layout
+msgid "Trips Record Configuration"
+msgstr "Trips Конфигурация записи"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Unique number written on the vehicle motor (VIN/SN number)"
+msgstr "Уникальный номер написан на двигателе транспортного средства (VIN / номер SN)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Unit of the odometer "
+msgstr "Комплект счетчика пробега "
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "Unread Messages"
+msgstr "Непрочитанные сообщения"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Непрочитанные сообщения Счетчик"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_user
+msgid "User"
+msgstr "Пользователь"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Value of the bought vehicle"
+msgstr "Стоимость купленного автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__vehicle_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vehicle_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_tree
+msgid "Vehicle"
+msgstr "Транспортное средство"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Vehicle Type Layout Configuration"
+msgstr "Конфигурация Тип макета автомобиля"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_vehicle_layout
+msgid "Vehicle Type Record Configuration"
+msgstr "Тип транспортного средства Конфигурация записи"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/stop.py:35
+#, python-format
+msgid "Vehicle capacity is over."
+msgstr "Емкость автомобиля закончилась."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_vehicle_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_vehicle_sub
+msgid "Vehicles"
+msgstr "Транспортные средства"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr "Сайт сообщение"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr "Сайт истории связи"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Year of the model"
+msgstr "Год модели"
+

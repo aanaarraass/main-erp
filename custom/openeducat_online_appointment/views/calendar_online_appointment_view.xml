@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="calendar__online_appointment_view_tree" model="ir.ui.view">
+        <field name="name">calendar.online.appointment.tree</field>
+        <field name="model">calendar.online.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Calendar Online Appointment">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="duration" />
+                <field name="user_id" />
+                <field name="is_cancel" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="calendar__online_appointment_view_search" model="ir.ui.view">
+            <field name="name">calendar.online.appointment.search</field>
+            <field name="model">calendar.online.appointment</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <filter string="MyAppointment" name="user_id" domain="[('user_id', '=', uid)]"/>
+                </search>
+            </field>
+    </record>
+
+    <record id="calendar_online_appointment_view_form" model="ir.ui.view">
+        <field name="name">calendar.online.appointment.form</field>
+        <field name="model">calendar.online.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Calendar Online Appointment">
+                <sheet>
+                    <div class="oe_button_box">
+                        <button class="oe_stat_button" name="calendar_appointment_schedule"
+                                type="object" icon="fa-calendar">
+                            <field name="count_appointment" widget="statinfo" string="Appointment"/>
+                        </button>
+                        <button class="oe_stat_button" name="open_website_url" type="object" icon="fa-globe" >
+                            <div class="o_stat_info">
+                                <span class="o_stat_text">
+                                    Go To
+                                    <br/>
+                                    Website
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+                    <group col="4">
+                        <field name="name" required="1"/>
+                        <field name="code" />
+                        <field name="user_id" />
+                        <field name="default_timezone" required="1"/>
+                        <field name="assign_method" required="1"/>
+                        <field name="location"/>
+                        <field name="website_url" invisible="1" />
+                    </group>
+                    <group string="Appointment Scheduling" col="4">
+                        <field name="duration" widget="float_time" required="1"/>
+                        <field name="min_appointment_hours" widget="float_time" required="1"/>
+                        <label for="max_appointment_days" string="Appointment not after (days)"/>
+                        <div>
+                              <field name="max_appointment_days" class="oe_inline" />
+                              <span> in </span>
+                              <field name="not_after_type"/>
+                        </div>
+                    </group>
+                    <group string="Appointment Cancellation">
+                        <field name="is_cancel" />
+                        <label for="min_appointment_hours" string="Schedule Appointment" attrs="{'invisible': [('is_cancel', '=', False)]}"/>
+                        <div>
+                            <div attrs="{'invisible': [('is_cancel', '=', False)]}">
+                              <span>Before </span><field name="min_appointment_cancel_duration" class="oe_inline" attrs="{'invisible': [('is_cancel', '=', False)],'required': [('is_cancel', '=', True)]}"/>
+                              <span>  in  </span><field name="cancel_type" class="oe_inline" attrs="{'invisible': [('is_cancel', '=', False)],'required': [('is_cancel', '=', True)]}"/>
+                            </div>
+                        </div>
+                    </group>
+                    <notebook>
+                    <page string="Availabilities">
+                         <field name="employee_ids">
+                                <tree string="Resources">
+                                    <field name="name"/>
+                                    <field name="resource_calendar_id"/>
+                                    <field name="id" widget="access_url" string="Appointment URL" context="{'parent_id': parent.website_url}"/>
+                                </tree>
+                            </field>
+                    </page>
+                    <page string="Slots">
+                        <field name="slots" mode="tree">
+                            <tree string="Slots" editable="bottom">
+                                <field name="week"/>
+                                <field name="hour" widget="float_time"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Message">
+                        <field name="description"/>
+                    </page>
+                    <page string="Question">
+                        <field name="question_ids"/>
+                    </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="calendar_online_appointment_view_kanban" model="ir.ui.view">
+        <field name="name">calendar.online.appointment.kanban</field>
+        <field name="model">calendar.online.appointment</field>
+        <field name="arch" type="xml">
+        <kanban>
+            <templates>
+                <t t-name="kanban-box">
+                 <div t-attf-class="#{kanban_color(0)} oe_kanban_global_click">
+                    <div class="oe_kanban_details">
+                        <div t-attf-class="o_kanban_card_header">
+                            <div class="o_dropdown_kanban dropdown">
+                                <a class="dropdown-toggle o-no-caret btn" role="button" data-toggle="dropdown" data-display="static" href="#" aria-label="Dropdown menu" title="Dropdown menu">
+                                    <span class="fa fa-ellipsis-v"/>
+                                </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <t t-if="widget.editable"><a role="menuitem" type="edit" class="dropdown-item">Edit</a></t>
+                                </div>
+                            </div>
+                            <div>
+                                <strong><h6><field name="name"/></h6></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <field name="location"/>
+                    </div>
+                    <div class="pb-3">
+                        <field name="default_timezone"/>
+
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" name="calendar_appointment_schedule" type="object" string="Schedule">
+                            <span><field name="count_appointment" filter_domain="[('appointment_id', 'ilike', self)]"/></span>
+                            <span>Schedule</span>
+                        </button>
+                    </div>
+                 </div>
+                </t>
+            </templates>
+        </kanban>
+        </field>
+    </record>
+
+    <record id="action_calendar_online_appointment" model="ir.actions.act_window">
+        <field name="name">Online Calendar Appointment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">calendar.online.appointment</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{'search_default_user_id': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new calendar appointment
+            </p>
+        </field>
+    </record>
+
+    <record id="action_view_appointment_kanban" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="action_calendar_online_appointment"/>
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="calendar_online_appointment_view_kanban"/>
+    </record>
+
+     <record id="action_view_appointment_tree" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="action_calendar_online_appointment"/>
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="calendar__online_appointment_view_tree"/>
+    </record>
+
+    <record id="action_view_calendar_appointment_form" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="action_calendar_online_appointment"/>
+        <field name="sequence" eval="3"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="calendar_online_appointment_view_form"/>
+    </record>
+
+    <menuitem
+        id="calendar_appointment_menu"
+        parent="calendar.mail_menu_calendar"
+        name="Online Appointment"
+        action="action_calendar_online_appointment"
+        sequence="10"/>
+
+</odoo>

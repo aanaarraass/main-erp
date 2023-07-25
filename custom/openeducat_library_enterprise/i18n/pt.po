@@ -1,0 +1,994 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_library_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 09:18+0000\n"
+"PO-Revision-Date: 2019-09-26 09:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr "<I class = \"fa fa-reticências-v\" role = \"img\" aria-label = \"Gerenciar\" title = \"Gerenciar\" />"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>New</span>"
+msgstr "<Span> Novo </ span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>Reports</span>"
+msgstr "<Span> Relatórios </ span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Actual Return Date:</strong>"
+msgstr "<Strong> real data de retorno: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Author:</strong>"
+msgstr "<Strong> Autor: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Code:</strong>"
+msgstr "<Strong> Código: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Due Date:</strong>"
+msgstr "<Strong> Due Date: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Edition:</strong>"
+msgstr "<Strong> Edição: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>ISBN Code:</strong>"
+msgstr "<Strong> ISBN Código: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Invoice:</strong>"
+msgstr "<Strong> Nota Fiscal: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Issued Date:</strong>"
+msgstr "<Strong> Data de Emissão: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "<strong>Library Card:</strong>"
+msgstr "<Strong> Biblioteca de cartão: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Queue Count:</strong>"
+msgstr "<Strong> Mídia Queue Count: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Type:</strong>"
+msgstr "Digite <strong> Mídia: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Unit:</strong>"
+msgstr "<Strong> Unidade de mídia: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media:</strong>"
+msgstr "<Strong> Mídia: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Penalty:</strong>"
+msgstr "<Strong> Pena: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Publisher:</strong>"
+msgstr "<Strong> Editor: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Status:</strong>"
+msgstr "<Strong> Status: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student / Faculty:</strong>"
+msgstr "<Strong> Estudante / Faculdade: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student:</strong>"
+msgstr "<Strong> Student: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Tags:</strong>"
+msgstr "<strong> Tags: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Actual Return Date"
+msgstr "Data de retorno real"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "All Media Information"
+msgstr "Todas as Informações de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+msgid "Author"
+msgstr "Autor"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_author_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "Author Configuration"
+msgstr "Configuração do Autor"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Author:"
+msgstr "Autor:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__available
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Available"
+msgstr "acessível"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_barcode_issue_media
+msgid "Barcode Issue Media Wizard"
+msgstr "Media Wizard Barcode Issue"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_movement.py:52
+#, python-format
+msgid "Can't renew media \n"
+" you have penalty to pay"
+msgstr "Não é possível renovar media\n"
+" você tem pena de pagar"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:58
+#, python-format
+msgid "Can't return media : % s"
+msgstr "não pode retornar media:% s"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:72
+#, python-format
+msgid "Card not available : % s"
+msgstr "O cartão não disponível:% s"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Closed"
+msgstr "Fechadas"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_author__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_purchase__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_queue__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_unit__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_publisher__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_tag__company_id
+msgid "Company"
+msgstr "companhia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Course"
+msgstr "Curso"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Course:"
+msgstr "Curso:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Customize"
+msgstr "Personalizar"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.menu_op_dashboard_librarian
+msgid "Dashboard"
+msgstr "painel de controle"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Description"
+msgstr "Descrição"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__display_name
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__display_name
+msgid "Display Name"
+msgstr "Mostrar nome"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Done"
+msgstr "Feito"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Due"
+msgstr "Vencimento"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_month
+msgid "Due Media of Month"
+msgstr "Devido mídia do mês"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_today
+msgid "Due Media of Today"
+msgstr "Devido mídia de hoje"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Edition"
+msgstr "Edição"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Edition:"
+msgstr "Edição:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Educational Details"
+msgstr "Detalhes educacionais"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "From Date"
+msgstr "Da data"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "From Date:"
+msgstr "Da data:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__id
+msgid "ID"
+msgstr "EU IRIA"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "ISBN Code"
+msgstr "Código ISBN"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "Internal Code"
+msgstr "Código interno"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Issue"
+msgstr "Questão"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.barcode_issue_media_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Issue Media"
+msgstr "mídia Issue"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.barcode_issue_media_act
+msgid "Issue media"
+msgstr "meios de emissão"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__issued
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Issued"
+msgstr "Emitido"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Issued Date"
+msgstr "Data de emissão"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Just done"
+msgstr "apenas feito"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__kanban_dashboard_graph
+msgid "Kanban Dashboard Graph"
+msgstr "Kanban Painel Gráfico"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media____last_update
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew____last_update
+msgid "Last Modified on"
+msgstr "Última modificação em"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__librarian_id
+msgid "Librarian"
+msgstr "Bibliotecário"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Library\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+msgstr "Biblioteca\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Library All Media Information"
+msgstr "Biblioteca All Media Information"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Library All Media details"
+msgstr "detalhes Biblioteca todos os meios"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+msgid "Library Card"
+msgstr "Cartão da biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "Library Card Configuration"
+msgstr "Configuração do cartão de biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__library_card_number
+msgid "Library Card Number"
+msgstr "Número do cartão da biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+msgid "Library Card Type"
+msgstr "Biblioteca Tipo de cartão"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "Library Card Type Configuration"
+msgstr "Configuração Tipo de cartão de biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "Library Dashboard"
+msgstr "Painel biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_renew
+msgid "Library Media Renewal"
+msgstr "Renovação de mídia da biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Library card"
+msgstr "Cartão da biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Looks great!"
+msgstr "Parece bem!"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:100
+#, python-format
+msgid "Maximum Number of media allowed for % s is : % s"
+msgstr "Número máximo de meios permitiu% s é:% s"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_month
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_today
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media"
+msgstr "meios de comunicação"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_pivot
+msgid "Media Analysis"
+msgstr "Análise de mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_author
+msgid "Media Author"
+msgstr "mídia Autor"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media
+msgid "Media Details"
+msgstr "Detalhes de mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_movement
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__movement_id
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Media Movement"
+msgstr "Movimento de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Media Movement Information"
+msgstr "Media Information Movimento"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Movements"
+msgstr "Movimentos de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_purhase_list
+msgid "Media Purchase List"
+msgstr "Lista de Compra de mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media Purchase Request"
+msgstr "Mídia pedido de compra"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+msgid "Media Purchase Request List"
+msgstr "Mídia Lista Pedido de Compra"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Purchase Request Submit"
+msgstr "Mídia Pedido de Compra Submeter"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__queue_count
+msgid "Media Queue Count"
+msgstr "Conde Queue mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_queue_list
+msgid "Media Queue List"
+msgstr "Lista Queue mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media Queue Request"
+msgstr "Request Queue mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Media Queue Request List"
+msgstr "Lista Request Queue mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+msgid "Media Queue Request Submit"
+msgstr "Mídia fila de pedidos Submeter"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Media Renew Details"
+msgstr "Mídia Renove Detalhes"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_tag
+msgid "Media Tags"
+msgstr "media Tags"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Type"
+msgstr "Tipo de mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_media_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "Media Type Configuration"
+msgstr "Configuração Tipo de Mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_unit
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Unit"
+msgstr "Unidade de mídia"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__media_unit_number
+msgid "Media Unit Number"
+msgstr "Mídia Número de Unidade"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:52
+#, python-format
+msgid "Media Unit can not available : % s"
+msgstr "Unidade de mídia não pode disponível:% s"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:95
+#, python-format
+msgid "Media Unit can not be issued                         because it's state is : % s"
+msgstr "Unidade de mídia não pode ser emitido porque o estado é:% s"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media type:"
+msgstr "Tipo de mídia:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Media(s)"
+msgstr "Mídia (s)"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media:"
+msgstr "Meios de comunicação:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Movements"
+msgstr "movimentos"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New"
+msgstr "Novo"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New Media"
+msgstr "Novas mídias"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Not done"
+msgstr "Não realizado"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__media_movement_id
+msgid "Parent Media Movement"
+msgstr "Pai Movimento de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Penalty"
+msgstr "Multa"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Person"
+msgstr "Pessoa"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Proceed"
+msgstr "Continuar"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_publisher
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Publisher"
+msgstr "Editor"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_publisher_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Publisher Configuration"
+msgstr "Configuration Publisher"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Publisher:"
+msgstr "Editor:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__is_renew
+msgid "Renew"
+msgstr "Renovar"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__renew_date
+msgid "Renew Date"
+msgstr "renovar Data"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__renew_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Details"
+msgstr "Renove Detalhes"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Media"
+msgstr "Renove mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Request by:"
+msgstr "Solicitado por:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Requested by"
+msgstr "Requerido por"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Return"
+msgstr "Retorna"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Return Media"
+msgstr "retorno de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "SUBMIT\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "ENVIAR\n"
+"                                    <Span class = \"fa fa-long-seta para a direita\" />"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "See how to create a Author."
+msgstr "Veja como criar um Autor."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "See how to create a Media Type."
+msgstr "Veja como criar um tipo de mídia."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "See how to create a library card type."
+msgstr "Veja como criar um tipo de cartão de biblioteca."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "See how to create a library card."
+msgstr "Veja como criar um cartão de biblioteca."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "See how to create a publisher."
+msgstr "Veja como criar uma editora."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Select your option"
+msgstr "Escolha sua opção"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Sequence No."
+msgstr "Sequência No."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Settings"
+msgstr "Configurações"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_author_layout_state
+msgid "State of the onboarding author layout step"
+msgstr "Estado da etapa disposição autor de integração"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_layout_state
+msgid "State of the onboarding library card layout step"
+msgstr "Estado da etapa de layout do cartão de biblioteca de integração"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_type_layout_state
+msgid "State of the onboarding library card type layout step"
+msgstr "Estado da etapa de layout tipo de integração cartão de biblioteca"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__openeducat_library_onboard_panel
+msgid "State of the onboarding library layout step"
+msgstr "Estado da etapa de layout da biblioteca de integração"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_media_type_layout_state
+msgid "State of the onboarding media type layout step"
+msgstr "Estado da etapa de layout tipo de mídia de integração"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_publisher_layout_state
+msgid "State of the onboarding publisher layout step"
+msgstr "Estado da etapa de layout editor de integração"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Status"
+msgstr "Estado"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "Student / Faculty Detail"
+msgstr "Estudante / Detalhe Faculdade"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Subject"
+msgstr "Assunto"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Subject:"
+msgstr "Sujeito:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Subjects"
+msgstr "assuntos"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+msgid "Tag"
+msgstr "Etiqueta, rótulo, palavra-chave"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "There are currently no information for your account!!!"
+msgstr "Não existem informações para a sua conta !!!"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "This is the Library Dashboard."
+msgstr "Este é o painel Biblioteca."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Title"
+msgstr "Título"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Title:"
+msgstr "Título:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "To Date"
+msgstr "Até a presente data"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_queue.py:26
+#, python-format
+msgid "To Date cannot be set before From Date."
+msgstr ""
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date must be grater then From Date"
+msgstr "Para Data deve ser ralador, em seguida, De Data"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date:"
+msgstr "Até a presente data:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "To date"
+msgstr "Até a presente data"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__total_copies
+msgid "Total Copies"
+msgstr "total de Cópias"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__total_units
+msgid "Total Units"
+msgstr "Unidades totais"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__transaction_type
+msgid "Transaction Type"
+msgstr "Tipo de transação"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Units"
+msgstr "Unidades"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "User"
+msgstr "Utilizador"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "User:"
+msgstr "Do utilizador:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "media Issue"
+msgstr "Edição de mídia"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Month"
+msgstr "do mês"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Today"
+msgstr "de hoje"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "status"
+msgstr "estado"
+

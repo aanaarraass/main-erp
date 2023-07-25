@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quiz_first_question_drag_into_text_inherit" inherit_id="openeducat_quiz.quiz_first_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'drag_into_text'">
+
+            <div id="drag_into_text_data">
+
+                <div class="drag_question" t-att-data-id="question.id" t-att-id="question.id"></div>
+                <div id="drag_into_text"></div>
+            </div>
+            </t>
+        </xpath>
+         <xpath expr="//t[@t-esc='question.name']" position="replace">
+            <t t-if="question.que_type == 'drag_into_text'">
+                <t>Drag and drop into text.</t>
+            </t>
+            <t t-if="question.que_type != 'drag_into_text'">
+                <t t-esc="question.name"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_last_question_drag_into_text_inherit" inherit_id="openeducat_quiz.quiz_last_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'drag_into_text'">
+            <div id="drag_into_text_data">
+                <div class="drag_question" t-att-data-id="question.id" t-att-id="question.id"></div>
+                <div id="drag_into_text"></div>
+            </div>
+            </t>
+        </xpath>   
+         <xpath expr="//t[@t-esc='question.name']" position="replace">
+            <t t-if="question.que_type == 'drag_into_text'">
+                <t>Drag and drop into text.</t>
+            </t>
+            <t t-if="question.que_type != 'drag_into_text'">
+                <t t-esc="question.name"/>
+            </t>
+        </xpath>                                                               
+    </template>
+
+    <template id="quiz_middle_question_drag_into_text_inherit" inherit_id="openeducat_quiz.quiz_middle_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'drag_into_text'">
+            <div id="drag_into_text_data">
+                <div class="drag_question" t-att-data-id="question.id" t-att-id="question.id"></div>
+                <div id="drag_into_text"></div>
+            </div>
+            </t>
+        </xpath>
+         <xpath expr="//t[@t-esc='question.name']" position="replace">
+            <t t-if="question.que_type == 'drag_into_text'">
+                <t>Drag and drop into text.</t>
+            </t>
+            <t t-if="question.que_type != 'drag_into_text'">
+                <t t-esc="question.name"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

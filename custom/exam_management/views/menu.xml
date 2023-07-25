@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem name="Exam Management" id="academic_calendar_menu_root"
+              web_icon="exam_management,static/src/img/exam.png">
+        <menuitem
+                name="Academic calendar"
+                id="menu_academic_calendar"
+                sequence="1"
+                action="academic_calendar_action_window"
+        />
+
+        <menuitem
+                name="Exams"
+                id="menu_exam_exam"
+                sequence="2"
+                action="exam_exam_action_window"
+        />
+        <menuitem name="Configuration" id="menu_exam_management_configuration" sequence="3">
+            <menuitem
+                    name="TimeTable Request"
+                    id="menu_timetable_request"
+                    sequence="1"
+                    action="timetable_request_action_window"
+            />
+            <menuitem
+                    name="Exam Room"
+                    id="menu_exam_room"
+                    sequence="2"
+                    action="exam_room_action_window"
+            />
+            <menuitem
+                    name="Sitting Plan"
+                    id="menu_exam_sittingplan"
+                    sequence="3"
+                    action="exam_sittingplan_action_window"
+            />
+            <menuitem
+                    name="Exam Result"
+                    id="menu_result_action"
+                    sequence="4"
+                    action="exam_result_action_window"
+            />
+             <menuitem
+                    name="Time Slots"
+                    id="menu_exam_timeslots_action"
+                    sequence="5"
+                    action="exam_timeslots_action_window"
+            />
+
+        </menuitem>
+    </menuitem>
+
+</odoo>

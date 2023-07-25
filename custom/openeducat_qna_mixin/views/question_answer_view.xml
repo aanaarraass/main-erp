@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="question_answer_tree" model="ir.ui.view">
+        <field name="name">question.answer.tree</field>
+        <field name="model">question.single</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="question_type"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="question_answer_view_form" model="ir.ui.view">
+        <field name="name">question.answer.form</field>
+        <field name="model">question.single</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                        <field name="placeholder" />
+                        <field name="required_answer"/>
+                        <field name="question_type" required="1"/>
+                        <field name="res_model" invisible="1"/>
+                        <field name="qna_id" invisible="1"/>
+                        <field name="answer_ids" attrs="{'invisible': ['|','|','|','|','|','|',('question_type','=','char'),
+                        ('question_type','=','text'),('question_type','=','date'),('question_type','=','datetime'),
+                        ('question_type','=','file'),('question_type','=','number'),('question_type','=','decimal')]}"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

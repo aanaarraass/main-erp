@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="transport_account_invoice_view">
+            <t t-call="transport_account.report_transport_account_view_id"/>
+        </template>
+
+        <record id="paperformat_transport_account_voucher" model="report.paperformat">
+            <field name="name">UOJ Pdf Sheet</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">25</field>
+            <field name="margin_bottom">3</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">25</field>
+            <field name="dpi">90</field>
+
+        </record>
+
+
+        <report
+                id="report_transport_account_invoice_id"
+                model="account.move"
+                string="Transport Agreement Fee"
+                name="transport_account.transport_account_invoice_view"
+                file="transport_account.transport_account_invoice_view"
+                report_type="qweb-pdf"
+                paperformat="paperformat_transport_account_voucher"
+                menu="True"/>
+
+
+
+    </data>
+</odoo>

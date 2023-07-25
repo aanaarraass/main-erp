@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="calendar_slot_1" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">09.00</field>
+        </record>
+        <record id="calendar_slot_2" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">10.00</field>
+        </record>
+        <record id="calendar_slot_3" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">11.00</field>
+        </record>
+        <record id="calendar_slot_4" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">13.00</field>
+        </record>
+        <record id="calendar_slot_5" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">14.00</field>
+        </record>
+        <record id="calendar_slot_6" model="calendar.appointment.slot">
+            <field name="week">1</field>
+            <field name="hour">15.00</field>
+        </record>
+        <record id="calendar_slot_14" model="calendar.appointment.slot">
+            <field name="week">2</field>
+            <field name="hour">13.00</field>
+        </record>
+        <record id="calendar_slot_15" model="calendar.appointment.slot">
+            <field name="week">2</field>
+            <field name="hour">14.00</field>
+        </record>
+        <record id="calendar_slot_16" model="calendar.appointment.slot">
+            <field name="week">2</field>
+            <field name="hour">15.00</field>
+        </record>
+        <record id="calendar_slot_22" model="calendar.appointment.slot">
+            <field name="week">3</field>
+            <field name="hour">10.00</field>
+        </record>
+        <record id="calendar_slot_23" model="calendar.appointment.slot">
+            <field name="week">3</field>
+            <field name="hour">11.00</field>
+        </record>
+        <record id="calendar_slot_24" model="calendar.appointment.slot">
+            <field name="week">3</field>
+            <field name="hour">13.00</field>
+        </record>
+        <record id="calendar_slot_27" model="calendar.appointment.slot">
+            <field name="week">3</field>
+            <field name="hour">16.00</field>
+        </record>
+
+        <record id="calendar_slot_31" model="calendar.appointment.slot">
+            <field name="week">4</field>
+            <field name="hour">09.00</field>
+        </record>
+        <record id="calendar_slot_32" model="calendar.appointment.slot">
+            <field name="week">4</field>
+            <field name="hour">10.00</field>
+        </record>
+        <record id="calendar_slot_35" model="calendar.appointment.slot">
+            <field name="week">4</field>
+            <field name="hour">14.00</field>
+        </record>
+        <record id="calendar_slot_36" model="calendar.appointment.slot">
+            <field name="week">4</field>
+            <field name="hour">15.00</field>
+        </record>
+        <record id="calendar_slot_37" model="calendar.appointment.slot">
+            <field name="week">4</field>
+            <field name="hour">16.00</field>
+        </record>
+        <record id="calendar_slot_43" model="calendar.appointment.slot">
+            <field name="week">5</field>
+            <field name="hour">11.00</field>
+        </record>
+        <record id="calendar_slot_44" model="calendar.appointment.slot">
+            <field name="week">5</field>
+            <field name="hour">13.00</field>
+        </record>
+        <record id="calendar_slot_45" model="calendar.appointment.slot">
+            <field name="week">5</field>
+            <field name="hour">14.00</field>
+        </record>
+    </data>
+</odoo>

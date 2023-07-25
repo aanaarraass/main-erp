@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="20_Omr_4option" model="op.omr.template">
+          <field name="name">20 MCQ 4_Option</field>
+          <field name="question_option">4</field>
+          <field name="json_data">{
+                "Dimensions": [600, 700],
+                "BubbleDimensions": [7, 8],
+                "Concatenations": {
+                    "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                    ],
+                    "key_type": ["Medium"]
+                  },
+                  "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                    "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"],
+                    "QBlocks": {
+                        "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                        "Medium": {
+                                "qType": "QTYPE_MED",
+                                "orig": [222,84],
+                                "bigGaps": [115,11],
+                                "gaps": [15,20],
+                                "qNos": [[["Medium"]]]
+                        },
+                        "MCQBlock1": {
+                                "qType": "QTYPE_MCQ4",
+                                "orig": [47, 293],
+                                "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                                "gaps": [17, 15.5],
+                                "bigGaps": [15, 15]},
+                        "MCQBlock2": {
+                                "qType": "QTYPE_MCQ4",
+                                "orig": [159, 293],
+                                "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                                "gaps": [17, 15.5],
+                                "bigGaps": [15, 15]
+                    }
+                    }
+            }</field>
+        </record>
+        <record id="50_Omr_4option" model="op.omr.template">
+            <field name="name">50 MCQ 4_Option</field>
+            <field name="question_option">4</field>
+            <field name="json_data">{
+                "Dimensions": [600, 700],
+                "BubbleDimensions": [7, 8],
+                "Concatenations": {
+                    "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                    ],
+                    "key_type": ["Medium"]
+                  },
+                "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20",
+                "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30",
+                "q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40",
+                "q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"],
+                "QBlocks": {
+                    "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                "Medium": {
+                        "qType": "QTYPE_MED",
+                        "orig": [222,84],
+                        "bigGaps": [115,11],
+                        "gaps": [15,20],
+                        "qNos": [[["Medium"]]]
+                    },
+                "MCQBlock1": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [47, 293],
+                        "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock2": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [159, 293],
+                        "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock3": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [270, 293],
+                        "qNos": [[["q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock4": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [381, 294],
+                        "qNos": [[["q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock5": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [493, 293],
+                        "qNos": [[["q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]
+                    }
+                    }
+                }</field>
+        </record>
+        <record id="100_Omr_4option" model="op.omr.template">
+            <field name="name">100 MCQ 4_Option</field>
+            <field name="question_option">4</field>
+            <field name="json_data">{
+                "Dimensions": [600, 700],
+                "BubbleDimensions": [8, 8],
+                "Concatenations": {
+                    "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                    ],
+                    "key_type": ["Medium"]
+                  },
+                "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20",
+                "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30",
+                "q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40",
+                "q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50",
+                "q51", "q52", "q53", "q54", "q55", "q56", "q57", "q58", "q59", "q60",
+                "q61", "q62", "q63", "q64", "q65", "q66", "q67", "q68", "q69", "q70",
+                "q71", "q72", "q73", "q74", "q75", "q76", "q77", "q78", "q79", "q80",
+                "q81", "q82", "q83", "q84", "q85", "q86", "q87", "q88", "q89", "q90",
+                "q91", "q92", "q93", "q94", "q95", "q96", "q97", "q98", "q99", "q100"],
+                "QBlocks": {
+                "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                "Medium": {
+                        "qType": "QTYPE_MED",
+                        "orig": [222,84],
+                        "bigGaps": [115,11],
+                        "gaps": [15,20],
+                        "qNos": [[["Medium"]]]
+                    },
+                "MCQBlock1": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [47, 293],
+                        "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock2": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [159, 293],
+                        "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock3": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [270, 293],
+                        "qNos": [[["q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock4": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [381, 294],
+                        "qNos": [[["q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock5": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [493, 293],
+                        "qNos": [[["q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock6": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [46, 475],
+                        "qNos": [[["q51", "q52", "q53", "q54", "q55", "q56", "q57", "q58", "q59", "q60"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock7": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [159, 475],
+                        "qNos": [[["q61", "q62", "q63", "q64", "q65", "q66", "q67", "q68", "q69", "q70"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock8": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [270, 475],
+                        "qNos": [[["q71", "q72", "q73", "q74", "q75", "q76", "q77", "q78", "q79", "q80"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock9": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [381, 475],
+                        "qNos": [[["q81", "q82", "q83", "q84", "q85", "q86", "q87", "q88", "q89", "q90"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock10": {
+                        "qType": "QTYPE_MCQ4",
+                        "orig": [499, 476],
+                        "qNos": [[["q91", "q92", "q93", "q94", "q95", "q96", "q97", "q98", "q99", "q100"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]}
+                    }
+                }</field>
+        </record>
+        <record id="20_Omr_5option" model="op.omr.template">
+          <field name="name">20 MCQ 5_Option</field>
+          <field name="question_option">5</field>
+          <field name="json_data">{
+              "Dimensions": [600, 700],
+              "BubbleDimensions": [7, 8],
+              "Concatenations": {
+                "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                ],
+                "key_type": ["Medium"]
+              },
+              "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                        "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"],
+              "QBlocks": {
+                "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                "Medium": {
+                        "qType": "QTYPE_MED",
+                        "orig": [222,84],
+                        "bigGaps": [115,11],
+                        "gaps": [15,20],
+                        "qNos": [[["Medium"]]]
+                    },
+                "MCQBlock1": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [47, 293],
+                        "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock2": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [159, 293],
+                        "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]}
+                    } }</field>
+        </record>
+        <record id="50_Omr_5option" model="op.omr.template">
+            <field name="name">50 MCQ 5_Option</field>
+            <field name="question_option">5</field>
+            <field name="json_data">{
+                "Dimensions": [600, 700],
+                "BubbleDimensions": [7, 8],
+                "Concatenations": {
+                    "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                    ],
+                    "key_type": ["Medium"]
+                  },
+                "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20",
+                "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30",
+                "q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40",
+                "q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"],
+                "QBlocks": {
+                "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                "Medium": {
+                        "qType": "QTYPE_MED",
+                        "orig": [222,84],
+                        "bigGaps": [115,11],
+                        "gaps": [15,20],
+                        "qNos": [[["Medium"]]]
+                    },
+                "MCQBlock1": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [47, 293],
+                        "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock2": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [159, 293],
+                        "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock3": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [270, 293],
+                        "qNos": [[["q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock4": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [381, 294],
+                        "qNos": [[["q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock5": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [493, 293],
+                        "qNos": [[["q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]}
+                    }
+                }</field>
+        </record>
+        <record id="100_Omr_5option" model="op.omr.template">
+            <field name="name">100 MCQ 5_Option</field>
+            <field name="question_option">5</field>
+            <field name="json_data">{
+                "Dimensions": [600, 700],
+                "BubbleDimensions": [8, 8],
+                "Concatenations": {
+                    "Roll": ["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"
+                    ],
+                    "key_type": ["Medium"]
+                  },
+                "Singles": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10",
+                "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20",
+                "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30",
+                "q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40",
+                "q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50",
+                "q51", "q52", "q53", "q54", "q55", "q56", "q57", "q58", "q59", "q60",
+                "q61", "q62", "q63", "q64", "q65", "q66", "q67", "q68", "q69", "q70",
+                "q71", "q72", "q73", "q74", "q75", "q76", "q77", "q78", "q79", "q80",
+                "q81", "q82", "q83", "q84", "q85", "q86", "q87", "q88", "q89", "q90",
+                "q91", "q92", "q93", "q94", "q95", "q96", "q97", "q98", "q99", "q100"],
+                "QBlocks": {
+                "Roll": {
+                          "qType": "QTYPE_ROLL",
+                          "orig": [26,80],
+                          "bigGaps": [115,11],
+                          "gaps": [15.4,14.5],
+                          "qNos": [[["roll0","roll1","roll2","roll3","roll4","roll5","roll6","roll7","roll8","roll9"]]]
+                        },
+                "Medium": {
+                        "qType": "QTYPE_MED",
+                        "orig": [222,84],
+                        "bigGaps": [115,11],
+                        "gaps": [15,20],
+                        "qNos": [[["Medium"]]]
+                    },
+                "MCQBlock1": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [47, 293],
+                        "qNos": [[["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock2": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [159, 293],
+                        "qNos": [[["q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock3": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [270, 293],
+                        "qNos": [[["q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock4": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [381, 294],
+                        "qNos": [[["q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock5": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [493, 293],
+                        "qNos": [[["q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock6": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [46, 475],
+                        "qNos": [[["q51", "q52", "q53", "q54", "q55", "q56", "q57", "q58", "q59", "q60"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock7": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [159, 475],
+                        "qNos": [[["q61", "q62", "q63", "q64", "q65", "q66", "q67", "q68", "q69", "q70"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock8": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [270, 475],
+                        "qNos": [[["q71", "q72", "q73", "q74", "q75", "q76", "q77", "q78", "q79", "q80"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock9": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [381, 475],
+                        "qNos": [[["q81", "q82", "q83", "q84", "q85", "q86", "q87", "q88", "q89", "q90"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]},
+                "MCQBlock10": {
+                        "qType": "QTYPE_MCQ5",
+                        "orig": [499, 476],
+                        "qNos": [[["q91", "q92", "q93", "q94", "q95", "q96", "q97", "q98", "q99", "q100"]]],
+                        "gaps": [17, 15.5],
+                        "bigGaps": [15, 15]}
+                    }
+                }</field>
+        </record>
+    </data>
+</odoo>

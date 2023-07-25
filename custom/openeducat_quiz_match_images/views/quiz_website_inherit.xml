@@ -1,0 +1,104 @@
+<odoo>
+    <template id="quiz_results_form_match_following_images_inherit" inherit_id="openeducat_quiz.quiz_results_form">
+         <xpath expr="//td[hasclass('not_attempt_ans')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:image/*;base64,{{line_data['image']}}" t-att-alt="line_data['image']" height="100px" width="100px"/>
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('not_attempt_question')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:image/*;base64,{{line_data['default_answer']}}" t-att-alt="line_data['default_answer']" height="100px" width="100px"/>
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//td[hasclass('display_true_ans')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:image/*;base64,{{line_data['image']}}" t-att-alt="line_data['image']" height="100px" width="100px"/>
+
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('display_true_question')]" position="inside">
+            <div>
+                <t t-if="answer['que_type'] == 'match_following_images'">
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:image/*;base64,{{line_data['default_answer']}}" t-att-alt="line_data['default_answer']" height="100px" width="100px"/>
+                            </li>
+                        </t>
+                    </ol>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:image/*;base64,{{line_data['image']}}" t-att-alt="line_data['image']" height="100px" width="100px"/>
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_given_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <t t-if="line_data['given_answer']">
+                                <img t-attf-src="data:image/*;base64,{{line_data['given_answer']}}" t-att-alt="line_data['given_answer']" height="100px" width="100px"/>
+                            </t>
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_question')]" position="inside">
+            <t t-if="answer['que_type'] == 'match_following_images'">
+                <div>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <img t-attf-src="data:imag e/*;base64,{{line_data['default_answer']}}" t-att-alt="line_data['default_answer']" height="100px" width="100px"/>
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath> 
+    </template>
+</odoo>

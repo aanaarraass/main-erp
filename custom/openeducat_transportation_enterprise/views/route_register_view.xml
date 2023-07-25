@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_route_register_tree" model="ir.ui.view">
+            <field name="name">op.route.register.tree</field>
+            <field name="model">op.route.register</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Route Register">
+                    <field name="name"/>
+                    <field name="route_id"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="cost"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_route_register_form" model="ir.ui.view">
+            <field name="name">op.route.register.form</field>
+            <field name="model">op.route.register</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Route Register">
+                    <header groups="base.group_user">
+                        <button name="close_register" states="draft" type="object" string="Confirm"
+                                class="oe_highlight"/>
+                        <button name="cancel_register" states="draft,confirm,gathering" string="Cancel" type="object"/>
+                        <button name="set_to_draft" states="cancel" string="Set to Draft" type="object"/>
+                        <button name="register_gathering" states="confirm" string="Start Registration" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,cancel,gathering"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="route_id"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+<!--<field name="product_id"/>-->
+                            <!--<field name="transport_fee"/>-->
+                            <field name="cost"/>
+                            <field name="plan_id"/>
+                        </group>
+                        <group string="Agreement Applicants">
+                            <field name="transport_lines" nolabel="1">
+                                <tree string="Transport Agreement" editable="top">
+                                    <field name="partner_id"/>
+                                    <field name="stop_id"/>
+                                    <field name="date"/>
+                                    <field name="state"/>
+                                    <field name="route_register_id" invisible="1"/>
+
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_route_register_view">
+            <field name="name">Route Register</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.route.register</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

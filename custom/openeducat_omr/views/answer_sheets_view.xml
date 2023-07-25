@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="answer_sheets_list_view" model="ir.ui.view">
+            <field name="name">answer_sheets_list_view</field>
+            <field name="model">op.answer.sheets</field>
+            <field name="arch" type="xml">
+                <tree string="student_answer_sheet">
+                    <field name="roll_number"/>
+                    <field name="key_type"/>
+                    <field name="right_answer"/>
+                    <field name="wrong_answer"/>
+                    <field name="not_attampted"/>
+                    <field name="score"/>
+                    <field name="date_time"/>
+                    <field name="student_id"/>
+                    <field name="omr_exam_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="answer_sheets_form_view" model="ir.ui.view">
+            <field name="name">answer_sheets_form_view</field>
+            <field name="model">op.answer.sheets</field>
+            <field name="arch" type="xml">
+                <form>                      
+                    <sheet>
+                            <group string="Student Details">
+                                <field name="student_id"/>
+                                <field name="roll_number"/>
+                                <field name="omr_exam_id"/>
+                            </group>
+                            <group string="Omr Exam Details">
+                                <group>
+                                    <field name="key_type"/>
+                                    <field name="right_answer"/>
+                                    <field name="wrong_answer"/>
+                                </group>
+                                <group>
+                                    <field name="not_attampted"/>
+                                    <field name="score"/>
+                                    <field name="date_time"/>
+                                    <field name="image_id"/>
+                                </group>
+                            </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="answer_sheets_pivot_view" model="ir.ui.view">
+            <field name="name">answer_sheets_pivot_view</field>
+            <field name="model">op.answer.sheets</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <pivot string="Omr Exam Results">
+                    <field name="omr_exam_id" type="col"/>
+                    <field name="roll_number" type="row"/>
+                </pivot>
+            </field>
+        </record>
+        <record id="action_answer_sheets_list" model="ir.actions.act_window">
+            <field name="name">Answer Sheets</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.answer.sheets</field>
+            <field name="view_mode">tree,form,pivot</field>
+        </record>
+    </data>
+</odoo>

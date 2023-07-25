@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="portal_my_home_request_assets" name="Show request assets" inherit_id="portal.portal_my_home"
+                  customize_show="True" priority="30">
+            <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+                <t t-if="request.env.user.user_has_groups('openeducat_core.group_op_faculty') and
+                not request.env.user.user_has_groups('openeducat_core.group_op_back_office') and
+                not request.env.user.user_has_groups('openeducat_core.group_op_back_office_admin')">
+                    <t t-call="portal.portal_docs_entry">
+                        <t t-set="title">Asset Requests</t>
+                        <t t-set="url" t-value="'/my/asset-request'"/>
+                        <t t-set="placeholder_count" t-value="'asset_request_count'"/>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+
+        <template id="portal_my_home_menu_request_asset"
+                  name="Portal layout : Request Assets"
+                  inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+            <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+                <li t-if="page_name == 'request_asset' or request_asset"
+                    t-attf-class="breadcrumb-item #{'active ' if not notice_board else ''}">
+                    <t t-if="user_id.sudo().is_student">
+                        <a t-if="requests" t-attf-href="/my/asset-request?{{ keep_query() }}">Requests</a>
+                        <t t-else=" ">
+                            <span>Requests</span>
+                        </t>
+                    </t>
+                    <t t-else=" ">
+                        <a t-if="st_id"
+                           t-attf-href="/my/asset-request/#{st_id}?{{ keep_query() }}">
+                            <span>Requests</span>
+                        </a>
+                        <t t-else=" ">
+                            <span>Requests</span>
+                        </t>
+                    </t>
+                </li>
+
+                <li t-if="page_name == 'my_asset' or my_asset"
+                    t-attf-class="breadcrumb-item #{'active ' if not notice_board else ''}">
+                    <t t-if="user_id.sudo().is_student">
+                        <a t-if="assets" t-attf-href="/my/asset-request?{{ keep_query() }}">Requests</a>
+                        <t t-else=" ">
+                            <span>Requests</span>
+                        </t>
+                        <li t-if="assets" class="breadcrumb-item active text-truncate col-8 col-lg-10">
+                            <t t-esc="assets.name"/>
+                        </li>
+                    </t>
+                    <t t-else=" ">
+                        <a t-if="assets"
+                           t-attf-href="/my/asset-request/#{assets.student_id.id}?{{ keep_query() }}">
+                            <span>Requests</span>
+                        </a>
+                        <t t-else=" ">
+                            <span>Requests</span>
+                        </t>
+                        <li t-if="assets" class="breadcrumb-item active text-truncate col-8 col-lg-10">
+                            <t t-esc="assets.name"/>
+                        </li>
+                    </t>
+                </li>
+            </xpath>
+        </template>
+
+        <template id="request_assets_form" name="Asset Requests">
+            <t t-call="website.layout">
+                <div id="request_assets_form">
+                    <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                        <div class="container">
+                            <br/>
+                            <br/>
+                            <form role="form" data-toggle="validator" method="post" action=" /my/asset/asset-request">
+                                <div class="s_website_form_rows row s_col_no_bgcolor">
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                         t-if="student">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Student:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="hidden" class="form-control s_website_form_input"
+                                                       name="request_for" value="student" readonly=""/>
+                                                <input type="text" class="form-control s_website_form_input"
+                                                       name="student" t-att-value="student.name" readonly=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                         t-if="faculty">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Faculty:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="hidden" class="form-control s_website_form_input"
+                                                       name="request_for" value="faculty" readonly=""/>
+                                                <input type="text" class="form-control s_website_form_input"
+                                                       name="faculty" t-att-value="faculty.name" readonly=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Asset:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input id="asset" type="text" class="form-control s_website_form_input"
+                                                       name="assets" required=""
+                                                       placeholder="Asset Name Which you want to request for"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Request Reason:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <select name="request_reason_id" class="form-control">
+                                                    <t t-foreach="reasons" t-as="r">
+                                                        <option t-att-value="r.id">
+                                                            <t t-esc="r.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3"/>
+                                    <div class="from-group col-md-6">
+                                        <button type="submit" class="btn btn-primary mb16 mt16 col-md-12">Submit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3"/>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+        <template id="request_assets_form_edit" name="Asset Requests">
+            <t t-call="website.layout">
+                <div id="request_assets_form">
+                    <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                        <div class="container">
+                            <br/>
+                            <br/>
+                            <form role="form" data-toggle="validator" method="post"
+                                  t-att-action="' /my/asset/asset-request/'+str(requests.id)">
+                                <div class="s_website_form_rows row s_col_no_bgcolor">
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                         t-if="student">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Students:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="hidden" class="form-control s_website_form_input"
+                                                       name="request_for" value="student" readonly=""/>
+                                                <input type="text" class="form-control s_website_form_input"
+                                                       name="student" t-att-value="student.name" readonly=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                         t-if="faculty">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Faculty:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="hidden" class="form-control s_website_form_input"
+                                                       name="request_for" value="faculty" readonly=""/>
+                                                <input type="text" class="form-control s_website_form_input"
+                                                       name="faculty" t-att-value="faculty.name" readonly=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Asset:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="text" class="form-control s_website_form_input"
+                                                       name="assets" required=""
+                                                       placeholder="Asset Name Which you want to request for"
+                                                       t-att-value="requests.requested_asset"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content">Request Reason:</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <select name="request_reason_id" class="form-control">
+                                                    <option t-foreach="reasons" t-as="r"
+                                                            t-att-value="r.id"
+                                                            t-att-selected="r.id == requests.request_reason_id.id">
+                                                        <t t-esc="r.name"/>
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3"/>
+                                    <div class="from-group col-md-6">
+                                        <button type="submit" class="btn btn-primary mb16 mt16 col-md-12">Submit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3"/>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+        <template id="all_asset_request" name="Assets">
+            <t t-call="portal.portal_layout">
+                <t t-set="breadcrumbs_searchbar" t-value="True"/>
+                <t t-call="portal.portal_searchbar">
+                    <t t-set="title">Request Assets</t>
+                </t>
+
+                <t t-if="not user_id.sudo().is_parent">
+                    <div style="padding: 6px;">
+                        <a class="btn btn-primary" href=" /my/asset/asset-request">New Request</a>
+                    </div>
+                </t>
+
+                <t t-if="not requests">
+                    <div class="alert alert-warning mt8" role="alert">
+                        There are no requests for assets
+                    </div>
+                </t>
+
+                <t t-if="requests" t-call="portal.portal_table">
+                    <thead style="100%">
+                        <tr class="active">
+                            <th style="width:16%">Request Number #</th>
+                            <th style="width:16%">Requested Date</th>
+                            <th style="width:16%">Requested Asset</th>
+                            <th style="width:16%">Reason</th>
+                            <th style="width:16%">Status</th>
+                        </tr>
+                    </thead>
+                    <t t-foreach="requests" t-as="o">
+                        <tbody style="100%">
+                            <tr>
+                                <td style="width:16%">
+                                    <a t-attf-href=" /my/asset/asset-detail/#{o.id}?{{ keep_query() }}">
+                                        <span t-esc="o.name"/>
+                                    </a>
+                                </td>
+                                <td style="width:16%">
+                                    <span t-esc="o.request_date"/>
+                                </td>
+                                <td style="width:16%">
+                                    <span id="request_asset" t-esc="o.requested_asset"/>
+                                </td>
+                                <td style="width:16%">
+                                    <t t-esc="o.request_reason_id.name"/>
+                                </td>
+                                <td style="width:16%">
+                                    <t t-if="o.state == 'approved' ">
+                                        <span class="badge badge-pill badge-primary" t-field="o.state"/>
+                                        <br/>
+                                    </t>
+                                    <t t-if="o.state == 'rejected' ">
+                                        <span class="badge badge-pill badge-danger" t-field="o.state"/>
+                                    </t>
+                                    <t t-if="o.state == 'draft' ">
+                                        <span class="badge badge-pill badge-primary" t-field="o.state"/>
+                                    </t>
+                                    <t t-if="o.state == 'allocate' ">
+                                        <span class="badge badge-pill badge-success" t-field="o.state"/>
+                                    </t>
+                                    <t t-if="o.state == 'returned' ">
+                                        <span class="badge badge-pill badge-success" t-field="o.state"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </template>
+        <template id="asset_detail" name="My asset">
+            <t t-call="portal.portal_layout">
+                <div class="panel panel-default">
+                    <t t-if="not user_id.sudo().is_parent">
+
+                        <div class="bg-400 container mt-3 p-lg-2 row-md-12" style="padding-right: 6px;">
+                            <div class="pull-left col-md-6">
+                                <t t-if="assets.state not in ('draft','approved')">
+                                    <h3>
+                                        <strong>
+                                            Asset :
+                                            <span>
+                                                <t t-esc="assets.asset_id.name"/>
+                                            </span>
+                                        </strong>
+                                    </h3>
+                                </t>
+                            </div>
+                            <t t-if="assets.state == 'draft'">
+                                <div class="pull-left col-md-12">
+                                    <h4 style="padding-top: 5px;">
+                                        <a t-attf-href=" /my/asset/asset-request/#{assets.id}">
+                                            <button class="btn btn-primary ">Edit</button>
+                                        </a>
+                                        <a t-attf-href="/my/asset/delete-request/#{assets.id}">
+                                            <button class="btn btn-primary">Delete</button>
+                                        </a>
+                                    </h4>
+                                </div>
+                            </t>
+                            <t t-if="assets.state != 'draft'">
+                                <div class="pull-right col-md-6">
+                                    <h4 style="padding-top: 5px;">
+                                        <span class="pull-right label label-info badge badge-pill badge-info margin"
+                                              title="Current stage of this ticket" t-field="assets.state">
+                                        </span>
+                                    </h4>
+                                </div>
+                            </t>
+                        </div>
+                    </t>
+                    <div class="container mt-3">
+                        <div class="border card-body">
+                            <table style="width:100%">
+                                <tr>
+                                    <div class="col-md-6 mb8">
+                                        <td style="width:20%">
+                                            <strong>
+                                                Requested Asset:
+                                            </strong>
+                                        </td>
+                                        <td style="width:30%">
+                                            <span id="asset_name">
+                                                <t t-esc="assets.requested_asset"/>
+                                            </span>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-6 mb8">
+                                        <td style="width:20%">
+                                            <strong>
+                                                Requested Date:
+                                            </strong>
+                                        </td>
+                                        <td style="width:30%">
+                                            <span t-field-options='{"widget": "date"}' t-field="assets.request_date"/>
+                                        </td>
+                                    </div>
+                                </tr>
+                                <t t-if="assets.state not in ('draft','approved')">
+                                    <tr>
+                                        <div class="col-md-6 mb8">
+                                            <td style="width:20%">
+                                                <strong>
+                                                    Asset Category:
+                                                </strong>
+                                            </td>
+                                            <td style="width:30%">
+                                                <span>
+                                                    <t t-esc="assets.asset_id.category_id.name"/>
+                                                </span>
+                                            </td>
+                                        </div>
+                                        <div class="col-md-6 mb8">
+                                            <td style="width:20%">
+                                                <strong>
+                                                    Allocated Date:
+                                                </strong>
+                                            </td>
+                                            <td style="width:30%">
+                                                <span t-field-options='{"widget": "date"}'
+                                                      t-field="assets.allocate_date"/>
+                                            </td>
+                                        </div>
+                                    </tr>
+                                </t>
+                                <tr>
+                                    <t t-if="assets.state != 'draft' ">
+                                        <div class="col-md-6 mb8">
+                                            <td style="width:20%">
+                                                <strong>
+                                                    Approved Date:
+                                                </strong>
+                                            </td>
+                                            <td style="width:30%">
+                                                <span t-field-options='{"widget": "date"}'
+                                                      t-field="assets.approve_date"/>
+                                            </td>
+                                        </div>
+                                    </t>
+                                    <t t-if="assets.state == 'returned' ">
+                                        <div class="col-md-6 mb8">
+                                            <td style="width:20%">
+                                                <strong>
+                                                    Returned Date:
+                                                </strong>
+                                            </td>
+                                            <td style="width:30%">
+                                                <span t-field-options='{"widget": "date"}'
+                                                      t-field="assets.return_date"/>
+                                            </td>
+                                        </div>
+                                    </t>
+                                </tr>
+                                <tr>
+                                    <div class="col-md-6 mb8">
+                                        <td style="width:20%">
+                                            <strong>
+                                                Reason:
+                                            </strong>
+                                        </td>
+                                        <td colspan="3">
+                                            <span>
+                                                <t t-esc="assets.request_reason_id.name"/>
+                                            </span>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_alumni_blog_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 04:58+0000\n"
+"PO-Revision-Date: 2019-09-26 04:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "<span class=\"fa fa-calendar mr8\" role=\"img\" aria-label=\"Post date\" title=\"Post date\"/>"
+msgstr "<تمتد الطبقة = \"كرة القدم MR8 كرة القدم-تقويم\" دور = \"IMG\" الأغنية التسمية = \"تاريخ بوست\" عنوان = \"تاريخ بوست\" />"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "<span class=\"fa fa-exclamation-triangle ml8\" title=\"Unpublished\" role=\"img\" aria-label=\"Unpublished\"/>"
+msgstr "<تمتد الطبقة = \"كرة القدم اتحاد كرة القدم-تعجب مثلث ml8\" عنوان = دور \"غير منشورة\" = \"IMG\" الأغنية التسمية = \"غير منشورة\" />"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "<span class=\"fa fa-folder-open\"/>\n"
+"                                    In"
+msgstr "<تمتد الطبقة = \"كرة القدم اتحاد كرة القدم-مجلد فتح\" />\n"
+"                                    في"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_blog_enterprise.field_blog_post__alumni_group_id
+msgid "Alumni Group"
+msgstr "الخريجين المجموعة"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:blog.post,name:openeducat_alumni_blog_enterprise.alumni_blog_3
+msgid "Annual celebration"
+msgstr "الاحتفال السنوي"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:ir.model.fields,field_description:openeducat_alumni_blog_enterprise.field_op_alumni_group__blog_post_ids
+msgid "Blog"
+msgstr "مدونة"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:ir.model,name:openeducat_alumni_blog_enterprise.model_blog_post
+msgid "Blog Post"
+msgstr "مقال المدونة"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:blog.post,name:openeducat_alumni_blog_enterprise.alumni_blog_2
+msgid "Music"
+msgstr "موسيقى"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "No tags defined!"
+msgstr "لا توجد كلمات دلالية محددة!"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "Our Blogs"
+msgstr "لدينا المدونات"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:blog.post,name:openeducat_alumni_blog_enterprise.alumni_blog_1
+msgid "Sports"
+msgstr "رياضات"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:blog.post,content:openeducat_alumni_blog_enterprise.alumni_blog_1
+#: model_terms:blog.post,content:openeducat_alumni_blog_enterprise.alumni_blog_2
+#: model_terms:blog.post,content:openeducat_alumni_blog_enterprise.alumni_blog_3
+msgid "Start writing here..."
+msgstr "بدء الكتابة هنا ..."
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "Tags"
+msgstr "الكلمات"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "comment"
+msgstr "تعليق"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_alumni_blog_enterprise.blog_post_detail
+msgid "comments"
+msgstr "تعليقات"
+
+#. module: openeducat_alumni_blog_enterprise
+#: model:ir.model,name:openeducat_alumni_blog_enterprise.model_op_alumni_group
+msgid "op.alumni.group"
+msgstr ""
+

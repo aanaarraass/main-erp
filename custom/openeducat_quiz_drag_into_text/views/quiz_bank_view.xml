@@ -1,0 +1,13 @@
+<odoo>
+    <record id="view_op_quiz_bank_drag_into_text_tree" model="ir.ui.view">
+        <field name="name">op.question.bank.form</field>
+        <field name="model">op.question.bank</field>
+        <field name="inherit_id" ref="openeducat_quiz.view_op_question_bank_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page//field//form//group//field[@name='answer']" position="after">
+                <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'drag_into_text')], 'required': [('que_type', '=', 'drag_into_text')]}" />
+                <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'drag_into_text')], 'required': [('que_type', '=', 'drag_into_text')]}" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

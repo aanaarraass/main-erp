@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="report_layout_hundred">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="container">
+                        <div class="float-left" style="margin-left:-20px;">
+                            <img class="float-left"
+                                    src="/openeducat_omr/static/src/img/square.png"
+                                    width="60" height="60"/>
+                        </div>
+                        <div class="float-right" style="margin-right:-20px;">
+                            <img class="float-right"
+                                    src="/openeducat_omr/static/src/img/square.png"
+                                    width="60" height="60"/>
+                        </div>
+                        <div class="row mb-3 ml-0">
+                            <div class="col-5" style="border:1px solid black;height:281px;">
+                            <div class="row">
+                                <div class="col-9 mt-3 mb-2" >
+                                    <table style="width:100%;" class="text-center">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="11">
+                                                    <strong>Student ID</strong>
+                                                </td>
+                                            </tr>
+                                            <td>
+
+                                            </td>
+                                            <tr>
+                                                <td>Sr.</td>
+                                                <td t-foreach="range(0,10)" t-as="td"
+                                                    style="border:1px solid black;padding:4px 4px;">
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="font-size:12px;">
+
+                                            <tr t-foreach="range(0,10)" t-as="l">
+                                                <td>
+                                                    <t t-esc="l"/>
+                                                </td>
+                                                <td t-foreach="range(0,10)" t-as="td">
+                                                    <img
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="15"
+                                                            height="15"/>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-3 mt-3">
+                                    <table style="width:100%;"
+                                            class="text-center">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="3"><strong>Key</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" style="border:1px solid black;height:25px;">
+
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="font-size:10px;border: solid black 1px;">
+                                            <tr style="height:5px;">
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr style="height: 25px;">
+                                                <td>A</td>
+                                                <td>
+                                                    <img style="padding-right: 2%;"
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="16"
+                                                            height="16"/>
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 25px;">
+                                                <td>B</td>
+                                                <td>
+                                                    <img style="padding-right: 2%;"
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="16"
+                                                            height="16"/>
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 25px;">
+                                                <td>C</td>
+                                                <td>
+                                                    <img style="padding-right: 2%;"
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="16"
+                                                            height="16"/>
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 25px;">
+                                                <td>D</td>
+                                                <td>
+                                                    <img style="padding-right: 2%;"
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="16"
+                                                            height="16"/>
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 25px;">
+                                                <td>E</td>
+                                                <td>
+                                                    <img style="padding-right: 2%;"
+                                                            src="/openeducat_omr/static/src/img/circle2.png"
+                                                            width="16"
+                                                            height="16"/>
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                    <table style="width:100%;border: solid black 1px;" >
+                                        <tbody>
+                                            <tr style="font-size:16px;height:5px;">
+                                                <td colspan="3"> </td>
+                                            </tr>
+                                            <tr style="font-size:16px;height:25px;">
+                                                <td colspan="3" >&#160;&#160;Name: ___________________________________________________________</td>
+                                            </tr>
+                                            <tr style="font-size:16px;height:25px;">
+                                                <td colspan="3">
+                                                    <t t-if="fields['batch']==True">
+                                                    &#160;&#160;Batch: ___________________________________________________________
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                            <tr style="font-size:16px;height:25px;">
+                                                <td colspan="2" >
+                                                    <t t-if="fields['mobile_no']==True">
+                                                    &#160;&#160;Mobile No: ____________________
+                                                    </t>
+                                                </td>
+                                                <td>
+                                                    <t t-if="fields['date']==True">
+                                                        &#160;&#160;Date: ________________________
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <t t-if="fields['signature']==True">
+                                        <div class="col-4">
+                                            <table style="width:100%;">
+                                                <tbody>
+                                                    <tr style="text-align:center; height:91px; width:100%;border: solid black 1px;"><td><strong>Candidate Sign</strong></td></tr>
+                                                    <tr style="text-align:center;height:91px; width:100%;border: solid black 1px;"><td><strong>Invigilator Sign</strong></td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+                                    <t t-if="fields['instruction']==True">
+                                        <div class="col-8 pl-0" t-attf-class="{{'col-8 pl-0' if fields and fields['signature']==True else 'col-8'}}">
+                                            <table style="width:100%;height:182px;border: solid black 1px;">
+                                                <tbody>
+                                                    <tr style="font-size:12px;height:5px;">
+                                                        <td colspan="2"> </td>
+                                                    </tr>
+                                                    <tr style="text-align:center;font-size:12px;">
+                                                        <td colspan="2"><strong>INSTRUCTIONS FOR FILLING THE SHEET</strong></td>
+                                                    </tr>
+                                                    <tr style="font-size:12px;">
+                                                        <td colspan="2">&#160;&#160;1. This sheet should not be folded or crushed.</td>
+                                                    </tr>
+                                                    <tr style="font-size:12px;"><td colspan="2">&#160;&#160;2. Use only blue/ black ball point pen to fill the circles.</td></tr>
+                                                    <tr style="font-size:12px;"><td colspan="2">&#160;&#160;3. Circles should be darkened completely and properly.</td></tr>
+                                                    <tr style="font-size:12px;"> <td colspan="2">&#160;&#160;4. Do not use any stray marks on the sheet.</td></tr>
+                                                    <tr style="font-size:12px;"><td colspan="2">&#160;&#160;5. Do not use marker or white fluid to hide the mark.</td></tr>
+                                                    <tr style="text-align:center;font-size:12px;">
+                                                        <td><strong>WRONG METHODS</strong></td>
+                                                        <td><strong>CORRECT METHOD</strong></td>
+                                                    </tr>
+                                                    <tr style="text-align:center;">
+                                                        <td colspan="2"><img
+                                                            src="/openeducat_omr/static/src/img/omr_instruction.jpg"
+                                                            width="300"/></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="border:1px solid black;margin-top:2px;height:510px;">
+                                <div class="row mt-3 ml-1">
+
+                                    <t t-if="fields['var_que']&gt;=1">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;height:100%;">
+                                                <tbody style="font-size:12px;">
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td  style="padding-left:6%;">A</td>
+                                                        <td  style="padding-left:6%;">B</td>
+                                                        <td  style="padding-left:6%;">C</td>
+                                                        <td  style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td  style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </tr>
+                                                    <tr t-foreach="range(1,11)" t-as="l">
+                                                        <td  style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td" >
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=2">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody  style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td  style="padding-left:6%;">A</td>
+                                                        <td  style="padding-left:6%;">B</td>
+                                                        <td  style="padding-left:6%;">C</td>
+                                                        <td  style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td  style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(11,21)" t-as="l">
+                                                        <td  style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td" >
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=3">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(21,31)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=4">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(31,41)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=5">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </tr>
+                                                    <tr t-foreach="range(41,51)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                </div>
+
+
+                                <div class="row mt-3 ml-1 mb-3">
+
+                                    <t t-if="fields['var_que']&gt;=6">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(51,61)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=7">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(61,71)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=8">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(71,81)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=9">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </tr>
+                                                    <tr t-foreach="range(81,91)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="fields['var_que']&gt;=10">
+                                        <div class="col-2 ml-3">
+                                            <table style="width:80%;">
+                                                <tbody style="font-size:12px;">
+                                                    <th class="text-center">
+                                                        <td style="padding-left:6%;">A</td>
+                                                        <td style="padding-left:6%;">B</td>
+                                                        <td style="padding-left:6%;">C</td>
+                                                        <td style="padding-left:6%;">D</td>
+                                                        <t t-if="fields['option']==5">
+                                                            <td style="padding-left:6%;">E</td>
+                                                        </t>
+                                                    </th>
+                                                    <tr t-foreach="range(91,101)" t-as="l">
+                                                        <td style="align:center;">
+                                                            <t t-esc="l"/>
+                                                        </td>
+                                                        <td t-foreach="range(0,fields['option'])" t-as="td">
+                                                            <img class="pl-1"
+                                                                 src="/openeducat_omr/static/src/img/circle2.png"
+                                                                 width="22"
+                                                                 height="18" style="margin:0 auto;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </t>
+                                </div>
+
+                        </div>
+                        <div class="float-left" style="margin-left:-20px;">
+                            <img class="float-left"
+                                 src="/openeducat_omr/static/src/img/square.png"
+                                 width="60" height="60"/>
+                        </div>
+                        <div class="float-right" style="margin-right:-20px;">
+                            <img class="float-left"
+                                 src="/openeducat_omr/static/src/img/square.png"
+                                 width="60" height="60"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

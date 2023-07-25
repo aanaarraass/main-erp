@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="jitsi_server" model="ir.config_parameter">
+            <field name="key">jitsi.server</field>
+            <field name="value">meet.jit.si</field>
+        </record>
+    </data>
+</odoo>

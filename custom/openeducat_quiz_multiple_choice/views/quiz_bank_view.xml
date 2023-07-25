@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+
+        <record id="view_op_quiz_bank_multiple_choice_tree" model="ir.ui.view">
+            <field name="name">op.question.bank.form</field>
+            <field name="model">op.question.bank</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_question_bank_form"></field>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook//page//field//form//group//field[@name='answer']" position="after">
+                    <field name="multiple_choice_que_type" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                    <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                    <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')], 'required': [('que_type', '=', 'multiple_choice')]}" />
+                </xpath>
+                <xpath expr="//notebook//page//field//form//notebook" position="after">
+                    <notebook colspan="4" attrs="{'invisible': [('que_type', '!=', 'multiple_choice')]}">
+                        <page string="Answers">
+                            <field name="multiple_choice_line_ids">
+                                <tree string="Answers" editable="bottom">
+                                    <field name="que_text" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'image')]}"/>
+                                    <field name="que_image" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'text')]}" />
+                                    <field name="default_answer" />
+                                </tree>
+                                <form string="Answers">
+                                    <group>
+                                        <field name="que_text" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'image')]}"/>
+                                        <field name="que_image" attrs="{'column_invisible': [('parent.multiple_choice_que_type', '=', 'text')]}" />
+                                        <field name="default_answer" />
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

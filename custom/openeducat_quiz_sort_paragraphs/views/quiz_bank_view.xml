@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_sort_paragraphs_tree" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='answers']" position="after">
+                        <group name="answers" string="Answers" attrs="{'invisible': [('que_type', '!=', 'sort_paragraphs')]}">
+                            <field name="sort_paragraphs_line_ids" nolabel="1">
+                                <tree string="Answers" editable="bottom">
+                                    <field name="question" />
+                                </tree>
+                                <form string="Answers">
+                                    <group>
+                                        <field name="question" />
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+  
+</odoo>

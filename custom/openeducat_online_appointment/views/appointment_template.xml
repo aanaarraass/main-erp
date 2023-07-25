@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="booking" name="Booking">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Booking</t>
+            <div id="wrap">
+                <section class="appointment-title"
+                         style="background-image: url(&quot;/openeducat_online_appointment/static/img/inner-pagebg.jpg&quot;);position:relative;background-position-y: center;">
+                    <div class="overlay"></div>
+                    <div class="container pt64 pb64">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center text-md-left">
+                                <h1 class="text-white mb0" style="font-size: 40px;">
+                                    Appointment
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="oe_structure container mb64">
+                    <div class="js_oe_appointment_booking d-none">
+                        <t t-if="cancel != '' ">
+                            <input type="hidden" name="cancel" t-att-value="cancel"/>
+                        </t>
+                        <t t-call="openeducat_online_appointment.booking_services"/>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="booking_services" name="Services">
+        <div class="profile text-center">
+            <div class="profile-info ">
+                <ul class="wizard mt32 float-none breadcrumb" id="list">
+                    <li class="breadcrumb-item appointment-select">
+                        <a class="text-primary  appointment-bread" href="/booking">
+                            Appointment
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item time-select">
+                        <a class="text-muted time_bread">Time</a>
+                    </li>
+                    <li class="text-muted breadcrumb-item confirm-app">Confirmation</li>
+                </ul>
+            </div>
+        </div>
+        <div id="cancel" class="cancel">
+            <t t-if="cancel != '' ">
+                <div class="panel-heading m-3">
+                    <div id="editable_area" class="o_editable alert-danger text-center pt-2 pb-2" data-oe-type="html">
+                        <h2 class="panel-title text-align:center">
+                            Your Appointment has been cancel.
+                        </h2>
+                    </div>
+                </div>
+            </t>
+
+        </div>
+        <div class="stepper">
+            <div class="stepper-body">
+                <div class="date-time-step">
+                    <div class="step-header">
+                    </div>
+                    <div class="date-time-step-body row">
+                        <div class="col-md-12 mx-auto date-time-step-calendar js-appointment-booking row">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <t t-foreach="appointment_ids" t-as="appointment">
+                                <div class="form-group  d-inline-block  col-md-4 col-form-label-lg">
+                                    <div class="main_tabcontent appointment_booking border border-primary">
+                                        <div class="media align-items-center" style="cursor: pointer;">
+                                            <img src="/openeducat_online_appointment/static/img/clock.svg" class=" mr-2" alt="hour" title="Hour" style="width: 48px;"/>
+                                            <div class="media-body ml-3" style="font-size: 18px;color: #7d7b7b;">
+                                                <input type="radio" name="service" t-att-value='appointment.id'
+                                                       t-att-data-name='appointment.name' class="js-radio-services d-none"/>
+                                                <span class="appointment_name truncate text-dark" t-field='appointment.name'/>
+                                                <span t-field='appointment.duration' t-options='{"widget": "duration", "unit": "hour", "round": "minute"}'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+
+                        <div class="date-time-step-times col-md-6 col">
+                            <div class="date-time-step-times-anchor js-select-date pt-lg-4 " style="font-size: 2rem;">
+                            </div>
+                            <div class="time-cards js-get-time-slots pt-4">
+                            </div>
+                            <div class="js-bk-continue text-center">
+                                <div class="form-group js-form-service-submit o_hidden">
+                                    <button class="btn btn-primary service-submit ">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stepper-footer d-none">
+                <a class="btn stepper-step stepper-step-duration available step_book">
+                    <div class="stepper-step-icon">
+                        <i class="fa fa-book fa-w-16" viewBox="0 0 448 512">
+                        </i>
+                    </div>
+                    <div class="stepper-step-details btn_book">
+                        <div class="stepper-step-details-title">Services</div>
+                        <div class="stepper-step-details-subtitle">Booking</div>
+                    </div>
+                </a>
+                <a class="btn stepper-step stepper-step-date-time step_staff">
+                    <div class="stepper-step-icon">
+                        <i class="fa fa-user fa-w-14" viewBox="0 0 448 512">
+                        </i>
+                    </div>
+                    <div class="stepper-step-details btn_staff">
+                        <div class="stepper-step-details-title">Staff</div>
+                        <div class="stepper-step-details-subtitle">Selection</div>
+                    </div>
+                </a>
+                <a class="btn stepper-step stepper-step-location  step_time">
+                    <div class="stepper-step-icon">
+                        <i class="fa fa-calendar fa-w-14" viewBox="0 0 384 512">
+                        </i>
+                    </div>
+                    <div class="stepper-step-details btn_time">
+                        <div class="stepper-step-details-title">Date &amp; Time</div>
+                        <div class="stepper-step-details-subtitle">When</div>
+                    </div>
+                </a>
+                <a class=" btn stepper-step stepper-step-confirm">
+                    <div class="stepper-step-icon">
+                        <i class="fa fa-sticky-note fa-w-14 ">
+                        </i>
+                    </div>
+                    <div class="stepper-step-details">
+                        <div class="stepper-step-details-title">Confirm</div>
+                        <div class="stepper-step-details-subtitle">Who</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <template id="confirm_appointment" name="Confirmation">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Confirmation</t>
+            <div id="wrap">
+                <div class="oe_structure container">
+                    <div class="panel panel-primary mt64 ">
+                        <div class="panel-heading">
+                            <div id="editable_area" class="o_editable bg-primary pt-2 pb-2 text-center" data-oe-type="html">
+                                <h2 class="panel-title text-align:center">
+                                    Your Appointment has been confirmed
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 row">
+                        <div class="panel-body col-md-9 py-5">
+                            <table class="col-md-12">
+                                <tr>
+                                    <td>
+                                        <h4>Your Service:</h4>
+                                    </td>
+                                    <td>
+                                        <h5 t-esc="appointment.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Attendees:</h4>
+                                    </td>
+                                    <td>
+                                        <h5 t-esc="employee.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>When:</h4>
+                                    </td>
+                                    <td>
+                                        <h5 t-esc="check_date"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Timezone :</h4>
+                                    </td>
+                                    <td>
+                                        <h5 t-esc="timezone"></h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Location :</h4>
+                                    </td>
+                                    <td>
+                                        <h5 t-esc="location"></h5>
+                                    </td>
+                                </tr>
+
+                                <tr height="auto">
+                                    <td style="vertical-align: text-top;">
+                                        <h4>Description:</h4>
+                                    </td>
+                                    <td>
+                                        <h5 style="white-space: break-spaces;"><t t-esc="qn_description"/></h5>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="mb32 mr-2">
+                                <a t-att-href="google_event_url">
+                                    <button class="btn btn-primary text-center">Add To Google Calendar </button>
+                                </a>
+                            </div>
+                            <div class="mb32">
+                                <a t-att-href="'/cancel/appointment/%s' %(event.id)">
+                                    <button id="cancel_appointment" class="btn btn-danger text-center" style="width: 186.03px;">Cancel Appointment</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

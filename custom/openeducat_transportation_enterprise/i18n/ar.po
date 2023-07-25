@@ -1,0 +1,999 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_transportation_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 05:23+0000\n"
+"PO-Revision-Date: 2019-09-26 05:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_drivers
+msgid "Assignation Logs"
+msgstr "سجلات الإسناد"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Brand"
+msgstr "العلامة التجارية"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 Emissions"
+msgstr "انبعاثات ثاني أكسيد الكربون"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__co2
+msgid "CO2 emissions of the vehicle"
+msgstr "انبعاثات ثاني أكسيد الكربون لهذه المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__capacity
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Capacity"
+msgstr "سعة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Catalog Value (VAT Incl.)"
+msgstr "قيمة الكتالوج (شاملة ضريبة القيمة المضافة)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Chassis Number"
+msgstr "رقم الشاسيه"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__color
+msgid "Color of the vehicle"
+msgstr "لون المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__company_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_count
+msgid "Contract Count"
+msgstr "عدد العقود"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_contracts
+msgid "Contracts"
+msgstr "العقود"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__cost
+msgid "Cost"
+msgstr "التكلفة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__cost_count
+msgid "Costs"
+msgstr "التكاليف"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__create_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "Current state of the vehicle"
+msgstr "الحالة الحالية للسيارة"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Date when the vehicle has been immatriculated"
+msgstr "تاريخ توثيق السيارة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__display_name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Doors Number"
+msgstr "عدد الأبواب"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver"
+msgstr "السائق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__driver_id
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__driver_id
+msgid "Driver of the vehicle"
+msgstr "سائق المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Drop"
+msgstr "قطرة"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "End"
+msgstr "النهاية"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "End Trip"
+msgstr "نهاية رحلة"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/vehicle.py:30
+#, python-format
+msgid "Enter proper Capacity."
+msgstr "أدخل القدرات المناسبة."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__estimated_time
+msgid "Estimated Arrival"
+msgstr "الوصول المتوقع"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__estimated_arrival_conf
+msgid "Estimated Arrival Time"
+msgstr "الوقت المتوقع للوصول"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__first_contract_date
+msgid "First Contract Date"
+msgstr "تاريخ أول عقد"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_channel_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_logs_count
+msgid "Fuel Log Count"
+msgstr "عدد سجلات الوقود"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_fuel
+msgid "Fuel Logs"
+msgstr "سجلات الوقود"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Type"
+msgstr "نوع الوقود"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__fuel_type
+msgid "Fuel Used by the vehicle"
+msgstr "الوقود المستخدم في المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Get Stops"
+msgstr "الحصول على توقف"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_overdue
+msgid "Has Contracts Overdue"
+msgstr "لديه عقود متأخرة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_due_soon
+msgid "Has Contracts to renew"
+msgstr "لديه عقود مطلوب تجديدها"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,description:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "Helps you manage user related to transportation."
+msgstr "يساعدك على إدارة المستخدم المتعلقة بالنقل."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower
+msgid "Horsepower"
+msgstr "قوة حصان"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__horsepower_tax
+msgid "Horsepower Taxation"
+msgstr "الضريبة على قوة الحصان"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__acquisition_date
+msgid "Immatriculation Date"
+msgstr "تاريخ التوثيق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Just done"
+msgstr "مجرد القيام به"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop____last_update
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Last Odometer"
+msgstr "آخر قيمة لعداد المسافات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_uid
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__write_date
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License Plate"
+msgstr "رقم اللوحة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__license_plate
+msgid "License plate number of the vehicle (i = plate number for a car)"
+msgstr "رقم لوحة المركبة (س = رقم لوحة لسيارة)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location"
+msgstr "المكان"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__location
+msgid "Location of the vehicle (garage, ...)"
+msgstr "موقع السيارة (المرآب، ...)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "Logo"
+msgstr "الشعار"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Logo (medium)"
+msgstr "الشعار (متوسط)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Logo (small)"
+msgstr "الشعار (صغير)"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Looks great!"
+msgstr "يبدو رائعا!"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__brand_id
+msgid "Make of the vehicle"
+msgstr "العلامة التجارية للمركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_medium
+msgid "Medium-sized logo of the brand. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "صورة متوسطة الحجم لشعار العلامة التجارية. يتم تغيير حجمها تلقائيًا كصورة 128*128 بيكسل، مع الحفاظ على تناسب الأبعاد. استخدم هذا الحقل في واجهات العروض أو بعض عروض كانبان."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model"
+msgstr "الكائن"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Model Year"
+msgstr "عام الموديل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_id
+msgid "Model of the vehicle"
+msgstr "موديل المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__name
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__name
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+msgid "Name"
+msgstr "الاسم"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_name
+msgid "Name of contract to renew soon"
+msgstr "اسم العقد المراد تجديده قريبًا"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: openeducat_transportation_enterprise
+#: selection:res.company,onboarding_route_layout_state:0
+#: selection:res.company,onboarding_stop_layout_state:0
+#: selection:res.company,onboarding_trip_layout_state:0
+#: selection:res.company,onboarding_vehicle_layout_state:0
+#: selection:res.company,transportation_enterprise_onboard_panel:0
+msgid "Not done"
+msgstr "لم تفعل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__doors
+msgid "Number of doors of the vehicle"
+msgstr "عدد أبواب المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد الأخطاء"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Number of seats of the vehicle"
+msgstr "عدد مقاعد المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_count
+msgid "Odometer"
+msgstr "عداد المسافات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Odometer Unit"
+msgstr "وحدة عداد المسافات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer
+msgid "Odometer measure of the vehicle at the moment of this log"
+msgstr "قيمة عداد مسافات المركبة عند إنشاء هذا السجل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.module.category,name:openeducat_transportation_enterprise.module_category_openeducat_transportation
+msgid "OpenEduCat Transportation"
+msgstr "OpenEduCat النقل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_passenger_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__partner_id
+msgid "Passenger"
+msgstr "راكب"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Passengers"
+msgstr "ركاب"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+msgid "Person(s)"
+msgstr "الشخص (الأشخاص)"
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,route_type:0
+msgid "Pickup"
+msgstr "امسك"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power"
+msgstr "طاقة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__power
+msgid "Power in kW of the vehicle"
+msgstr "قدرة المركبة بالكيلوواط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__present
+msgid "Present/Absent"
+msgstr "تغيب الحالي"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__residual_value
+msgid "Residual Value"
+msgstr "القيمة المتبقية"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسئول"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__route_id
+msgid "Route"
+msgstr "طريق"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "Route Layout Configuration"
+msgstr "تكوين تخطيط الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__route_line_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__route_line_id
+msgid "Route Line"
+msgstr "خط الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_route_layout
+msgid "Route Record Configuration"
+msgstr "تكوين سجل الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_type
+msgid "Route Type"
+msgstr "نوع الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_stop_line_view
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_route_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_stop_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_tree
+msgid "Routes"
+msgstr "طرق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__seats
+msgid "Seats Number"
+msgstr "عدد المقاعد"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_route_layout_step
+msgid "See how to create a Route Layout."
+msgstr "معرفة كيفية إنشاء تخطيط الطريق."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "See how to create a Trips Layout."
+msgstr "معرفة كيفية إنشاء تخطيط الرحلات."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "See how to create a Vehicle Type Layout."
+msgstr "معرفة كيفية إنشاء نوع المركبة تخطيط."
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "See how to create a stops Layout."
+msgstr "معرفة كيفية إنشاء تخطيط توقف."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__sequence
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_stop__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__service_count
+msgid "Services"
+msgstr "الخدمات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__log_services
+msgid "Services Logs"
+msgstr "سجلات الخدمات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image_small
+msgid "Small-sized logo of the brand. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "صورة صغيرة الحجم لشعار العلامة التجارية. يتم تعديل حجمها تلقائيًا لتصبح بحجم 64*64 بيكسل، مع الحفاظ على تناسب الأبعاد. استخدم هذا الحقل لأي غرض يحتاج صورة صغيرة."
+
+#. module: openeducat_transportation_enterprise
+#: selection:op.route.line,state:0
+msgid "Start"
+msgstr "بداية"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__start_time
+msgid "Start Time"
+msgstr "وقت البدء"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Start Trip"
+msgstr "بدء رحلة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__state
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__state_id
+msgid "State"
+msgstr "الحالة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_route_layout_state
+msgid "State of the onboarding route layout  step"
+msgstr "حالة الخطوة تخطيط مرحلة الإعداد الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__transportation_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "حالة الخطوة التأهيل ل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_stop_layout_state
+msgid "State of the onboarding stops layout  step"
+msgstr "حالة التأهيل لتوقف خطوة تخطيط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_trip_layout_state
+msgid "State of the onboarding trip layout  step"
+msgstr "حالة الخطوة تخطيط رحلة التأهيل ل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_res_company__onboarding_vehicle_layout_state
+msgid "State of the onboarding vehicle layout  step"
+msgstr "حالة التأهيل لمركبة خطوة تخطيط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "الحالة على أساس الأنشطة\n"
+"المتأخرة: تاريخ الاستحقاق مر\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"المخطط: الأنشطة المستقبلية."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_passenger__stop_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_stop_line__stop_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_stop_tree
+msgid "Stop"
+msgstr "إيقاف"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_form_onboard
+msgid "Stop(s)"
+msgstr "وقف (ق)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_stop_view
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__stop_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__route_stop_ids
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_stop_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_line_form_onboard
+msgid "Stops"
+msgstr "توقف"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_stop_layout_step
+msgid "Stops Layout Configuration"
+msgstr "توقف تكوين تخطيط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_stop_layout
+msgid "Stops Record Configuration"
+msgstr "توقف تكوين سجل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__tag_ids
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__image
+msgid "This field holds the image used as logo for the brand, limited to 1024x1024px."
+msgstr "يحتوي هذا الحقل على صورة شعار العلامة التجارية، الحد الأقصى لها هو 1024*1024 بيكسل."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__contract_renewal_total
+msgid "Total of contracts due or overdue minus one"
+msgstr "مجموع العقود المستحقة أو المتأخرة ناقص واحد"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission"
+msgstr "الناقل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__transmission
+msgid "Transmission Used by the vehicle"
+msgstr "الناقل المُستخدم في هذه المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_transportations_main
+msgid "Transportation"
+msgstr "وسائل النقل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route
+msgid "Transportation Route"
+msgstr "النقل الطريق"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_line
+msgid "Transportation Route Line"
+msgstr "النقل الطريق لاين"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_passenger
+msgid "Transportation Route Passenger"
+msgstr "نقل الركاب بالخطوط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_route_stop_line
+msgid "Transportation Route Stop Line"
+msgstr "النقل الطريق توقف الخط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_stop
+msgid "Transportation Stop"
+msgstr "النقل التوقف"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model,name:openeducat_transportation_enterprise.model_op_vehicle
+msgid "Transportation Vehicle"
+msgstr "نقل سيارة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_route_line_sub
+msgid "Trips"
+msgstr "رحلات"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_trip_layout_step
+msgid "Trips Layout Configuration"
+msgstr "رحلات تكوين تخطيط"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_trip_layout
+msgid "Trips Record Configuration"
+msgstr "رحلات تكوين سجل"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__vin_sn
+msgid "Unique number written on the vehicle motor (VIN/SN number)"
+msgstr "رقم فريد مسجل على محرك المركبة (رقم VIN/SN)"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__odometer_unit
+msgid "Unit of the odometer "
+msgstr "وحدة عداد المسافات "
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__message_unread_counter
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_transportation_enterprise
+#: model:res.groups,name:openeducat_transportation_enterprise.group_op_transport_user
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__car_value
+msgid "Value of the bought vehicle"
+msgstr "قيمة المركبة المشتراة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route__vehicle_id
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__vehicle_id
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_route_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_search
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.view_op_vehicle_tree
+msgid "Vehicle"
+msgstr "المركبة"
+
+#. module: openeducat_transportation_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_transportation_enterprise.onboarding_vehicle_layout_step
+msgid "Vehicle Type Layout Configuration"
+msgstr "تكوين نوع تخطيط السيارة"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.action_onboarding_vehicle_layout
+msgid "Vehicle Type Record Configuration"
+msgstr "تكوين سجل نوع السيارة"
+
+#. module: openeducat_transportation_enterprise
+#: code:addons/openeducat_transportation_enterprise/models/stop.py:35
+#, python-format
+msgid "Vehicle capacity is over."
+msgstr "قدرة السيارة قد انتهت."
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.actions.act_window,name:openeducat_transportation_enterprise.act_open_op_vehicle_view
+#: model:ir.ui.menu,name:openeducat_transportation_enterprise.menu_op_vehicle_sub
+msgid "Vehicles"
+msgstr "المركبات"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_route_line__website_message_ids
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: openeducat_transportation_enterprise
+#: model:ir.model.fields,help:openeducat_transportation_enterprise.field_op_vehicle__model_year
+msgid "Year of the model"
+msgstr "عام الموديل"
+

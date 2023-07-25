@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Student Omr Exam Result Record -->
+        <record id="student_omr_result_demo3_1" model="op.answer.sheets">
+            <field name="roll_number">0000123456</field>
+            <field name="key_type">D</field>
+            <field name="right_answer">15</field>
+            <field name="wrong_answer">5</field>
+            <field name="not_attampted">0</field>
+            <field name="score">15</field>
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+            <field name="image_id" ref="openeducat_omr.student_omr_sheet_demo3_image1"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+        <record id="student_omr_result_demo3_2" model="op.answer.sheets">
+            <field name="roll_number">0000789456</field>
+            <field name="key_type">B</field>
+            <field name="right_answer">10</field>
+            <field name="wrong_answer">10</field>
+            <field name="not_attampted">0</field>
+            <field name="score">10</field>
+            <field name="student_id" ref="openeducat_core.op_student_2"/>
+            <field name="image_id" ref="openeducat_omr.student_omr_sheet_demo3_image2"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+        <record id="student_omr_result_demo3_3" model="op.answer.sheets">
+            <field name="roll_number">0000456123</field>
+            <field name="key_type">A</field>
+            <field name="right_answer">15</field>
+            <field name="wrong_answer">5</field>
+            <field name="not_attampted">0</field>
+            <field name="score">15</field>
+            <field name="student_id" ref="openeducat_core.op_student_3"/>
+            <field name="image_id" ref="openeducat_omr.student_omr_sheet_demo3_image3"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+        <record id="student_omr_result_demo3_4" model="op.answer.sheets">
+            <field name="roll_number">0000123789</field>
+            <field name="key_type">E</field>
+            <field name="right_answer">14</field>
+            <field name="wrong_answer">3</field>
+            <field name="not_attampted">3</field>
+            <field name="score">14</field>
+            <field name="student_id" ref="openeducat_core.op_student_4"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+        <record id="student_omr_result_demo3_5" model="op.answer.sheets">
+            <field name="roll_number">0000539649</field>
+            <field name="key_type">C</field>
+            <field name="right_answer">16</field>
+            <field name="wrong_answer">2</field>
+            <field name="not_attampted">2</field>
+            <field name="score">16</field>
+            <field name="student_id" ref="openeducat_core.op_student_5"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- openeducat_core module STEPS -->
+    <!-- library card view starts -->
+    <template id="onboarding_library_card_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Library Card Configuration</t>
+            <t t-set="description">See how to create a library card.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_library_card_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_library_card_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_library_card_form_onboard" model="ir.ui.view">
+            <field name="name">op.library.card.form</field>
+            <field name="model">op.library.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Library Card">
+                    <sheet>
+                        <group col="4">
+                            <field name="number"/>
+                            <field name="issue_date"/>
+                            <field name="library_card_type_id"/>
+                            <field name="type"/>
+                            <field name="partner_id" readonly="1" force_save="1"/>
+                            <field name="student_id" options="{'no_create': True , 'no_open': True}" attrs="{'invisible':[('type','!=','student')],'required':[('type','=','student')]}"/>
+                            <field name="faculty_id" options="{'no_create': True , 'no_open': True}" attrs="{'invisible':[('type','!=','faculty')],'required':[('type','=','faculty')]}"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_library_card_layout"/>
+                    </footer>
+                </form>
+            </field>
+    </record>
+
+
+    <record id="action_onboarding_library_card_layout" model="ir.actions.act_window">
+        <field name="name">Library Card Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.library.card</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_library_card_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- publisher view starts -->
+    <template id="onboarding_publisher_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Publisher Configuration</t>
+            <t t-set="description">See how to create a publisher.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_publisher_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_publisher_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_publisher_form_onboard" model="ir.ui.view">
+            <field name="name">op.publisher.form</field>
+            <field name="model">op.publisher</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Publisher">
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="address_id" context="{'show_address': 1}"
+                                   options='{"always_reload": True}'/>
+                        </group>
+                        <group col="4" string="Media(s)">
+                            <field name="media_ids" colspan="4" nolabel="1"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_publisher_layout"/>
+                    </footer>
+                </form>
+            </field>
+    </record>
+
+
+    <record id="action_onboarding_publisher_layout" model="ir.actions.act_window">
+        <field name="name">Publisher Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.publisher</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_publisher_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+
+    <!-- author view starts -->
+    <template id="onboarding_author_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Author Configuration</t>
+            <t t-set="description">See how to create a Author.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_author_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_author_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_author_form_onboard" model="ir.ui.view">
+            <field name="name">op.author.form</field>
+            <field name="model">op.author</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Author">
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="address"
+                                   context="{'show_address': 1}"
+                                   options='{"always_reload": True}'/>
+                        </group>
+                        <group string="Media(s)">
+                            <field name="media_ids" colspan="4" nolabel="1"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_author_layout"/>
+                    </footer>
+                </form>
+            </field>
+    </record>
+
+
+    <record id="action_onboarding_author_layout" model="ir.actions.act_window">
+        <field name="name">Author Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.author</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_author_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+
+    <!-- media type view starts -->
+    <template id="onboarding_media_type_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Media Type Configuration</t>
+            <t t-set="description">See how to create a Media Type.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_media_type_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_media_type_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_media_type_form_onboard" model="ir.ui.view">
+            <field name="name">op.media.type.form</field>
+            <field name="model">op.media.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Tag">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_media_type_layout"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+    <record id="action_onboarding_media_type_layout" model="ir.actions.act_window">
+        <field name="name">Media Type Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.media.type</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_media_type_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+
+    <!-- library card type view starts -->
+    <template id="onboarding_library_card_type_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Library Card Type Configuration</t>
+            <t t-set="description">See how to create a library card type.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_library_card_type_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_library_card_type_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_library_card_type_form_onboard" model="ir.ui.view">
+            <field name="name">op.library.card.type.form</field>
+            <field name="model">op.library.card.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Library Card Type">
+                    <sheet>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="allow_media"/>
+                            <field name="duration"/>
+                            <field name="penalty_amt_per_day"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_library_card_type_layout"/>
+                    </footer>
+                </form>
+            </field>
+    </record>
+
+
+    <record id="action_onboarding_library_card_type_layout" model="ir.actions.act_window">
+        <field name="name">Library Card Type Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.library.card.type</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_library_card_type_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+
+    <template id="openeducat_library_onboarding_panel" name="openeducat.library.onboarding.panel">
+        <t t-call="base.onboarding_container">
+            <t t-set="classes" t-value="'o_onboarding_violet'"/>
+            <t t-set="bg_image" t-value="'/sale/static/src/img/sale_quotation_onboarding_bg.jpg'"/>
+            <t t-set="close_method" t-value="'action_close_library_panel_onboarding'"/>
+            <t t-set="close_model" t-value="'res.company'"/>
+            <t t-call="openeducat_library_enterprise.onboarding_library_card_layout_step" name="company_step_library_card"/>
+            <t t-call="openeducat_library_enterprise.onboarding_publisher_layout_step" name="company_step_publisher"/>
+            <t t-call="openeducat_library_enterprise.onboarding_author_layout_step" name="company_step_author"/>
+            <t t-call="openeducat_library_enterprise.onboarding_media_type_layout_step" name="company_step_media_type"/>
+            <t t-call="openeducat_library_enterprise.onboarding_library_card_type_layout_step" name="company_step_library_card_type"/>
+        </t>
+    </template>
+</odoo>

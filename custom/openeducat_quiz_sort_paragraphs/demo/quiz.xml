@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_ans_grd_100p_p" model="op.answer.grade">
+            <field name="name">+100%</field>
+            <field name="value">100</field>
+        </record>
+
+        <record id="op_ans_grd_50p_p" model="op.answer.grade">
+            <field name="name">+50%</field>
+            <field name="value">50</field>
+        </record>
+
+        <record id="op_ans_grd_25p_p" model="op.answer.grade">
+            <field name="name">+25%</field>
+            <field name="value">25</field>
+        </record>
+
+        <record id="op_ans_grd_0p" model="op.answer.grade">
+            <field name="name">0</field>
+            <field name="value">0</field>
+        </record>
+
+        <record id="op_ans_grd_100n_n" model="op.answer.grade">
+            <field name="name">-100%</field>
+            <field name="value">-100</field>
+        </record>
+
+        <record id="op_ans_grd_50n_n" model="op.answer.grade">
+            <field name="name">-50%</field>
+            <field name="value">-50</field>
+        </record>
+
+        <record id="op_ans_grd_25n_n" model="op.answer.grade">
+            <field name="name">-25%</field>
+            <field name="value">-25</field>
+        </record>
+
+        <record id="sort_paragraphs_op_qz_ctg_b" model="op.quiz.category">
+            <field name="name">General Knowledge</field>
+            <field name="code">generalknowledge123</field>
+        </record>
+
+        <record id="sort_paragraphs_quiz1" model="op.quiz">
+            <field name="name">Arrange the order</field>
+            <field name="quiz_config">quiz_bank_selected</field>
+            <field name="categ_id" ref="sort_paragraphs_op_qz_ctg_b"/>
+            <field name="time_config">True</field>
+            <field name="time_limit_hr">1</field>
+            <field name="time_limit_minute">30</field>
+            <field name="no_of_attempt">10</field>
+
+            <field name="description">This quiz is based on General Knowledge.
+            </field>
+            <field name="state">open</field>
+            <field name="exit_allow">True</field>
+            <field name="quiz_html">Sort the data in specific defined sequence.
+            </field>
+        </record>
+      
+        <record id="sort_paragraphs_q1" model="op.quiz.line">
+            <field name="name">Sort the numbers in ascending order.</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="op_ans_grd_50n_n"/>
+            <field name="que_type">sort_paragraphs</field>
+            <field name="quiz_id" ref="sort_paragraphs_quiz1"/>
+        </record>
+        <record id="sort_paragraphs_q1_o1" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >1</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q1"/>
+        </record>
+        <record id="sort_paragraphs_q1_o2" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >2</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q1"/>
+        </record>
+        <record id="sort_paragraphs_q1_o3" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >3</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q1"/>
+        </record>
+        <record id="sort_paragraphs_q1_o4" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >4</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q1"/>
+        </record>
+        <record id="sort_paragraphs_q1_o5" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >5</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q1"/>
+            
+        </record>
+
+        <record id="sort_paragraphs_q2" model="op.quiz.line">
+            <field name="name">Sort the below items according to morning routine:</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="op_ans_grd_50n_n"/>
+            <field name="que_type">sort_paragraphs</field>
+            <field name="quiz_id" ref="sort_paragraphs_quiz1"/>
+        </record>
+        <record id="sort_paragraphs_q2_o1" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >First, I wake up at 7:30 am</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q2"/>
+        </record>
+        <record id="sort_paragraphs_q2_o2" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Afterward, I brush my teeth</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q2"/>
+        </record>
+        <record id="sort_paragraphs_q2_o3" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Next, I get dressed</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q2"/>
+        </record>
+        <record id="sort_paragraphs_q2_o4" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Then, I have breakfast</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q2"/>
+        </record>
+        <record id="sort_paragraphs_q2_o5" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Finally, I go to Office</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q2"/>
+        </record>
+
+        <record id="sort_paragraphs_q3" model="op.quiz.line">
+            <field name="name">Arrange the months of the year in alphabetical order:</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="op_ans_grd_50n_n"/>
+            <field name="que_type">sort_paragraphs</field>
+            <field name="quiz_id" ref="sort_paragraphs_quiz1"/>
+        </record>
+        <record id="sort_paragraphs_q3_o1" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >April</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q3"/>
+        </record>
+        <record id="sort_paragraphs_q3_o2" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >August</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q3"/>
+        </record>
+        <record id="sort_paragraphs_q3_o3" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >February</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q3"/>
+        </record>
+        <record id="sort_paragraphs_q3_o4" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >January</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q3"/>
+        </record>
+        <record id="sort_paragraphs_q3_o5" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >July</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q3"/>
+        </record>
+
+         <record id="sort_paragraphs_q4" model="op.quiz.line">
+            <field name="name">Arrange the following body parts from head to toe:</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="op_ans_grd_50n_n"/>
+            <field name="que_type">sort_paragraphs</field>
+            <field name="quiz_id" ref="sort_paragraphs_quiz1"/>
+        </record>
+        <record id="sort_paragraphs_q4_o1" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Eyes</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q4"/>
+        </record>
+        <record id="sort_paragraphs_q4_o2" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Mouth</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q4"/>
+        </record>
+        <record id="sort_paragraphs_q4_o3" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Hands</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q4"/>
+        </record>
+        <record id="sort_paragraphs_q4_o4" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Stomach</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q4"/>
+        </record>
+        <record id="sort_paragraphs_q4_o5" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Legs</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q4"/>
+        </record>
+
+        <record id="sort_paragraphs_q5" model="op.quiz.line">
+            <field name="name">Arrange the week days from the first day of the week:</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="grade_true_id" ref="op_ans_grd_100p_p"/>
+            <field name="grade_false_id" ref="op_ans_grd_50n_n"/>
+            <field name="que_type">sort_paragraphs</field>
+            <field name="quiz_id" ref="sort_paragraphs_quiz1"/>
+        </record>
+        <record id="sort_paragraphs_q5_o1" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Sunday</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q5"/>
+        </record>
+        <record id="sort_paragraphs_q5_o2" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Monday</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q5"/>
+        </record>
+        <record id="sort_paragraphs_q5_o3" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Wednesday</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q5"/>
+        </record>
+        <record id="sort_paragraphs_q5_o4" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Friday</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q5"/>
+        </record>
+        <record id="sort_paragraphs_q5_o5" model="op.quiz.answer.sort.paragraphs">
+            <field name="question" >Saturday</field>
+            <field name="sort_paragraphs_line_id" ref="sort_paragraphs_q5"/>
+        </record>
+
+    </data>
+</odoo>

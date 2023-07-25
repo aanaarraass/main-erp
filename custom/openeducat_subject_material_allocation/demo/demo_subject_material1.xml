@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_subject_material_financial_accounting_1" model="ir.attachment">
+            <field name="name">Financial Accounting</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Financial_accounting.pdf"/>
+        </record>
+        <record id="op_subject_material_financial_accounting_2" model="ir.attachment">
+            <field name="name">Investment Philosophies</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/investment_philosophies.pdf"/>
+        </record>
+        <record id="op_subject_material_financial_accounting_3" model="ir.attachment">
+            <field name="name">Financial Mathematics</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Financial_mathematics.pdf"/>
+        </record>
+        <record id="op_subject_material_financial_accounting_4" model="ir.attachment">
+            <field name="name">Strategic Financial Management</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Strategic_financial_management.pdf"/>
+        </record>
+        <record id="openeducat_core.op_subject_1" model="op.subject">
+            <field name="attachment_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_subject_material_allocation.op_subject_material_financial_accounting_4'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_financial_accounting_3'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_financial_accounting_2'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_financial_accounting_1')
+                   ])]"/>
+        </record>
+
+        <record id="op_subject_material_taxation_1" model="ir.attachment">
+            <field name="name">Accounting</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Financial_accounting.pdf"/>
+        </record>
+        <record id="op_subject_material_taxation_2" model="ir.attachment">
+            <field name="name">Taxation</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Taxonomy.pdf"/>
+        </record>
+        <record id="openeducat_core.op_subject_2" model="op.subject">
+            <field name="attachment_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_subject_material_allocation.op_subject_material_taxation_2'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_taxation_1')
+                   ])]"/>
+        </record>
+
+        <record id="op_subject_material_law_and_ethics_1" model="ir.attachment">
+            <field name="name">Law-Ethics Section-1</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/law_section-1.pdf"/>
+        </record>
+        <record id="op_subject_material_law_and_ethics_2" model="ir.attachment">
+            <field name="name">Law-Ethics Section-2</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/law_section-2.pdf"/>
+        </record>
+        <record id="op_subject_material_law_and_ethics_3" model="ir.attachment">
+            <field name="name">Law-Ethics Section-3</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/law_section-3.pdf"/>
+        </record>
+        <record id="openeducat_core.op_subject_3" model="op.subject">
+            <field name="attachment_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_subject_material_allocation.op_subject_material_law_and_ethics_3'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_law_and_ethics_2'),
+                   ref('openeducat_subject_material_allocation.op_subject_material_law_and_ethics_1')
+                   ])]"/>
+        </record>
+
+        <record id="op_subject_material_business_management_1" model="ir.attachment">
+            <field name="name">Business Management Chapt-1</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Business_management.pdf"/>
+        </record>
+        <record id="op_subject_material_business_management_2" model="ir.attachment">
+            <field name="name">Business Management Chapt-2</field>
+            <field name="create_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="write_uid" ref="openeducat_core.op_user_faculty"/>
+            <field name="res_model">op.subject</field>
+            <field name="type">binary</field>
+            <field name="datas" type="base64"
+                   file="openeducat_subject_material_allocation/static/description/Business_management.pdf"/>
+        </record>
+        <record id="openeducat_core.op_subject_4" model="op.subject">
+            <field name="attachment_ids"
+                   eval="[(6,0,[
+                   ref('openeducat_subject_material_allocation.op_subject_material_business_management_2'),
+                     ref('openeducat_subject_material_allocation.op_subject_material_business_management_1'),
+                   ])]"/>
+        </record>
+    </data>
+</odoo>

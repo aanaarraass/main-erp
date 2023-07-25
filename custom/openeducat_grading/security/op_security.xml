@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.rule" id="faculty_grading_assignment_rule">
+            <field name="name">Faculty Grading Assignment rule</field>
+            <field name="model_id" ref="model_grading_assignment"/>
+            <field name="groups"
+                   eval="[(4, ref('openeducat_core.group_op_faculty'))]"/>
+        </record>
+
+        <record model="ir.rule" id="admin_grading_assignment_rule">
+            <field name="name">Admin Grading Assignment rule</field>
+            <field name="model_id" ref="model_grading_assignment"/>
+            <field name="groups"
+                   eval="[(4, ref('openeducat_core.group_op_back_office_admin'))]"/>
+        </record>
+        <record model="ir.rule" id="backoffice_grading_assignment_rule">
+            <field name="name">Backoffice Grading Assignment rule</field>
+            <field name="model_id" ref="model_grading_assignment"/>
+            <field name="groups"
+                   eval="[(4, ref('openeducat_core.group_op_back_office'))]"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_scale_multi_comp_rule">
+            <field name="name">Grade Scale multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_scale"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_type_multi_comp_rule">
+            <field name="name">Grade Type multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_type"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_table_multi_comp_rule">
+            <field name="name">Grade Table multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_table"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_table_line_multi_comp_rule">
+            <field name="name">Grade Table Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_table_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_template_line_multi_comp_rule">
+            <field name="name">Grade Template Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_template_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_template_multi_comp_rule">
+            <field name="name">Grade Template multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_template"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="subterm_weight_line_multi_comp_rule">
+            <field name="name">Subterm Weightage Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_subterm_weight_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="assignment_type_weight_line_multi_comp_rule">
+            <field name="name">Assignment Type Weightage Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_assignment_type_weight_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="gradebook_gradebook_multi_comp_rule">
+            <field name="name">Gradebook Gradebook multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_gradebook_gradebook"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="gradebook_line_multi_comp_rule">
+            <field name="name">Gradebook Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_gradebook_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="op_grade_override_line_multi_comp_rule">
+            <field name="name">Grade Override Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_op_grade_override_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+
+        <record model="ir.rule" id="attendance_weight_line_multi_comp_rule">
+            <field name="name">Attendance Weightage Line multi company</field>
+            <field name="model_id" ref="openeducat_grading.model_attendance_weight_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|','|',('company_id','=',False),('company_id','child_of',[user.company_id.id]),('company_id','in',user.company_ids.ids)]
+            </field>
+        </record>
+    </data>
+</odoo>

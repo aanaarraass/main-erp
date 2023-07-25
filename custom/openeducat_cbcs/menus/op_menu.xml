@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_course_credit_register" name="Course Credit"
+                  sequence="21"
+                  groups="openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin"
+                  parent="openeducat_core.menu_op_school_config_course"
+                  action="act_open_course_credit_view"/>
+    </data>
+</odoo>

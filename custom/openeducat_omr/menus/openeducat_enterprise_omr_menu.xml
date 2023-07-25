@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <menuitem id="menu_action_omr_root" name="OMR"
+                  groups="openeducat_core.group_op_faculty"
+                  web_icon="openeducat_omr,static/description/icon.png"/>
+
+        <menuitem action="action_omr_exam_list"
+                  id="menu_action_omr_exam_list"
+                  parent="menu_action_omr_root"
+                  sequence="20"/>
+
+        <menuitem action="action_answer_sheets_list"
+                  id="menu_action_answer_sheets_list"
+                  parent="menu_action_omr_root"
+                  sequence="30"/>
+
+        <menuitem action="action_temp_wizard"
+                  id="menu_action_temp_omr"
+                  parent="menu_action_omr_root"
+                  groups="hr.group_hr_manager"
+                  sequence="40"/>
+
+        <menuitem id="menu_configuration_omr"
+                  parent="menu_action_omr_root"
+                  sequence="50" name="Configuration"/>
+
+        <menuitem action="action_answersheet_configuration_list"
+                  id="menu_action_answersheet_configuration_list"
+                  parent="menu_configuration_omr"
+                  sequence="10"/>
+
+        <!--  Portal View     -->
+
+        <record id="portal_menu_omr_exam_result_overview" model="openeducat.portal.menu">
+            <field name="name">OMR Exam Result</field>
+            <field name="menu_ref_name">OMR Exam Result</field>
+            <field name="link">/openeducat-omr/exam</field>
+            <field name="active">True</field>
+            <field name="sequence" type="int">71</field>
+            <field name="background_color">#45ac34</field>
+            <field name="icon_image" type="base64"
+                   file="openeducat_omr/static/src/img/grades.png"/>
+        </record>
+
+    </data>
+</odoo>

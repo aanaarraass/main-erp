@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+
+        <record id="view_op_quiz_bank_match_following_images_tree" model="ir.ui.view">
+            <field name="name">op.question.bank.form</field>
+            <field name="model">op.question.bank</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_question_bank_form"></field>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook//page//field//form//group//field[@name='answer']" position="after">
+                    <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'match_following_images')], 'required': [('que_type', '=', 'match_following_images')]}" />
+                    <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'match_following_images')], 'required': [('que_type', '=', 'match_following_images')]}" />
+                </xpath>
+                <xpath expr="//notebook//page//field//form//notebook" position="after">
+                    <notebook colspan="4" attrs="{'invisible': [('que_type', '!=', 'match_following_images')]}">
+                        <page string="Answers">
+                            <field name="following_images_line_ids">
+                                <tree string="Answers" editable="bottom">
+                                    <field name="image" required="1" />
+                                    <field name="default_answer" required="1" />
+                                </tree>
+                                <form string="Answers">
+                                    <group>
+                                    <field name="image" required="1" />
+                                    <field name="default_answer" required="1"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

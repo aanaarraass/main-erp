@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_transport_agreement_tree" model="ir.ui.view">
+            <field name="name">op.transportation.agreement.tree</field>
+            <field name="model">op.transportation.agreement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Transportation Agreement">
+                    <field name="partner_id"/>
+                    <field name="route_register_id"/>
+                    <field name="route_id"/>
+                    <field name="stop_id"/>
+                    <field name="date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_transport_agreement_form" model="ir.ui.view">
+            <field name="name">op.transportation.agreement.form</field>
+            <field name="model">op.transportation.agreement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Transportation Agreement">
+                    <header groups="base.group_user">
+                        <button string="Submit" states="draft" class="oe_highlight" type="object" name="submit_form"/>
+                        <button name="confirm_in_progress" states="submit,pending" string="Confirm" type="object"
+                                class="oe_highlight"/>
+                        <button string="Agreement Confirm" class="oe_highlight" states="confirm" type="object"
+                                name="agreement_confirm"/>
+                        <button name="enroll_partner" states="agreement" string="Enroll" type="object"
+                                class="oe_highlight"/>
+                        <button name="confirm_rejected" states="confirm,confirm_pending" string="Reject" type="object"/>
+                        <button name="confirm_pending" states="submit" string="Pending" type="object"/>
+                        <button name="confirm_cancel" string="Cancel" type="object"/>
+                        <button name="confirm_to_draft" states="pending,reject,cancel" string="Set to Draft"
+                                type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <field name="partner_id"/>
+                            <field name="route_register_id" domain="[('state', 'in', ['gathering'])]"/>
+                            <field name="route_id"/>
+                            <field name="stop_id"/>
+                            <field name="plan_id"/>
+                            <field name="expires_after"/>
+                            <field name="date"/>
+                            <field name="end_date"/>
+                            <field name="prev_invoice_date"/>
+                            <field name="next_invoice_date"/>
+                        </group>
+                        <group col="4" string="Bill and Accounts">
+                            <field name="bill"/>
+                            <field name="bill_selection"/>
+                        </group>
+                        <group string="Transportation Fees Collection">
+                            <field name="transportation_fees_detail_ids" nolabel="1">
+                                <tree string="Transportation Fees Collection Details" editable="top">
+                                    <field name="date"/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="amount" widget="monetary"/>
+                                    <field name="product_id" invisible="1"/>
+                                    <field name="invoice_id" invisible="1"/>
+                                    <field name="state"/>
+                                    <field name="invoice_state"/>
+                                    <button string="Create Invoice"
+                                            states="draft" type="object" name="get_invoice"
+                                            groups="openeducat_core.group_op_back_office"/>
+                                    <button string="View Invoice"
+                                            groups="openeducat_core.group_op_back_office"
+                                            states="invoiced" type="object"
+                                            name="action_get_invoice"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_transport_agreement_view">
+            <field name="name">Transportation Agreement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.transportation.agreement</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

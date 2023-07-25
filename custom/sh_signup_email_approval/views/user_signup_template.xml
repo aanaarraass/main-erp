@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="auth_signup.signup" name="Sign up login">
+        <t t-call="web.login_layout">
+            <form id="signup_form" class="oe_signup_form" role="form" method="post" t-if="not message">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+
+                <t t-call="auth_signup.fields">
+                    <t t-set="only_passwords" t-value="bool(token and not invalid_token)" />
+                </t>
+
+                <p class="alert alert-danger" t-if="error" role="alert">
+                    <t t-esc="error" />
+                </p>
+                <input type="hidden" name="redirect" t-att-value="redirect" />
+                <input type="hidden" name="token" t-att-value="token" />
+                <div class="text-center oe_login_buttons pt-3">
+                    <button type="submit" id="signup_btn" class="btn btn-primary btn-block">Sign up</button>
+                    <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm" role="button">Already have an account?</a>
+                    <div class="o_login_auth" />
+                </div>
+            </form>
+        </t>
+    </template>
+    <template id="sh_signup_verfiy_template">
+        <t t-call="web.login_layout">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#button_verify").click(function (e) {
+                        $.ajax({
+                            url: "/web/signup/verify",
+                            data: { url: window.location.href, code: $("#code").val() },
+                            type: "post",
+                            cache: false,
+                            success: function (result) {
+                                var datas = JSON.parse(result);
+                                if (datas.success == "1") {
+                                    window.location.href = "/my";
+                                }
+                                if (datas.error == "0") {
+                                    url = "/web/signup/error/" + String(datas.user_id);
+                                    window.location.href = url;
+                                }
+                            },
+                        });
+                    });
+                });
+            </script>
+            <div class="container">
+                <h2>Verify Code</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="code" id="code" class="form-group form-control-sm" placeholder="Code" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button id="button_verify" class="btn btn-primary 0">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="email_approval_sorry">
+        <t t-call="website.layout">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script type="text/javascript">
+                $( document ).ready(function() {
+                	$("#button_verify").click(function(e){
+                		$.ajax({url: "/web/signup/error/verify",
+                			data: {'url':window.location.href},
+                			type: "post",
+                			cache: false,
+                			success: function(result){
+                				var datas = JSON.parse(result);
+                				if(datas.success=='1' &amp;&amp; datas.user_id){
+                					url = "/web/signup/verify/"+String(datas.user_id);
+                					window.location.href = url;
+                					}
+                				},
+                			});
+                	});
+                });
+            </script>
+            <div class="container">
+                <h1>Sorry!</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger" role="status">
+                            Your Code is invalid.
+                            <button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div t-field="website.company_id.partner_id"
+                t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button id="button_verify" class="btn btn-primary 0" role="button">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <!--   Request Reason Data   -->
+
+        <record id="asset_request_reason_1" model="asset.request.reason">
+            <field name="name">New joining</field>
+        </record>
+        <record id="asset_request_reason_2" model="asset.request.reason">
+            <field name="name">Old asset replacement</field>
+        </record>
+        <record id="asset_request_reason_3" model="asset.request.reason">
+            <field name="name">Old asset damage</field>
+        </record>
+        <record id="asset_request_reason_4" model="asset.request.reason">
+            <field name="name">Asset technical issue</field>
+        </record>
+        <record id="asset_request_reason_5" model="asset.request.reason">
+            <field name="name">Old asset lost</field>
+        </record>
+
+        <!--   Request Assets Data     -->
+        <record id="request_asset_1" model="account.asset.request">
+            <field name="request_for">student</field>
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+            <field name="request_reason_id" ref="openeducat_asset_request_enterprise.asset_request_reason_1"/>
+            <field name="request_date" eval="(DateTime.today())"/>
+            <field name="requested_asset">Laptop</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="request_asset_2" model="account.asset.request">
+            <field name="request_for">faculty</field>
+            <field name="faculty_id" ref="openeducat_core.op_faculty_1"/>
+            <field name="request_reason_id" ref="openeducat_asset_request_enterprise.asset_request_reason_2"/>
+            <field name="request_date" eval="(DateTime.today())"/>
+            <field name="requested_asset">Computer</field>
+            <field name="state">draft</field>
+        </record>
+
+    </data>
+</odoo>

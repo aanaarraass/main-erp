@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="course_detail_inherit" inherit_id="openeducat_lms.course_detail">
+        <xpath expr="//li[hasclass('review')]" position="after">
+            <li class="">
+                <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                    Q &amp; A
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[contains(@id, 'forum_tab_view')]" position="inside">
+            <div id="course-q-and-a" t-if="course.forum_id">
+                <t t-foreach="post_ids" t-as="question">
+                    <t t-call="website_forum.display_post_question_block">
+                        <ol>
+                            <li>
+                                <t t-set="forum" t-value="course.forum_id"/>
+                                <t t-set="question" t-value="question"/>
+                            </li>
+                        </ol>
+                    </t>
+                </t>
+                <a type="button" t-attf-class="btn btn-primary btn-md" t-if="post_ids"
+                   t-attf-href="/forum/#{slug(course.forum_id)}/ask?post_type=#{course.forum_id.mode}">
+                    <t t-if="course.forum_id.mode == 'question'"/>Ask a Question
+                </a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

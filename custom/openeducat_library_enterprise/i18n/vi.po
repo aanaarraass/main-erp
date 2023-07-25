@@ -1,0 +1,993 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_library_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 07:34+0000\n"
+"PO-Revision-Date: 2019-09-30 07:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr "<I class = \"fa fa-lược-v\" role = \"img\" aria-label = \"Quản lý\" title = \"Quản lý\" />"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>New</span>"
+msgstr "<Span> mới </ span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "<span>Reports</span>"
+msgstr "<Span> Báo cáo </ span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Actual Return Date:</strong>"
+msgstr "<Strong> Thực tế Return ngày: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Author:</strong>"
+msgstr "<Strong> Tác giả: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Code:</strong>"
+msgstr "<Strong> Code: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Due Date:</strong>"
+msgstr "<Strong> Do ngày: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Edition:</strong>"
+msgstr "<Strong> Nơi xuất bản: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>ISBN Code:</strong>"
+msgstr "<Strong> ISBN Code: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Invoice:</strong>"
+msgstr "<Strong> Hóa đơn: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Issued Date:</strong>"
+msgstr "<Strong> Cấp ngày: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "<strong>Library Card:</strong>"
+msgstr "<Strong> Thư viện thẻ: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Queue Count:</strong>"
+msgstr "<Strong> Media Queue Count: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Type:</strong>"
+msgstr "<Strong> Media Type: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media Unit:</strong>"
+msgstr "<Strong> Media Đơn vị: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Media:</strong>"
+msgstr "<Strong> Media: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Penalty:</strong>"
+msgstr "<Strong> Penalty: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Publisher:</strong>"
+msgstr "<Strong> Nhà xuất bản: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Status:</strong>"
+msgstr "<Strong> Trạng thái: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student / Faculty:</strong>"
+msgstr "<Strong> Sinh viên / Khoa: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "<strong>Student:</strong>"
+msgstr "<Strong> Sinh viên: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "<strong>Tags:</strong>"
+msgstr "<Strong> Tags: </ strong>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Actual Return Date"
+msgstr "Ngày trở về thực tế"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "All Media Information"
+msgstr "Tất cả các phương tiện thông tin"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Apply"
+msgstr "Áp dụng"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+msgid "Author"
+msgstr "Tác giả"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_author_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "Author Configuration"
+msgstr "tác giả cấu hình"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Author:"
+msgstr "tác giả:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__available
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Available"
+msgstr "có sẵn"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_barcode_issue_media
+msgid "Barcode Issue Media Wizard"
+msgstr "Issue mã vạch Truyền thông Hướng dẫn"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_movement.py:52
+#, python-format
+msgid "Can't renew media \n"
+" you have penalty to pay"
+msgstr "Không thể đổi mới phương tiện truyền thông bạn có hình phạt để trả tiền"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:58
+#, python-format
+msgid "Can't return media : % s"
+msgstr "Không thể quay trở lại phương tiện truyền thông: % s"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:72
+#, python-format
+msgid "Card not available : % s"
+msgstr "Thẻ không sẵn dùng: % s"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Closed"
+msgstr "đóng"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_author__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_library_card_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_purchase__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_queue__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_unit__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_publisher__company_id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_tag__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Course"
+msgstr "Khóa học"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Course:"
+msgstr "Khóa học:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Courses"
+msgstr "Các khóa học"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__create_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__create_date
+msgid "Created on"
+msgstr "Được tạo ra"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Customize"
+msgstr "Tuỳ chỉnh"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.menu_op_dashboard_librarian
+msgid "Dashboard"
+msgstr "Bảng thông tin"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__display_name
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Done"
+msgstr "Làm xong"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Due"
+msgstr "vì"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Due Date"
+msgstr "Ngày đáo hạn"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_month
+msgid "Due Media of Month"
+msgstr "Do phương tiện của Tháng"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__due_media_today
+msgid "Due Media of Today"
+msgstr "Do phương tiện của hôm nay"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Edition"
+msgstr "Phiên bản"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Edition:"
+msgstr "Phiên bản:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Educational Details"
+msgstr "Chi tiết về giáo dục"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "From Date"
+msgstr "Từ ngày"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "From Date:"
+msgstr "Từ ngày:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__id
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "ISBN Code"
+msgstr "ISBN Mã"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+msgid "Internal Code"
+msgstr "Mã nội bộ"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Issue"
+msgstr "Vấn đề"
+
+#. module: openeducat_library_enterprise
+#: model:ir.ui.menu,name:openeducat_library_enterprise.barcode_issue_media_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Issue Media"
+msgstr "Phương tiện truyền thông phát hành"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.barcode_issue_media_act
+msgid "Issue media"
+msgstr "Phương tiện truyền thông phát hành"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__issued
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Issued"
+msgstr "Cấp"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Issued Date"
+msgstr "Ngày phát hành"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Just done"
+msgstr "Vừa làm xong"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__kanban_dashboard_graph
+msgid "Kanban Dashboard Graph"
+msgstr "Bảng điều khiển Graph Kanban"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media____last_update
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew____last_update
+msgid "Last Modified on"
+msgstr "Sửa đổi lần cuối trên"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_uid
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__write_date
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__librarian_id
+msgid "Librarian"
+msgstr "Thủ thư"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Library\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+msgstr "Thư viện\n"
+"                                <span style=\"float:left;padding: 0 20px 0 20px;\">+</span>"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Library All Media Information"
+msgstr "Thư viện All Media Thông tin"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Library All Media details"
+msgstr "chi tiết thư viện All Media"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_form_onboard
+msgid "Library Card"
+msgstr "Thẻ thư viện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "Library Card Configuration"
+msgstr "Cấu hình thẻ thư viện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__library_card_number
+msgid "Library Card Number"
+msgstr "Số thẻ thư viện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_library_card_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_library_card_type_form_onboard
+msgid "Library Card Type"
+msgstr "Loại thẻ thư viện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_library_card_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "Library Card Type Configuration"
+msgstr "Loại Cấu hình thư viện Thẻ"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "Library Dashboard"
+msgstr "Trang tổng quan thư viện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_renew
+msgid "Library Media Renewal"
+msgstr "Media Library Renewal"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Library card"
+msgstr "Thẻ thư viện"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Looks great!"
+msgstr "Trông thật tuyệt!"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:100
+#, python-format
+msgid "Maximum Number of media allowed for % s is : % s"
+msgstr "Tối đa số phương tiện truyền thông cho phép cho% s là:% s"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_month
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.act_op_media_today
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media"
+msgstr "Phương tiện truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_pivot
+msgid "Media Analysis"
+msgstr "phương tiện truyền thông Phân tích"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_author
+msgid "Media Author"
+msgstr "phương tiện truyền thông tác giả"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media
+msgid "Media Details"
+msgstr "Thông tin chi tiết phương tiện truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_movement
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__movement_id
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_media_queue_list
+msgid "Media Movement"
+msgstr "Phương tiện di chuyển"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Media Movement Information"
+msgstr "Truyền thông Thông tin Phong trào"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Movements"
+msgstr "Biến động truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_purhase_list
+msgid "Media Purchase List"
+msgstr "Danh sách mua hàng Truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media Purchase Request"
+msgstr "Phương tiện truyền thông yêu cầu mua hàng"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+msgid "Media Purchase Request List"
+msgstr "Phương tiện truyền thông mua hàng Danh sách yêu cầu"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Purchase Request Submit"
+msgstr "Phương tiện truyền thông mua hàng Yêu cầu Submit"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__queue_count
+msgid "Media Queue Count"
+msgstr "Đếm phương tiện truyền thông Queue"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_my_home_library_queue_list
+msgid "Media Queue List"
+msgstr "Truyền thông Queue Danh sách"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media Queue Request"
+msgstr "Phương tiện truyền thông hàng đợi yêu cầu"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Media Queue Request List"
+msgstr "Truyền thông Queue Danh sách yêu cầu"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+msgid "Media Queue Request Submit"
+msgstr "Truyền thông Queue Yêu cầu Submit"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Media Renew Details"
+msgstr "Truyền thông Renew Chi tiết"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_tag
+msgid "Media Tags"
+msgstr "Truyền thông Thẻ"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_type
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Media Type"
+msgstr "Loại phương tiện truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_media_type_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "Media Type Configuration"
+msgstr "Loại phương tiện truyền thông Cấu hình"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_media_unit
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Media Unit"
+msgstr "Đơn vị truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__media_unit_number
+msgid "Media Unit Number"
+msgstr "Truyền thông Số Đơn vị"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:52
+#, python-format
+msgid "Media Unit can not available : % s"
+msgstr "Truyền thông Đơn vị có thể không có sẵn:% s"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/wizards/barcode_issue_media.py:95
+#, python-format
+msgid "Media Unit can not be issued                         because it's state is : % s"
+msgstr "Đơn vị truyền thông này có thể không được phát hành bởi vì trạng thái của nó là: % s"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Media type:"
+msgstr "Loại vật liệu:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_author_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Media(s)"
+msgstr "Media (s)"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Media:"
+msgstr "Phương tiện truyền thông:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Movements"
+msgstr "phong trào"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New"
+msgstr "Mới"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "New Media"
+msgstr "Phương tiện truyền thông mới"
+
+#. module: openeducat_library_enterprise
+#: selection:res.company,onboarding_author_layout_state:0
+#: selection:res.company,onboarding_library_card_layout_state:0
+#: selection:res.company,onboarding_library_card_type_layout_state:0
+#: selection:res.company,onboarding_media_type_layout_state:0
+#: selection:res.company,onboarding_publisher_layout_state:0
+#: selection:res.company,openeducat_library_onboard_panel:0
+msgid "Not done"
+msgstr "Không được thực hiện"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__media_movement_id
+msgid "Parent Media Movement"
+msgstr "Phong trào Truyền mẹ"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Penalty"
+msgstr "hình phạt"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "Person"
+msgstr "Người"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "Proceed"
+msgstr "tiến hành"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model,name:openeducat_library_enterprise.model_op_publisher
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_publisher_form_onboard
+msgid "Publisher"
+msgstr "nhà phát hành"
+
+#. module: openeducat_library_enterprise
+#: model:ir.actions.act_window,name:openeducat_library_enterprise.action_onboarding_publisher_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "Publisher Configuration"
+msgstr "Cấu hình nhà xuất bản"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Publisher:"
+msgstr "Nhà xuất bản:"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__is_renew
+msgid "Renew"
+msgstr "Thay mới"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_renew__renew_date
+msgid "Renew Date"
+msgstr "renew ngày"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_movement__renew_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Details"
+msgstr "renew Chi tiết"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_movement_enterprise_form
+msgid "Renew Media"
+msgstr "renew Truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Request by:"
+msgstr "Yêu cầu theo:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Requested by"
+msgstr "Được yêu cầu bởi"
+
+#. module: openeducat_library_enterprise
+#: selection:barcode.issue.media,transaction_type:0
+msgid "Return"
+msgstr "Quay trở lại"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_unit_enterprise_form
+msgid "Return Media"
+msgstr "Trở Truyền thông"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "SUBMIT\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "GỬI ĐI\n"
+"                                    <Span class = \"fa fa dài mũi tên bên phải\" />"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_author_layout_step
+msgid "See how to create a Author."
+msgstr "Xem làm thế nào để tạo ra một tác giả."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_media_type_layout_step
+msgid "See how to create a Media Type."
+msgstr "Xem làm thế nào để tạo ra một loại Media."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_type_layout_step
+msgid "See how to create a library card type."
+msgstr "Xem làm thế nào để tạo ra một loại thẻ thư viện."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_library_card_layout_step
+msgid "See how to create a library card."
+msgstr "Xem làm thế nào để tạo ra một thẻ thư viện."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.onboarding_publisher_layout_step
+msgid "See how to create a publisher."
+msgstr "Xem làm thế nào để tạo ra một nhà xuất bản."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "Select your option"
+msgstr "Chọn tùy chọn của bạn"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "Sequence No."
+msgstr "Dãy số"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "Settings"
+msgstr "Thiết lập"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_author_layout_state
+msgid "State of the onboarding author layout step"
+msgstr "Nhà nước của nhập môn bước bố trí tác giả"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_layout_state
+msgid "State of the onboarding library card layout step"
+msgstr "Nhà nước của thư viện tham gia hệ thống bước bố trí thẻ"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_library_card_type_layout_state
+msgid "State of the onboarding library card type layout step"
+msgstr "Nhà nước của gia hệ thống thẻ thư viện bước loại bố trí"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__openeducat_library_onboard_panel
+msgid "State of the onboarding library layout step"
+msgstr "Nhà nước bước bố trí thư viện tham gia hệ thống"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_media_type_layout_state
+msgid "State of the onboarding media type layout step"
+msgstr "Nhà nước của phương tiện truyền thông tham gia hệ thống bước loại bố trí"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_res_company__onboarding_publisher_layout_state
+msgid "State of the onboarding publisher layout step"
+msgstr "Nhà nước bước bố trí nhà xuất bản tham gia hệ thống"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.student_portal_library
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+msgid "Student / Faculty Detail"
+msgstr "Sinh viên / Khoa Chi tiết"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Subject"
+msgstr "Môn học"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Subject:"
+msgstr "Môn học:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "Subjects"
+msgstr "Đối tượng"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_type_form_onboard
+msgid "Tag"
+msgstr "Nhãn"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_information
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "There are currently no information for your account!!!"
+msgstr "Hiện tại không có thông tin cho tài khoản của bạn !!!"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_library_enterprise.open_library_dashboard_kanban
+msgid "This is the Library Dashboard."
+msgstr "Đây là Dashboard Thư viện."
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_librart_midia_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchase_request_list
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_purchases_request
+msgid "Title"
+msgstr "Xưng hô"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_purchase
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_data
+msgid "To Date"
+msgstr "đến ngày"
+
+#. module: openeducat_library_enterprise
+#: code:addons/openeducat_library_enterprise/models/media_queue.py:26
+#, python-format
+msgid "To Date cannot be set before From Date."
+msgstr ""
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date must be grater then From Date"
+msgstr "Đến ngày phải vắt tay sau đó Từ ngày"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "To Date:"
+msgstr "Đến ngày:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "To date"
+msgstr "cho đến nay"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media_type__total_copies
+msgid "Total Copies"
+msgstr "Tổng số bản sao"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_op_media__total_units
+msgid "Total Units"
+msgstr "Tổng số đơn vị"
+
+#. module: openeducat_library_enterprise
+#: model:ir.model.fields,field_description:openeducat_library_enterprise.field_barcode_issue_media__transaction_type
+msgid "Transaction Type"
+msgstr "Loại giao dịch"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.view_op_media_enterprise_form
+msgid "Units"
+msgstr "Các đơn vị"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_submited_queue_request_list
+msgid "User"
+msgstr "Người dùng"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_library_media_queue
+msgid "User:"
+msgstr "Người dùng:"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.barcode_issue_media_form
+msgid "media Issue"
+msgstr "phương tiện truyền thông phát hành"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Month"
+msgstr "của tháng"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.openeducat_media_dashboard_kanban_view
+msgid "of Today"
+msgstr "của ngày hôm nay"
+
+#. module: openeducat_library_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_library_enterprise.portal_student_media_movement_list
+msgid "status"
+msgstr "trạng thái"
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="property_report_invoice_document" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@id='total']" position="after">
+                <div style="border:1px solid black">
+                    <table class="table text-left table-borderless">
+                        <tbody>
+                            <tr>
+                                <td class="text-center" colspan="4">
+                                    <h5>Contract Details</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Property Selling Price</th>
+                                <td>
+                                    <span t-field="o.property_selling_price"/>
+                                </td>
+                                <th>Discount</th>
+                                <td>
+                                    <span t-field="o.property_discount_amount"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Total Contract Amount</th>
+                                <td>
+                                    <span t-field="o.total_emi_amount"/>
+                                </td>
+                                <th>Contract Total Amount With Tax</th>
+                                <td>
+                                    <span t-field="o.contract_total_amount_with_tax"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Total Paid Amount</th>
+                                <td>
+                                    <span t-field="o.paid_installment_emi"/>
+                                </td>
+                                <th>Total Remaining Amount</th>
+                                <td>
+                                    <span t-field="o.remaining_balance"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Remaining Installments</td>
+                                <td>
+                                    <span t-field="o.remaining_installments"/>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </xpath>
+        </template>
+
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="op_skypemeet_integration_menu"
+                  sequence="10"
+                  name="Skype Meet"
+                  web_icon="openeducat_skypemeet/static/description/icon.png"/>
+    </data>
+</odoo>

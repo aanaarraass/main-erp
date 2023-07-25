@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_op_digital_library_material_form">
+            <field name="name">op.digital.library.material.form</field>
+            <field name="model">op.digital.library.material</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="material_cover" class="oe_avatar" widget="image"/>
+                        <group>
+                            <field name="publish_online"/>
+                        </group>
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="material_type"/>
+                            <field name="material_data"/>
+                            <field name="language_id"/>
+                        </group>
+                        <group col="4">
+                            <field name="material_edition"/>
+                            <field name="material_source"/>
+                            <field name="author_ids" widget="many2many_tags"/>
+                            <field name="publisher_ids" widget="many2many_tags"/>
+                        </group>
+                        <group col="4">
+                            <field name="material_tags" widget="many2many_tags"/>
+                            <field name="isbn_code"/>
+                            <field name="rating"/>
+                            <field name="total_reviews"/>
+                        </group>
+                        <group>
+                            <field name="material_description"/>
+                        </group>
+                        <group>
+                            <notebook>
+                                <page name="enrollments" string="Enrollments">
+                                    <field name="material_enrollment_line">
+                                        <tree>
+                                            <field name="user_id"/>
+                                            <field name="company_id"/>
+                                            <field name="enrollment_date"/>
+                                            <field name="state"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                                <page name="reviews" string="Reviews">
+                                    <field name="material_review_line" readonly="1">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="email"/>
+                                            <field name="review"/>
+                                            <field name="rating"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_digital_library_material_tree" model="ir.ui.view">
+            <field name="name">op.digital.library.material.tree</field>
+            <field name="model">op.digital.library.material</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="material_type"/>
+                    <field name="author_ids"/>
+                    <field name="publisher_ids"/>
+                    <field name="material_edition"/>
+                    <field name="language_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_digital_library_material_view">
+            <field name="name">Material</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.digital.library.material</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

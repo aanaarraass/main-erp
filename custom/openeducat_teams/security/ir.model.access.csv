@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_msteams_meeting_back_office_admin,access_msteams_meeting,model_msteams_meeting,openeducat_core.group_op_back_office_admin,1,1,1,1
+access_msteams_meeting_back_office,access_msteams_meeting,model_msteams_meeting,openeducat_core.group_op_back_office,1,1,1,1
+access_msteams_meeting_faculty,access_msteams_meeting,model_msteams_meeting,openeducat_core.group_op_faculty,1,1,1,1

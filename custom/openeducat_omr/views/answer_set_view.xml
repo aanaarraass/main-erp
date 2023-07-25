@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="answer_set_list_view" model="ir.ui.view">
+            <field name="name">answer_set_list_view</field>
+            <field name="model">op.answer.set</field>
+            <field name="arch" type="xml">
+                <tree string="answer_set">
+                    <field name="paper_set"/>
+                </tree>
+            </field>
+        </record>
+        <record id="answer_set_form_view" model="ir.ui.view">
+            <field name="name">answer_set_form_view</field>
+            <field name="model">op.answer.set</field>
+            <field name="arch" type="xml">
+                <form string="Answer Key">
+                    <sheet>
+                        <group>
+                            <field name="paper_set"/>
+                        </group>
+                        <notebook colspan="4">
+                            <page string="Question Answer Detail">
+                                <field name="question_answer_line"/>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="action_answer_set_list" model="ir.actions.act_window">
+            <field name="name">Answer Set</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.answer.set</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

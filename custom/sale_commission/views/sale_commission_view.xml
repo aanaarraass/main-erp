@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="sale_commission_tree">
+        <field name="name">Sales commissions tree</field>
+        <field name="model">sale.commission</field>
+        <field name="arch" type="xml">
+            <tree string="Commissions">
+                <field name="name" />
+                <field name="commission_type" />
+                <field name="amount_base_type" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="sale_commission_form">
+        <field name="name">Sales commissions form</field>
+        <field name="model">sale.commission</field>
+        <field name="arch" type="xml">
+            <form string="Commission">
+                <group string="General information">
+                    <group>
+                        <field name="name" />
+                        <field name="active" />
+                        <field name="fix_qty" required="1"/>
+                    </group>
+                    <group>
+                        <field name="commission_type" />
+                        <field name="amount_base_type" invisible="1"/>
+                        <field name="invoice_state" />
+                    </group>
+                </group>
+                <!--<group string="Rates definition" colspan="4">
+                   &lt;!&ndash; <field
+                        name="section_ids"
+                        widget="one2many_list"
+                        colspan="4"
+                        nolabel="1"
+                        attrs="{'invisible': [('commission_type', '!=', 'section')]}"
+                    >
+                        <tree string="Sections" editable="bottom">
+                            <field name="amount_from" />
+                            <field name="amount_to" />
+                            <field name="percent" />
+                        </tree>
+                    </field>&ndash;&gt;
+                </group>-->
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_commission">
+        <field name="name">Commission types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.commission</field>
+        <field name="binding_view_types">form,tree</field>
+    </record>
+    <menuitem
+        name="Commissions Management"
+        id="menu_sale_commissions_management"
+        parent="real_estate_advertisement.real_state_menu"
+        sequence="3"
+    />
+    <menuitem
+        name="Commission types"
+        id="menu_sale_commissions_types"
+        parent="sale_commission.menu_sale_commissions_management"
+        action="action_commission"
+    />
+</odoo>

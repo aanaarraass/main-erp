@@ -1,0 +1,840 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_meeting_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 05:05+0000\n"
+"PO-Revision-Date: 2019-09-26 05:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "<span>hours</span>"
+msgstr "<SPAN> ساعات </ SPAN>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>All Day:</strong>"
+msgstr "<القوي> جميع يوم: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Attendance:</strong>"
+msgstr "<القوي> الحضور: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Description:</strong>"
+msgstr "<strong>الوصف:</strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Duration:</strong>"
+msgstr "<قوية> المدة: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Location:</strong>"
+msgstr "<strong> الموقع: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Meeting Subject:</strong>"
+msgstr "<القوي> اجتماع الموضوع: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Privacy:</strong>"
+msgstr "<strong> الخصوصية: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Reminders:</strong>"
+msgstr "<قوية> تذكير: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Show Time as:</strong>"
+msgstr "<strong> عرض الوقت على النحو التالي: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Starting at:</strong>"
+msgstr "على <strong> ابتداء من الساعة: </ قوي>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Accept"
+msgstr "قبول"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__allday
+msgid "All Day"
+msgstr "كامل اليوم"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Are You Sure You Want To Create Meeting"
+msgstr "هل أنت متأكد أنك تريد إنشاء اجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_attendee
+msgid "Attendee"
+msgstr "الحاضر"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_status
+msgid "Attendee Status"
+msgstr "حالة الحاضر"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Attendees"
+msgstr "الحضور"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Availability"
+msgstr "متاح"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__byday
+msgid "By day"
+msgstr "باليوم"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "Click to schedule a new meeting."
+msgstr "انقر لتحديد موعد لاجتماع جديد."
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: openeducat_meeting_enterprise
+#: code:addons/openeducat_meeting_enterprise/wizard/op_meeting_wizard.py:31
+#, python-format
+msgid "Create Event"
+msgstr "انشاء حدث"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Create Meeting Event"
+msgstr "إنشاء حدث اجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_start
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__day
+msgid "Date of month"
+msgstr "اليوم من الشهر"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Decline"
+msgstr "رفض"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_name
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_id
+msgid "Document ID"
+msgstr "معرف المستند"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model_id
+msgid "Document Model"
+msgstr "نموذج المستند"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model
+msgid "Document Model Name"
+msgstr "اسم كائن المستند"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__duration
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Duration"
+msgstr "المدة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_datetime
+msgid "End Datetime"
+msgstr "تاريخ ووقت النهاية"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Ending at"
+msgstr "تنتهي في"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_time
+msgid "Event Time"
+msgstr "وقت الحدث"
+
+#. module: openeducat_meeting_enterprise
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_faculty
+msgid "Faculty"
+msgstr "كلية"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__fr
+msgid "Fri"
+msgstr "جمع"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__id
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "If the active field is set to false, it will allow you to hide the event alarm information without removing it."
+msgstr "إذا تم تحويل قيمة الحقل نشط إلى خطأ، يمكنك إخفاء معلومات التنبيه للفعالية دون إزالتها."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitation details"
+msgstr "تفاصيل الدعوة"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitations"
+msgstr "الدعوات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_highlighted
+msgid "Is the Event Highlighted"
+msgstr "هل الفعالية مميزة"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Just done"
+msgstr "مجرد القيام به"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting____last_update
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Let the event automatically repeat at that interval"
+msgstr "تكرار الحدث تلقائيًا عند مرور هذه الفترة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__location
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Location"
+msgstr "المكان"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__location
+msgid "Location of Event"
+msgstr "مكان الحدث"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Looks great!"
+msgstr "يبدو رائعا!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_faculty
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_parent
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_wizard_student
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__meeting_id
+#: model:ir.ui.menu,name:openeducat_meeting_enterprise.menu_meeting
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Meeting"
+msgstr "لقاء"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting Data Information"
+msgstr "اجتماع إعلامي البيانات"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.portal_my_home_library
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Meeting Details"
+msgstr "تفاصيل الاجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Meeting Information"
+msgstr "معلومات قاء"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Meeting Layout Configuration"
+msgstr "تكوين تخطيط الاجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_onboarding_meeting_layout
+msgid "Meeting Record Configuration"
+msgstr "تكوين سجل اجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__name
+msgid "Meeting Subject"
+msgstr "موضوع الاجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting_wizard
+msgid "Meeting Wizard"
+msgstr "معالج اجتماع"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting-Deatils"
+msgstr "لقاء-Deatils"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event_notify
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Meetings"
+msgstr "اجتماعات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Misc"
+msgstr "متفرقات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__mo
+msgid "Mon"
+msgstr "الاثنين"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Events"
+msgstr "احداثي"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Meetings"
+msgstr "اجتماعاتي"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Not done"
+msgstr "لم تفعل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد الأخطاء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_faculty
+msgid "OpenEduCat Faculty"
+msgstr "OpenEduCat كلية"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__month_by
+msgid "Option"
+msgstr "الخيار"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Options"
+msgstr "خيارات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__user_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Owner"
+msgstr "المالك"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_parent
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_parent
+msgid "Parent"
+msgstr "الأصل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_ids
+msgid "Participant"
+msgstr "مشاركة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__partner_id
+msgid "Partner-related data of the user"
+msgstr "بيانات المستخدم المرتبطة بالشريك"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__privacy
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Privacy"
+msgstr "الخصوصية"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Recurrence"
+msgstr "تكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__end_type
+msgid "Recurrence Termination"
+msgstr "إنهاء التكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent"
+msgstr "التكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id
+msgid "Recurrent ID"
+msgstr "معرف التكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id_date
+msgid "Recurrent ID date"
+msgstr "معرف تاريخ التكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent Meeting"
+msgstr "اجتماع دوري"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule
+msgid "Recurrent Rule"
+msgstr "قاعدة التكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__alarm_ids
+msgid "Reminders"
+msgstr "التذكيرات"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat"
+msgstr "تكرار"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat Every"
+msgstr "تكرار كل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__final_date
+msgid "Repeat Until"
+msgstr "تكرار حتى"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat every (Days/Week/Month/Year)"
+msgstr "تكرر كل (يوم/أسبوع/شهر/سنة)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat x times"
+msgstr "تكرار مرات س"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Responsible"
+msgstr "المسئول"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__sa
+msgid "Sat"
+msgstr "السبت"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Search Meetings"
+msgstr "بحث عن الاجتماعات"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "See how to create a Meeting Layout."
+msgstr "معرفة كيفية إنشاء تخطيط الاجتماع."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Select attendees..."
+msgstr "اختر المدعوين.."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Send mail"
+msgstr "إرسال بريد"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__show_as
+msgid "Show Time as"
+msgstr "عرض الوقت كـ"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start"
+msgstr "بدء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_datetime
+msgid "Start DateTime"
+msgstr "تاريخ ووقت البداية"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start date of an event, without time for full days events"
+msgstr "تاريخ بداية الحدث، بدون ساعة معينة للأحداث التي تستغرق أيامًا كاملة"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Starting at"
+msgstr "ابتداء من"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__onboarding_meeting_layout_state
+msgid "State of the onboarding meeting layout  step"
+msgstr "حالة الخطوة تخطيط اجتماع التأهيل ل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__meeting_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "حالة الخطوة التأهيل ل"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop"
+msgstr "إيقاف"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop date of an event, without time for full days events"
+msgstr "تاريخ انتهاء الحدث، بدون ساعة معينة للأحداث التي تستغرق أيامًا كاملة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_student
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_student
+msgid "Student"
+msgstr "طالب"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Subject"
+msgstr "موضوع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__su
+msgid "Sun"
+msgstr "الأحد"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__categ_ids
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "The calendar is shared between employees and fully integrated with\n"
+"                other applications such as the employee holidays or the\n"
+"                business\n"
+"                opportunities."
+msgstr "ويشارك في التقويم بين الموظفين ودمجها بشكل كامل مع\n"
+"                التطبيقات الأخرى مثل الأعياد أو الموظف\n"
+"                اعمال\n"
+"                الفرص."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "There are currently no information for your account!!!"
+msgstr "لا يوجد حاليا أي معلومات عن حسابك!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__th
+msgid "Thu"
+msgstr "الخميس"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__tu
+msgid "Tue"
+msgstr "الثلاثاء"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Uncertain"
+msgstr "غير واثق"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__we
+msgid "Wed"
+msgstr "الأربعاء"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__week_list
+msgid "Weekday"
+msgstr "يوم العمل"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "e.g. Business Lunch"
+msgstr "مثال: غداء عمل"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "or"
+msgstr "أو"
+

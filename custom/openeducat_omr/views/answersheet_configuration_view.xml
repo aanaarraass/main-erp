@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="answersheet_configuration_list_view" model="ir.ui.view">
+            <field name="name">answersheet_configuration_list_view</field>
+            <field name="model">op.answersheet.configuration</field>
+            <field name="arch" type="xml">
+                <tree string="answersheet_configuration">
+                    <field name="name"/>
+                    <field name="subject_id"/>
+                    <field name="answer_set_line"/>
+                </tree>
+            </field>
+        </record>
+        <record id="answersheet_configuration_form_view" model="ir.ui.view">
+            <field name="name">answersheet_configuration_form_view</field>
+            <field name="model">op.answersheet.configuration</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="Subject Answer Sheet">
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="subject_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Answer Keys">
+                                <field name="answer_set_line"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="action_answersheet_configuration_list" model="ir.actions.act_window">
+            <field name="name">AnswerSheet</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.answersheet.configuration</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

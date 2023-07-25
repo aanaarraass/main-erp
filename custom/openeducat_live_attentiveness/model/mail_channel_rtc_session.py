@@ -1,0 +1,42 @@
+from odoo import models
+
+
+class MailRtcsession(models.Model):
+    _inherit = "mail.channel.rtc.session"
+
+    def _update_and_broadcast(self, values):
+        """ Updates the session and notifies all members of the channel
+            of the change.
+        """
+        valid_values = {'is_screen_sharing_on', 'is_camera_on', 'is_muted', 'is_deaf',
+                        'is_hand_raised', 'is_screen_show',
+                        'is_Emoji', 'is_Attentiveness'}
+        self.write({key: values[key]
+                   for key in valid_values if key in valid_values})
+        session_data = self._mail_rtc_session_format()
+        self.env['bus.bus']._sendone(self.channel_id, 'mail.channel.rtc.session/insert',
+                                     session_data)
+
+    def _mail_rtc_session_format(self, complete_info=True):
+        self.ensure_one()
+        vals = {
+            'id': self.id,
+            'isCameraOn': self.is_camera_on,
+            'isDeaf': self.is_deaf,
+            'isMuted': self.is_muted,
+            'isScreenSharingOn': self.is_screen_sharing_on,
+            'isHandRaised': self.is_hand_raised,
+            'isEmoji': self.is_Emoji,
+            'isAttentiveness': self.is_Attentiveness,
+        }
+        if self.guest_id:
+            vals['guest'] = [('insert', {
+                'id': self.guest_id.id,
+                'name': self.guest_id.name,
+            })]
+        else:
+            vals['partner'] = [('insert', {
+                'id': self.partner_id.id,
+                'name': self.partner_id.name,
+            })]
+        return vals

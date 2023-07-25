@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_campus_facility_tree" model="ir.ui.view">
+            <field name="name">op.campus.facility.tree</field>
+            <field name="model">op.campus.facility</field>
+            <field name="priority" eval="8"/>
+            <field name="field_parent">child_ids</field>
+            <field name="arch" type="xml">
+                <tree string="Facility"
+                      banner_route="/openeducat_campus_enterprise/openeducat_campus_enterprise_onboarding_panel">
+                    <field name="name"/>
+                    <field name="parent_id"/>
+                    <field name="facility_type_id"/>
+                    <field name="capacity"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_op_campus_facility_form" model="ir.ui.view">
+            <field name="name">op.campus.facility.form</field>
+            <field name="model">op.campus.facility</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="facility">
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <group>
+                            <div class="oe_button_box">
+                                <button class="oe_stat_button"
+                                        name="%(openeducat_campus_enterprise.act_open_op_facility_allocation_view)d"
+                                        context="{'search_default_facility_id': active_id}"
+                                        type="action"
+                                        icon="fa-tasks">
+                                    <span class="o_stat_text">Allocations</span>
+                                </button>
+                            </div>
+                        </group>
+                        <group>
+                            <h1>
+                                <field name="name" placeholder="Facility Name"
+                                       nolabel="1" style="width: 50%%"/>
+                            </h1>
+                            <field name="facility_type_id"/>
+                            <field name="parent_id" domain="[('facility_type_id','=',facility_type_id)]"/>
+                            <field name="capacity"/>
+                            <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                        </group>
+                        <group string="Sub Facilities">
+                            <field name="child_ids" nolabel="1"/>
+                        </group>
+                        <group string="Facility Allocation">
+                            <field name="facility_allocation_lines" nolabel="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_campus_facility_search" model="ir.ui.view">
+            <field name="name">op.campus.facility.search</field>
+            <field name="model">op.campus.facility</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="facility">
+                    <field name="name"/>
+                    <field name="capacity"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Facility Type" name="group_by_campus_facility_type_id"
+                                domain="[]" context="{'group_by':'facility_type_id'}"/>
+                    </group>
+                    <searchpanel>
+                        <field name="facility_type_id"/>
+                    </searchpanel>
+
+                </search>
+            </field>
+        </record>
+
+
+        <record id="view_op_campus_facility_graph" model="ir.ui.view">
+            <field name="name">op.campus.facility.graph</field>
+            <field name="model">op.campus.facility</field>
+            <field name="arch" type="xml">
+                <graph string="Campus Facility">
+                    <field name="name" type="row"/>
+                    <field name="parent_id"/>
+                    <field name="facility_type_id"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="view_op_campus_facility_pivot" model="ir.ui.view">
+            <field name="name">op.campus.facility.pivot</field>
+            <field name="model">op.campus.facility</field>
+            <field name="arch" type="xml">
+                <pivot string="Campus Facility">
+                    <field name="name" type="row"/>
+                    <field name="parent_id"/>
+                    <field name="facility_type_id"/>
+                </pivot>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="act_open_op_campus_facility_view">
+            <field name="name">Facilities</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.campus.facility</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="search_view_id" ref="view_op_campus_facility_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_campus_facility_view_form">
+            <field name="act_window_id" ref="act_open_op_campus_facility_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_campus_facility_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_campus_facility_view_tree">
+            <field name="act_window_id" ref="act_open_op_campus_facility_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_campus_facility_tree"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_campus_facility_view_pivot">
+            <field name="act_window_id" ref="act_open_op_campus_facility_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">pivot</field>
+            <field name="view_id" ref="view_op_campus_facility_pivot"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_campus_facility_view_graph">
+            <field name="act_window_id" ref="act_open_op_campus_facility_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">graph</field>
+            <field name="view_id" ref="view_op_campus_facility_graph"/>
+        </record>
+    </data>
+</odoo>

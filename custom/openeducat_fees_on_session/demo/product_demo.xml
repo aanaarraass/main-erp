@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_product_1" model="product.product">
+            <field name="name">Session Product</field>
+            <field name="lst_price">250</field>
+        </record>
+
+        <record id="op_product_2" model="product.product">
+            <field name="name">Advanced Taxation Product</field>
+            <field name="lst_price">300</field>
+        </record>
+
+        <record id="op_product_3" model="product.product">
+            <field name="name">Taxation Product</field>
+            <field name="lst_price">200</field>
+        </record>
+    </data>
+</odoo>

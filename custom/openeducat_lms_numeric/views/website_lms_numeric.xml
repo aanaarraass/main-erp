@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="quiz_first_question_numeric_inherit" inherit_id="openeducat_quiz.quiz_first_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'numeric'">
+                <input id="numeric_answer" type="number" step="any"  t-attf-value="#{question.given_answer}" t-attf-name="answer" required="True"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="quiz_last_question_numeric_inherit" inherit_id="openeducat_quiz.quiz_last_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'numeric'">
+                <input id="numeric_answer" type="number" step="any"  t-attf-value="#{line.given_answer}" t-attf-name="answer" required="True"/>
+            </t>
+        </xpath>                                                                  
+    </template>
+
+    <template id="quiz_middle_question_numeric_inherit" inherit_id="openeducat_quiz.quiz_middle_question">
+        <xpath expr="//div//h4" position="after">
+            <t t-if="question.que_type == 'numeric'">
+                <input id="numeric_answer" type="number" step="any"  t-attf-value="#{line.given_answer}" t-attf-name="answer" required="True"/>    
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,517 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_campus_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 05:04+0000\n"
+"PO-Revision-Date: 2019-09-26 05:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+msgid "<span class=\"o_stat_text\">Allocations</span>"
+msgstr "<تمتد الطبقة = \"o_stat_text\"> المخصصات </ SPAN>"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_main_facility
+msgid "All Facilities"
+msgstr "جميع المرافق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__facility_allocation_lines
+msgid "Allocations"
+msgstr "المخصصات"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_form_onboard
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_campus_management
+msgid "Campus"
+msgstr "الحرم الجامعي"
+
+#. module: openeducat_campus_enterprise
+#: model:product.product,name:openeducat_campus_enterprise.op_product_8
+#: model:product.template,name:openeducat_campus_enterprise.op_product_8_product_template
+msgid "Campus Charge"
+msgstr "الحرم الجامعي المسؤول"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model,name:openeducat_campus_enterprise.model_op_campus_facility
+msgid "Campus Facility"
+msgstr "مرفق الحرم الجامعي"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.facility_invoice_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__capacity
+msgid "Capacity"
+msgstr "سعة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__child_ids
+msgid "Child Facility"
+msgstr "مرفق الطفل"
+
+#. module: openeducat_campus_enterprise
+#: selection:res.company,campus_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_facilities_layout_state:0
+#: selection:res.company,onboarding_facilities_type_layout_state:0
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__code
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model,name:openeducat_campus_enterprise.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__company_id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__company_id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_op_hostel_configuration_sub
+msgid "Configuration"
+msgstr "ترتيب"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.facility_invoice_form
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_form
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__create_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__create_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__create_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__create_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__create_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__create_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__partner_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_type_layout_step
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__display_name
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__display_name
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__display_name
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: openeducat_campus_enterprise
+#: selection:res.company,campus_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_facilities_layout_state:0
+#: selection:res.company,onboarding_facilities_type_layout_state:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.act_open_op_campus_facility_view
+msgid "Facilities"
+msgstr "مرافق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.action_onboarding_facilities_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_layout_step
+msgid "Facilities Configuration"
+msgstr "تكوين مرافق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__facility_id
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_all_facility
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_search
+msgid "Facility"
+msgstr "منشأة"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_calendar
+msgid "Facility ALlocation"
+msgstr "تخصيص مرفق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model,name:openeducat_campus_enterprise.model_op_facility_allocation
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_search
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_tree
+msgid "Facility Allocation"
+msgstr "تخصيص مرفق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.act_open_op_facility_allocation_view
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_op_hostel_room_sub
+msgid "Facility Allocations"
+msgstr "مخصصات مرفق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.facility_invoice_act
+msgid "Facility Invoice"
+msgstr "فاتورة مرفق"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+msgid "Facility Name"
+msgstr "إسم المنشأة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.act_open_op_facility_type_view
+#: model:ir.model,name:openeducat_campus_enterprise.model_op_facility_type
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__facility_type_id
+#: model:ir.ui.menu,name:openeducat_campus_enterprise.menu_facility_type
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_search
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_search
+msgid "Facility Type"
+msgstr "نوع المنشأة"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_type_layout_step
+msgid "Facility Type Configuration"
+msgstr "تكوين نوع مرفق"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.actions.act_window,name:openeducat_campus_enterprise.action_onboarding_facilities_type_layout
+msgid "Facility Type Record Configuration"
+msgstr "تكوين نوع السجل مرفق"
+
+#. module: openeducat_campus_enterprise
+#: code:addons/openeducat_campus_enterprise/models/facility_allocation.py:50
+#, python-format
+msgid "Facility is not available in that Dates."
+msgstr "مرفق غير متوفر في أن التواريخ."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model,name:openeducat_campus_enterprise.model_facility_invoice
+msgid "Faculty Invoice"
+msgstr "كلية الفاتورة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__from_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__from_date
+msgid "From Date"
+msgstr "من التاريخ"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_search
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_search
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_search
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: openeducat_campus_enterprise
+#: model:product.product,name:openeducat_campus_enterprise.op_product_9
+#: model:product.template,name:openeducat_campus_enterprise.op_product_9_product_template
+msgid "Hostel Charge"
+msgstr "نزل المسؤول"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا تم تتطلب الرسائل الجديدة انتباهكم."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم، تتطلب الرسائل الجديدة انتباهكم."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم، بعض الرسائل لها خطأ التسليم."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__invoice_id
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_is_follower
+msgid "Is Follower"
+msgstr "غير أتباع"
+
+#. module: openeducat_campus_enterprise
+#: selection:res.company,campus_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_facilities_layout_state:0
+#: selection:res.company,onboarding_facilities_type_layout_state:0
+msgid "Just done"
+msgstr "مجرد القيام به"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice____last_update
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility____last_update
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation____last_update
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل ل"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__write_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__write_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__write_uid
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__write_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__write_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__write_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث:"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_type_layout_step
+msgid "Looks great!"
+msgstr "يبدو رائعا!"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "مرفق الرئيسي"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_has_error
+msgid "Message Delivery error"
+msgstr "رسالة الخطأ تسليم"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__name
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_type__name
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_search
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_search
+msgid "Name"
+msgstr "اسم"
+
+#. module: openeducat_campus_enterprise
+#: selection:res.company,campus_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_facilities_layout_state:0
+#: selection:res.company,onboarding_facilities_type_layout_state:0
+msgid "Not done"
+msgstr "لم تفعل"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد من تطبيقات"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد من الخطأ"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي يتطلب العمل"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل مع الخطأ تسليم"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_campus_facility__parent_id
+msgid "Parent Facility"
+msgstr "مرفق الوالدين"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__partner_id
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_allocation_form
+msgid "Person"
+msgstr "شخص"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__product_id
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.facility_invoice_form
+msgid "Room Booking"
+msgstr "حجز غرفة"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_layout_step
+msgid "See how to create a Facilities."
+msgstr "معرفة كيفية إنشاء المرافق."
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.onboarding_facilities_type_layout_step
+msgid "See how to create a Facility Type."
+msgstr "معرفة كيفية إنشاء نوع مرفق."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_res_company__onboarding_facilities_layout_state
+msgid "State of the onboarding facilities layout step"
+msgstr ""
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_res_company__onboarding_facilities_type_layout_state
+msgid "State of the onboarding facilities type layout  step"
+msgstr "حالة المرافق التأهيل لنوع خطوة تخطيط"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_res_company__campus_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "حالة الخطوة التأهيل ل"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+msgid "Sub Facilities"
+msgstr "المرافق الفرعية"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_facility_type_tree
+msgid "Tag"
+msgstr "الوسم"
+
+#. module: openeducat_campus_enterprise
+#: code:addons/openeducat_campus_enterprise/wizard/facility_create_invoice.py:36
+#, python-format
+msgid "There is no income account defined for this product: \"% s\".                    You may have to install a chart of account from Accounting                    app, settings menu."
+msgstr "ليس هناك حساب الدخل تعريف لهذا المنتج: \"٪ الصورة\". قد يكون لديك لتثبيت رسما بيانيا من حساب من المحاسبة التطبيق، إعدادات القائمة."
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_facility_invoice__to_date
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__to_date
+msgid "To Date"
+msgstr "حتي اليوم"
+
+#. module: openeducat_campus_enterprise
+#: model:product.product,uom_name:openeducat_campus_enterprise.op_product_8
+#: model:product.product,uom_name:openeducat_campus_enterprise.op_product_9
+#: model:product.template,uom_name:openeducat_campus_enterprise.op_product_8_product_template
+#: model:product.template,uom_name:openeducat_campus_enterprise.op_product_9_product_template
+msgid "Unit(s)"
+msgstr "وحدة(ات)"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "الرسائل غير المقروءة عداد"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,field_description:openeducat_campus_enterprise.field_op_facility_allocation__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: openeducat_campus_enterprise
+#: model:ir.model.fields,help:openeducat_campus_enterprise.field_op_facility_allocation__website_message_ids
+msgid "Website communication history"
+msgstr "موقع تاريخ الاتصال"
+
+#. module: openeducat_campus_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_campus_enterprise.view_op_campus_facility_search
+msgid "facility"
+msgstr "منشأة"
+
+#. module: openeducat_campus_enterprise
+#: model:product.product,weight_uom_name:openeducat_campus_enterprise.op_product_8
+#: model:product.product,weight_uom_name:openeducat_campus_enterprise.op_product_9
+#: model:product.template,weight_uom_name:openeducat_campus_enterprise.op_product_8_product_template
+#: model:product.template,weight_uom_name:openeducat_campus_enterprise.op_product_9_product_template
+msgid "kg"
+msgstr "كجم"
+

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_skype_meet_back_office_admin,name_skype_meet_back_office_admin,model_skype_meet,openeducat_core.group_op_back_office_admin,1,1,1,1
+access_skype_meet_back_office,name_skype_meet_back_office,model_skype_meet,openeducat_core.group_op_back_office,1,1,1,1
+access_skype_meet_faculty,name_skype_meet_faculty,model_skype_meet,openeducat_core.group_op_faculty,1,1,1,1

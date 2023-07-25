@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <template id="qr_code_scanner" name="QR Code Verification">
+            <link href="/openeducat_secure/static/src/css/qr_template_design.css"
+                  rel="stylesheet" type="text/css"/>
+            <t t-call="website.layout">
+                <br></br>
+                <div class="qr_scanner">
+                    <div class="wrapper">
+                        <div class="outer">
+                            <div class="content animated fadeInLeft">
+                                <h1>
+                                    Verify your QR
+                                </h1>
+                                <p>QR Code Scanner decodes the registered information.
+                                </p>
+                                <div class="button">
+                                    <a class="cart-btn open_qr" data-qrr-target="#preview" id="open_qr"><i class="fa fa-qrcode fa-lg"></i>    Open QR Scanner
+                                    </a>
+                                </div>
+                                <input type="text" class="d-none" name="binary" id="preview"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

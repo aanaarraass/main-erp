@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="poratl_menu_library_all_media_list" model="openeducat.portal.menu">
+        <field name="name">Library</field>
+        <field name="menu_ref_name">Library</field>
+        <field name="link">/library/media/</field>
+        <field name="active">True</field>
+        <field name="sequence" type="int">15</field>
+        <field name="background_color">#575756</field>
+        <field name="icon_image" type="base64"
+               file="openeducat_library_enterprise/static/img/library.png"/>
+    </record>
+    <menuitem id="menu_op_media_analysis_reporting"
+              parent="openeducat_library.menu_op_library_root"
+              name="Reporting"
+              sequence="30"
+              groups="openeducat_core.group_op_faculty,openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin"/>
+
+    <menuitem id="menu_op_media_analysis"
+              name="Media Analysis"
+              parent="menu_op_media_analysis_reporting"
+              sequence="10"
+              action="openeducat_library_enterprise.act_media_analysis_pivot_view"
+              groups="openeducat_core.group_op_back_office"/>
+
+    <menuitem id="menu_op_media_unit_analysis"
+              name="Media Unit Analysis"
+              parent="menu_op_media_analysis_reporting"
+              sequence="20"
+              action="openeducat_library_enterprise.act_media_unit_analysis_pivot_view"
+              groups="openeducat_core.group_op_back_office"/>
+
+    <menuitem id="menu_op_media_movement_analysis"
+              name="Media Movement Analysis"
+              parent="menu_op_media_analysis_reporting"
+              sequence="30"
+              action="openeducat_library_enterprise.act_media_movement_analysis_pivot_view"
+              groups="openeducat_core.group_op_back_office"/>
+
+    <menuitem id="menu_op_media_queue_analysis"
+              name="Media Queue Analysis"
+              parent="menu_op_media_analysis_reporting"
+              sequence="40"
+              action="openeducat_library_enterprise.act_media_queue_analysis_pivot_view"
+              groups="openeducat_core.group_op_back_office"/>
+
+    <menuitem id="menu_op_media_purchase_analysis"
+              name="Media Purchase Analysis"
+              parent="menu_op_media_analysis_reporting"
+              sequence="50"
+              action="openeducat_library_enterprise.act_media_purchase_analysis_pivot_view"
+              groups="openeducat_core.group_op_back_office"/>
+
+
+</odoo>
+
+

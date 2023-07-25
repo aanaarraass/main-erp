@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_student_form_face_recognition" model="ir.ui.view">
+            <field name="name">op.student.form.face_recognition</field>
+            <field name="model">op.student</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_form"/>
+            <field name="priority" eval="9"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='badge']" position="after">
+                    <page string="Face Recognition">
+                        <group class="col-md-2">
+                            <field name="descriptor" invisible="1"/>
+                            <field name="image_detect" widget="image" class="oe_avatar"/>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <widget name="cam_widget" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

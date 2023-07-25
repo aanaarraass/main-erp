@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="academic_calendar_list">
+            <field name="name">Academic calendar</field>
+            <field name="model">academic.calendar</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="course_name"/>
+                    <field name="date_start"/>
+                    <field name="date_stop"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="academic_calendar_form">
+            <field name="name">Academic calendar</field>
+            <field name="model">academic.calendar</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="course_name"/>
+                        <field name="date_start"/>
+                        <field name="date_stop"/>
+                        <field name="duration"/>
+                        <field name="color" widget="color_picker"/>
+                        <field name="description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <!-- explicit calendar view definition -->
+        <record model="ir.ui.view" id="academic_calendar_calendar">
+            <field name="name">Academic calendar</field>
+            <field name="model">academic.calendar</field>
+            <field name="arch" type="xml">
+                <calendar string="Time Sheet" date_start="date_start" date_stop="date_stop" mode="year"  date_delay="duration"
+                          event_open_popup="true" color="name" quick_add="False" event_limit="5">
+                     <field name="name" filters="1"/>
+                    <field name="course_name" filters="1"/>
+                    <field name="description"/>
+                </calendar>
+            </field>
+
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="academic_calendar_action_window">
+            <field name="name">Academic calendar</field>
+            <field name="res_model">academic.calendar</field>
+            <field name="view_mode">calendar,tree,form</field>
+        </record>
+
+
+        <!-- Top menu item -->
+       <!-- <menuitem name="Exam Management" id="academic_calendar_menu_root"
+                  web_icon="exam_management,static/src/img/exam.png"/>
+        <menuitem
+                name="Academic calendar"
+                id="menu_academic_calendar"
+                sequence="1"
+                action="academic_calendar_action_window"
+                parent="academic_calendar_menu_root"/>
+-->
+    </data>
+</odoo>

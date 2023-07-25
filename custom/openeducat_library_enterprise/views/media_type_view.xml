@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_inherited_op_media_type_tree" model="ir.ui.view">
+            <field name="name">op.media.type.inherited.tree</field>
+            <field name="model">op.media.type</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_media_type_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_inherited_op_media_type_form" model="ir.ui.view">
+            <field name="name">op.media.type.inherited.form</field>
+            <field name="model">op.media.type</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="openeducat_library.view_op_media_type_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position="after">
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

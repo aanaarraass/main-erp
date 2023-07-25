@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <data>
+        <record id="view_op_quiz_drag_into_text_tree" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='questions']" position="inside">
+                        <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'drag_into_text')], 'required': [('que_type', '=', 'drag_into_text')]}" />
+                        <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'drag_into_text')], 'required': [('que_type', '=', 'drag_into_text')]}" />
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data> 
+</odoo>

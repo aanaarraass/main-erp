@@ -1,0 +1,46 @@
+<odoo>
+     <template id="quiz_results_form_sort_paragraphs_line_ids_inherit" inherit_id="openeducat_quiz.quiz_results_form">
+        <xpath expr="//td[hasclass('display_true_ans')]" position="inside">
+            <t t-if="answer['que_type'] == 'sort_paragraphs'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <t t-esc="line_data['given_answer']" />
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'sort_paragraphs'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <t t-esc="line_data['default_answer']" />
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_given_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'sort_paragraphs'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <li>
+                                <t t-esc="line_data['given_answer']" />
+                            </li>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

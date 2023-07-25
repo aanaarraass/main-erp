@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="demo_course_h5p" model="op.course">
+            <field name="name">QuizUp</field>
+            <field name="code">Quiz-01</field>
+            <field name="sequence">3</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="faculty_ids"
+                   eval="[(6,0,[ref('openeducat_core.op_faculty_1'),ref('openeducat_core.op_faculty_2')])]"/>
+            <field name="category_ids"
+                   eval="[(6,0,[ref('openeducat_lms.category_3')])]"/>
+            <field name="suggested_course_ids"
+                   eval="[(6,0,[ref('openeducat_lms.demo_course_maths')])]"/>
+            <field name="visibility">logged_user</field>
+            <field name="navigation_policy">free_learn</field>
+            <field name="state">open</field>
+            <field name="online_course" eval="True"/>
+            <field name="confirm_date"
+                   eval="(DateTime.today() - relativedelta(days=8))"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_lms_h5p/static/src/img/quiz-image.jpg"/>
+            <field name="full_description"><![CDATA[
+            <div>
+<p>
+Ripe juicy tomatoes, delicious sweet corn or crisp lettuce. It's possible for any one that has a small back yard to grow surprising amounts of vegetables. A small 150 square foot plot can produce several hundred pounds of yummy veggies thru the spring, summer and fall.
+
+In this Vegetable Gardening Basics course you will learn where to put your garden, when to plant it and what are some of the easiest veggies to grow. The course is designed to teach the new gardener the basics to get started. The course will also teach you more experienced gardeners some of the basic principals that you need to know to "pump up" your garden production:</p>
+            <p>This is a step by step course that takes you through the process of creating an edible garden for any size garden: apartment or condominium balconies or patios, small or large backyards, or a plot in a community garden.</p>
+            </div>
+            ]]></field>
+        </record>
+
+        <record id="op_course_section_h5p_variable1" model="op.course.section">
+            <field name="name">Fun Brain</field>
+            <field name="course_id" ref="demo_course_h5p"/>
+            <field name="sequence" type="int">1</field>
+        </record>
+        <record id="op_course_section_h5p_variable2" model="op.course.section">
+            <field name="name">Math Master</field>
+            <field name="course_id" ref="demo_course_h5p"/>
+            <field name="sequence" type="int">2</field>
+        </record>
+
+        <record id="op_course_section_h5p_variable3" model="op.course.section">
+            <field name="name">Geographical Quiz</field>
+            <field name="course_id" ref="demo_course_h5p"/>
+            <field name="sequence" type="int">3</field>
+        </record>
+
+        <record id="material_h5p_quiz_1" model="op.material">
+            <field name="name">Insert the Missing Words</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_url</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="document_url" eval="'https://h5p.org/h5p/embed/611'"/>
+        </record>
+        <record id="material_h5p_quiz_2" model="op.material">
+            <field name="name">Guess the Capital of the Country</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_url</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="document_url" eval="'https://h5p.org/h5p/embed/61113'"/>
+        </record>
+        <record id="material_h5p_quiz_3" model="op.material">
+            <field name="name">Multiplication Quiz</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_url</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="document_url" eval="'https://h5p.org/h5p/embed/6725'"/>
+        </record>
+        <record id="material_h5p_quiz_4" model="op.material">
+            <field name="name">Drag and Drop the Correct Answer</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_url</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="document_url" eval="'https://h5p.org/h5p/embed/711'"/>
+        </record>
+        <record id="material_h5p_quiz_5" model="op.material">
+            <field name="name">Division Quiz</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_iframe</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="iframe_video_data">
+                <![CDATA[
+           <iframe src="https://h5p.org/h5p/embed/57020" width="1090" height="389" frameborder="0" allowfullscreen="allowfullscreen"
+           allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Arithmetic quiz example - division"></iframe>
+            ]]>
+            </field>
+        </record>
+        <record id="material_h5p_quiz_6" model="op.material">
+            <field name="name">Guess the Vegetables</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_iframe</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="iframe_video_data">
+                <![CDATA[
+          <iframe src="https://h5p.org/h5p/embed/64192" width="1090" height="764" frameborder="0" allowfullscreen="allowfullscreen"
+           allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Find Multiple Hotspots"></iframe>
+            ]]>
+            </field>
+        </record>
+        <record id="material_h5p_quiz_7" model="op.material">
+            <field name="name">Quick Smoothie Recipe</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_iframe</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="iframe_video_data">
+                <![CDATA[
+          <iframe src="https://h5p.org/h5p/embed/617" width="1090" height="473" frameborder="0" allowfullscreen="allowfullscreen"
+          allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Image pairing"></iframe>
+            ]]>
+            </field>
+        </record>
+        <record id="material_h5p_quiz_8" model="op.material">
+            <field name="name">Match the Pictures</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_iframe</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="iframe_video_data">
+                <![CDATA[
+          <iframe src="https://h5p.org/h5p/embed/231678" width="1090" height="675" frameborder="0" allowfullscreen="allowfullscreen"
+          allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Interactive Video"></iframe>
+            ]]>
+            </field>
+        </record>
+        <record id="material_h5p_quiz_9" model="op.material">
+            <field name="name">Arrange the Planets from Smallest to Largest</field>
+            <field name="website_published" eval="True"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="material_type">h5p_iframe</field>
+            <field name="total_time" type="float">1.45</field>
+            <field name="iframe_video_data">
+                <![CDATA[
+          <iframe src="https://h5p.org/h5p/embed/107824" width="1090" height="759" frameborder="0" allowfullscreen="allowfullscreen"
+          allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Image Sequencing"></iframe>
+            ]]>
+            </field>
+        </record>
+
+        <record id="op_course_material_quiz_introduction1" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_6"/>
+            <field name="section_id" ref="op_course_section_h5p_variable1"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction2" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_4"/>
+            <field name="section_id" ref="op_course_section_h5p_variable1"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction8" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_8"/>
+            <field name="section_id" ref="op_course_section_h5p_variable1"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction3" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_7"/>
+            <field name="section_id" ref="op_course_section_h5p_variable1"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction4" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_1"/>
+            <field name="section_id" ref="op_course_section_h5p_variable1"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction5" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_3"/>
+            <field name="section_id" ref="op_course_section_h5p_variable2"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction6" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_5"/>
+            <field name="section_id" ref="op_course_section_h5p_variable2"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction7" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_2"/>
+            <field name="section_id" ref="op_course_section_h5p_variable3"/>
+            <field name="preview" eval="True"/>
+        </record>
+        <record id="op_course_material_quiz_introduction9" model="op.course.material">
+            <field name="sequence" type="int">1</field>
+            <field name="material_id" ref="material_h5p_quiz_9"/>
+            <field name="section_id" ref="op_course_section_h5p_variable3"/>
+            <field name="preview" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="google_meet_client_id" model="ir.config_parameter">
+            <field name="key">google.meet.client.id</field>
+            <field name="value">46239603179-4ju2di8vkkoo6aqbn4qa61v72mkt9nc5.apps.googleusercontent.com</field>
+        </record>
+
+        <record id="google_meet_secret_key" model="ir.config_parameter">
+            <field name="key">google.meet.client.secret</field>
+            <field name="value">nTOb3yG4dorJ9kj54U0ubIrw</field>
+        </record>
+
+        <record id="google_meet_access_token" model="ir.config_parameter">
+            <field name="key">google.meet.access.token</field>
+            <field name="value">ya29.a0AfH6SMAXrHSSHfi0BD0oCwO1pM2_qAfTgbrzcJB53ULfsqHB6wS_Cawe2AGlG-FT0EYfez7OcQW9Ri9DkrenRtXci8a-uFutqSmEVKzoKhFZzfXAIGw7E6mLEFI74-HYaGJWfGRJyn3jMKSIKLUobwjiuAczBRnliCI</field>
+        </record>
+
+        <record id="google_meet_refresh_token" model="ir.config_parameter">
+            <field name="key">google.meet.refresh.token</field>
+            <field name="value">1//0gCqcJGO53nrmCgYIARAAGBASNwF-L9Ir72MWL0Epz9xqhDc1rhf2yZcyIxbkM6icWA5aeYzHLPAALFREykYaoROhbqQlaWPndi0</field>
+        </record>
+
+    </data>
+</odoo>

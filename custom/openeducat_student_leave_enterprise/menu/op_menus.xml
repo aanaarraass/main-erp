@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <menuitem id="menu_main_student_leave"
+                  name="Student Leave"
+                  sequence="21"
+                  groups="openeducat_core.group_op_faculty"
+                  web_icon="openeducat_student_leave_enterprise,static/description/icon.png"/>
+
+        <menuitem id="menu_leave_request"
+                  name="My Time Off"
+                  parent="menu_main_student_leave"
+                  sequence="1"/>
+
+        <menuitem id="menu_student_leave_request_dashboard"
+                  name="Dashboard"
+                  parent="menu_leave_request"
+                  action="student_leave_request_action_calendar"
+                  sequence="2"/>
+
+        <menuitem id="menu_student_leave_request"
+                  name="My Time Off Request"
+                  parent="menu_leave_request"
+                  action="student_leave_request_action"
+                  sequence="3"/>
+
+        <menuitem id="menu_student_leave_configure"
+                  name="Configuration"
+                  parent="menu_main_student_leave"
+                  sequence="30"/>
+
+        <menuitem id="menu_student_leave_type"
+                  name="Leave Type"
+                  parent="menu_student_leave_configure"
+                  sequence="10"
+                  action="student_leave_type_action"/>
+    </data>
+</odoo>

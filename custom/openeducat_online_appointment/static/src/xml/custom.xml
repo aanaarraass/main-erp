@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="Booking">
+        <t t-foreach="appointment_ids" t-as="appointment">
+            <div class="form-group tabcontent ">
+                <label>
+                    <input type="radio" name="service" t-att-value='appointment.id'
+                           class="js-radio-services d-none"/>
+                    <span t-field='appointment.name'/>
+                    <div>
+                        <span class="ml-lg-n3" t-field='appointment.duration'/>
+                        <span>hr</span>
+                    </div>
+                </label>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="ContinueBooking">
+        <div class="form-group js-form-service-submit o_hidden">
+            <button class="btn btn-primary service-submit ">
+                Book Now
+            </button>
+        </div>
+    </t>
+
+    <t t-name="MyData">
+        <div>
+            <h1>Click on date and book your slot</h1>
+        </div>
+    </t>
+
+    <t t-name="SelectStaff">
+        <t t-if="staff_count == '0'">
+            <t t-foreach="staff_list" t-as="staff">
+                <div class="form-group col-form-label-lg rounded col-md-6">
+                    <label class="big border border-primary text-center m-1 pt-2 pb-2 tabcontent toggle">
+                        <input type="hidden" name="appointment_id" t-att-value="appointment_id"/>
+                        <input type="hidden" name="appointment_name" t-att-value="appointment_name"/>
+                        <input type="radio" name="staff" t-att-value='staff.id' class="js-radio-staff d-none"/>
+                        <span t-esc='staff.name'/>
+                        <input type="hidden" class="ml-lg-n3" name="staffname" t-att-value='staff.name'></input>
+                    </label>
+                </div>
+            </t>
+        </t>
+        <t t-else="1">
+            <h2>Staff Not Available</h2>
+        </t>
+    </t>
+
+    <t t-name="ContinueStaff">
+            <div class="form-group js-form-staff-back">
+<!--                <a href="/booking">-->
+                <!--                <button class="btn btn-primary" t-att-data-appointment-id="appointment_id">-->
+                <!--                    Back-->
+                <!--                </button>-->
+                <!--                </a>-->
+            </div>
+    </t>
+
+    <t t-name="SelectDate">
+        <input type="hidden" name="staff_id" t-att-value="staff_id"/>
+        <input type="hidden" name="appointment_id" t-att-value="appointment_id"/>
+        <input type="hidden" name="summary" t-att-value="summary"/>
+        <input type="hidden" name="start_date" t-att-value="start_date"/>
+        <input type="hidden" name="end_date" t-att-value="end_date"/>
+        <input type="hidden" name="slot_date" t-att-value="slot_date_list"/>
+        <section class="center slider col-md-12 calender_view p-4">
+            <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
+            <body>
+                <div id="container" class="calendar-container"></div>
+                <div class="date-time-step-timezone">
+                    <div class="select rc-select rc-select-enabled">
+                        <div class="rc-select-selection rc-select-selection--single" role="combobox"
+                             aria-autocomplete="list" aria-haspopup="true"
+                             aria-controls="e49eec89-739a-43ac-e3ee-69a5da9108ca" aria-expanded="false"
+                             tabindex="0">
+                            <div class="rc-select-selection__rendered">
+                                <div class="rc-select-search rc-select-search--inline" style="display: none;">
+                                    <div class="rc-select-search__field__wrap">
+                                        <input autocomplete="off" class="rc-select-search__field" value=""/>
+                                        <span class="rc-select-search__field__mirror"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="rc-select-arrow" unselectable="on" style="user-select: none;">
+                                <i aria-hidden="true" focusable="false" data-prefix="fal"
+                                   data-icon="chevron-down" class="fa fa-chevron-down fa-w-14 ">
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                      $(document).ready(function () {
+                            var slot_date = JSON.parse($("input[name='slot_date']").val());
+                            var event_date = []
+                            var summary = $("input[name='summary']").val();
+                            var staff = $("input[name='staff_id']").val();
+                            if (slot_date.length != 0){
+                                for (var i=0; i &lt; slot_date.length;i++){
+<!--                                    const event = new Date(slot_date[i]['date'] + ' ' + slot_date[i]['time']);-->
+                                    const event = moment(slot_date[i]['date'] + ' ' + slot_date[i]['time']);
+                                    var isodate = event.toISOString();
+                                    event_date.push( {startDate: isodate,endDate: isodate,summary:summary,id: isodate});
+                                }
+                            }
+                            $("#container").simpleCalendar({
+                                  fixedStartDay: false,
+                                  disableEmptyDetails: true,
+                                  events: event_date,
+                            });
+                            $('.today').click();
+                            $("#container").addClass("disable-div");
+                      });
+                </script>
+            </body>
+        </section>
+        <section class="js-get-emp d-none"></section>
+    </t>
+    <t t-name="TimeBack">
+         <div class="form-group js-form-time-back pt96">
+<!--            <a class="btn btn-primary time-back" href="/booking" t-att-data-appointment-id="appointment_id"-->
+<!--                            t-att-data-staff-id="staff_id">-->
+<!--                             Cancel-->
+<!--                         </a>-->
+         </div>
+    </t>
+
+
+    <t t-name="TimeSlots">
+        <div class="js-slots col-form-label-lg time-continue border-top pt-4 row ScrollStyle px-0">
+            <t t-if="slots.length != 0">
+                <t t-foreach="slots" t-as="slot">
+                <div class="form-group rounded col-md-4">
+                    <label class="big border border-primary text-center tabcontent toggle m-1">
+                        <img src="/openeducat_online_appointment/static/img/clock.svg"
+                                                             class="float-left mt-1 mb-1 mr-0" alt="hour" title="Hour"
+                                                             style="width: 20px;"/>
+                        <input type="hidden" name="appointment_id" t-att-value="appointment_id"/>
+                        <input type="hidden" name="date_select" t-att-value="date_select"/>
+                        <input type="radio" name="time" t-att-value='slot.hours' class="js-radio-slot d-none"
+                               t-att-data-date="date" t-att-data-appointment-id="appointment_id"
+                               t-att-data-staff-id="staff_id"/>
+                        <t t-esc='slot.hours'/>
+                    </label>
+                </div>
+                </t>
+            </t>
+            <t t-if="slots.length == 0">
+                <div class="col-12">
+                   <h4 class="py-sm-3">Slots are not available on this date</h4>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="RandomTimeSlots">
+        <div class="js-slots d-flex col-form-label-lg border-top pt-4 time-continue row ScrollStyle px-0">
+            <t t-if="slots.length != 0">
+                <t t-foreach="slots" t-as="slot">
+                <div class="form-group col-md-4">
+                    <label class="big border border-primary text-center toggle tabcontent rounded m-1">
+                        <img src="/openeducat_online_appointment/static/img/clock.svg"
+                                                             class="float-left mt-1 mb-1 mr-0" alt="hour" title="Hour"
+                                                             style="width: 20px;"/>
+                        <input type="hidden" name="appointment_id" t-att-value="appointment_id"/>
+                        <input type="hidden" name="date_select" t-att-value="date_select"/>
+                        <input type="radio" name="time" t-att-value="slot.hours" class="js-random-radio-slot d-none"
+                               t-att-data-date="date" t-att-data-appointment-id="appointment_id"/>
+                        <t t-esc='slot.hours'/>
+                    </label>
+                </div>
+            </t>
+            </t>
+            <t t-if="slots.length == 0">
+                <div class="col-12">
+                    <h4 class="py-sm-3">Slots are not available on this date</h4>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="RandomEmployee">
+        <div>
+            <h2><t t-esc="emp_data"/></h2>
+        </div>
+    </t>
+
+    <t t-name="CustomerForm">
+            <form role="form" class="col-md-12 mt32" action="/submit/booking" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token"
+                       t-att-value="csrf_token"/>
+                <input type="hidden" name="timezone"
+                       t-att-value="timezone"/>
+                <input type="hidden" name="partner_id"
+                       t-att-value="partner_id"
+                       id="partner_id"/>
+                <input type="hidden" name="time"
+                       t-att-value="time"
+                       id="time"/>
+                <input type="hidden" name="month"
+                       t-att-value="month"
+                       id="month"/>
+                <input type="hidden" name="year"
+                       t-att-value="year"
+                       id="year"/>
+                <input type="hidden" name="date"
+                       t-att-value="date"
+                       id="date"/>
+                <input type="hidden" name="week"
+                       t-att-value="week"
+                       id="week"/>
+                <input type="hidden" name="appointment_id"
+                       t-att-value="appointment_id"
+                       id="appointment_id"/>
+                <input type="hidden" name="staff_id"
+                       t-att-value="staff_id"
+                       id="staff_id"/>
+                <div class="row mb24">
+                    <div class="form-group o_website_form_required_custom col-12">
+                    <label for="name" class="control-label">
+                        Name
+                    </label>
+                        <input type="text" name="name"
+                               t-att-value="name"
+                               id="name" class="form-control o_website_form_input" required="required"/>
+                </div>
+                    <div class="form-group o_website_form_required_custom col-6">
+                    <label for="name" class="control-label">
+                        Email
+                    </label>
+                        <input type="email" name="email"
+                               t-att-value="email"
+                               id="email" class="form-control o_website_form_input" required="required"/>
+                </div>
+                    <div class="form-group o_website_form_required_custom col-6">
+                    <label for="name" class="control-label">
+                        Contact No.
+                    </label>
+                        <input type="tel" name="phone"
+                               t-att-value="phone"
+                               id="phone" class="form-control o_website_form_input" required="required"/>
+                </div>
+                </div>
+
+                <t t-foreach="questions" t-as="question">
+                    <div class="form-group o_website_form_required_custom">
+                        <label for="name" class="control-label mb16">
+                            <t t-esc="question.question_name"/>
+                        </label>
+
+                        <t t-if="question.question_type == 'char'">
+                            <input type="text" t-att-name="'question_'+question.question_id"
+                                   id="answer" class="form-control col-md-12"
+                                   t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'text'">
+                            <textarea rows="3" cols="55" class="form-control col-md-12"
+                                      t-att-name="'question_'+question.question_id"
+                                      t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'select'">
+                            <br></br>
+                            <select t-att-name="'question_'+question.question_id" class="form-control col-md-12" id="answer">
+                            <t t-foreach="answer" t-as="answer">
+                              <option t-att-value="answer"><t t-esc="answer"></t> </option>
+                            </t>
+                            </select>
+                        </t>
+
+                        <t t-if="question.question_type == 'radio'">
+                            <br></br>
+                            <div class="row">
+                            <t t-foreach="answer" t-as="answer">
+                                <div class="col-md-4">
+                                    <input type="radio" id="answer" t-att-name="'question_'+question.question_id"
+                                           t-att-value="answer"/>
+                                    <label for="answer"><t t-esc="answer" ></t></label>
+                                </div>
+                            </t>
+                            </div>
+                        </t>
+
+                        <t t-if="question.question_type == 'checkbox'">
+                            <br></br>
+                            <div class="row">
+                            <t t-foreach="answer" t-as="answer">
+                                <div class="col-md-4 ">
+                                <input type="checkbox" id="answer1"
+                                       t-att-name="'question_'+question.question_id+ answer" t-att-id="answer"
+                                       t-att-value="answer"/>
+                                    <label for="answer"><t t-esc="answer"></t></label>
+                                </div>
+                            </t>
+                            </div>
+                        </t>
+
+                        <t t-if="question.question_type == 'date'">
+                            <input type="date" t-att-name="'question_'+question.question_id"
+                                   id="answer" class="form-control col-md-12"
+                                   t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'datetime'">
+                            <input type="datetime-local" t-att-name="'question_'+question.question_id"
+                                   id="answer" class="form-control col-md-12"
+                                   t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'file'">
+                            <br/>
+                            <input type="file" class="col-md-12 px-0" multiple="true" t-att-name="'question_'+question.question_id+'file'"
+                                   id="answer" t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'number'">
+                            <input type="number" t-att-name="'question_'+question.question_id"
+                                   id="answer" class="form-control col-md-12"
+                                   t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                        <t t-if="question.question_type == 'decimal'">
+                            <input type="number" t-att-name="'question_'+question.question_id"
+                                   id="answer" class="form-control col-md-12" step="0.01" placeholder="0.00"
+                                   t-att-required="question.required_answer == true ? 'required' : None "/>
+                        </t>
+
+                    </div>
+                </t>
+
+                <div class="form-group mt32">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+    </t>
+</templates> 

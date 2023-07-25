@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_submited_queue_req" name="Portal layout : Submited Queue Req"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'submited_queue_req' or submited_queue_req "
+                t-attf-class="breadcrumb-item #{'active ' if not media_queue_req_form else ''}">
+                <a t-if="media_ids" t-attf-href="/library/media/?{{ keep_query() }}">
+                    Library All Media List
+                </a>
+                <t t-else="">Library All Media List</t>
+            </li>
+            <li t-if="page_name == 'submited_queue_req' or submited_queue_req "
+                t-attf-class="breadcrumb-item #{'active ' if not media_queue_req_form else ''}">
+                <a t-if="media_ids" t-attf-href="/requested/queue/list/?{{ keep_query() }}">
+                    Media Queue List
+                </a>
+                <t t-else="">Media Queue List</t>
+            </li>
+            <li t-if="page_name == 'submited_queue_req' or submited_queue_req"
+                class="breadcrumb-item active">
+                Media Queue Request Submitted
+            </li>
+
+        </xpath>
+    </template>
+
+    <template id="portal_my_home_menu_media_queue_req_form" name="Portal layout : Media Queue Req Form"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'media_queue_req_form' or media_queue_req_form "
+                t-attf-class="breadcrumb-item #{'active ' if not media_queue_req_form else ''}">
+                <a t-if="media_queue_ids" t-attf-href="/requested/queue/list/?{{ keep_query() }}">
+                    Media Queue List
+                </a>
+                <t t-else="">Media Queue List</t>
+            </li>
+            <li t-if="media_queue_ids" class="breadcrumb-item active">
+                Media Queue Request Form
+            </li>
+
+        </xpath>
+    </template>
+
+    <template id="portal_my_home_menu_media_queue" name="Portal layout : Media queue"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <t t-if="user_id.sudo().is_parent">
+                <li t-if="page_name == 'Media Queue List'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-attf-href="/library/media/#{stud_id}?{{ keep_query() }}">
+                        Library All Media List
+                    </a>
+                </li>
+                <li t-if="page_name == 'Media Queue List'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="media_ids" t-attf-href="/requested/queue/list/#{stud_id}?{{ keep_query() }}">Media Queue
+                        List
+                    </a>
+                    <t t-else="">Media Queue List</t>
+                </li>
+            </t>
+
+            <t t-if="user_id.sudo().is_student">
+                <li t-if="page_name == 'Media Queue List'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-attf-href="/library/media/?{{ keep_query() }}">
+                        Library All Media List
+                    </a>
+                </li>
+                <li t-if="page_name == 'Media Queue List'"
+                    t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                    <a t-if="media_ids" t-attf-href="/requested/queue/list/?{{ keep_query() }}">Media Queue List</a>
+                    <t t-else="">Media Queue List</t>
+                </li>
+            </t>
+
+        </xpath>
+    </template>
+
+    <template id="openeducat_library_media_queue">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Media Queue Request</t>
+            </t>
+            <t t-if="not media_queue_ids">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+
+            <div t-if="media_queue_ids" style="background-color:white; padding: 20px 40px 20px 40px;">
+                <div class="mt16">
+                    <form action="/queue/request/submit/" method="post" role="form" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div t-if="user_id.sudo().is_student" class="row col-md-12">
+                            <div class="row col-md-6">
+                                <div class="col-md-4 mt8">
+                                    <lanle>User:</lanle>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="hidden" name="student_id" t-att-value="student_ids.id"/>
+                                    <input type="text" name="name" t-attf-class="form-control"
+                                           t-att-value="student_ids.name" readonly="1"/>
+                                </div>
+                                <div class="col-md-4 mt16">
+                                    <lanle>Media:</lanle>
+                                </div>
+                                <div class="col-md-8 mt8">
+                                    <select class="form-control" name="media_ids" required="1">
+                                        <option value="" class="disabled selected">
+                                            <lable>Select your option</lable>
+                                        </option>
+                                        <t t-foreach="media_queue_ids or []" t-as="media">
+                                            <option t-att-value="media.id">
+                                                <t t-esc="media.name"/>
+                                            </option>
+                                        </t>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row col-md-6">
+                                <div class="mt8 col-md-4">
+                                    <lanle>From Date:</lanle>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="date_from" t-attf-class="form-control"
+                                           t-att-value="date_from"
+                                           required="1" readonly="1"/>
+                                </div>
+                                <div class="mt8 col-md-4 mt16">
+                                    <lanle>To Date:</lanle>
+                                </div>
+                                <div class="col-md-8 mt8">
+                                    <input type="text" name="date_to"
+                                           placeholder="MM/DD/YYYY"
+                                           t-attf-class="form-control a fa-calendar"
+                                           id="calendar" required="1"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div t-if="user_id.sudo().is_student" class="clearfix mt16 row col-md-12 mb16">
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">
+                                    SUBMIT
+                                    <span class="fa fa-long-arrow-right"/>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_submited_queue_request">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Media Queue Request Submitted</t>
+            </t>
+            <t t-if="not media_ids">
+                <p>There are currently no information for your account!!!</p>
+            </t>
+
+            <div t-if="media_ids" style="background-color:white; padding: 20px 40px 20px 40px;">
+                <div class="mt32">
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Sequence No.</th>
+                                <th>Media</th>
+                                <th>User</th>
+                                <th>From Date</th>
+                                <th>To date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="media_ids" t-foreach="media_ids" t-as="media_req">
+                                <tr>
+                                    <td>
+                                        <span t-esc="media_req.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req.media_id.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req.user_id.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req.date_from" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req.date_to" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-if="media_req.state == 'request'">
+                                            <span class="badge badge-pill badge-primary">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Request" title="Request"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Request</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_req.state == 'accept'">
+                                            <span class="badge badge-pill badge-success">
+                                                <i class="fa fa-fw fa-check" aria-label="Accepted" title="Accepted"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Accepted</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_req.state == 'reject'">
+                                            <span class="badge badge-pill badge-danger">
+                                                <i class="fa fa-fw fa-remove" aria-label="Rejected" title="Rejected"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Rejected</span>
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_submited_queue_request_list">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Media Queue Request List</t>
+            </t>
+
+            <div t-if="user_id.sudo().is_student" class="row mt16 mb16 text-left portal_buttons"
+                 style="padding-left: 15px;">
+                <div>
+                    <a t-attf-href="/media/queue/request">
+                        <button>Media Queue Request</button>
+                    </a>
+                </div>
+            </div>
+            <t t-if="not grouped_tasks">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+            <t t-if="grouped_tasks">
+                <t t-if="media_ids" t-call="portal.portal_table">
+                    <t t-foreach="grouped_tasks" t-as="tasks">
+                        <thead>
+                            <tr t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                                <th>Sequence No.</th>
+                                <th t-if="groupby == 'none'">Media</th>
+                                <th t-else="">
+                                    <em class="font-weight-normal text-muted">Queue Req For:</em>
+                                    <span t-field="tasks[0].sudo().media_id.name"/>
+                                </th>
+                                <th>User</th>
+                                <th>From Date</th>
+                                <th>To date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="tasks" t-foreach="tasks" t-as="media_req_list">
+                                <tr>
+                                    <td>
+                                        <span t-esc="media_req_list.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req_list.media_id.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req_list.user_id.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req_list.date_from" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_req_list.date_to" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-if="media_req_list.state == 'request'">
+                                            <span class="badge badge-pill badge-primary">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Request" title="Request"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Request</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_req_list.state == 'accept'">
+                                            <span class="badge badge-pill badge-success">
+                                                <i class="fa fa-fw fa-check" aria-label="Accepted" title="Accepted"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Accepted</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_req_list.state == 'reject'">
+                                            <span class="badge badge-pill badge-danger">
+                                                <i class="fa fa-fw fa-remove" aria-label="Rejected" title="Rejected"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Rejected</span>
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="view_op_media_queue_inherited_form_view" model="ir.ui.view">
+        <field name="name">op.media.queue.inherited.form.view</field>
+        <field name="model">op.media.queue</field>
+        <field name="priority">99</field>
+        <field name="inherit_id" ref="openeducat_library.view_op_media_queue_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_to']" position="after">
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_op_media_queue_inherited_tree_view" model="ir.ui.view">
+        <field name="name">op.media.queue.inherited.tree.view</field>
+        <field name="model">op.media.queue</field>
+        <field name="priority">99</field>
+        <field name="inherit_id" ref="openeducat_library.view_op_media_queue_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_op_media_queue_inherited_search_view" model="ir.ui.view">
+        <field name="name">op.media.queue.inherited.search.view</field>
+        <field name="model">op.media.queue</field>
+        <field name="inherit_id" ref="openeducat_library.view_op_media_queue_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="." position="inside">
+                <searchpanel>
+                    <field name="media_id" icon="fa fa-file-video-o"/>
+                </searchpanel>
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="act_media_queue_analysis_pivot_view">
+        <field name="name">Media Queue Analysis</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.media.queue</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="openeducat_library.view_op_media_queue_pivot"/>
+        <field name="view_mode">pivot</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="op_media-queue_analysis_pivot_view" model="ir.actions.act_window.view">
+        <field name="view_mode">pivot</field>
+        <field name="view_id" ref="openeducat_library.view_op_media_queue_pivot"/>
+        <field name="act_window_id" ref="act_media_queue_analysis_pivot_view"/>
+    </record>
+
+</odoo>

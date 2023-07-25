@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_quiz_following_Images_tree" model="ir.ui.view">
+            <field name="name">op.quiz.form</field>
+            <field name="model">op.quiz</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='answers']" position="after">
+                        <group name="answers" string="Answers" attrs="{'invisible': [('que_type', '!=', 'match_following_images')]}">
+                            <field name="following_images_line_ids" nolabel="1">
+                                <tree string="Answers" editable="bottom">
+                                    <field name="image" />
+                                    <field name="default_answer" />
+                                </tree>
+                                <form string="Answers">
+                                    <group>
+                                        <field name="image" />
+                                        <field name="default_answer" />
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </xpath>
+                    <xpath expr="//group[@name='questions']" position="inside">
+                        <field name="grade_true_id" attrs="{'invisible': [('que_type', '!=', 'match_following_images')], 'required': [('que_type', '=', 'match_following_images')]}" />
+                        <field name="grade_false_id" attrs="{'invisible': [('que_type', '!=', 'match_following_images')], 'required': [('que_type', '=', 'match_following_images')]}" />
+                    </xpath>
+
+                </data>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="view_op_quiz_result_match_the_following_images" model="ir.ui.view">
+            <field name="name">op.quiz.result.form</field>
+            <field name="model">op.quiz.result</field>
+            <field name="inherit_id" ref="openeducat_quiz.view_op_quiz_result_form"></field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='line_ids']/form/group/field[@name='question_mark']" position="after">
+                        <field name="following_images_line_ids" readonly="1" attrs="{'invisible': [('que_type', '!=', 'match_following_images')]}">
+                            <tree string="match following Images">
+                                <field name="image" widget='image' class="oe_avatar"></field>
+                                <field name="default_answer" widget='image' class="oe_avatar"></field>
+                                <field name="given_answer" widget='image' class="oe_avatar"></field>
+                            </tree>
+                        </field>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

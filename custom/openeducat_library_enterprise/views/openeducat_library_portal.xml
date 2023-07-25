@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home_menu_library_media" name="Portal layout : Library Media"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <t t-if="user_id.sudo().is_parent">
+                <li t-if="page_name == 'Library_media_list' or Library_media_list"
+                    t-attf-class="breadcrumb-item #{'active ' if not Library_media_list else ''}">
+                    <a t-if="library_id" t-attf-href="/library/media/#{stud_id}?{{ keep_query() }}">Library All Media
+                        List
+                    </a>
+                    <t t-else="">Library All Media List</t>
+                </li>
+                <li t-if="page_name == 'library_media_info' or library_media_info "
+                    t-attf-class="breadcrumb-item #{'active ' if not library_media_info else ''}">
+                    <a t-if="library_ids" t-attf-href="/library/media/#{student}?{{ keep_query() }}">
+                        Library All Media List
+                    </a>
+                    <t t-else="">Library All Media List</t>
+                </li>
+            </t>
+            <t t-if="user_id.sudo().is_student">
+                <li t-if="page_name == 'Library_media_list' or Library_media_list"
+                    t-attf-class="breadcrumb-item #{'active ' if not Library_media_list else ''}">
+                    <a t-if="library_id" t-attf-href="/library/media/?{{ keep_query() }}">Library All Media List</a>
+                    <t t-else="">Library All Media List</t>
+                </li>
+                <li t-if="page_name == 'library_media_info' or library_media_info "
+                    t-attf-class="breadcrumb-item #{'active ' if not library_media_info else ''}">
+                    <a t-if="library_ids" t-attf-href="/library/media/?{{ keep_query() }}">
+                        Library All Media List
+                    </a>
+                    <t t-else="">Library All Media List</t>
+                </li>
+            </t>
+            <li t-if="library_ids" class="breadcrumb-item active">
+                <span t-field="library_ids.name"/>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="openeducat_library_midia_portal">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">All Media Information</t>
+            </t>
+            <t t-if="not grouped_tasks">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+            <div class="row mt16 mb16 text-left portal_buttons" style="padding-left: 15px;">
+                <div>
+                    <a t-attf-href="/requested/queue/list/#{stud_id}">
+                        <button>Media Queue</button>
+                    </a>
+                </div>
+                <div style="padding-left: 15px;">
+                    <a t-attf-href="/requested/purchase/list/#{stud_id}">
+                        <button>Media Purchase</button>
+                    </a>
+                </div>
+                <div style="padding-left: 15px;">
+                    <a t-attf-href="/media/movement/list/#{stud_id}">
+                        <button>Media Movement</button>
+                    </a>
+                </div>
+            </div>
+
+            <t t-if="grouped_tasks">
+                <t t-if="library_id" t-call="portal.portal_table">
+                    <t t-foreach="grouped_tasks" t-as="tasks">
+                        <thead>
+                            <tr t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                                <th>Title</th>
+                                <th t-if="groupby == 'none'">Media Type</th>
+                                <th t-else="">
+                                    <em class="font-weight-normal text-muted">Media Type:</em>
+                                    <span t-field="tasks[0].sudo().media_type_id"/>
+                                </th>
+                                <th>ISBN Code</th>
+                                <th>Internal Code</th>
+                                <th>Edition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="tasks" t-foreach="tasks" t-as="library_media">
+                                <tr>
+                                    <td>
+                                        <a t-attf-href="/library/media/info/#{stud_id}/#{library_media.id}">
+                                            <span id='test' t-esc="library_media.name"/>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span t-esc="library_media.media_type_id.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="library_media.isbn"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="library_media.internal_code"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="library_media.edition"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="openeducat_library_media_data">
+        <t t-call="portal.portal_layout">
+
+            <t t-set="o_portal_fullwidth_alert" groups="project.group_project_user">
+                <t t-call="portal.portal_back_in_edit_mode">
+                    <t t-set="backend_url"
+                       t-value="'/web#model=op.media&amp;id=%s&amp;view_type=form' % (library_ids.id)"/>
+                </t>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <small class="text-muted">Library All Media Information</small>
+                    </h5>
+                </t>
+            </t>
+
+            <div t-if="library_ids" style="background-color:white; padding: 20px 40px 20px 40px;">
+                <t t-if="library_ids" t-foreach="library_ids" t-as="media_data">
+                    <div class="mt16">
+                        <div t-if="media_data.name" class="row col-md-12">
+                            <strong>
+                                <span style="font-size:24px;" t-esc="media_data.name"/>
+                            </strong>
+                        </div>
+                        <div class="mt16"/>
+                        <div class="row col-md-12">
+                            <div class="row col-md-6">
+                                <div t-if="media_data.author_ids" class="col-md-4">
+                                    <strong>Author:</strong>
+                                </div>
+                                <div t-if="media_data.author_ids" class="col-md-8">
+                                    <t t-foreach="media_data.author_ids" t-as="author">
+                                        <span id="test1" t-esc="author.name"/>
+                                        <br/>
+                                    </t>
+                                </div>
+                                <div t-if="media_data.isbn" class="col-md-4">
+                                    <strong>ISBN Code:</strong>
+                                </div>
+                                <div t-if="media_data.isbn" class="col-md-8">
+                                    <span t-esc="media_data.isbn"/>
+                                </div>
+                                <div t-if="media_data.edition" class="col-md-4">
+                                    <strong>Edition:</strong>
+                                </div>
+                                <div t-if="media_data.edition" class="col-md-8">
+                                    <span t-esc="media_data.edition"/>
+                                </div>
+                                <div t-if="media_data.media_type_id.name" class="col-md-4">
+                                    <strong>Media Type:</strong>
+                                </div>
+                                <div t-if="media_data.media_type_id.name" class="col-md-8">
+                                    <span t-esc="media_data.media_type_id.name"/>
+                                </div>
+                            </div>
+                            <div class="row col-md-6">
+                                <div t-if="media_data.publisher_ids" class="col-md-4">
+                                    <strong>Publisher:</strong>
+                                </div>
+                                <div t-if="media_data.publisher_ids" class="col-md-8">
+                                    <t t-foreach="media_data.publisher_ids" t-as="publisher">
+                                        <span t-esc="publisher.name"/>
+                                        <br/>
+                                    </t>
+                                </div>
+                                <div t-if="media_data.internal_code" class="col-md-4">
+                                    <strong>Code:</strong>
+                                </div>
+                                <div t-if="media_data.internal_code" class="col-md-8">
+                                    <span t-esc="media_data.internal_code"/>
+                                </div>
+                                <div t-if="media_data.tags" class="col-md-4">
+                                    <strong>Tags:</strong>
+                                </div>
+                                <div t-if="media_data.tags" class="col-md-8">
+                                    <t t-foreach="media_data.tags" t-as="tag">
+                                        <span t-esc="tag.name"/>
+                                        <br/>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div t-if="media_data.description" class="mt32">
+                        <h4>Description</h4>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-esc="media_data.description"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div t-if="media_data.course_ids" class="mt32">
+                        <h4>Educational Details</h4>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Courses</th>
+                                    <th>Subjects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <t t-foreach="media_data.course_ids" t-as="course">
+                                            <span t-esc="course.name"/>
+                                            <br/>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-foreach="media_data.subject_ids" t-as="subjet">
+                                            <span t-esc="subjet.name"/>
+                                            <br/>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <t t-if="media_data.queue_ids">
+                        <div class="mt32">
+                            <h4>Media Queue Request</h4>
+                        </div>
+                    </t>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>From Date</th>
+                                <th>To Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="media_data.queue_ids" t-foreach="media_data.queue_ids" t-as="media_lines">
+                                <tr>
+                                    <td>
+                                        <span t-esc="media_lines.date_from" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="media_lines.date_to" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-if="media_lines.state == 'request'">
+                                            <span class="badge badge-pill badge-primary">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Request" title="Request"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Request</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_lines.state == 'accept'">
+                                            <span class="badge badge-pill badge-success">
+                                                <i class="fa fa-fw fa-check" aria-label="Accepted" title="Accepted"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Accepted</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_lines.state == 'reject'">
+                                            <span class="badge badge-pill badge-danger">
+                                                <i class="fa fa-fw fa-remove" aria-label="Rejected" title="Rejected"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Rejected</span>
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_media_movement_header" name="Portal layout : Meida Movement"
+              inherit_id="openeducat_core_enterprise.portal_breadcrumbs_inhetrite" priority="10">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'Media_movement_list' or Media_movement_list "
+                t-attf-class="breadcrumb-item #{'active ' if not media_queue_req_form else ''}">
+                <a t-attf-href="/library/media/#{stud_id}?{{ keep_query() }}">
+                    Library All Media List
+                </a>
+            </li>
+            <li t-if="page_name == 'Media_movement_list' or Media_movement_list "
+                t-attf-class="breadcrumb-item #{'active ' if not media_queue_req_form else ''}">
+                <a t-if="media_movement_ids" t-attf-href="/media/movement/list/#{stud_id}?{{ keep_query() }}">
+                    Media Movement List
+                </a>
+                <t t-else="">Media Movement List</t>
+            </li>
+            <li t-if="page_name == 'media_movement_info' or media_movement_info "
+                t-attf-class="breadcrumb-item #{'active ' if not library_media_info else ''}">
+                <a t-if="media_movement_ids" t-attf-href="/media/movement/list/#{student}?{{ keep_query() }}">
+                    Media Movement List
+                </a>
+                <t t-else="">Library All Media List</t>
+            </li>
+            <li t-if="page_name == 'media_movement_info' or media_movement_info" class="breadcrumb-item active">
+                <span t-field="media_movement_ids.media_id"/>
+            </li>
+
+        </xpath>
+    </template>
+
+
+    <template id="portal_student_media_movement_list">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Media Movement Information</t>
+            </t>
+
+            <t t-if="not media_movement_ids">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no records.
+                </div>
+            </t>
+
+            <t t-if="grouped_tasks">
+                <t t-if="media_movement_ids" t-call="portal.portal_table">
+                    <t t-foreach="grouped_tasks" t-as="tasks">
+                        <thead>
+                            <tr t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+
+                                <th t-if="groupby == 'none'">Library card</th>
+                                <th t-else="">
+                                    <em class="font-weight-normal text-muted">Media Type:</em>
+                                    <span t-field="tasks[0].sudo().media_id"/>
+                                </th>
+                                <th>Media</th>
+                                <th>Media Unit</th>
+                                <th style="width:120px;">Issued Date</th>
+                                <th style="width:100px;">Due Date</th>
+                                <th style="width:160px;">Actual Return Date</th>
+                                <th>Penalty</th>
+                                <th>status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="tasks" t-foreach="tasks" t-as="media_data">
+                                <tr>
+                                    <td>
+                                        <a t-attf-href="/media/movement/information/#{stud_id}/#{media_data.id}">
+                                            <t t-esc="media_data.library_card_id.number"/>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.media_id.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.media_unit_id.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.issued_date" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.return_date" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.actual_return_date" t-options="{'widget': 'date'}"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="media_data.penalty"/>
+                                    </td>
+                                    <td>
+                                        <t t-if="media_data.state == 'issue'">
+                                            <span class="badge badge-pill badge-primary">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Draft" title="Draft"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Issued</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_data.state == 'available'">
+                                            <span class="badge badge-pill badge-info">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Offer" title="Offer"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Available</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_data.state == 'return_done'">
+                                            <span class="badge badge-pill badge-success">
+                                                <i class="fa fa-fw fa-check" aria-label="Returned Done"
+                                                   title="Returned Done" role="img"></i>
+                                                <span class="d-none d-md-inline">Returned Done</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_data.state == 'return'">
+                                            <span class="badge badge-pill badge-danger">
+                                                <i class="fa fa-fw fa-clock-o" aria-label="Return" title="Return"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Return</span>
+                                            </span>
+                                        </t>
+                                        <t t-if="media_data.state == 'lost'">
+                                            <span class="badge badge-pill badge-warning">
+                                                <i class="fa fa-fw fa-remove" aria-label="Cancelled" title="Cancelled"
+                                                   role="img"></i>
+                                                <span class="d-none d-md-inline">Lost</span>
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="portal_student_media_movement_information">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Media Movement Information</t>
+            </t>
+            <t t-if="not media_movement_ids">
+                <p>There are currently no information for your account!!!</p>
+            </t>
+
+            <div t-if="media_movement_ids" style="background-color:white; padding: 20px 40px 20px 40px;">
+                <div class="mt16">
+
+                    <div t-if="media_movement_ids" class="row col-md-12">
+
+                        <div class="row col-md-6">
+                            <div t-if="media_movement_ids.media_id.name" class="col-md-4">
+                                <strong>Media:</strong>
+                            </div>
+                            <div t-if="media_movement_ids.media_id.name" class="col-md-8">
+                                <t t-esc="media_movement_ids.media_id.name" id='media'/>
+                            </div>
+                            <div t-if="media_movement_ids.media_unit_id.name" class="col-md-4">
+                                <strong>Media Unit:</strong>
+                            </div>
+                            <div t-if="media_movement_ids.media_unit_id.name" class="col-md-8">
+                                <t t-esc="media_movement_ids.media_unit_id.name"/>
+                            </div>
+                            <div t-if="media_movement_ids.invoice_id.name" class="col-md-4">
+                                <strong>Invoice:</strong>
+                            </div>
+                            <div t-if="media_movement_ids.invoice_id.name" class="col-md-8">
+                                <t t-esc="media_movement_ids.invoice_id.name"/>
+                            </div>
+                        </div>
+                        <div class="row col-md-6">
+                            <div t-if="media_movement_ids.media_type_id.name" class="col-md-6">
+                                <strong>Media Type:</strong>
+                            </div>
+                            <div t-if="media_movement_ids.media_type_id.name" class="col-md-6">
+                                <t t-esc="media_movement_ids.media_type_id.name"/>
+                            </div>
+                            <div t-if="media_movement_ids.queue_count" class="col-md-6">
+                                <strong>Media Queue Count:</strong>
+                            </div>
+                            <div t-if="media_movement_ids.queue_count" class="col-md-6">
+                                <t t-esc="media_movement_ids.queue_count"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt32 col-md-12">
+                    <h4>Student / Faculty Detail</h4>
+                </div>
+                <div class="row mt8 col-md-12">
+                    <div class="row col-md-6">
+                        <div class="col-md-4">
+                            <strong>Library Card:</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <t t-esc="media_movement_ids.library_card_id.number"/>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Student:</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <t t-esc="media_movement_ids.student_id.name"/>
+                        </div>
+                    </div>
+                    <div class="row col-md-6">
+                        <div class="col-md-6">
+                            <strong>Student / Faculty:</strong>
+                        </div>
+                        <div class="col-md-6">
+                            <t t-esc="media_movement_ids.type"/>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Status:</strong>
+                        </div>
+                        <div class="col-md-6">
+                            <!--                            <t t-esc="{'false':False, 'available':'Available','issue':'Issued',-->
+                            <!--                            'lost':'Lost','return':'Return','return_done':'Return_Done'}[media_movement_ids.state]"/>-->
+                            <t t-if="media_movement_ids.state == 'issue'">
+                                <span class="badge badge-pill badge-primary">
+                                    <i class="fa fa-fw fa-clock-o" aria-label="Draft" title="Draft" role="img"></i>
+                                    <span class="d-none d-md-inline">Issued</span>
+                                </span>
+                            </t>
+                            <t t-if="media_movement_ids.state == 'available'">
+                                <span class="badge badge-pill badge-info">
+                                    <i class="fa fa-fw fa-clock-o" aria-label="Offer" title="Offer" role="img"></i>
+                                    <span class="d-none d-md-inline">Available</span>
+                                </span>
+                            </t>
+                            <t t-if="media_movement_ids.state == 'return_done'">
+                                <span class="badge badge-pill badge-success">
+                                    <i class="fa fa-fw fa-check" aria-label="Returned Done" title="Returned Done"
+                                       role="img"></i>
+                                    <span class="d-none d-md-inline">Returned Done</span>
+                                </span>
+                            </t>
+                            <t t-if="media_movement_ids.state == 'return'">
+                                <span class="badge badge-pill badge-danger">
+                                    <i class="fa fa-fw fa-clock-o" aria-label="Return" title="Return" role="img"></i>
+                                    <span class="d-none d-md-inline">Return</span>
+                                </span>
+                            </t>
+                            <t t-if="media_movement_ids.state == 'lost'">
+                                <span class="badge badge-pill badge-warning">
+                                    <i class="fa fa-fw fa-remove" aria-label="Cancelled" title="Cancelled"
+                                       role="img"></i>
+                                    <span class="d-none d-md-inline">Lost</span>
+                                </span>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt32 col-md-12">
+                    <div class="row col-md-6">
+                        <div class="col-md-4">
+                            <strong>Issued Date:</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <t t-esc="media_movement_ids.issued_date" t-options="{'widget': 'date'}"/>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>Due Date:</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <t t-esc="media_movement_ids.return_date" t-options="{'widget': 'date'}"/>
+                        </div>
+                    </div>
+                    <div class="row col-md-6">
+                        <div class="col-md-6">
+                            <strong>Actual Return Date:</strong>
+                        </div>
+                        <div class="col-md-6">
+                            <t t-esc="media_movement_ids.actual_return_date" t-options="{'widget': 'date'}"/>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Penalty:</strong>
+                        </div>
+                        <div class="col-md-6">
+                            <t t-esc="media_movement_ids.penalty"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

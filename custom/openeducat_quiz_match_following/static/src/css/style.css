@@ -1,0 +1,96 @@
+.drop_btn_id {
+    height:100%;
+    border: 2px solid #cbced4;
+    border-radius: 5px;
+    text-align: -webkit-center;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    transition: 0.3s;
+}
+
+.quiz_data{
+    padding-top:0.625rem;
+}
+.question_box{
+    /* border: 2px dashed #009efb; */
+    /* transition: 0.1s; */
+    padding-bottom:10px;
+    min-height:40px;
+}
+
+.mybtn{
+    margin:0px 0 0 10px;
+    z-index: 99;
+    transition: 0.3s;
+    white-space: nowrap; 
+    width: auto; 
+    max-width:200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.mybtn:hover{
+    /* width: 250px;  */
+    overflow: visible; 
+    white-space: normal; 
+}
+.question_box{
+    /* margin:5px 0 0 10px; */
+    display: -webkit-box;
+}
+
+.quesionline{
+    padding:5px;
+}
+
+.parentquestion{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.child_image{
+    height: 100px;
+    width: 100px;
+}
+  .drop_btn_id.hovering {
+    border: 2px solid #cbced4;
+    z-index: 10;
+}
+.question_box{
+    padding-top:20px;   
+    z-index: 10;
+}
+.question_box.hovering{
+    border: 2px solid #cbced4;
+    z-index: 10;
+}
+.drop_btn_id.mybtn{
+    background-color: rgba(0,0,0,0.2);
+  }
+  @media only screen and (max-width: 800px) {
+    .drop_btn_id {
+        max-height:40px;
+        padding: 0px 0px 40px 0px;
+        margin: 10px 0 0 20px;
+    }
+    .child_question{
+        width:65%;
+    }
+    .child_image{
+        width:28%;
+        margin-left:7px;
+    }
+    #form_quiz{
+        -webkit-overflow-scrolling: touch;
+     }
+}
+@-moz-document url-prefix() {
+  @media only screen and (max-width: 800px) {
+    .mybtn{
+        margin-top : 40px;
+        }
+    }
+  }  
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="res_config_settings_view_form_zoom" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.zoom</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="openeducat_core.res_config_settings_view_form_core"/>
+        <field name="arch" type="xml">
+            <xpath expr="//h2[@id='openeducat_core_apps']" position="before">
+                <h2>OpenEduCat Zoom Integration</h2>
+                <div class="row mt16 o_settings_container margin-left: 5%">
+
+                    <separator string="Zoom Meeting Credentials" class="col-12"
+                               colspan="2"/>
+                    <group col="2" class="ml-4">
+                        <group>
+                            <field name="openeducat_zoom_email"/>
+                            <field name="openeducat_zoom_secret_key"/>
+                        </group>
+                        <group>
+                            <field name="openeducat_zoom_api_key"/>
+                        </group>
+                    </group>
+
+                    <separator string="Zoom Meeting Configuration"
+                               colspan="2" class="col-12"/>
+                    <group col="2" class="ml-4">
+                        <group>
+                            <field name="host_video"/>
+                            <field name="watermark"/>
+                            <field name="participant_video"/>
+                            <field name="cn_meeting"/>
+                            <field name="in_meeting"/>
+                            <field name="join_before_host"/>
+                            <field name="mute_upon_entry"/>
+                            <field name="use_pmi"/>
+                            <field name="enforce_login"/>
+                            <field name="waiting_room"/>
+                            <field name="close_registration"/>
+                        </group>
+                        <group>
+                            <field name="approval_type"/>
+                            <field name="registration_type"/>
+                            <field name="audio"/>
+                            <field name="auto_recording"/>
+                            <field name="enforce_login_domains"/>
+                            <field name="alternative_hosts"/>
+                        </group>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

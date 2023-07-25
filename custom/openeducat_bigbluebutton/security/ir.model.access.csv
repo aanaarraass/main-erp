@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bbb_meeting_back_office_admin,bbb_meeting_back_office_admin,model_bbb_meeting,openeducat_core.group_op_back_office_admin,1,1,1,1
+access_bbb_meeting_back_office,bbb_meeting_back_office,model_bbb_meeting,openeducat_core.group_op_back_office,1,1,1,1
+access_bbb_meeting_faculty,bbb_meeting_faculty,model_bbb_meeting,openeducat_core.group_op_faculty,1,1,1,1

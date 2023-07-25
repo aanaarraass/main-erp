@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="op_zoom_integration_menu"
+                  sequence="10"
+                  name="Zoom Integration"
+                  web_icon="openeducat_zoom,static/description/icon.png"/>
+    </data>
+</odoo>

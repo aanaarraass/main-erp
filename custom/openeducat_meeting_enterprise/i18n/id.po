@@ -1,0 +1,840 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_meeting_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 07:05+0000\n"
+"PO-Revision-Date: 2019-09-30 07:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "<span>hours</span>"
+msgstr "<Span> jam </ span>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>All Day:</strong>"
+msgstr "<Strong> All Day: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Attendance:</strong>"
+msgstr "<Strong> Penonton: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Description:</strong>"
+msgstr "<Strong> Keterangan: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Duration:</strong>"
+msgstr "<Strong> Duration: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Location:</strong>"
+msgstr "<Strong> Lokasi: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Meeting Subject:</strong>"
+msgstr "<Strong> Rapat Subject: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Privacy:</strong>"
+msgstr "<Strong> Privasi: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Reminders:</strong>"
+msgstr "<Strong> Pengingat: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Show Time as:</strong>"
+msgstr "<Strong> Show Time sebagai: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "<strong>Starting at:</strong>"
+msgstr "<Strong> Mulai dari: </ strong>"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Accept"
+msgstr "Menerima"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "Action Needed"
+msgstr "aksi Dibutuhkan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__activity_ids
+msgid "Activities"
+msgstr "Kegiatan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__allday
+msgid "All Day"
+msgstr "Sepanjang hari"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Apply"
+msgstr "Terapkan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Are You Sure You Want To Create Meeting"
+msgstr "Apakah Anda Yakin Anda Ingin Membuat Meeting"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_attachment_count
+msgid "Attachment Count"
+msgstr "lampiran Hitungan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Attendance"
+msgstr "Kehadiran"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_attendee
+msgid "Attendee"
+msgstr "Peserta"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_status
+msgid "Attendee Status"
+msgstr "Status peserta"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Attendees"
+msgstr "peserta"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Availability"
+msgstr "Ketersediaan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__byday
+msgid "By day"
+msgstr "Pada siang hari"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Cancel"
+msgstr "Batalkan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "Click to schedule a new meeting."
+msgstr "Klik untuk menjadwalkan pertemuan baru."
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Closed"
+msgstr "Tutup"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_company
+msgid "Companies"
+msgstr "Perusahaan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Confirm"
+msgstr "Konfirmasi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_res_partner
+msgid "Contact"
+msgstr "Kontak"
+
+#. module: openeducat_meeting_enterprise
+#: code:addons/openeducat_meeting_enterprise/wizard/op_meeting_wizard.py:31
+#, python-format
+msgid "Create Event"
+msgstr "Membuat acara"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "Create Meeting Event"
+msgstr "Buat Rapat Acara"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__create_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Customize"
+msgstr "Sesuaikan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_start
+msgid "Date"
+msgstr "Tanggal"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__day
+msgid "Date of month"
+msgstr "Tanggal"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Decline"
+msgstr "Menurun"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__description
+msgid "Description"
+msgstr "Deskripsi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_name
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__display_name
+msgid "Display Name"
+msgstr "Nama tampilan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_id
+msgid "Document ID"
+msgstr "dokumen ID"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model_id
+msgid "Document Model"
+msgstr "Model dokumen"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__res_model
+msgid "Document Model Name"
+msgstr "Nama Model Dokumen"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Done"
+msgstr "Selesai"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__duration
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Duration"
+msgstr "Durasi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "End Date"
+msgstr "Tanggal akhir"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop_datetime
+msgid "End Datetime"
+msgstr "akhir Datetime"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Ending at"
+msgstr "berakhir di"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__display_time
+msgid "Event Time"
+msgstr "acara Waktu"
+
+#. module: openeducat_meeting_enterprise
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_faculty
+msgid "Faculty"
+msgstr "Fakultas"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_follower_ids
+msgid "Followers"
+msgstr "pengikut"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__fr
+msgid "Fri"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Group By"
+msgstr "Kelompokkan Menurut"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__id
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Jika dicentang pesan baru membutuhkan perhatian Anda."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru membutuhkan perhatian Anda."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan memiliki kesalahan pengiriman."
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__active
+msgid "If the active field is set to false, it will allow you to hide the event alarm information without removing it."
+msgstr "Jika bidang aktif diatur ke false, itu akan memungkinkan Anda untuk menyembunyikan informasi acara alarm tanpa menghapusnya."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitation details"
+msgstr "rincian undangan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Invitations"
+msgstr "undangan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_is_follower
+msgid "Is Follower"
+msgstr "Apakah Follower"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__is_highlighted
+msgid "Is the Event Highlighted"
+msgstr "Apakah Acara Disorot"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Just done"
+msgstr "hanya dilakukan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting____last_update
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_uid
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__write_date
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting_wizard__write_date
+msgid "Last Updated on"
+msgstr "Terakhir diperbarui saat"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Let the event automatically repeat at that interval"
+msgstr "Biarkan acara mengulang secara otomatis pada interval yang"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__location
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Location"
+msgstr "tempat"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__location
+msgid "Location of Event"
+msgstr "Lokasi Acara"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Looks great!"
+msgstr "Tampak hebat!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran utama"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_faculty
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_parent
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_meeting_wizard_student
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__meeting_id
+#: model:ir.ui.menu,name:openeducat_meeting_enterprise.menu_meeting
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Meeting"
+msgstr "Pertemuan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting Data Information"
+msgstr "Data Informasi Rapat"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.portal_my_home_library
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Meeting Details"
+msgstr "Rincian pertemuan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+msgid "Meeting Information"
+msgstr "Informasi pertemuan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "Meeting Layout Configuration"
+msgstr "Rapat Tata Letak Konfigurasi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_onboarding_meeting_layout
+msgid "Meeting Record Configuration"
+msgstr "Rapat Rekam Konfigurasi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__name
+msgid "Meeting Subject"
+msgstr "pertemuan Subyek"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_meeting_wizard
+msgid "Meeting Wizard"
+msgstr "rapat Wisaya"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "Meeting-Deatils"
+msgstr "Rapat-DEATILS"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event
+#: model:ir.actions.act_window,name:openeducat_meeting_enterprise.action_op_meeting_event_notify
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Meetings"
+msgstr "rapat"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error
+msgid "Message Delivery error"
+msgstr "pesan kesalahan Pengiriman"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_ids
+msgid "Messages"
+msgstr "pesan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Misc"
+msgstr "Lain-lain"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__mo
+msgid "Mon"
+msgstr "mon"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Events"
+msgstr "Acara saya"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "My Meetings"
+msgstr "Pertemuan saya"
+
+#. module: openeducat_meeting_enterprise
+#: selection:res.company,meeting_enterprise_onboard_panel:0
+#: selection:res.company,onboarding_meeting_layout_state:0
+msgid "Not done"
+msgstr "Belum selesai"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of error"
+msgstr "Jumlah kesalahan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_faculty
+msgid "OpenEduCat Faculty"
+msgstr "OpenEduCat Fakultas"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__month_by
+msgid "Option"
+msgstr "Pilihan"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Options"
+msgstr "Pilihan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__user_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Owner"
+msgstr "Pemilik"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_parent
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_parent
+msgid "Parent"
+msgstr "Induk"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__attendee_ids
+msgid "Participant"
+msgstr "Peserta"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__partner_id
+msgid "Partner-related data of the user"
+msgstr "Data terkait mitra pengguna"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__privacy
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Privacy"
+msgstr "Pribadi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule_type
+msgid "Recurrence"
+msgstr "Kambuh"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__end_type
+msgid "Recurrence Termination"
+msgstr "Penghentian kekambuhan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent"
+msgstr "kumat"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id
+msgid "Recurrent ID"
+msgstr "berulang ID"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__recurrent_id_date
+msgid "Recurrent ID date"
+msgstr "tanggal ID berulang"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__recurrency
+msgid "Recurrent Meeting"
+msgstr "Rapat berulang"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__rrule
+msgid "Recurrent Rule"
+msgstr "Aturan berulang"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__alarm_ids
+msgid "Reminders"
+msgstr "pengingat"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat"
+msgstr "Ulangi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat Every"
+msgstr "ulangi Setiap"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__final_date
+msgid "Repeat Until"
+msgstr "Ulangi sampai"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__interval
+msgid "Repeat every (Days/Week/Month/Year)"
+msgstr "Ulangi setiap (Hari / Minggu / Bulan / Tahun)"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__count
+msgid "Repeat x times"
+msgstr "Ulangi x kali"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__partner_id
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Responsible"
+msgstr "tanggung jawab"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__sa
+msgid "Sat"
+msgstr "Duduk"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Search Meetings"
+msgstr "Cari Rapat"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.onboarding_meeting_layout_step
+msgid "See how to create a Meeting Layout."
+msgstr "Lihat cara membuat Tata Letak Rapat."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Select attendees..."
+msgstr "Pilih peserta ..."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Send mail"
+msgstr "Kirim email"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__show_as
+msgid "Show Time as"
+msgstr "Tampilkan Waktu sebagai"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start"
+msgstr "mulai"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_date
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Start Date"
+msgstr "Mulai tanggal"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__start_datetime
+msgid "Start DateTime"
+msgstr "Mulai DateTime"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__start
+msgid "Start date of an event, without time for full days events"
+msgstr "tanggal acara mulai, tanpa waktu untuk acara hari penuh"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_popup
+msgid "Starting at"
+msgstr "Mulai dari"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__onboarding_meeting_layout_state
+msgid "State of the onboarding meeting layout  step"
+msgstr "Negara pertemuan sosialisasi tata letak langkah"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_res_company__meeting_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "Negara langkah sosialisasi"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__state
+msgid "Status"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop"
+msgstr "Berhenti"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__stop
+msgid "Stop date of an event, without time for full days events"
+msgstr "tanggal acara berhenti, tanpa waktu untuk acara hari penuh"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model,name:openeducat_meeting_enterprise.model_op_student
+#: model:res.partner.category,name:openeducat_meeting_enterprise.res_partner_category_student
+msgid "Student"
+msgstr "Siswa"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_tree
+msgid "Subject"
+msgstr "Subyek"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__su
+msgid "Sun"
+msgstr "Matahari"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__categ_ids
+msgid "Tags"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.actions.act_window,help:openeducat_meeting_enterprise.action_op_meeting_event
+msgid "The calendar is shared between employees and fully integrated with\n"
+"                other applications such as the employee holidays or the\n"
+"                business\n"
+"                opportunities."
+msgstr "kalender dibagi antara karyawan dan sepenuhnya terintegrasi dengan\n"
+"                aplikasi lain seperti liburan karyawan atau\n"
+"                bisnis\n"
+"                peluang."
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.openeducat_meeting_portal_data
+msgid "There are currently no information for your account!!!"
+msgstr "Saat ini tidak ada informasi untuk akun Anda !!!"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__th
+msgid "Thu"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__tu
+msgid "Tue"
+msgstr ""
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "Uncertain"
+msgstr "tak menentu"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_event_search
+msgid "Unread Messages"
+msgstr "Pesan belum dibaca"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Pesan belum dibaca Kontra"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website Messages"
+msgstr "Website Pesan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,help:openeducat_meeting_enterprise.field_op_meeting__website_message_ids
+msgid "Website communication history"
+msgstr "riwayat komunikasi situs"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__we
+msgid "Wed"
+msgstr "Mengawinkan"
+
+#. module: openeducat_meeting_enterprise
+#: model:ir.model.fields,field_description:openeducat_meeting_enterprise.field_op_meeting__week_list
+msgid "Weekday"
+msgstr "Hari kerja"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.view_op_meeting_form_onboard
+msgid "e.g. Business Lunch"
+msgstr "misalnya Makan siang bisnis"
+
+#. module: openeducat_meeting_enterprise
+#: model_terms:ir.ui.view,arch_db:openeducat_meeting_enterprise.op_faculty_user_create_view
+msgid "or"
+msgstr "atau"
+

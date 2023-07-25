@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+openeducat_terminology_enterprise.access_terminology_configuration,access_terminology_configuration,openeducat_terminology_enterprise.model_terminology_configuration,base.group_user,1,1,1,1
+openeducat_terminology_enterprise.access_wizard_terminology,access_wizard_terminology,openeducat_terminology_enterprise.model_wizard_terminology,base.group_user,1,1,1,1
+

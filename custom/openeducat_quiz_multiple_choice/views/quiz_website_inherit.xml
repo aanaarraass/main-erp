@@ -1,0 +1,189 @@
+<odoo>
+    <template id="quiz_results_form_multiple_choice_inherit" inherit_id="openeducat_quiz.quiz_results_form">
+        <xpath expr="//td[hasclass('not_attempt_ans')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li style="height:100px;">
+                                    <t t-if="line_data['default_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['default_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-if="line_data['default_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['default_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('not_attempt_question')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-esc="line_data['que_text']"></t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li>
+                                    <img t-attf-src="data:image/*;base64,{{line_data['que_image']}}" t-att-alt="line_data['que_image']" height="100px" width="100px" />
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//td[hasclass('display_true_ans')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li style="height:100px;">
+                                    <t t-if="line_data['given_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['given_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-if="line_data['given_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['given_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('display_true_question')]" position="inside">
+            <div>
+                <t t-if="answer['que_type'] == 'multiple_choice'">
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-esc="line_data['que_text']"></t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li>
+                                    <img t-attf-src="data:image/*;base64,{{line_data['que_image']}}" t-att-alt="line_data['que_image']" height="100px" width="100px" />
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li style="height:100px;">
+                                    <t t-if="line_data['default_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['default_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-if="line_data['default_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['default_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_given_answer')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <span style="visibility: hidden;">Answer</span>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li style="height:100px;">
+                                    <t t-if="line_data['given_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['given_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-if="line_data['given_answer'] == True">
+                                        <p>true</p>
+                                    </t>
+                                    <t t-if="line_data['given_answer'] == False">
+                                        <p>false</p>
+                                    </t>
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//td[hasclass('wrong_question')]" position="inside">
+            <t t-if="answer['que_type'] == 'multiple_choice'">
+                <div>
+                    <ol>
+                        <t t-foreach="answer['line_data']" t-as="line_data">
+                            <t t-if="line_data['que_type'] == 'text'">
+                                <li style="height:50px;">
+                                    <t t-esc="line_data['que_text']"></t>
+                                </li>
+                            </t>
+                            <t t-if="line_data['que_type'] == 'image'">
+                                <li>
+                                    <img t-attf-src="data:image/*;base64,{{line_data['que_image']}}" t-att-alt="line_data['que_image']" height="100px" width="100px" />
+                                </li>
+                            </t>
+                        </t>
+                    </ol>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

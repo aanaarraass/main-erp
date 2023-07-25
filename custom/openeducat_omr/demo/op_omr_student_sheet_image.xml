@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- OMR Image Demo1 Exam 100 Data -->
+        <record id="student_omr_sheet_demo1_image1" model="op.omr.image">
+            <field name="image" type="base64"
+                   file="openeducat_omr/static/src/img/sumita_100mcq.jpeg"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo1"/>
+        </record>
+<!--        <record id="student_omr_sheet_demo1_image2" model="op.omr.image">-->
+<!--            <field name="image" type="base64"-->
+<!--                   file="openeducat_omr/static/src/img/xun_100mcq.jpg"/>-->
+<!--            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo1"/>-->
+<!--        </record>-->
+<!--        <record id="student_omr_sheet_demo1_image3" model="op.omr.image">-->
+<!--            <field name="image" type="base64"-->
+<!--                   file="openeducat_omr/static/src/img/liling_100mcq.jpg"/>-->
+<!--            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo1"/>-->
+<!--        </record>-->
+
+        <!-- OMR Image Demo2 Exam 50 Data -->
+        <record id="student_omr_sheet_demo2_image1" model="op.omr.image">
+            <field name="image" type="base64"
+                   file="openeducat_omr/static/src/img/sumita_50mcq.jpeg"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo2"/>
+        </record>
+<!--        <record id="student_omr_sheet_demo2_image2" model="op.omr.image">-->
+<!--            <field name="image" type="base64"-->
+<!--                   file="openeducat_omr/static/src/img/xun_50mcq.jpg"/>-->
+<!--            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo2"/>-->
+<!--        </record>-->
+<!--        <record id="student_omr_sheet_demo2_image3" model="op.omr.image">-->
+<!--            <field name="image" type="base64"-->
+<!--                   file="openeducat_omr/static/src/img/liling_50mcq.jpg"/>-->
+<!--            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo2"/>-->
+<!--        </record>-->
+
+        <!-- OMR Image Demo3 Exam 20 Data -->
+        <record id="student_omr_sheet_demo3_image1" model="op.omr.image">
+            <field name="image" type="base64"
+                   file="openeducat_omr/static/src/img/sumita_20mcq.jpeg"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+        <record id="student_omr_sheet_demo3_image2" model="op.omr.image">
+            <field name="image" type="base64"
+                   file="openeducat_omr/static/src/img/xun_20mcq.jpeg"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+        <record id="student_omr_sheet_demo3_image3" model="op.omr.image">
+            <field name="image" type="base64"
+                   file="openeducat_omr/static/src/img/liling_20mcq.jpeg"/>
+            <field name="omr_exam_id" ref="openeducat_omr.omr_exam_demo3"/>
+        </record>
+
+    </data>
+</odoo>

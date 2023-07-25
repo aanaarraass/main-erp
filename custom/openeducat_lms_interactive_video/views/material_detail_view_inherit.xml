@@ -1,0 +1,55 @@
+<odoo>
+  <template id="material_detail_view_intractive_video" inherit_id="openeducat_lms.material_detail_view">
+    <xpath expr="//div[hasclass('course_img_video')]" position="before">
+      <t t-if="material.material_type =='interactive_video'">
+        <div t-att-class="material.id" id="interactive_video_data">
+          <div id="iv-start">
+            <span style="font-size: 100px;">►</span>
+            <h2 style="color:white;">Interactive Video</h2>
+            <hr style="border-top: 1px solid rgb(255 255 255); margin-top:8%;"></hr>
+            <h6 style="color:white;">Press the buttons that appear during the video!</h6>
+          </div>
+          <div class="player" id="video_player">
+            <t t-raw="material.embed_code" />
+            <div class="player__controls" style="display:none">
+              <div class="video_duration"></div>
+              <div class="progress">
+                <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle" id="play_btn" title="Toggle Play">►</button>
+              <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1" title="monkey" />
+              <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1" title="monkey" />
+              <button data-skip="-10" class="player__button">« 10s</button>
+              <button data-skip="25" class="player__button">25s »</button>
+              <button class="player__fullscreen" title="Toggle fullscreen">↔️</button>
+            </div>
+            <div>
+              <div class="pushable" style="display:none;" id="id_pushable">
+                <div id="quiz-btn">
+                  <img src="/openeducat_lms_interactive_video/static/src/img/click.jpg"></img>
+                </div>
+                <span class="front" id="span_interactive_question"></span>
+              </div>
+              <t t-foreach="material.interactive_video_line_ids" t-as="data">
+                <t t-if="data.interactive_video_type == 'description'">
+                  <div class="iv-question-show" t-att-data="data.interactive_video_type" t-att-id="data.id" style='display: none;font-size: 20px;'>
+                    <div id="close-btn">
+                      <img class="iv-close-img-btn" src="/openeducat_lms_interactive_video/static/src/img/close.png"></img>
+                    </div>
+                    <t t-raw="data.full_description" />
+                  </div>
+                </t>
+              </t>
+              <div id="video_quiz" style='display: none;font-size: 20px;'>
+                <div id="close-btn">
+                  <img class="iv-close-img-btn" src="/openeducat_lms_interactive_video/static/src/img/close.png"></img>
+                </div>
+                <div id="quiz_video_data" class=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </t>
+    </xpath>
+  </template>
+</odoo>

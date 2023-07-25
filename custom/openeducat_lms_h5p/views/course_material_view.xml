@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_op_course_material_form_inherit" model="ir.ui.view">
+            <field name="name">op.material.form</field>
+            <field name="model">op.material</field>
+            <field name="inherit_id" ref="openeducat_lms.view_op_course_material_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='material_type']" position="after">
+                    <field name="embed_code" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='material_type']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='document_url']" position="attributes">
+                    <attribute name="attrs">{'invisible': [('material_type', 'not in', ['url', 'h5p_url'])], 'required': [('material_type', 'in', ['url', 'h5p_url'])]}</attribute>
+                </xpath>
+                <xpath expr="//page[2]//field[@name='material_type']" position="after">
+                    <field name="iframe_video_data"
+                           attrs="{'invisible': [('material_type', '!=', 'h5p_iframe')], 'required': [('material_type', '=', 'h5p_iframe')]}"/>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

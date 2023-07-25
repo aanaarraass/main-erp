@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+
+    <div t-name="CamDialog" >
+        <div class="container">
+                <div class="col-md-12">
+                    <div id="webcam"> </div>
+                </div>
+            <div class="col-md-12">
+                    <div id="prev_result"></div>
+                </div>
+
+        </div>
+    </div>
+    <div t-name="prevResult" >
+
+    </div>
+
+</template>

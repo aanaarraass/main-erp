@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="student_portal_library"
+              inherit_id="openeducat_core_enterprise.openeducat_enterprise_student_portal" priority="45">
+        <xpath expr="//ul[hasclass('nav-pills')]" position="inside">
+            <li>
+                <a href="#library" aria-expanded="false" data-toggle="tab">
+                    <h5 class="mb0">
+                        Library
+                    </h5>
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[hasclass('tab-content')]" position="inside">
+            <div class="tab-pane fade" id="library">
+                <div class="mb-4">
+                    <h4>Media Movements</h4>
+                </div>
+                <div t-if="student.library_card_id" class="row col-md-12">
+                    <div>
+                        <strong class="text-secondary">Library Card:</strong>
+                    </div>
+                    <div class="col-md-8">
+                        <span t-esc="student.library_card_id.number"/>
+                    </div>
+                </div>
+                <table class="mt16 table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Media</th>
+                            <th>Media Unit</th>
+                            <th style="width: 96px;">Issued Date</th>
+                            <th style="width: 96px;">Due Date</th>
+                            <th>Actual Return Date</th>
+                            <th>Penalty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="student.media_movement_lines" t-as="library_data">
+                            <tr>
+                                <td>
+                                    <span t-esc="library_data.media_id.name"/>
+                                </td>
+
+                                <td>
+                                    <span t-esc="library_data.media_unit_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-esc="library_data.issued_date" t-options="{'widget': 'date'}"/>
+                                </td>
+                                <td>
+                                    <span t-esc="library_data.return_date" t-options="{'widget': 'date'}"/>
+                                </td>
+                                <td>
+                                    <span t-esc="library_data.actual_return_date" t-options="{'widget': 'date'}"/>
+                                </td>
+
+                                <td>
+                                    <span t-esc="library_data.penalty"/>
+                                </td>
+                                <td>
+                                    <!--                                                <span t-esc="{'false':False, 'return':'Return', 'return_done':'Returned Done',-->
+                                    <!--                                                'available':'Available','issue':'Issued'}[library_data.state]"/>-->
+                                    <t t-if="library_data.state == 'issue'">
+                                        <span class="badge badge-pill badge-primary">
+                                            <i class="fa fa-fw fa-clock-o" aria-label="Draft" title="Draft"
+                                               role="img"></i>
+                                            <span class="d-none d-md-inline">Issued</span>
+                                        </span>
+                                    </t>
+                                    <t t-if="library_data.state == 'available'">
+                                        <span class="badge badge-pill badge-info">
+                                            <i class="fa fa-fw fa-clock-o" aria-label="Offer" title="Offer"
+                                               role="img"></i>
+                                            <span class="d-none d-md-inline">Available</span>
+                                        </span>
+                                    </t>
+                                    <t t-if="library_data.state == 'return_done'">
+                                        <span class="badge badge-pill badge-success">
+                                            <i class="fa fa-fw fa-check" aria-label="Returned Done"
+                                               title="Returned Done" role="img"></i>
+                                            <span class="d-none d-md-inline">Returned Done</span>
+                                        </span>
+                                    </t>
+                                    <t t-if="library_data.state == 'return'">
+                                        <span class="badge badge-pill badge-danger">
+                                            <i class="fa fa-fw fa-clock-o" aria-label="Return" title="Return"
+                                               role="img"></i>
+                                            <span class="d-none d-md-inline">Return</span>
+                                        </span>
+                                    </t>
+                                    <!--                                                <t t-if="library_data.state == 'cancel'">-->
+                                    <!--                                                    <span class="badge badge-pill badge-warning"><i class="fa fa-fw fa-remove" aria-label="Cancelled" title="Cancelled" role="img"></i><span class="d-none d-md-inline"> Cancelled</span></span>-->
+                                    <!--                                                </t>-->
+                                </td>
+
+                            </tr>
+                        </t>
+
+                    </tbody>
+                </table>
+            </div>
+            <!--        </div>-->
+            <!--        </div>-->
+            <!--        </div>-->
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_course_inherit_fees_form" model="ir.ui.view">
+            <field name="name">op.course.form</field>
+            <field name="model">op.course</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_course_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='max_unit_load']" position="after">
+                    <field name="reg_fees"/>
+                    <field name="product_id"
+                           attrs="{'required': [('reg_fees','=', True)], 'invisible': [('reg_fees', '=', False)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_op_admission_program_tree" model="ir.ui.view">
+            <field name="name">op.program.tree</field>
+            <field name="model">op.program</field>
+            <field name="inherit_id" ref="openeducat_admission.view_op_admission_program_tree"/>
+            <field name="arch" type="xml">
+                <field name="department_id" position="after">
+                    <field name="level"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_op_admission_program_form" model="ir.ui.view">
+            <field name="name">op.program.form</field>
+            <field name="model">op.program</field>
+            <field name="inherit_id" ref="openeducat_admission.view_op_admission_program_form"/>
+            <field name="arch" type="xml">
+                <field name="department_id" position="after">
+                    <field name="level"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_op_admission_register_form" model="ir.ui.view">
+            <field name="name">op.admission.register.form</field>
+            <field name="model">op.admission.register</field>
+            <field name="inherit_id" ref="openeducat_admission.view_op_admission_register_form"/>
+            <field name="arch" type="xml">
+                <field name="program_id" position="after">
+                    <field name="level"/>
+                </field>
+                <xpath expr="//group[1]" position="after">
+                    <group string="Merit">
+                        <field name="merit_list_for"/>
+                        <field name="seats"/>
+                        <field name="merit_list" readonly="1"/>
+                    </group>
+                </xpath>
+                <button name="start_admission" position="after">
+                <button name="calculate_aggregate" type="object" string="Calculate Aggregate"
+                                class="oe_highlight" attrs="{'invisible': ['|',('ag_done', '=', True),('state', '!=', 'done')]}"/>
+                    <field name="ag_done" invisible="1"/>
+                <button name="create_merit_list" type="object" string="Create Merit list"
+                                class="oe_highlight" attrs="{'invisible': ['|',('ag_done', '=', False),('state', '!=', 'done')]}"/>
+/>
+                </button>
+            </field>
+        </record>
+    </data>
+</odoo>

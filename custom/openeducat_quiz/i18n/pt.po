@@ -1,0 +1,1276 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* openeducat_quiz
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-26 09:27+0000\n"
+"PO-Revision-Date: 2019-09-26 09:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "<b>Average Result</b>\n"
+"                                            :"
+msgstr "<B> Resultado Média </ b>\n"
+"                                            :"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "<b>Total Attempt</b>\n"
+"                                            :"
+msgstr "<B> Tentativa Total </ b>\n"
+"                                            :"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_needaction
+msgid "Action Needed"
+msgstr "Ação necessária"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__question_mark
+msgid "Actual Marks"
+msgstr "Marcas reais"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__que_required
+msgid "All Question are Required"
+msgstr "Todos questão são considerados"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__name
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Answer"
+msgstr "Responda"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Answers"
+msgstr "respostas"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conde anexo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Attempt :"
+msgstr "tentativa:"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Attempt Date"
+msgstr "tentativa Data"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Attempts must be submitted before time expires, or they are not counted"
+msgstr "Tentativas devem ser apresentados antes do tempo expirar, ou eles não são contados"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Audio"
+msgstr "auditivo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_audio
+msgid "Audio File"
+msgstr "Arquivo de áudio"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+msgid "Avg Result :"
+msgstr "Resultado Média:"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/result.py:296
+#, python-format
+msgid "Can not set more then actual mark."
+msgstr "Não é possível definir mais de marca real."
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__case_sensitive
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__case_sensitive
+msgid "Case Sensitive"
+msgstr "Maiúsculas e Minúsculas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__categ_id
+msgid "Category"
+msgstr "Categoria"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__challenge_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Challenges"
+msgstr "desafios"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+#: selection:res.company,onboarding_question_bank_layout_state:0
+#: selection:res.company,onboarding_quiz_layout_state:0
+#: selection:res.company,quiz_enterprise_onboard_panel:0
+msgid "Closed"
+msgstr "Fechadas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__code
+msgid "Code"
+msgstr "Código"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__config_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_config
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_config_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Configuration"
+msgstr "Configuração"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__answer
+msgid "Correct Answer"
+msgstr "Resposta correta"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__create_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__create_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_question_bank_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_quiz_layout_step
+msgid "Customize"
+msgstr "Personalizar"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__description
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__description
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Description"
+msgstr "Descrição"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Description..."
+msgstr "Descrição..."
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Descriptive"
+msgstr "Descritivo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__display_name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__display_name
+msgid "Display Name"
+msgstr "Mostrar nome"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__not_attempt_ans
+msgid "Display Not Attempted Answer"
+msgstr "Mostrar Resposta Não Tentativa"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__show_result
+msgid "Display Result"
+msgstr "Resultado de exibição"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__right_ans
+msgid "Display Right Answer"
+msgstr "Mostrar resposta certa"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__wrong_ans
+msgid "Display Wrong Answer"
+msgstr "Mostrar Resposta errada"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+#: selection:res.company,onboarding_question_bank_layout_state:0
+#: selection:res.company,onboarding_quiz_layout_state:0
+#: selection:res.company,quiz_enterprise_onboard_panel:0
+msgid "Done"
+msgstr "Concluído"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+msgid "Draft"
+msgstr "Esboço, projeto"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Exam Name"
+msgstr "exame Nome"
+
+#. module: openeducat_quiz
+#: model:website.menu,name:openeducat_quiz.website_menu_quiz_menu
+msgid "Exams"
+msgstr "exames"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Fetch Questions"
+msgstr "fetch Perguntas"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Fill in the Blank"
+msgstr "Preencher o espaço em branco"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page
+msgid "Finish"
+msgstr "Terminar"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__finish_date
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Finished On"
+msgstr "terminado On"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_follower_ids
+msgid "Followers"
+msgstr "seguidores"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (canais)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Parceiros)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__answer
+msgid "Given Answer"
+msgstr "Resposta dada"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Given Aswer"
+msgstr "dada aswer"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Grace Period"
+msgstr "Período de carência"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__grade_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__grade_id
+msgid "Grade"
+msgstr "Grau"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__value
+msgid "Grade (%)"
+msgstr "Grau (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__grade_true_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__grade_true_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__grade_true_id
+msgid "Grade for truly given answer"
+msgstr "Grade de resposta verdadeiramente dada"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__grade_false_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__grade_false_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__grade_false_id
+msgid "Grade for wrongly given answer"
+msgstr "Grade de resposta errada dada"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_answer_grade_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_answer_grade
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_answer_grade_tree
+msgid "Grades"
+msgstr "Notas"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "HTML"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_html
+msgid "HTML Content"
+msgstr "conteúdo HTML"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_limit_hr
+msgid "Hour"
+msgstr "Hora"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Hr"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__id
+msgid "ID"
+msgstr "EU IRIA"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Se marcada novas mensagens requer sua atenção."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se marcada, as novas mensagens requer sua atenção."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se marcada, algumas mensagens têm um erro de entrega."
+
+#. module: openeducat_quiz
+#: selection:op.quiz,state:0
+#: selection:op.quiz.result,state:0
+msgid "In-Progress"
+msgstr "Em progresso"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_is_follower
+msgid "Is Follower"
+msgstr "é Follower"
+
+#. module: openeducat_quiz
+#: selection:res.company,onboarding_question_bank_layout_state:0
+#: selection:res.company,onboarding_quiz_layout_state:0
+#: selection:res.company,quiz_enterprise_onboard_panel:0
+msgid "Just done"
+msgstr "apenas feito"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message____last_update
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark____last_update
+msgid "Last Modified on"
+msgstr "Última modificação em"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__write_uid
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__write_date
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_question_bank_layout_step
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_quiz_layout_step
+msgid "Looks great!"
+msgstr "Parece bem!"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Anexo principal"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Manual"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__mark
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__mark
+msgid "Marks"
+msgstr "marcas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__message
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Message"
+msgstr "mensagem"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_has_error
+msgid "Message Delivery error"
+msgstr "erro Message Delivery"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_message_ids
+msgid "Messages"
+msgstr "mensagens"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Min"
+msgstr "min"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period_minute
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_limit_minute
+msgid "Minutes"
+msgstr "Minutos"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_answer_grade__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_type__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_category__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_first_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Next"
+msgstr "Seguinte"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__no_of_attempt
+msgid "No of Attempt"
+msgstr "Nenhum de Tentativa"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__no_of_question
+msgid "No of Question from each Question Bank"
+msgstr "No of Pergunta de cada Banco Pergunta"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Not Attempt Answers"
+msgstr "Não tente Respostas"
+
+#. module: openeducat_quiz
+#: selection:res.company,onboarding_question_bank_layout_state:0
+#: selection:res.company,onboarding_quiz_layout_state:0
+#: selection:res.company,quiz_enterprise_onboard_panel:0
+msgid "Not done"
+msgstr "Não realizado"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Ações"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__no_of_question
+msgid "Number of Question"
+msgstr "Número de Pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de erro"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensagens que requer uma ação"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensagens com erro de entrega"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensagens não lidas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__prev_readonly
+msgid "Only One Time Answer"
+msgstr "Apenas uma vez Resposta"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "Open attempts are submitted automatically"
+msgstr "tentativas abertas são automaticamente submetidos"
+
+#. module: openeducat_quiz
+#: selection:op.question.bank.line,que_type:0
+#: selection:op.quiz.line,que_type:0
+#: selection:op.quiz.result.line,que_type:0
+msgid "Optional"
+msgstr "Opcional"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Original Answer"
+msgstr "Resposta original"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please hear the audio before start exam"
+msgstr "Por favor, ouvir o áudio antes do exame início"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Please see the video before start exam"
+msgstr "Por favor, veja o vídeo antes do exame início"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_last_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_middle_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Prev"
+msgstr "prev"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__prev_allow
+msgid "Previous Question Allowed"
+msgstr "Pergunta anterior admitidos"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_update_mark_wizard_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_answer__question_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_answer__line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__name
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line_answers__line_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__name
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Question"
+msgstr "Pergunta, questão"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_view
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__bank_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__bank_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank
+#: model:ir.ui.menu,name:openeducat_quiz.op_question_bank_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_tree
+msgid "Question Bank"
+msgstr "Banco pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.action_onboarding_question_bank_layout
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_question_bank_layout_step
+msgid "Question Bank Configuration"
+msgstr "Configuração do Banco Pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_bank_type_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_question_bank_type
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_type_tree
+msgid "Question Bank Type"
+msgstr "Pergunta Banco Tipo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_web_page_single_form
+msgid "Question Grid"
+msgstr "pergunta Grade"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank_line__que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__que_type
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__que_type
+msgid "Question Type"
+msgstr "Tipo de pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_question_wizard_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_line
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__line_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_wizard__question_ids
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_bank_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "Questions"
+msgstr "Perguntas"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Questions Configuration"
+msgstr "Configuração perguntas"
+
+#. module: openeducat_quiz
+#: sql_constraint:op.quiz.line:0
+msgid "Questions mark should be greater then 0"
+msgstr "marca de perguntas deve ser maior que 0"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_config__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__quiz_id
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__quiz_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_main_menu
+#: model:ir.ui.menu,name:openeducat_quiz.op_quiz_menu
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_tree
+msgid "Quiz"
+msgstr "Questionário"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_answer_grade
+msgid "Quiz Answer Grades"
+msgstr "Grades teste Responda"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_answer
+msgid "Quiz Answers"
+msgstr "Respostas do quiz"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Random Quesiton"
+msgstr "Teste Banco com a Random Quesiton"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,quiz_config:0
+msgid "Quiz Bank with Selected Question"
+msgstr "Teste Banco com pergunta selecionada"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_category_view
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_category
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__categ_id
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_category
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_category_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "Quiz Category"
+msgstr "teste Categoria"
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.action_onboarding_quiz_layout
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_config
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_quiz_layout_step
+msgid "Quiz Configuration"
+msgstr "Configuração de teste"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank
+msgid "Quiz Question Bank"
+msgstr "Teste Banco Pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_answer
+msgid "Quiz Question Bank Answers"
+msgstr "Respostas Quiz Question Banco"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_type
+msgid "Quiz Question Bank Type"
+msgstr "Tipo questionário Pergunta Banco"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_bank_line
+msgid "Quiz Question Lines"
+msgstr "Questionário Lines Pergunta"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_question_wizard
+msgid "Quiz Question Wizard"
+msgstr "Assistente pergunta do quiz"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line
+msgid "Quiz Result Line"
+msgstr "Linha Resultado questionário"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_line_answers
+msgid "Quiz Result Line Answer"
+msgstr "Teste Resultado Linha Resposta"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result_message
+msgid "Quiz Result Message"
+msgstr "Teste Resultado Mensagem"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_quiz_result
+msgid "Quiz Results"
+msgstr "Os resultados do questionário"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Qustions"
+msgstr "qustions"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Re-open"
+msgstr "Reabrir"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__received_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__mark
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Received Marks"
+msgstr "Marcas recebidos"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__result_id
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.portal_my_result_account_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Result"
+msgstr "Resultado"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Result Configuration"
+msgstr "Configuração resultado"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__result_from
+msgid "Result From (%)"
+msgstr "Resultado de (%)"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__line_ids
+msgid "Result Line"
+msgstr "Linha resultado"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Result Message"
+msgstr "resultado Mensagem"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_message__result_to
+msgid "Result To (%)"
+msgstr "Para resultado (%)"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Result won't display if descriptive Questions."
+msgstr "Resultado não será exibido se questões descritivas."
+
+#. module: openeducat_quiz
+#: model:ir.actions.act_window,name:openeducat_quiz.act_open_op_quiz_result_view
+#: model:ir.ui.menu,name:openeducat_quiz.menu_op_quiz_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_pivot
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_tree
+msgid "Results"
+msgstr "Resultados"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Score"
+msgstr "Ponto"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__score
+msgid "Score (%)"
+msgstr "Ponto (%)"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Score Board"
+msgstr "Placar"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_single_form_view
+msgid "Sec"
+msgstr "sec"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_question_bank_layout_step
+msgid "See how to create a Question Bank."
+msgstr "Veja como criar um banco de perguntas."
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.onboarding_quiz_layout_step
+msgid "See how to create a Quiz."
+msgstr "Veja como criar um Quiz."
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+msgid "Select Questions"
+msgstr "Seleccione Perguntas"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/wizard/update_mark.py:28
+#, python-format
+msgid "Set proper marks."
+msgstr "Definir marcas próprias."
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__shuffle
+msgid "Shuffle the Choices"
+msgstr "Embaralhar as escolhas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__single_que
+msgid "Single Question Per Page"
+msgstr "Única Pergunta por página"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__description
+msgid "Sort Description"
+msgstr "Classificar Descrição"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_hr
+msgid "Spent Hours"
+msgstr "Horas gastas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_minute
+msgid "Spent Minutes"
+msgstr "Minutos gastos"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__time_spent_second
+msgid "Spent Seconds"
+msgstr "segundos gastos"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_render_exam_main_form_view
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_starting_page
+msgid "Start Exam"
+msgstr "Comece Exam"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Starting Page"
+msgstr "iniciando Página"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__start_view
+msgid "Starting View"
+msgstr "começando Ver"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__state
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__state
+msgid "State"
+msgstr "Estado"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_res_company__onboarding_question_bank_layout_state
+msgid "State of the onboarding question bank layout  step"
+msgstr "Estado da etapa disposição pergunta banco de integração"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_res_company__onboarding_quiz_layout_state
+msgid "State of the onboarding quiz layout  step"
+msgstr "Estado da etapa de layout de integração questionário"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_res_company__quiz_enterprise_onboard_panel
+msgid "State of the onboarding step"
+msgstr "Estado da etapa onboarding"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__grace_period_hr
+msgid "Submission Grace Period"
+msgstr ""
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Thank you for Quiz"
+msgstr "Obrigado para Quiz"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "There are currently no Result for your account."
+msgstr "Atualmente há resultado para sua conta."
+
+#. module: openeducat_quiz
+#: selection:op.quiz,time_expire:0
+msgid "There is a grace period when open attempts can be submitted, but no more questions answered"
+msgstr "Há um período de carência quando as tentativas abertas podem ser enviados, mas há mais perguntas respondidas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_config
+msgid "Time Configuration"
+msgstr "Configuração do tempo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Time Limit"
+msgstr "Limite de tempo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "Timing Configuration"
+msgstr "Configuração sincronismo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_correct
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Correct"
+msgstr "total cORRETO"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_incorrect
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Incorrect"
+msgstr "total incorrecto"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__total_marks
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_marks
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Marks"
+msgstr "Total de marcas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_not_attempt
+msgid "Total Not Attempt"
+msgstr "Total não Tentativa"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__total_question
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.exam_user_result_profile
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Total Question"
+msgstr "Pergunta total"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Total Questions"
+msgstr "Total de perguntas"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Truly Given Answers"
+msgstr "Verdadeiramente Dado Respostas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_question_bank__bank_type_id
+msgid "Type"
+msgstr "Tipo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_unread
+msgid "Unread Messages"
+msgstr "Mensagens não lidas"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "As mensagens não lidas Contador"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_form
+msgid "Update Mark"
+msgstr "atualização Mark"
+
+#. module: openeducat_quiz
+#: model:ir.model,name:openeducat_quiz.model_op_update_mark
+msgid "Update Mark Wizard"
+msgstr "Assistente Mark atualização"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_result_search
+msgid "User"
+msgstr "Utilizador"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result_line__given_answer
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_update_mark__mark
+msgid "User Answer"
+msgstr "resposta do usuário"
+
+#. module: openeducat_quiz
+#: selection:op.quiz,start_view:0
+msgid "Video"
+msgstr "Vídeo"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__quiz_video
+msgid "Video File"
+msgstr "Arquivo de vídeo"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_quiz_form_onboard
+msgid "View Exam"
+msgstr "Ver Exam"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__website_message_ids
+msgid "Website Messages"
+msgstr "Mensagens website"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,help:openeducat_quiz.field_op_quiz__website_message_ids
+msgid "Website communication history"
+msgstr "histórico de comunicação site"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz__time_expire
+msgid "When Time Expires"
+msgstr "Quando o tempo expirar"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_results_form
+msgid "Wrongly Given Answers"
+msgstr "Erroneamente dadas respostas"
+
+#. module: openeducat_quiz
+#: code:addons/openeducat_quiz/models/quiz.py:192
+#, python-format
+msgid "You are already reached maximum attempt of this exam"
+msgstr "Você já está alcançado tentativa máxima deste exame"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.my_result
+msgid "Your Result"
+msgstr "Seu resultado"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.quiz_completed
+msgid "Your answers are recorded"
+msgstr "Suas respostas são registradas"
+
+#. module: openeducat_quiz
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_question_wizard_form
+#: model_terms:ir.ui.view,arch_db:openeducat_quiz.view_op_update_mark_wizard_form
+msgid "or"
+msgstr "ou"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_line__que_id
+msgid "question"
+msgstr "Pergunta, questão"
+
+#. module: openeducat_quiz
+#: model:ir.model.fields,field_description:openeducat_quiz.field_op_quiz_result__user_id
+msgid "user"
+msgstr "do utilizador"
+

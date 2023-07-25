@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="sequence_omr_exam" model="ir.sequence">
+            <field name="name">OMR Exam Sequence</field>
+            <field name="code">self.sequence</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">EXAM</field>
+            <field name="padding">4</field>
+            <field name="number_increment">1</field>
+         </record>
+        <record id="omr_exam_list_view" model="ir.ui.view">
+            <field name="name">omr_exam_list_view</field>
+            <field name="model">op.omr.exam</field>
+            <field name="arch" type="xml">
+                <tree string="omr">
+                    <field name="name"/>
+                    <field name="template_id"/>
+                    <field name="answersheet_configuration_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="omr_exam_form_view" model="ir.ui.view">
+            <field name="name">omr_exam_form_view</field>
+            <field name="model">op.omr.exam</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button string="Draft" name="action_draft_progressbar" type="object" states="cancel"/>
+                        <button string="Confirm" name="action_confirm_progressbar" type="object" class="oe_highlight" states="draft"/>
+                        <button string="Cancel" name="action_cancel_progressbar" type="object" states="confirm,draft"/>
+                        <button string="Done" name="action_done_progressbar" type="object" states="confirm"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" position="inside">
+                            <widget name="omr_cam_widget" attrs="{'invisible': [('state','!=','draft')]}">
+
+                            </widget>
+                        </div>
+                        <group string="OMR Exam">
+                            <group>
+                                <field name="name"/>
+                                <field name="subject_id"/>
+                            </group>
+                            <group>
+                                <field name="template_id" options="{'no_open': True}"/>
+                                <field name="answersheet_configuration_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Student Answers Detail">
+                                <field name="answer_sheets_line" >
+                                    <tree>
+                                        <field name="roll_number"/>
+                                        <field name="key_type"/>
+                                        <field name="right_answer"/>
+                                        <field name="wrong_answer"/>
+                                        <field name="not_attampted"/>
+                                        <field name="score"/>
+                                        <field name="student_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="kanban_view_op_omr_exam" model="ir.ui.view">
+            <field name="name">OMR Exam Kanban</field>
+            <field name="model">op.omr.exam</field>
+            <field name="arch" type="xml">
+                <kanban class="o_res_partner_kanban">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click o_res_partner_kanban">
+                                <div class="oe_kanban_details">
+                                    <h4>
+                                        <a type="open">
+                                            <field name="name"/>
+                                        </a>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li t-if="record.subject_id.raw_value" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                                                    <field name="subject_id"/>
+                                                </li>
+                                                <li t-if="record.template_id.raw_value" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                                                    <field name="template_id"/>
+                                                </li>
+                                                <li t-if="record.answersheet_configuration_id.raw_value" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                                                    <field name="answersheet_configuration_id"/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <div style="float:right;margin-right: 20px;"><field name="state"/> </div>
+                                            <div name="button_box" style="margin-top: 10px;float: right;background-color: gainsboro;">
+                                                <widget class="btn-group" name="omr_cam_widget" attrs="{'invisible': [('state','!=','draft')]}">
+                                                </widget>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record id="action_omr_exam_list" model="ir.actions.act_window">
+            <field name="name">OMR Exam</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.omr.exam</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="student_portal_achivemenet"
+              inherit_id="openeducat_core_enterprise.openeducat_enterprise_student_portal"
+              priority="50">
+        <xpath expr="//ul[hasclass('nav-pills')]" position="inside">
+            <li>
+                <a href="#achievement" aria-expanded="false" data-toggle="tab">
+                    <h5 class="mb0">
+                        Achievement
+                    </h5>
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[hasclass('tab-content')]" position="inside">
+            <div class="tab-pane fade" id="achievement">
+                <div class="mb-4">
+                    <h4>Achievement</h4>
+                </div>
+                <table class="mt16 table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Achievement Type</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="student.achievement_line_ids" t-as="student_achievement">
+                            <tr>
+                                <td>
+                                    <span t-esc="student_achievement.achievement_type_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-esc="student_achievement.achievement_date" t-options="{'widget': 'date'}"/>
+                                </td>
+                                <td>
+                                    <span t-esc="student_achievement.description"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </xpath>
+    </template>
+</odoo>

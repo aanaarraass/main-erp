@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="secure_student_transcript" inherit_id="openeducat_grading.student_transcript">
+            <xpath expr="//div[hasclass('text-right')]" position="inside">
+                <div class="text-right">
+                    <img t-attf-src="data:image/*;base64,{{docs.generate_qrcode()}}" style="width:150px;height:150px;"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
+

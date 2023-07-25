@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- openeducat_core module STEPS -->
+    <!-- route record view starts -->
+    <template id="onboarding_route_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Route Layout Configuration</t>
+            <t t-set="description">See how to create a Route Layout.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_route_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_route_layout_state')"/>
+        </t>
+    </template>
+    <record id="view_op_route_form_onboard" model="ir.ui.view">
+        <field name="name">op.route.form</field>
+        <field name="model">op.route</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Routes">
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="vehicle_id"/>
+                        <field name="cost"/>
+                    </group>
+                    <group string="Stop(s)">
+                        <field name="stop_ids" nolabel="1">
+                            <tree>
+                                <field name="sequence"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_route_layout"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_onboarding_route_layout" model="ir.actions.act_window">
+        <field name="name">Route Record Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.route</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_route_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- stop record view starts -->
+    <template id="onboarding_stop_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Stops Layout Configuration</t>
+            <t t-set="description">See how to create a stops Layout.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_stop_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_stop_layout_state')"/>
+        </t>
+    </template>
+
+    <record id="view_op_stop_form_onboard" model="ir.ui.view">
+        <field name="name">op.stop.form</field>
+        <field name="model">op.stop</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Stop">
+                <sheet>
+                    <group col="4">
+                        <field name="sequence" required="1"/>
+                        <field name="name"/>
+                        <field name="route_id"/>
+                        <field name="estimated_arrival_conf" required="1" widget="float_time"/>
+                    </group>
+                    <notebook>
+                        <page string="Person(s)">
+                            <group>
+                                <field name="partner_ids" nolabel="1">
+                                    <tree>
+                                        <field name="title"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_stop_layout"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_onboarding_stop_layout" model="ir.actions.act_window">
+        <field name="name">Stops Record Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.stop</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_stop_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- trip record view starts -->
+    <template id="onboarding_trip_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Trips Layout Configuration</t>
+            <t t-set="description">See how to create a Trips Layout.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_trip_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_trip_layout_state')"/>
+        </t>
+    </template>
+
+    <record id="view_op_route_line_form_onboard" model="ir.ui.view">
+        <field name="name">op.route.line.form</field>
+        <field name="model">op.route.line</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Routes">
+                <header>
+                    <button type="object" name="start_trip" states="draft" string="Start Trip"
+                            class="oe_highlight"/>
+                    <button type="object" name="end_trip" states="start" string="End Trip" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,start,end"/>
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="route_id"/>
+                        <field name="route_type"/>
+                        <field name="start_time"/>
+                        <field name="route_date"/>
+                        <field name="driver_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Stops">
+                            <group>
+                                <button type="object" name="create_route_stop_line" string="Get Stops"/>
+                            </group>
+                            <group>
+                                <field name="route_stop_ids" nolabel="1">
+                                    <tree>
+                                        <field name="sequence"/>
+                                        <field name="stop_id"/>
+                                        <field name="estimated_time" widget="float_time"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Passengers">
+                            <field name="route_passenger_ids" nolabel="1">
+                                <tree editable="top">
+                                    <field name="partner_id"/>
+                                    <field name="present"/>
+                                    <field name="stop_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_trip_layout"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_onboarding_trip_layout" model="ir.actions.act_window">
+        <field name="name">Trips Record Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.route.line</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_route_line_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- vehicle type record view starts -->
+    <template id="onboarding_vehicle_layout_step">
+        <t t-call="base.onboarding_step">
+            <t t-set="title">Vehicle Type Layout Configuration</t>
+            <t t-set="description">See how to create a Vehicle Type Layout.</t>
+            <t t-set="done_icon" t-value="'fa-star'"/>
+            <t t-set="done_text">Looks great!</t>
+            <t t-set="btn_text">Customize</t>
+            <t t-set="method" t-value="'action_onboarding_vehicle_layout'"/>
+            <t t-set="model" t-value="'res.company'"/>
+            <t t-set="state" t-value="state.get('onboarding_vehicle_layout_state')"/>
+        </t>
+    </template>
+
+    <record id="view_op_vehicle_form_onboard" model="ir.ui.view">
+        <field name="name">op.vehicle.form</field>
+        <field name="model">op.vehicle</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Vehicle">
+                <sheet>
+                    <group col="4">
+                        <field name="model_id"/>
+                        <field name="license_plate" string="Number Plate"/>
+                        <field name="capacity"/>
+                        <field name="driver_id"/>
+                    </group>
+                    <group>
+<!--                        <field name="log_fuel" nolabel="1"/>-->
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Apply" class="btn btn-primary" type="object"
+                            name="action_onboarding_vehicle_layout"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_onboarding_vehicle_layout" model="ir.actions.act_window">
+        <field name="name">Vehicle Type Record Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">op.vehicle</field>
+        <field name="view_mode">form</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_id" ref="view_op_vehicle_form_onboard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- ONBOARDING PANEL-->
+    <template id="openeducat_route_onboarding_panel"
+              name="openeducat_transportation_enterprise.quotation.onboarding.panel">
+        <t t-call="base.onboarding_container">
+            <t t-set="classes" t-value="'o_onboarding_violet'"/>
+            <t t-set="bg_image" t-value="'/sale/static/src/img/sale_quotation_onboarding_bg.jpg'"/>
+            <t t-set="close_method" t-value="'action_close_transportation_panel_onboarding'"/>
+            <t t-set="close_model" t-value="'res.company'"/>
+            <t t-call="openeducat_transportation_enterprise.onboarding_route_layout_step" name="route_step"/>
+            <t t-call="openeducat_transportation_enterprise.onboarding_stop_layout_step" name="stop_step"/>
+            <t t-call="openeducat_transportation_enterprise.onboarding_trip_layout_step" name="trip_step"/>
+            <t t-call="openeducat_transportation_enterprise.onboarding_vehicle_layout_step" name="vehicle_step"/>
+        </t>
+    </template>
+</odoo>
+

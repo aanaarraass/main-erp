@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="view_op_course_optional_form" model="ir.ui.view">
+            <field name="name">op.course.optional.inherited.form</field>
+            <field name="model">op.course</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_course_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='max_unit_load']" position="after">
+                    <field name="subject_selection_option"/>
+                </xpath>
+                <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                    <button class="oe_stat_button" type="object"
+                            name="course_credit"
+                            string="Course Credit"
+                            icon="fa-user-circle">
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

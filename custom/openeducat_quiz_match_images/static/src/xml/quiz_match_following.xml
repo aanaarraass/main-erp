@@ -1,0 +1,25 @@
+<templates>
+
+    <t t-name="quiz_match_following_templates">
+        <div>
+            <t t-foreach="res" t-as="question">
+                <div class="row">
+                    <div class="col-md-12">
+                        <t t-esc="question.name"></t>
+                    </div>
+                    <t t-foreach="question.question_data" t-as="answer">
+                        <div class="col-md-12 row">
+                            <div class="col-md-6">
+                                <t t-esc="answer.question"></t>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="drop" id="drop_btn_id"></div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </div>
+    </t>
+</templates>
