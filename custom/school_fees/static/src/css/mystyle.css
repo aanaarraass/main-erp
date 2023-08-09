@@ -1,0 +1,35 @@
+ .bb {
+border-bottom:1px solid black;
+margin-left:0;
+}
+.tc{
+text-align:right;
+margin-right:0 ;
+}
+.table-bordered {
+border: 1px solid black !important;
+}
+th,td{
+border: 1px solid black !important;
+}
+.cw{
+width:80%;
+}
+.f1 {
+font-size: 18px;
+font-weight: 900;
+}
+.fb{
+font-weight:900;
+background-color:#c9c9c9;
+text-align:center;
+}
+.dc{
+font-size: 22px;
+font-weight: 900;
+text-decoration:underline;
+}
+.brl{
+ border-right: 2px solid black;
+}
+

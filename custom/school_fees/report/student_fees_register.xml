@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 
 <odoo>
     <template id="student_fees_register">
@@ -7,7 +7,7 @@
             <t t-foreach="docs" t-as="o">
                 <t t-call="web.external_layout">
                     <div class="page">
-                        <div class="oe_structure" />
+                        <div class="oe_structure"/>
                         <div class="row" align="center">
                             <span>
                                 <h1 class="text-center">Students Payroll Register</h1>
@@ -19,11 +19,11 @@
                             </span>
                         </div>
                         <div class="row" align="center" style="font-family: 'Helvetica';font-size: 20px;">
-                            <span>For the month of </span>
+                            <span>For the month of</span>
                             <span t-esc="get_month(o.date)"></span>
                         </div>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <table width="100%">
                             <tr>
                                 <td width="15%" style="font-family: 'Helvetica';font-size: 18px;">
@@ -48,7 +48,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <br />
+                        <br/>
                         <table width="100%" class="table table-striped">
                             <thead>
                                 <tr>
@@ -69,7 +69,9 @@
                                     <t t-set="counter" t-value="counter+1"/>
                                     <tr>
                                         <td>
-                                            <span><t t-esc="counter"></t></span>
+                                            <span>
+                                                <t t-esc="counter"></t>
+                                            </span>
                                         </td>
                                         <td width="5%" align="center" style="font-family: 'Helvetica';font-size: 16px;">
                                         </td>
@@ -97,16 +99,16 @@
                         <table width="100%">
                             <tr>
                                 <td width="50%" style="font-family: 'Helvetica';font-size: 16px;">
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
                                     <b>Principal</b>
-                                    <br />
+                                    <br/>
                                     <span>Authorized Signature</span>
                                 </td>
                                 <td width="50%">
-                                    <br />
+                                    <br/>
                                 </td>
                             </tr>
                         </table>
@@ -115,4 +117,5 @@
             </t>
         </t>
     </template>
+
 </odoo>

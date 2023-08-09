@@ -159,9 +159,8 @@ class StudentPayslipLine(models.Model):
         "Calculations",
         help="Payslip line",
     )
-    slip_id = fields.Many2one(
-        "student.payslip", "Pay Slip", help="Select student payslip"
-    )
+    slip_id = fields.Many2one("student.payslip", "Pay Slip", help="Select student payslip")
+
     description = fields.Text("Description", help="Description")
     company_id = fields.Many2one(
         "res.company",
@@ -288,6 +287,8 @@ class StudentPayslip(models.Model):
         "student.fees.register", "Register", help="Select student fee register"
     )
     name = fields.Char("Description", help="Payslip name")
+    school_id = fields.Many2one("school.school", "School Name")
+    # roll_no_id = fields.Many2one("student.student", "Roll No")
     number = fields.Char(
         "Number",
         readonly=True,

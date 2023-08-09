@@ -196,6 +196,7 @@
                                 attrs="{'readonly':[('state','not in','draft')]}"/>
                             <field name="number" readonly="1" attrs="{'invisible': [('state', 'not in', ('pending', 'paid'))]}"/>
                             <field name="date" attrs="{'readonly':[('state','not in','draft')]}"/>
+                            <field name="school_id"/>
                         </group>
                         <group col="2" string="Standard Information">
                             <field name="standard_id" placeholder="Standard" widget="selection" attrs="{'readonly':[('state','not in','draft')]}" readonly="1"/>

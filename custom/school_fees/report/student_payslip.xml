@@ -1,130 +1,549 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 
 <odoo>
     <template id="student_payslip">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
-                <t t-call="web.external_layout">
-                    <div class="page">
-                        <div class="oe_structure"/>
-                        <div class="row" align="center">
-                            <span>
-                                <h1>Student PaySlip</h1>
-                            </span>
+                <t t-call="web.basic_layout">
+                    <div class="page m-0">
+                        <link rel="stylesheet" href="/school_fees/static/src/css/mystyle.css"> </link>
+                        <div class="header " style="width:100%;margin:0px !important ">
+                            <style>
+                                h6 {
+                                font-weight:900;
+                                }
+                                .blr{
+                                border-left: 2px solid black;
+                                }
+                                .slips {
+                                padding-left: 20px;
+}
+                            </style>
+                            <div class="row ">
+                                <div class="col-4">
+
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-4 blr">
+                                    <div class="row">
+                                        <div class="col-8 text-center pt-2 pb-0">
+                                            <h3>
+                                                <br/>
+                                                <b t-field="o.sudo().school_id"> </b>
+                                            </h3>
+
+
+                                        </div>
+                                        <div class="col-8 ml-1" style="">
+                                            <br/>
+
+                                            <img src="/school_fees/static/src/img/logo.png"
+                                                 style="height:70pt;width:60pt;"/>
+
+<!--                                            <img src="/school_fees/static/description/logo.png"-->
+<!--                                                 style="height:70pt;width:60pt;" alt="Company Logo"/>-->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="col-4 blr">
+                                    <div class="row">
+                                        <div class="col-8 text-center pt-8 pb-0">
+                                            <h3>
+                                                <br/>
+                                                <b t-field="o.sudo().school_id"> </b>
+                                            </h3>
+                                        </div>
+
+                                        <div class="col-8 ml-0" style="">
+                                            <br/>
+                                            <img src="/school_fees/static/src/img/logo.png"
+                                                 style="height:70pt;width:60pt;"/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-4 blr">
+                                    <div class="row">
+                                        <div class="col-8 text-center pt-8 pb-0">
+                                            <h3>
+                                                <br/>
+                                                <b t-field="o.sudo().school_id"> </b>
+                                            </h3>
+                                        </div>
+                                        <div class="col-8 ml-0" style="">
+                                            <br/>
+                                            <img src="/school_fees/static/src/img/logo.png"
+                                                 style="height:70pt;width:60pt;" alt="Company Logo"/>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
                         </div>
-                        <div class="row" align="center" style="font-family: 'Helvetica';font-size: 20px;">
-                            <span>
-                                <b t-field="o.name"></b>
-                            </span>
-                        </div>
-                        <div class="row" align="center" style="font-family: 'Helvetica';font-size: 20px;">
-                            <span>For the month of </span>
-                            <span t-esc="get_month(o.date)"></span>
-                        </div>
-                        <br />
-                        <br />
-                        <table width="100%">
-                            <tr>
-                                <td width="15%" style="font-family: 'Helvetica';font-size: 18px;">
-                                    <b>Number</b>
-                                </td>
-                                <td width="5%">
-                                    <b>:</b>
-                                </td>
-                                <td width="80%" style="font-family: 'Helvetica';font-size: 16px;">
-                                    <span t-field="o.number"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="15%" style="font-family: 'Helvetica';font-size: 18px;">
-                                    <b>Date</b>
-                                </td>
-                                <td width="5%">
-                                    <b>:</b>
-                                </td>
-                                <td width="80%" style="font-family: 'Helvetica';font-size: 16px;">
-                                    <span t-esc="time.strftime('%Y-%m-%d')"></span>
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="row" align="center" style="font-family: 'Helvetica';font-size: 18px;">
-                            <span>
-                                <b>PaySlip of </b>
-                                <b t-field="o.sudo().student_id.name"></b>
-                            </span>
-                        </div>
-                        <br />
-                        <table width="100%" class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <td width="5%" style="font-family: 'Helvetica';font-size: 18px;" align="center">
-                                        <b>#</b>
-                                    </td>
-                                    <td width="50%" align="left" style="font-family: 'Helvetica';font-size: 18px;">
-                                        <b>Fees Structure</b>
-                                    </td>
-                                    <td align="right" width="45%" style="font-family: 'Helvetica';font-size: 18px;">
-                                        <b>Total</b>
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <t t-set="counter" t-value="0"/>
-                                <t t-foreach="o.line_ids" t-as="l">
-                                    <t t-set="counter" t-value="counter+1"/>
-                                    <tr>
-                                        <td>
-                                            <span><t t-esc="counter"></t></span>
-                                        </td>
-                                        <td width="5%" align="center" style="font-family: 'Helvetica';font-size: 16px;">
-                                        </td>
-                                        <td width="50%" align="left" style="font-family: 'Helvetica';font-size: 16px;">
-                                            <span t-field="l.name"></span>
-                                        </td>
-                                        <td align="right" width="45%" style="font-family: 'Helvetica';font-size: 16px;">
-                                            <span t-field="l.amount" t-options='{"widget": "monetary","display_currency": l.company_id.currency_id}'></span>
-                                        </td>
-                                    </tr>
-                                </t>
-                            </tbody>
-                        </table>
-                        <div class="row">
-                            <div class="col-4 pull-right">
-                                <table class="table table-condensed">
-                                    <tr>
-                                        <td><strong>Total Fees</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.total"
-                                                t-options='{"widget": "monetary","display_currency": o.currency_id}'/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Amount Paid</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.paid_amount"
-                                                />
-                                        </td>
-                                    </tr>
-                                    <tr class="border-black">
-                                        <td><strong>Due Amount</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.due_amount"/>
-                                        </td>
-                                    </tr>
+
+
+                        <div class="row mt-0 ">
+                            <div class="col-4 p-0 pl-1 brl">
+                                <div class="row mr-1">
+                                    <div class="col-4 text-center">
+                                        <strong>Issued Date:</strong>
+                                        <p class="bb">
+                                            <t t-esc="o.date"/>
+                                        </p>
+                                    </div>
+                                    <div class="col-4"> </div>
+                                    <div class="col-4 mr-1 text-center">
+                                        <strong>Due Date:</strong>
+                                        <p class="bb">
+                                            <!--                                                <t t-esc="o.date"/>-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 text-center">
+                                        <span class="dc">PERSONAL &#160; DETAILS</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Name:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().student_id.name"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>
+                                            Father Name:
+                                        </strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <!--                                         <b t-field="o.sudo().standard_id"></b>-->
+
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Class:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().standard_id"></b>
+
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+
+                                            <strong>Medium:</strong>
+
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().medium_id"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Fees Structure:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().fees_structure_id"></b>
+                                    </div>
+                                </div>
+                                <br/>
+                                <table class="table table-sm  table-bordered text-center m-0" style="width:98%">
+                                    <!--                                <table width="100%" class="table table-striped">-->
+                                    <thead>
+                                        <tr>
+                                            <td width="7%" style="font-family: 'Helvetica';font-size: 18px;"
+                                                align="center">
+                                                <b>#</b>
+                                            </td>
+                                            <td width="55%" align="left
+"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Fees Structure</b>
+                                            </td>
+                                            <td align="right" width="45%"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Total</b>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="counter" t-value="0"/>
+                                        <t t-foreach="o.line_ids" t-as="l">
+                                            <t t-set="counter" t-value="counter+1"/>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <t t-esc="counter"/>
+                                                    </span>
+                                                </td>
+
+                                                <td width="50%" align="left"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.name"/>
+                                                </td>
+                                                <td align="right" width="45%"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.amount"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <tr>
+                                            <td colspan="2" class="cw">
+                                                Total/Net Amount
+                                            </td>
+                                            <td>
+                                                <b t-field="o.sudo().due_amount"></b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
+
+<!--                                <br/>-->
+                                <div class="row m-3">
+                                    <div class="col-4 bb">
+                                        <!---->
+                                         <br/>
+                                <br/>
+                                    </div>
+                                    <div class="col-3"> </div>
+                                    <div class="col-5 bb"> </div>
+                                </div>
+
+                                <div class="row m-3">
+                                    <div class="col-4">
+                                        <strong>Issued by</strong>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-5">
+                                        <strong>Received by</strong>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="row m-3">
+                                    <div class="col-2"></div>
+                                    <div class="col-8">
+                                        <p class="fb">Student Copy</p>
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                    <div class="col-2"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-4 p-0 pl-1 brl ml-6">
+                                <div class="row mr-1">
+                                    <div class="col-4 text-center">
+                                        <strong>Issued Date:</strong>
+                                        <p class="bb">
+                                            <t t-esc="o.date"/>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-4"></div>
+                                    <div class="col-4 mr-0 text-center">
+                                        <strong>Due Date:</strong>
+                                        <p class="bb">
+                                            <!--                                                <t t-esc="o.date"/>-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <div class="row mt-3">
+                                    <div class="col-12 text-center">
+                                        <span class="dc">PERSONAL &#160; DETAILS</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-3">
+                                        <strong>Name:</strong>
+                                    </div>
+                                    <div class="col-9 bb">
+                                        <b t-field="o.sudo().student_id.name"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Father Name:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <!--                                        <span t-esc="o.name"/>-->
+                                    </div>
+                                </div>
+                                <div class="row mt-4 mr-1">
+                                    <div class="col-3">
+                                        <strong>Class:</strong>
+                                    </div>
+                                    <div class="col-8 bb">
+                                        <b t-field="o.sudo().standard_id"></b>
+
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Medium:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().medium_id"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Fees Structure:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().fees_structure_id"></b>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <br/>
+                                <table class="table table-sm table-bordered text-center m-0" style="width:98%">
+                                    <thead>
+                                        <tr>
+                                            <td width="7%" style="font-family: 'Helvetica';font-size: 18px;"
+                                                align="center">
+                                                <b>#</b>
+                                            </td>
+                                            <td width="55%" align="left"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Fees Structure</b>
+                                            </td>
+                                            <td align="right" width="45%"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Total</b>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="counter" t-value="0"/>
+                                        <t t-foreach="o.line_ids" t-as="l">
+                                            <t t-set="counter" t-value="counter+1"/>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <t t-esc="counter"/>
+                                                    </span>
+                                                </td>
+                                                <!---->
+                                                <td width="50%" align="left"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.name"/>
+                                                </td>
+                                                <td align="right" width="45%"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.amount"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <tr>
+                                            <td colspan="2" class="cw">
+                                                Total/Net Amount
+                                            </td>
+                                            <td>
+                                                <b t-field="o.sudo().due_amount"></b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/>
+                                <br/>
+                                <div class="row m-3">
+                                    <div class="col-4 bb">
+                                        <!---->
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-5 bb"></div>
+                                </div>
+
+                                <div class="row m-3">
+                                    <div class="col-4">
+                                        <strong>Issued by</strong>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-5">
+                                        <strong>Received by</strong>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="row m-3">
+                                    <div class="col-2"></div>
+                                    <div class="col-8">
+                                        <p class="fb">Office Copy</p>
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                    <div class="col-2"></div>
+                                </div>
+
+                            </div>
+
+                            <!--                                                 3rd Copy Format -->
+
+                            <div class="col-4 p-0 pl-1 brl">
+                                <div class="row mr-1">
+                                    <div class="col-4 text-center">
+                                        <strong>Issued Date:</strong>
+                                        <p class="bb">
+                                            <t t-esc="o.date"/>
+                                        </p>
+                                    </div>
+
+
+                                    <div class="col-4"></div>
+                                    <div class="col-4 mr-0 text-center">
+                                        <strong>Due Date:</strong>
+                                        <p class="bb">
+                                            <!--                                                <t t-esc="o.date"/>-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <div class="row mt-3">
+                                    <div class="col-12 text-center">
+                                        <span class="dc">PERSONAL &#160; DETAILS</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-2">
+                                    <div class="col-3">
+                                        <strong>Name:</strong>
+                                    </div>
+                                    <div class="col-9 bb">
+                                        <b t-field="o.sudo().student_id.name"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Father Name:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <!--                                        <span t-esc="o.name"/>-->
+                                    </div>
+                                </div>
+                                <div class="row mt-4 mr-1">
+                                    <div class="col-3">
+                                        <strong>Class:</strong>
+                                    </div>
+                                    <div class="col-8 bb">
+                                        <b t-field="o.sudo().standard_id"></b>
+
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Medium:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().medium_id"></b>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mr-1">
+                                    <div class="col-4">
+                                        <strong>Fees Structure:</strong>
+                                    </div>
+                                    <div class="col-7 bb">
+                                        <b t-field="o.sudo().fees_structure_id"></b>
+                                    </div>
+                                </div>
+                                <!---->
+                                <br/>
+                                <table class="table table-sm table-bordered text-center m-0" style="width:98%">
+                                    <thead>
+                                        <tr>
+                                            <td width="7%" style="font-family: 'Helvetica';font-size: 18px;"
+                                                align="center">
+                                                <b>#</b>
+                                            </td>
+                                            <td width="55%" align="left"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Fees Structure</b>
+                                            </td>
+                                            <td align="right" width="45%"
+                                                style="font-family: 'Helvetica';font-size: 18px;">
+                                                <b>Total</b>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="counter" t-value="0"/>
+                                        <t t-foreach="o.line_ids" t-as="l">
+                                            <t t-set="counter" t-value="counter+1"/>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <t t-esc="counter"/>
+                                                    </span>
+                                                </td>
+                                                <!---->
+                                                <td width="50%" align="left"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.name"/>
+                                                </td>
+                                                <td align="right" width="45%"
+                                                    style="font-family: 'Helvetica';font-size: 16px;">
+                                                    <span t-field="l.amount"/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <tr>
+                                            <td colspan="2" class="cw">
+                                                Total/Net Amount
+                                            </td>
+                                            <td>
+                                                <b t-field="o.sudo().due_amount"></b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/>
+                                <br/>
+                                <div class="row m-3">
+                                    <div class="col-4 bb">
+                                        <!---->
+                                    </div>
+                                    <div class="col-3"> </div>
+                                    <div class="col-5 bb"> </div>
+                                </div>
+
+                                <div class="row m-3">
+                                    <div class="col-4">
+                                        <strong>Issued by</strong>
+                                    </div>
+                                    <div class="col-3"> </div>
+                                    <div class="col-5">
+                                        <strong>Received by</strong>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="row m-3">
+                                    <div class="col-2"> </div>
+                                    <div class="col-8">
+                                        <p class="fb">Bank Copy</p>
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                    <div class="col-2"> </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4 pull-right">
-                            <br/><br/><br/><br/><br/><br/><br/>
-                            <b>Principal,</b>
-                            <br/><br/><br/>
-                            <span style="font-family: 'Helvetica';font-size: 16px;">Authorized Signature</span>
-                            <br />
-                       </div>
                     </div>
                 </t>
             </t>
         </t>
     </template>
+
 </odoo>
