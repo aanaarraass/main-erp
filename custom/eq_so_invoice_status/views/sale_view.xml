@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+	<record id="inherit_sale_view_order_form" model="ir.ui.view">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form" />
+		<field name="arch" type="xml">
+			<xpath
+				expr="//page[@name='other_information']//field[@name='invoice_status']"
+				position="after">
+				<field name="inv_status" />
+				<field name="inv_amount_due" />
+				<field name="inv_amount_paid" />
+				<field name="inv_paid_in_per" />
+			</xpath>
+		</field>
+	</record>
+
+	<record id="inherit_sale_view_order_tree" model="ir.ui.view">
+		<field name="name">sale.order.tree</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_tree" />
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='invoice_status']" position="after">
+				<field name="inv_status" />
+				<field name="inv_amount_due" />
+				<field name="inv_amount_paid" />
+				<field name="inv_paid_in_per" />
+			</xpath>
+		</field>
+	</record>
+
+
+</odoo>

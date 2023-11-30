@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+
+        <record id="view_sale_adjustment_tree" model="ir.ui.view">
+            <field name="name">view.sale.order.extended.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="replace">
+                    <field name="state"/>
+                </field>
+                <field name="state" position="after">
+                    <field name="invoice_open" />
+                    <field name="not_ship_status" />
+                    <field name="ship_partial" />
+                    <field name="ship_status"/>
+                    <field name="invoice_partial"/>
+                    <field name="invoice_status_new"/>
+                    <field name="not_paid_status"/>
+                </field>
+            </field>
+        </record>
+        
+        <record id="view_sale_adjustment_tree_quotation" model="ir.ui.view">
+            <field name="name">view.sale.order.extended.quotation</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="arch" type="xml">
+                <field name="state" position="replace">
+                    <field name="state"/>
+                </field>
+                <field name="state" position="after">
+                
+                    <field name="invoice_open" />
+                    <field name="not_ship_status" />
+                    <field name="ship_partial" />
+                    <field name="ship_status"/>
+                    <field name="invoice_partial"/>
+                    <field name="invoice_status_new"/>
+                    <field name="not_paid_status"/>
+                </field>
+            </field>
+        </record>
+        
+        
+<!--        Sale search view-->
+
+        <record id="sale_status_search_view" model="ir.ui.view">
+            <field name="name">sale.status.search.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.sale_order_view_search_inherit_sale"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='order_date']" position="after">
+                    <filter name="invoice_open" string="Draft Invoice" domain="[('invoice_open','=',True)]"/>
+                    <filter name="not_temp_ship_status" string="Not Shipped" domain="[('not_temp_ship_status','=',True)]"/>
+                    <filter name="temp_ship_partial" string="Partial Delivered" domain="[('temp_ship_partial','=',True)]"/>
+                    <filter name="temp_ship_status"  string="Shiped"  domain="[('temp_ship_status','=',True)]"/>
+                    <filter name="temp_invoice_partial" string="Partial Paid" domain="[('temp_invoice_partial','=',True)]"/>
+                    <filter name="temp_invoice_status_new"  string="Paid" domain="[('temp_invoice_status_new','=',True)]"/>
+                    <filter name="not_temp_paid_status"  string="Not Paid" domain="[('not_temp_paid_status','=',True)]"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="sale_status_search_quo_view" model="ir.ui.view">
+            <field name="name">sale.status.quo.search.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='filter_create_date']" position="after">
+                    <filter name="invoice_open" string="Draft Invoice" domain="[('invoice_open','=',True)]"/>
+                    <filter name="not_temp_ship_status" string="Not Shipped" domain="[('not_temp_ship_status','=',True)]"/>
+                    <filter name="temp_ship_partial" string="Partial Delivered" domain="[('temp_ship_partial','=',True)]"/>
+                    <filter name="temp_ship_status"  string="Shiped"  domain="[('temp_ship_status','=',True)]"/>
+                    <filter name="temp_invoice_partial" string="Partial Paid" domain="[('temp_invoice_partial','=',True)]"/>
+                    <filter name="temp_invoice_status_new"  string="Paid" domain="[('temp_invoice_status_new','=',True)]"/>
+                    <filter name="not_temp_paid_status"  string="Not Paid" domain="[('not_temp_paid_status','=',True)]"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>
+

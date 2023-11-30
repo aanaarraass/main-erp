@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- <record id="purchase_order_view_search_inherit_inherit_ray" model="ir.ui.view"> -->
+            <!-- <field name="name">purchase.order.view.search.website_ray</field> -->
+            <!-- <field name="model">purchase.order</field> -->
+            <!-- <field name="inherit_id" ref="purchase.view_purchase_order_filter"/> -->
+            <!-- <field name="arch" type="xml"> -->
+                <!-- <xpath expr="//filter[@name='activities_exception']" position="before">
+                    <separator/>
+                    <filter string="PO Not Billed" name="conf_order"
+                            domain="[('state','in',('purchase','done')), ('amount_total', '!=', 0), ('invoiced', '=', False)]"
+                            context="{'invoiced': False}"/>
+                    <separator/>
+                    <filter string="PO Not Received" name="conf_order_no_deliv"
+                            domain="[('state','in',('purchase','done')), ('amount_total', '!=', 0), ('delivered', '=', False)]"
+                            context="{'delivered': False}"/>
+                    <separator/>
+                    <filter string="Bill not Paid" name="inv_not_paid"
+                            domain="[('state','in',('purchase','done')), ('amount_total', '!=', 0), ('invoiced', '=', True), ('invoice_paid', '=', False)]"
+                            context="{'invoice_paid': False}"/>
+                    <separator/>
+                    <filter string="Billed" name="invoiced" domain="[('invoiced', '=', True)]"/>
+                    <filter string="Not-Billed" name="not_invoiced" domain="[('invoiced', '=', False)]"
+                            context="{'invoiced': False}"/>
+                    <separator/>
+                    <filter string="Paid" name="invoice_paid" domain="[('invoice_paid', '=', True)]"/>
+                    <filter string="Payment Pending" name="not_invoice_paid" domain="[('invoice_paid', '=', False)]"
+                            context="{'invoice_paid': False}"/>
+                    <separator/>
+                    <filter string="Received" name="delivered" domain="[('delivered', '=', True)]"/>
+                    <filter string="Not-Received" name="not_delivered" domain="[('delivered', '=', False)]"
+                            context="{'delivered': False}"/>
+                    <separator/>
+                    <filter string="Zero Value" name="zero_value" domain="[('amount_total', '=', 0)]"/>
+                    <filter string="Non-Zero Value" name="non_zero_value" domain="[('amount_total', '!=', 0)]"/>
+                    <separator/>
+                </xpath> -->
+            <!-- </field> -->
+        <!-- </record> -->
+
+        <record model="ir.ui.view" id="view_po_tree_form_in">
+            <field name="name">View Order Tree Purchase</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_view_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='state']" position="before">
+                        <field name="invoiced_amount" widget='monetary' options="{'currency_field': 'currency_id'}"
+                               string="Billed Amount"/>
+                        <field name="amount_due" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <field name="paid_amount" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <field name="invoiced" string="Billed"/>
+<!--                        <field name="invoice_paid" string="Paid"/>-->
+<!--                        <field name="delivered" string="Received"/>-->
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_rfq_tree_form_in">
+            <field name="name">View Order Tree Purchase</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_kpis_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='state']" position="before">
+                        <field name="invoiced_amount" widget='monetary' options="{'currency_field': 'currency_id'}"
+                               string="Billed Amount"/>
+                        <field name="amount_due" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <field name="paid_amount" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                        <field name="invoiced" string="Billed"/>
+<!--                        <field name="invoice_paid" string="Paid"/>-->
+<!--                        <field name="delivered" string="Received"/>-->
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</odoo>
