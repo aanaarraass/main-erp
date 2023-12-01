@@ -3,37 +3,41 @@
 
 <templates id="template" xml:space="preserve">
     <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
-
         <xpath expr="//div[@class='pos-receipt']/t[1]" position="replace">
             <table style="width:100%; height:150px;text-align:center;">
+<!--                <tr>-->
+
                 <div class="row ba c">
-                    <t t-if="receipt.company.logo">
-                <img class="pos-receipt-logo" t-att-src="receipt.company.logo" alt="Logo"/>
 
-                     <h8><p>Purchase Slip</p> </h8>
-                    <h2 class="pos-receipt-center-align">
-                    <t t-esc="receipt.company.name" />
-                </h2>
-                        <font>Main Satiana Road Toll Tax Faisalabad</font>
-            </t>
-<br/>
+                     <p>Purchase Slip</p>
+                    <h2>  <t t-if="receipt.company.name" t-esc="receipt.company.name"/>
+                        <t t-else=""><span>Hameed Mart</span></t>
+                    </h2>
+
+                    <h6>Main Susan Road Faizan-E Madina Faisalabad </h6>
+                    <span></span>
                     <strong>
-                        Tel:
                     <t t-if="receipt.company.phone" t-esc="receipt.company.phone"/>
-                        <t t-else=""><span> </span></t>
-
+                        <t t-else=""><span>031-1111-402</span></t>
+                        ||
                         <t t-if="receipt.company.mobile" t-esc="receipt.company.mobile"/>
-                        <t t-else=""><span> </span></t>
+                        <t t-else=""><span>0311-4992997</span></t>
                 </strong>
-
-
+                    <br/>
+                    <br/>
                     <td style="border:0px solid black;word-wrap: break-word;">
+<!--                       <t t-if="receipt.name" t-esc="receipt.name"/>-->
                    </td>
 
+                    <br/>
+
+
 </div>
+
+                <!--                </tr>-->
             </table>
 
-
+            <br/>
         </xpath>
         <xpath expr="//div[@class='pos-receipt-contact']" position="replace">
            <div>
@@ -87,21 +91,29 @@
 
 
         </style>
+        <!--        <div class="row ba c">-->
+        <!--             <t  t-if="receipt.company.name" t-esc="receipt.company.name"/>-->
+        <!--            <t t-else=""><span>BWP Mandi Chowk, Liaqat abad, Faisalabad</span></t>-->
 
+        <!--        </div>-->
+        <!--        <div class="row ba c">-->
+        <!--                <strong>-->
+        <!--                    <t  t-if="receipt.company.phone" t-esc="receipt.company.phone" /> <t t-else=""><span>0300-1105610</span></t> ||-->
+        <!--                    <t t-if="receipt.company.mobile" t-esc="receipt.company.mobile"/><t t-else=""><span>0300-1008729</span></t>-->
+        <!--                </strong>-->
+
+        <!--        </div>-->
 
     </t>
     <t t-name="OrderLinesReceiptInherit" owl="1">
          <table class="table ba c">
              <thead>
                  <tr>
-                    <th class="ba">Sr.</th>
+                     <th class="ba">Sr.</th>
                      <th class="ba">Product</th>
                      <th class="ba">Qty</th>
-                     <th class="ba">Price</th>
-
-
-                     <th class="ba">Total</th>
-
+                     <th class="ba">Rate</th>
+                     <th class="ba">Amount</th>
                  </tr>
              </thead>
              <t t-set="i" t-value="0"/>
@@ -112,14 +124,7 @@
                      <td class="ba"><span t-esc="i"/></td>
                      <td class="ba"><t t-esc="line.product_name_wrapped[0]"/></td>
                      <td class="ba"><t t-esc="line.quantity"/></td>
-                     <!--                                          <t t-set="tax_amount" t-value="line.price_subtotal_incl - line.price_subtotal"/>-->
-                     <td class="ba"><t t-esc="env.pos.format_currency_no_symbol(line.price)"/>
-                         <td class="ba">
-                         <t t-esc="line.tax_amount"/>
-</td>
-</td>
-                     <!--&lt;!&ndash;                     <t t-set="current_subtotal" t-value="0"/>-->
-
+                     <td class="ba"> <t t-esc="env.pos.format_currency_no_symbol(line.price)"/></td>
                      <td class="ba"><span t-esc="env.pos.format_currency_no_symbol(line.price_display)" class="price_display pos-receipt-right-align"/></td>
                  </tr>
 
@@ -129,5 +134,6 @@
 
 
      </t>
+
 </templates>
 

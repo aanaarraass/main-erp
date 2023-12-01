@@ -21,7 +21,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account', 'point_of_sale'],
+    'depends': ['point_of_sale'],
 
     # always loaded
     'data': [
@@ -33,7 +33,7 @@
     ],
     'assets': {
         'web.assets_qweb': [
-            "jts_pdf/static/src/xml/pos.xml",
+            "hameed_pdf/static/src/xml/pos.xml",
         ],
     },
 }
