@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<odoo></odoo>-->
+
+<templates id="template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[@class='pos-receipt']/t[1]" position="replace">
+            <table style="width:100%; height:150px;text-align:center;">
+<!--                <tr>-->
+
+                 <div class="row ba c">
+
+                     <p>Purchase Slip</p>
+           <h2>  <t  t-if="receipt.company.name" t-esc="receipt.company.name"/><t t-else=""><span>Hameed Mart</span></t>
+</h2>
+
+            <h6>Main Susan Road Faizan-E Madina Faisalabad </h6>
+                     <span></span>
+<strong>
+                    <t  t-if="receipt.company.phone" t-esc="receipt.company.phone" /> <t t-else=""><span>031-1111-402</span></t> ||
+                    <t t-if="receipt.company.mobile" t-esc="receipt.company.mobile"/><t t-else=""><span>0311-4992997</span></t>
+                </strong>   <br/>
+                     <br/>
+                  <td style="border:0px solid black;word-wrap: break-word;">
+<!--                       <t t-if="receipt.name" t-esc="receipt.name"/>-->
+                   </td>
+
+<br/>
+
+
+</div>
+
+<!--                </tr>-->
+            </table>
+
+            <br/>
+        </xpath>
+        <xpath expr="//div[@class='pos-receipt-contact']" position="replace">
+           <div>
+                <t t-call="PosCustomAddress"/>
+           </div>
+        </xpath>
+        <xpath expr="//div[@class='orderlines']" position="replace">
+                <div>
+                    <t t-call="OrderLinesReceiptInherit"/>
+                </div>
+        </xpath>
+
+
+
+
+<!--        <<<>>>>-->
+
+<!--          <xpath expr="//div[@class='pos-receipt-order-data']" position="before">-->
+<!--                    <strong>Receipt Status::<t t-if="receipt.state" t-esc="receipt.state"/><t t-else="">New</t> </strong>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--        </xpath>-->
+
+
+<!--         <xpath expr="//div[@class='pos-receipt-order-data']/t[3]" position="replace">-->
+<!--              <div style="position:absolute;margin-bottom:0;align:center">-->
+<!--                  <span style="margin-right:30px">Developed by:&#160;<b>JT Storm</b></span>-->
+<!--                 <span style="margin-left:30px">Contact:&#160;<b>03336108585</b></span>-->
+<!--              </div>-->
+<!--        </xpath>-->
+<!--        <<<>>>>>>>-->
+
+    </t>
+    <t t-name="PosCustomAddress" owl="1">
+         <style>
+            .ba{
+            border-bottom:1px dashed #494949;
+            }
+            .bb{
+            border-bottom:1px solid black
+            }
+            .c{
+            text-align:center;
+            }
+            .table{
+            width:100%;
+            }
+            .l{
+            text-align:left;
+            }
+             .w2{
+             width:20%
+             }
+
+
+        </style>
+<!--        <div class="row ba c">-->
+<!--             <t  t-if="receipt.company.name" t-esc="receipt.company.name"/>-->
+<!--            <t t-else=""><span>BWP Mandi Chowk, Liaqat abad, Faisalabad</span></t>-->
+
+<!--        </div>-->
+<!--        <div class="row ba c">-->
+<!--                <strong>-->
+<!--                    <t  t-if="receipt.company.phone" t-esc="receipt.company.phone" /> <t t-else=""><span>0300-1105610</span></t> ||-->
+<!--                    <t t-if="receipt.company.mobile" t-esc="receipt.company.mobile"/><t t-else=""><span>0300-1008729</span></t>-->
+<!--                </strong>-->
+
+<!--        </div>-->
+
+    </t>
+    <t t-name="OrderLinesReceiptInherit" owl="1">
+         <table class="table ba c">
+             <thead>
+                 <tr>
+                     <th class="ba">Sr.</th>
+                     <th class="ba">Product</th>
+                     <th class="ba">Qty</th>
+                     <th class="ba">Rate</th>
+                     <th class="ba">Amount</th>
+                 </tr>
+             </thead>
+             <t t-set="i" t-value="0"/>
+             <t t-foreach="receipt.orderlines" t-as="line" t-key="line.id">
+                  <t t-set="i" t-value="i + 1"/>
+                 <tbody>
+                 <tr>
+                     <td class="ba"><span t-esc="i"/></td>
+                     <td class="ba"><t t-esc="line.product_name_wrapped[0]"/></td>
+                     <td class="ba"><t t-esc="line.quantity"/></td>
+                     <td class="ba"> <t t-esc="env.pos.format_currency_no_symbol(line.price)"/></td>
+                     <td class="ba"><span t-esc="env.pos.format_currency_no_symbol(line.price_display)" class="price_display pos-receipt-right-align"/></td>
+                 </tr>
+
+             </tbody>
+             </t>
+         </table>
+
+
+     </t>
+
+</templates>
+
