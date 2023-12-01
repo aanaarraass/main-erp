@@ -52,42 +52,27 @@
                                     <div class="mt-2" t-if="o.name">
                                         <strong><p> <t t-esc="o.name"/></p></strong>
                                     </div>
+                                     <div class="bb mt-3">
+                                        <strong>Payment Status:</strong>
+                                    </div>
+                                    <div class="mt-2">
+                                        <strong>
+                                            <span t-esc="o.payment_state"/>
+                                        </strong>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row ba">
                                 <div class="col-12 text-center">
-                                    <strong>Bakar Mandi Chowk, Liaqat abad, Faisalabad</strong>
+                                    <strong>MAIN Satiana Road Toll Tax Faisalabad<br/>
+                                    </strong>
                                 </div>
                             </div>
                             <div class="row ba">
                                 <div class="col-12 text-center">
-                                    <strong>0300-1105610 || 0300-1008729 ||</strong>
+                                    <strong></strong>
                                 </div>
                             </div>
-                            <table class="table table-sm">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h5>Party/Table</h5>
-                                        </td>
-                                        <td>
-                                            <h5></h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5>Table Man:</h5>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5>Description:</h5>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
 
                         </div>
 

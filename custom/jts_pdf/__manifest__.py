@@ -21,7 +21,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account'],
+    'depends': ['account', 'point_of_sale'],
 
     # always loaded
     'data': [
@@ -31,4 +31,9 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'assets': {
+        'web.assets_qweb': [
+            "jts_pdf/static/src/xml/pos.xml",
+        ],
+    },
 }
